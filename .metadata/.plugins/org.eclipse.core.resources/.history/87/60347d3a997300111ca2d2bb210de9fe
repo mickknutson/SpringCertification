@@ -1,0 +1,11 @@
+package com.baselogic.common;
+
+/**
+ * http://blog.springsource.org/2011/08/09/whats-a-factorybean/
+ * http://blog.springsource.org/2011/08/10/beyond-the-factorybean/
+ * @author MKnuts6173c
+ *
+ */
+public class ComponentFactory {
+
+}

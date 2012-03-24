@@ -1,0 +1,20 @@
+package com.baselogic.util;
+
+
+
+@Component
+public class ContextUtils {
+
+	
+    @Autowired
+    ApplicationContext applicationContext;
+
+	
+	public static String staticFunction(){
+		return "staticFunction";
+	}
+
+	private static String privateFunction(){
+		return "privateFunction";
+	}
+}

@@ -1,0 +1,26 @@
+package com.baselogic.common;
+
+/**
+ * ComponentBeanPostProcessor
+ *
+ * <p>Spring Certification objective: 1.2</p>
+ * 
+ * @see http://springcert.sourceforge.net/core-3/index.html#beans
+ *
+ * @author Mick Knutson
+ * <p><a href="http://www.baselogic.com">Blog: http://baselogic.com</a></p>
+ * <p><a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a></p>
+ * <p><a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a></p>
+ * <p><a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a></p>
+ * 
+ * @since 2012
+ * 
+ */
+/**
+ * @see http://www.jpalace.org/docs/tutorials/spring/beans_11.html
+ * @author mknuts6173c
+ *
+ */
+public class ComponentBeanPostProcessor {
+
+}

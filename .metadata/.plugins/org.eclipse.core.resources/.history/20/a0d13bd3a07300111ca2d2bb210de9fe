@@ -1,0 +1,67 @@
+package com.baselogic.service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+import com.baselogic.dao.OrderDAO;
+import com.baselogic.util.ExampleUtils;
+
+
+/**
+ * {@link ExampleService} with hard-coded input data.
+ */
+@Component
+public class ExampleServiceInitializingBeanImpl 
+implements ExampleService, InitializingBean, DisposableBean {
+	
+	private static final Logger logger = LoggerFactory.getLogger(ExampleServiceInitializingBeanImpl.class);
+	
+	@Autowired
+	String message;
+	
+	/**
+	 * Reads next record from input
+	 */
+	public String getMessage() {
+		return message;	
+	}
+	
+	public void setMessage(String msg){
+		this.message = msg;
+	}
+	
+	@PostConstruct
+	public void initService(){
+        logger.debug("<<<<< POST CONSTRUCT - POST CONSTRUCT - POST CONSTRUCT - POST CONSTRUCT - POST CONSTRUCT <<<<<");
+	}
+	
+	@PreDestroy
+	public void destroyService(){
+		logger.debug(" >>>>> PRE DESTROY - PRE DESTROY - PRE DESTROY - PRE DESTROY - PRE DESTROY >>>>>");
+	}
+
+    public void init() {
+        logger.debug("**** Init-Method Attribute");
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        logger.debug("**** InitializingBean");
+
+    }
+    
+    @Override
+    public void destroy() throws Exception {
+  	  System.out.println("Spring Container is destroy! Customer clean up");
+  	}
+
+}

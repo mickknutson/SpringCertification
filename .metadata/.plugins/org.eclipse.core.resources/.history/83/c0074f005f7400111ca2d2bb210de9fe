@@ -1,0 +1,69 @@
+package com.baselogic.demos;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.baselogic.domain.Customer;
+import com.baselogic.domain.Item;
+import com.baselogic.domain.Order;
+
+/**
+ * FactoryBean Tests
+ *
+ * <p>Spring Certification objective: 1.2</p>
+ * 
+ * @see http://springcert.sourceforge.net/core-3/index.html#beans
+ *
+ * @author Mick Knutson
+ * <p><a href="http://www.baselogic.com">Blog: http://baselogic.com</a></p>
+ * <p><a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a></p>
+ * <p><a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a></p>
+ * <p><a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a></p>
+ * 
+ * @since 2012
+ * 
+ */
+@ContextConfiguration
+@RunWith(SpringJUnit4ClassRunner.class)
+public class FactoryBeanTests {
+
+	private final Logger logger = LoggerFactory.getLogger(FactoryBeanTests.class);
+
+	@Autowired
+	ApplicationContext applicationContext;
+
+	@Test
+	public void testCustomerWithXmlFactoryOrder(){
+		Customer customer = applicationContext.getBean("customer", Customer.class);
+		
+		logger.info("customer: {}", customer.toString());
+		logger.info("order: {}", applicationContext.getBean("order", Order.class));
+		
+		logger.info("item1: {}", applicationContext.getBean("item1", Item.class));
+		logger.info("item2: {}", applicationContext.getBean("item2", Item.class));
+
+		assertThat(customer.getFirstName(), is("Mick"));
+		assertThat(customer.getLastName(), is("Knutson"));
+
+		assertThat(customer.getOrder().getItems().size(), is(2));
+	}
+
+	@Test
+	public void testCustomerWithJavaConfigFactoryOrder(){
+		Customer customer = applicationContext.getBean("javaConfigCustomer", Customer.class);
+		
+		logger.info("customer: {}", customer.toString());
+		logger.info("order: {}", applicationContext.getBean("javaConfigOrder", Order.class));
+
+		assertThat(customer.getOrder().getItems().size(), is(4));
+	}
+}

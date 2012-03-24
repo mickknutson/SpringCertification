@@ -1,0 +1,52 @@
+package com.baselogic.demos;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+@Aspect
+public class TestAdvice {
+
+	private final Logger logger = LoggerFactory.getLogger(TestAdvice.class);
+
+	//@Pointcut("within(@org.junit.Test *)")
+	@Pointcut("within(*..*Test*)")
+    void junitTestMethods() {}
+
+    @Before("junitTestMethods()")
+    public void beforeJunitTestCases() {    	
+    	logger.debug("----- Start Test {} ----------------------------------");
+    }
+
+    @After("junitTestMethods()")
+    public void afterJunitTestCases() {    	
+    	logger.debug("----- After Test {} ----------------------------------");
+    }
+
+	
+	// Using joinPoint.getArgs() to show arguments.
+    @Around("junitTestMethods()")
+    public void aroundJunitTestCases(ProceedingJoinPoint joinPoint) throws Throwable {
+    	/*logger.debug("Executed the @Injected method: "
+                + joinPoint.getSignature() + " with value(s): ");
+ 
+        for (Object object : joinPoint.getArgs()) {
+            System.out.print(object);
+        }
+        logger.debug("");*/
+
+    	logger.debug("----- Start Test {} ----------------------------------");
+    	 
+    	joinPoint.proceed();
+     
+    	logger.debug("----- End Test {} ------------------------------------");
+        // Post processing work..
+
+    }
+
+}

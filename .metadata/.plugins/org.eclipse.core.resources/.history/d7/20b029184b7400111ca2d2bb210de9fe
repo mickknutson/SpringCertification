@@ -1,0 +1,5 @@
+package com.baselogic.common;
+
+public class ComponentBeanFactoryPostProcessor {
+
+}

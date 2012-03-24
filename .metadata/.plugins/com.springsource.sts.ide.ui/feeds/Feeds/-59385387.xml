@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.springsource.org"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>SpringSource.org</title>
+ <link>http://www.springsource.org</link>
+ <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
+ <language>en</language>
+<item>
+ <title>Cloud Foundry Integration for Eclipse 1.0 released</title>
+ <link>http://www.springsource.org/node/3515</link>
+ <description>&lt;p&gt;I am happy to announce the first release of the Cloud Foundry Integration for Eclipse 1.0.&lt;/p&gt;
+&lt;p&gt;This release features:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;deploying, updating, starting, stopping apps directly from your workspace&lt;/li&gt;
+&lt;li&gt;supports Java/Web, Java/Spring, Groovy/Grails and Scala/Lift apps&lt;/li&gt;
+&lt;li&gt;service creating and binding (directly at deploy time or later)&lt;/li&gt;
+&lt;li&gt;instance scaling and statistics&lt;/li&gt;
+&lt;li&gt;remote file browsing directly integrated&lt;/li&gt;
+&lt;li&gt;full debugging support for Micro Cloud Foundry&lt;/li&gt;
+&lt;li&gt;improved incremental update performance&lt;/li&gt;
+&lt;li&gt;integrated into Eclipse and STS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And, last but not least, the project is now open-source under the EPL and available from GitHub:&lt;br /&gt;
+&lt;a href=&quot;https://github.com/SpringSource/ecli...n-cloudfoundry&quot;&gt;https://github.com/SpringSource/ecli...n-cloudfoundry&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;You can install it into STS (2.9.0 or higher required) using the STS Dashboard or directly into a plain Eclipse JEE package (Indigo recommended) using the Eclipse Marketplace.&lt;/p&gt;
+&lt;p&gt;Attention: if you have a previous version of the Cloud Foundry tooling installed (the old milestone or nightly builds, having the old STS version 2.7.0 on them), please uninstall them before installing the new release. Since we moved to GitHub, this is a new and separate project and would be installed in addition to the old stuff that you have. So please uninstall the old feature before.&lt;/p&gt;
+&lt;p&gt;More detailed user documentation will follow shortly on &lt;a href=&quot;http://start.cloudfoundry.com/&quot;&gt;http://start.cloudfoundry.com/&lt;/a&gt;. Stay tuned!&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3515#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Fri, 23 Mar 2012 20:39:58 +0000</pubDate>
+ <dc:creator>Martin Lippert</dc:creator>
+ <guid isPermaLink="false">3515 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>SpringSource Tool Suite 2.9.1 released</title>
+ <link>http://www.springsource.org/node/3514</link>
+ <description>&lt;p&gt;Dear Spring Community,&lt;br /&gt;
+&amp;nbsp;&lt;br /&gt;
+We&#039;re pleased to announce the update release 2.9.1 of the SpringSource Tool Suite (STS).&lt;br /&gt;
+&amp;nbsp;&lt;br /&gt;
+This update improves the Spring Integration graphical editing experience and fixes a performance problem with the content-assist in the Java editor when working inside a Spring project.&lt;br /&gt;
+&amp;nbsp;&lt;br /&gt;
+More details on new features and bug fixes can be found in the&amp;nbsp;&lt;a href=&quot;http://dist.springsource.com/release/STS/doc/STS-new_and_noteworthy.pdf&quot;&gt;New and Noteworthy&lt;/a&gt;&amp;nbsp;document. Detailed&amp;nbsp;&lt;a href=&quot;http://download.springsource.com/release/STS/doc/STS-installation_instructions.pdf&quot;&gt;installation instructions&lt;/a&gt;&amp;nbsp;are also available. As always downloads are available from the&amp;nbsp;&lt;a href=&quot;http://www.springsource.com/landing/best-development-tool-enterprise-java&quot;&gt;STS download page&lt;/a&gt;.&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3514#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Fri, 23 Mar 2012 14:18:10 +0000</pubDate>
+ <dc:creator>Martin Lippert</dc:creator>
+ <guid isPermaLink="false">3514 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>This Week in Spring: March 20th, 2012</title>
+ <link>http://www.springsource.org/node/3513</link>
+ <description>&lt;P&gt; Hello and welcome to another installment of &lt;EM&gt;This Week in Spring&lt;/EM&gt;! As usual, we&#039;ve got some great stuff to look at, so let&#039;s get to it. 
+&lt;/P&gt;  
+
+&lt;ol&gt; 
+	&lt;LI&gt;  
+
+		Want to use SpringSource Tool Suite on the &lt;a href = &quot;http://blog.springsource.org/2012/03/14/early-access-springsource-tool-suite-for-eclipse-juno-4-2/&quot;&gt;latest Eclipse Juno (4.2) milestone builds&lt;/A&gt;? 
+		SpringSource Tool Suite lead Martin Lippert has got the answer for you.
+		  &lt;/LI&gt;
+ 
+
+	&lt;LI&gt; Michal Borek  has a great blog post on how to use the &lt;a href = &quot;http://www.greenpath.pl/2012/03/spring-framework-and-file-upload/&quot;&gt;&lt;CODE&gt;ConversionService&lt;/CODE&gt; in Spring 3.0+ to convert uploaded file data into a domain object&lt;/A&gt;. First, this is a &lt;EM&gt;really&lt;/EM&gt; cool idea. Second, users should be aware that Spring supports file uploads by default if it detects &lt;CODE&gt;commons-fileupload&lt;/CODE&gt; or the Servlet 3 &lt;CODE&gt;javax.servlet.http.Part&lt;/CODE&gt; APIs present on the classpath. To use this support, simply create a Spring MVC handler that takes a @RequesParam of type &lt;CODE&gt;MultipartFile&lt;/CODE&gt;. For an example, see this RESTful API controller that &lt;a href =&quot;https://github.com/SpringSource/html5expense/blob/master/server/api/src/main/java/com/springsource/html5expense/controllers/ExpenseReportingApiController.java&quot;&gt;accepts HTTP POST&#039;d file uploads&lt;/A&gt;.  If all you want is to manipulate the file data, then this is easy. The idea proffered in this post is to take it a step further, and bind that data to a domain model object. &lt;/LI&gt;
+		
+	&lt;LI&gt; Gal Levinsky has an interesting post on removing circular dependencies in Spring applications. 
+		He discusses the problems created by circular dependencies - i.e. one bean depending on another which is in turn in some way depended on by the first bean - and then &lt;a href  = &quot;http://gal-levinsky.blogspot.com/2012/03/resolve-circular-dependency-in-spring.html&quot;&gt;explores some of the many ways that Spring can solve circular dependencies for you&lt;/A&gt;.  
+		 &lt;/LI&gt;
+	&lt;LI&gt;
+ Blogger &lt;A href = &quot;http://www.blogger.com/profile/03187939208715339988&quot;&gt;Hemraj&lt;/A&gt; has a succinct post introducing how you can &lt;a href= &quot;http://www.programmingforfuture.com/2012/01/applicationcontext-instantiation-for.html&quot;&gt;install the Spring web-tier machinery through the use of context loaders&lt;/A&gt; - &lt;CODE&gt;ContextLoaderListener&lt;/CODE&gt; and &lt;CODE&gt;ContextLoaderServlet&lt;/CODE&gt;. 
+
+    &lt;/LI&gt;
+	
+	 &lt;LI&gt; Over on Dr. Dobbs, Adrian Bridgwater&#039;s written a fantastic blog &lt;a href = &quot;http://drdobbs.com/mobile/232602788&quot;&gt;about using Spring with the Magnolia CMS&lt;/A&gt; with the  
+		Blossom   integration module for Magnolia. 
+		
+		 &lt;/LI&gt;
+		&lt;LI&gt;Spring, as a technology, is a collection of libraries that you can layer into your application with ease. It provides powerful support, usually in the term of adapter code that&#039;s exposed as AOP aspects. While this is a good thing (TM), it can make for some very deep stack traces! With Spring, however, at least you can disassemble the layers by removing libraries. The problems are far worse with other, more monolithic technologies. 
+			So, blogger Tomasz Nurkiewicz has written a simple post on &lt;a href = &quot;http://nurkiewicz.blogspot.com/2012/03/filtering-irrelevant-stack-trace-lines.html&quot;&gt;how to effectively isolate the errors from the stack frames that are irrelevant&lt;/A&gt; in diagnosing a problem (Spring&#039;s frames, for example). Cool post, and it mirrors something I&#039;m sure many of us have done at some point or another, ourselves! &lt;/LI&gt;
+   
+	&lt;LI&gt; The Cafe Techno has a great post introducing the idea of an &lt;a href = &quot;http://thecafetechno.com/tutorials/spring/what-is-inner-bean-in-spring-framework/&quot;&gt;inner bean in Spring&lt;/A&gt;.
+ 
+		&lt;/LI&gt;
+		&lt;LI&gt;  I&#039;m sure that you heard all the news a couple of weeks ago about about &lt;a href=&quot;http://www.springsource.org/spring-data/hadoop&quot;&gt;Spring for Apache Hadoop&lt;/a&gt;? Want to get started fast? Check out this &lt;a href = &quot;http://news.oss.tw/node/13707&quot;&gt;Spring for Apache Hadoop quick start&lt;/a&gt; with all the details!   &lt;/li&gt;
+
+			 &lt;LI&gt; Blogger &lt;EM&gt;zousu&lt;/EM&gt; has a great post introducing  &lt;a href = &quot;http://zousu.com/wp/get-started-with-mongodb-with-spring-data-1-0-1-ga-release/&quot;&gt;how to get started with Spring Data Mongo 1.0.1 GA&lt;/A&gt;. &lt;/LI&gt; 
+             
+			&lt;LI&gt; Roger Hughes is back at it again, this time with a little bit of anecdotal advice on &lt;a href = &quot;http://java.dzone.com/articles/integrating-spring-legacy&quot;&gt;how to integrate Spring into legacy applications&lt;/A&gt;. I like to think of this process as &lt;EM&gt;Spring cleaning&lt;/EM&gt;!   &lt;/LI&gt;
+ &lt;/OL&gt;</description>
+ <comments>http://www.springsource.org/node/3513#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 20 Mar 2012 22:53:33 +0000</pubDate>
+ <dc:creator>Adam Fitzgerald</dc:creator>
+ <guid isPermaLink="false">3513 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring GemFire 1.2 M1 Released for Java </title>
+ <link>http://www.springsource.org/node/3512</link>
+ <description>&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am pleased to announce that the first milestone of the Spring GemFire 1.2 project for Java is now available! &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.springsource.com/download/community?project=Spring GemFire&amp;amp;version=1.2.0.M1&quot;&gt;Downloads&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-gemfire/docs/1.2.0.M1/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-gemfire/docs/1.2.0.M1/reference/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-gemfire/docs/1.2.0.M1/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This new milestone introduces:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.springsource.org/node/3512&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/3512#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 20 Mar 2012 17:33:06 +0000</pubDate>
+ <dc:creator>Costin Leau</dc:creator>
+ <guid isPermaLink="false">3512 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring GemFire 1.1.1 Released for Java </title>
+ <link>http://www.springsource.org/node/3511</link>
+ <description>&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am pleased to announce the GA release of Spring GemFire 1.1.1 project is now available!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.springsource.com/download/community?project=Spring GemFire&amp;amp;version=1.1.1.RELEASE&quot;&gt;Downloads&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-gemfire/docs/1.1.1.RELEASE/api/&quot;&gt;JavaDocs&lt;/a&gt; | &lt;a href=&quot;http://static.springsource.org/spring-gemfire/docs/1.1.1.RELEASE/reference/&quot;&gt;Reference Documentation&lt;/a&gt; | &lt;a href=&quot;http://static.springframework.org/spring-gemfire/docs/1.1.1.RELEASE/changelog.txt&quot;&gt;Changelog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.springsource.org/node/3511&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.springsource.org/node/3511#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 20 Mar 2012 17:27:02 +0000</pubDate>
+ <dc:creator>Costin Leau</dc:creator>
+ <guid isPermaLink="false">3511 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Spring 3.1 Release Train Complete, Spring More Popular Than Ever</title>
+ <link>http://www.springsource.org/node/3509</link>
+ <description>&lt;div style=&quot;float: right; width:320px; padding: 10px&quot;&gt;
+&lt;a href=&quot;http://www.vmware.com/company/news/releases/vmw-spring-momentum-3-14-12.html&quot;&gt;&lt;img height=&quot;184&quot; alt=&quot;Spring 3.1 Release Train Complete&quot; width=&quot;320&quot; border=&quot;0&quot; src=&quot;http://www.springsource.org/files/imagefield_default_images/placeholder_video_spring_projects.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In a press release today, SpringSource and VMware &lt;a href=&quot;http://www.vmware.com/company/news/releases/vmw-spring-momentum-3-14-12.html&quot;&gt;announced&lt;/a&gt; that the Spring 3.1 Release Train is complete. &lt;a href=&quot;/spring-integration&quot;&gt;Spring Integration&lt;/a&gt;, &lt;a href=&quot;/spring-security&quot;&gt;Spring Security&lt;/a&gt;, &lt;a href=&quot;/spring-batch&quot;&gt;Spring Batch&lt;/a&gt;, &lt;a href=&quot;/spring-data&quot;&gt;Spring Data&lt;/a&gt;, &lt;a href=&quot;/spring-mobile&quot;&gt;Spring Mobile&lt;/a&gt; and &lt;a href=&quot;/spring-android&quot;&gt;Spring for Android&lt;/a&gt; all now support Spring 3.1, making it easier and faster for enterprise developers to build the next generation of enterprise applications.&lt;/p&gt;
+
+&lt;p&gt;The press release also highlighted important findings from Evans Data Research regarding the growing popularity and benefits of using Spring. More than two thirds of Java developers are either using Spring today or plan to do so within the next two years and those that do use Spring are 50% more productive. &lt;/p&gt;
+
+&lt;p&gt;SpringSource would like to thank all of the amazing community members that made this release possible. Community contributions form an important part of many of the projects and all the users that experimented with milestone and release candidate versions help substantially in making sure that Spring technology is high quality and production ready. Work is already underway on many other exciting projects like the recently announced &lt;a href=&quot;http://blog.springsource.org/2012/02/29/introducing-spring-hadoop/&quot;&gt;Spring for Apache Hadoop&lt;/a&gt; project. Community members are invited to attend the upcoming &lt;a href=&quot;/springone-on-the-road&quot;&gt;SpringOne on the Road&lt;/a&gt; events to meet the Spring experts and learn about the latest features available with Spring. &lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3509#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Wed, 14 Mar 2012 19:54:55 +0000</pubDate>
+ <dc:creator>Adam Fitzgerald</dc:creator>
+ <guid isPermaLink="false">3509 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>This Week in Spring, March 13th, 2012</title>
+ <link>http://www.springsource.org/node/3508</link>
+ <description> 
+&lt;P&gt; Welcome to another installment of &lt;EM&gt; This Week in Spring&lt;/EM&gt;. 
+	As usual, too much content, and waaaay too little time.  
+	
+ The &lt;EM&gt;&lt;a href = &quot;http://www.springsource.org/springone-on-the-road&quot;&gt;SpringOne on the Road&lt;/A&gt;&lt;/EM&gt; and  &lt;EM&gt;&lt;a href = &quot;http://blog.cloudfoundry.com/post/13481010905/cloud-foundry-open-tour-2012&quot;&gt;Cloud Foundry Open Tour&lt;/A&gt;&lt;/EM&gt;&#039;s planning and preparation
+	 is well underway. 
+	
+	          It seems like every day some new excellent speaker or talk gets added to the
+	      lineup, making this event a must-go affair. It&#039;s 2012, we&#039;re staring down the barrel of big data, the cloud, event driven architectures and the mobile and rich web and no other technologies are nearly so well situated to deal with these things than Spring and Cloud Foundry. Come learn how, from the masters.
+	 	 
+	 &lt;/P&gt;
+
+
+ &lt;OL&gt; 
+	&lt;LI&gt; Peer over Spring Integration ninja Oleg Zhurakousky&#039;s shoulders as he helms the keyboard and introduces some of the finer &lt;a href = &quot;http://www.springsource.org/node/3506&quot;&gt;Spring Integration Tips &#039;n Tricks&lt;/A&gt; in this SpringOne2GX video hosted by InfoQ. &lt;/LI&gt;
+	
+ 	&lt;li&gt;  
+		&lt;a href = &quot;http://www.springsource.org/insight&quot;&gt;Spring Insight&lt;/A&gt; is a developer tool that provides visibility into your application&#039;s runtime performance and behavior by tracing how low level SQL queries, transaction times and application pages are performing. Optimized out of the box for standard Spring-developed applications, Insight also provides a pluggable architecture for enhancing trace capabilities to provide further visibility into your application performance. In this video, John Kew, SpringSource Staff Engineer,  describes the capabilities of the plugin framework and demonstrates the &lt;a href=&quot;http://www.springsource.org/node/3504&quot;&gt;Spring Insight best practices for plugin-in development&lt;/a&gt;. 
+	   &lt;/LI&gt;
+	
+	&lt;LI&gt;  
+		Did you miss last week&#039;s Roy Clarkson webinar &lt;A href = &quot;http://www.springsource.org/node/3505&quot;&gt;introducing Native Android development with Spring&lt;/A&gt;? Have no fear, you can check out the video, up on the &lt;a href = &quot;http://www.youtube.com/springsourcedev&quot;&gt;SpringSourceDev YouTube channel&lt;/A&gt;, as always! &lt;/LI&gt;
+	
+	&lt;LI&gt;  
+		The &lt;a href = &quot;http://blog.codeleak.pl/&quot;&gt;Codeleak.pl&lt;/A&gt; blog has some great posts, and this week&#039;s no exception. There&#039;s a post on how to exploit the more granular reach afforded to the &lt;a href = &quot;http://blog.codeleak.pl/2012/03/how-to-method-level-validation-in.html&quot;&gt;JSR 303 &lt;code&gt;@Validated&lt;/CODE&gt; annotation in Spring 3.1 to achieve method-level validation&lt;/A&gt;.  This from the same blog that had this great post on &lt;a href  = &quot;http://blog.codeleak.pl/2011/09/spring-31-httpputformcontentfilter.html&quot;&gt;using Spring 3.1&#039;s &lt;CODE&gt;HttpPutFormContentFilter&lt;/CODE&gt;&lt;/A&gt;, which is another gem buried in all the features from Spring MVC.
+		 &lt;/LI&gt;
+	&lt;LI&gt; Eugen, from the &lt;a href = &quot;http://www.baeldung.com&quot;&gt;baeldung&lt;/A&gt; blog, 
+		has a quick post on &lt;A href = &quot;http://www.baeldung.com/2012/03/12/project-configuration-with-spring/&quot;&gt;how to separate environment-specific properties files using Spring&#039;s property placeholder mechanism&lt;/A&gt;. Of course, in Spring 3.1, there&#039;s also the Environment abstraction and the profile abstraction, both merit attention for those who want the last word on environment-specific Spring applications.  &lt;/LI&gt;
+		 
+		&lt;LI&gt; Eugen has also got another installment on his REST with Spring blog series that&#039;s now re-making the rounds on the content syndication circuit. If you missed them all the first time, check out Eugen&#039;s Spring MVC and REST blogs, most recently &lt;a href =&quot;http://java.dzone.com/articles/rest-pagination-spring&quot;&gt;introducing RESTful pagination with Spring&lt;/A&gt;.&lt;/li&gt;
+ 
+    	&lt;LI&gt;  &lt;a href = &quot;https://mobilecf.feedhenry.com/&quot;&gt;CloudFoundry powers  FeedHenry&lt;/A&gt;.   Interesting - this is a natural use case. Let Cloud Foundry handle the backend stuff and developers focus on the important stuff. There&#039;s also some good analysis &lt;a href =&quot;http://cloud.dzone.com/articles/feedhenry-powers-mobile&quot;&gt;of this particular use case over on Dzone&lt;/A&gt;.  &lt;/LI&gt;
+	
+&lt;/OL&gt;
+ </description>
+ <comments>http://www.springsource.org/node/3508#comments</comments>
+ <pubDate>Wed, 14 Mar 2012 01:18:49 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">3508 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Video: SpringOne 2GX - Spring Integration Tips &#039;N Tricks</title>
+ <link>http://www.springsource.org/node/3506</link>
+ <description>&lt;div style=&quot;float: right; width:313px; padding: 10px&quot;&gt;
+&lt;a href=&quot;http://www.infoq.com/presentations/Spring-Integration-Practical-Tips-and-Tricks&quot;&gt;&lt;img   alt=&quot;SpringOne 2GX 2011 Tech Talk: Spring Integration Tips &#039;n Tricks&quot; width=&quot;313&quot; border=&quot;0&quot; src=&quot;http://www.springsource.org/files/olegzsitipsntricks.png&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;
+ 
+
+&lt;P&gt; &lt;A href= &quot;http://www.springsource.org/spring-integration&quot;&gt; Spring Integration&lt;/A&gt; committer and teacher &lt;A href =&quot;http://www.springsource.org/spring-integration&quot;&gt;Oleg Zhurakousky&lt;/A&gt; demoes performing transaction management, error handling, asynchronous processing, advanced aggregator configuration,  and much more using Spring Integration and the Enterprise Integration Patterns. &lt;a href = &quot;http://www.infoq.com/presentations/Spring-Integration-Practical-Tips-and-Tricks&quot;&gt;This talk&lt;/A&gt; is a chance to stand over the shoulder of a master as he tackles some frequently asked questions about Spring Integration and demonstrates the solutions in code. 
+    &lt;/P&gt;</description>
+ <comments>http://www.springsource.org/node/3506#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 13 Mar 2012 22:54:07 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">3506 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Video: Native Android Development with Spring</title>
+ <link>http://www.springsource.org/node/3505</link>
+ <description>&lt;p&gt;This video will provide an introductory overview of Android’s architecture, the layout of an Android project, the use of various Maven plugins and tools for enabling dependency management in your Android project. When building Android apps, you can use a third party library, like &lt;a href=&quot;http://www.springsource.org/spring-android&quot;&gt;Spring for Android&lt;/a&gt;, that provides an abstraction for consuming RESTful services within your native Android app. Spring Android also supports the use of Spring Social on Android, and this presentation will discuss how Spring Social can help you connect your apps to OAuth protected services like Facebook and Twitter. &lt;/p&gt;
+
+&lt;p style=&quot;text-align: center&quot;&gt;&lt;object width=&quot;560&quot; height=&quot;349&quot;&gt;
+&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/embed/kvPpu-pTTMY?version=3&amp;amp;hl=en_US&quot; /&gt;
+&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;
+&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/kvPpu-pTTMY?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;560&quot; height=&quot;349&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3505#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 13 Mar 2012 00:34:54 +0000</pubDate>
+ <dc:creator>Adam Fitzgerald</dc:creator>
+ <guid isPermaLink="false">3505 at http://www.springsource.org</guid>
+</item>
+<item>
+ <title>Video: Creating Spring Insight Plugins</title>
+ <link>http://www.springsource.org/node/3504</link>
+ <description>&lt;p&gt;&lt;a href=&quot;/insight&quot;&gt;Spring Insight&lt;/a&gt; is a developer tool that provides visibility into your application&#039;s runtime performance and behavior by tracing how low level SQL queries, transaction times and application pages are performing. Optimized out of the box for standard Spring-developed applications, Insight also provides a pluggable architecture for enhancing trace capabilities to provide further visibility into your application performance. In this video, John Kew, SpringSource Staff Engineer, describes the capabilities of Spring Insight&#039;s plugin framework and best practices in development of plug-ins. &lt;/p&gt;
+
+&lt;p style=&quot;text-align: center&quot;&gt;&lt;object width=&quot;560&quot; height=&quot;349&quot;&gt;
+&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/embed/YR3CYnryflw?version=3&amp;amp;hl=en_US&quot; /&gt;
+&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;
+&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/YR3CYnryflw?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;560&quot; height=&quot;349&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Spring Insight is part of &lt;a href=&quot;http://www.vmware.com/go/vfabric-tcserver-dev&quot;&gt;vFabric tc Server Developer Edition&lt;/a&gt; and &lt;a href=&quot;/springsource-tool-suite-download&quot;&gt;SpringSource Tool Suite&lt;/a&gt;. Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3504#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Mon, 12 Mar 2012 16:36:37 +0000</pubDate>
+ <dc:creator>Adam Fitzgerald</dc:creator>
+ <guid isPermaLink="false">3504 at http://www.springsource.org</guid>
+</item>
+</channel>
+</rss>

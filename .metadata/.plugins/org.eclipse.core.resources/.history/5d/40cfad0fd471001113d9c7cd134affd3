@@ -1,0 +1,7 @@
+package com.baselogic.service;
+
+public interface Service {
+	
+	String getMessage();
+
+}

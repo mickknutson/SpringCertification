@@ -1,0 +1,93 @@
+package com.baselogic.demos;
+
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
+
+import java.util.Set;
+
+import org.apache.log4j.BasicConfigurator;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.baselogic.domain.Customer;
+import com.baselogic.domain.Item;
+import com.baselogic.domain.Order;
+import com.baselogic.util.ExampleUtils;
+
+/**
+ * FactoryBeanTests
+ *
+ * http://localhost:8080/ch03/declarative/entry
+ *
+ * @author Mick Knutson
+ *         <a href="http://www.baselogic.com">Blog</a>< /br>
+ *         <a href="http://linkedin.com/in/mickknutson">LinkedIN</a>< /br>
+ *         <a href="http://twitter.com/mickknutson">Twitter</a>< /br>
+ *         <a href="http://www.mickknutson.com">Personal</a>< /br>
+ *         <a href="https://github.com/mickknutson">Git Hub</a>< /br> 
+ * @since 2012
+ */
+@ContextConfiguration
+@RunWith(SpringJUnit4ClassRunner.class)
+public class FactoryBeanTests {
+
+	private final Logger logger = LoggerFactory.getLogger(FactoryBeanTests.class);
+	
+	/*@Before
+	public void before() throws Exception {
+		// Log4J junit configuration.
+		BasicConfigurator.configure();
+	}*/
+
+	@Autowired
+	ApplicationContext applicationContext;
+
+	@Test
+	public void testCustomerWithXmlFactoryOrder(){
+		logger.info(">>> testCustomerWithFactoryOrder >>>");
+		
+		Customer customer = applicationContext.getBean(Customer.class);
+		
+		logger.info("customer: {}", customer.toString());
+		logger.info("order: {}", applicationContext.getBean(Order.class));
+		
+		logger.info("item1: {}", applicationContext.getBean("item1", Item.class));
+		logger.info("item2: {}", applicationContext.getBean("item2", Item.class));
+		
+		logger.info(">>>----------------------------------------------------------------->>>");
+
+		assertThat(customer.getFirstName(), is("Mick"));
+		assertThat(customer.getLastName(), is("Knutson"));
+
+		assertThat(customer.getOrder().getItems().size(), is(2));
+	}
+
+	@Test
+	public void testCustomerWithJavaConfigFactoryOrder(){
+		logger.info(">>> testCustomerWithFactoryOrder >>>");
+		
+		Customer customer = applicationContext.getBean(Customer.class);
+		
+		logger.info("customer: {}", customer.toString());
+		logger.info("order: {}", applicationContext.getBean(Order.class));
+		
+		logger.info("item1: {}", applicationContext.getBean("item1", Item.class));
+		logger.info("item2: {}", applicationContext.getBean("item2", Item.class));
+		
+		logger.info(">>>----------------------------------------------------------------->>>");
+
+		assertThat(customer.getFirstName(), is("Mick"));
+		assertThat(customer.getLastName(), is("Knutson"));
+
+		assertThat(customer.getOrder().getItems().size(), is(2));
+	}
+}

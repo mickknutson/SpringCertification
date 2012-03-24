@@ -1,0 +1,65 @@
+package com.baselogic.service;
+
+// Static imports
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.*;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Matchers.any;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.powermock.modules.junit4.PowerMockRunner;
+
+import com.baselogic.service.ExampleService;
+import com.baselogic.util.ContextUtils;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+@ContextConfiguration
+@RunWith(SpringJUnit4ClassRunner.class)
+public class ExampleConfigurationTests {
+	
+	@Autowired
+	private ContextUtils contextUtils;
+	
+	@Autowired
+	@Qualifier("exampleService")
+	private ExampleService service;
+	
+	@Autowired
+	@Qualifier("xmlService")
+	private ExampleService xmlService;		
+
+	@Before
+	public void beforeEachUnitTest(){}
+
+	@After
+	public void afterEachUnitTest(){}
+
+	@Test
+	public void testBeansInContext() throws Exception {
+		contextUtils.showBeansInContext();
+	}
+
+	@Test
+	public void testSimpleProperties() throws Exception {
+		assertNotNull(service);
+		assertThat(service.getMessage(), is("JavaConfiguration message"));
+		
+		assertEquals("xml Message 1", xmlService.getMessage());
+	}
+
+	
+}

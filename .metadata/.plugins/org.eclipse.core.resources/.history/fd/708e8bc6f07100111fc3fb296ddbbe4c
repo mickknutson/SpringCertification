@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+	">
+
+	<description>Example configuration to get you started.</description>
+
+	<context:component-scan base-package="com.baselogic" />
+	
+	<context:property-placeholder location="app.properties" />
+
+    <!--
+        <bean
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="app.properties" /></bean>
+    -->
+
+    <bean id="xmlService" class="com.baselogic.service.ExampleServiceImpl">
+        <property name="message" value="xml Message parent" />
+    </bean>
+
+    <bean id="xmlService2" 
+          class="com.baselogic.service.ExampleServiceImpl"
+          parent="xmlService">
+        <property name="message" value="xml Message child" />
+    </bean>
+    
+    <!-- Util's -->
+    
+    <util:properties id="utilConfiguration" location="classpath:util.properties"/>
+
+    <bean id="exampleUtils" class="com.baselogic.util.ExampleUtils">
+        <property name="names">
+            <!-- This will always create an ArrayList, use "util" namespace to change
+                impl type -->
+            <!-- Can specify the value type for "Generics" -->
+            
+                <list  value-type="java.lang.String">
+	                <value>#{utilConfiguration.user1}</value>
+	                <value>#{utilConfiguration.user2}</value>
+	                <value>#{utilConfiguration.user3}</value>
+	                <value>#{utilConfiguration.user4}</value>
+	                <value>#{utilConfiguration.user5}</value>
+	                <value>#{utilConfiguration.user6}</value>
+                </list>
+        </property>
+
+        <property name="otherNames" ref="someNames" />
+
+        <property name="additionalData" ref="additionalData" />
+
+    </bean>
+
+    <!-- SpEL property injection -->
+    <util:list id="someNames" 
+               list-class="java.util.LinkedList" 
+               value-type="java.lang.String">
+        <value>#{utilConfiguration.user1}</value>
+        <value>#{utilConfiguration.user2}</value>
+        <value>#{utilConfiguration.user3}</value>
+    </util:list>
+
+    <util:set id="otherSet" 
+               set-class="java.util.TreeSet" 
+               value-type="java.lang.String">
+        <value>#{utilConfiguration.activity1}</value>
+        <value>#{utilConfiguration.activity2}</value>
+        <value>#{utilConfiguration.activity3}</value>
+        <value>#{utilConfiguration.activity4}</value>
+    </util:set>
+    
+    <util:map id="additionalData">
+        <entry key="mick" value="mick@someplace.com" />
+        <entry key="Age" value="1234567890L" />
+        <entry key="otherSet" value-ref="otherSet"/>
+    </util:map>
+
+</beans>

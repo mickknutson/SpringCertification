@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Mar 17 10:55:44 EDT 2012
+org.eclipse.jst.jee.server\:SpringMvc=C\:\\usr\\bin\\springsource\\vfabric-tc-server-developer-2.6.3.RELEASE\\spring-insight-instance\\wtpwebapps\\SpringMvc
+org.eclipse.jst.jee.server\:demo=C\:\\usr\\bin\\springsource\\vfabric-tc-server-developer-2.6.3.RELEASE\\spring-insight-instance\\wtpwebapps\\demo

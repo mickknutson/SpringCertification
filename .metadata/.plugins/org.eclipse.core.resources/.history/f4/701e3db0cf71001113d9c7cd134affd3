@@ -1,0 +1,25 @@
+package com.baselogic.configuration;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JavaConfiguration {
+
+	/*@Value("#{dataSource}")
+	private javax.sql.DataSource dataSource;*/
+
+	/*@Bean
+	public Map<String, Object> jpaProperties() {
+		Map<String, Object> props = new HashMap<String, Object>();
+		props.put("hibernate.dialect", H2Dialect.class.getName());
+		props.put("hibernate.cache.provider_class", HashtableCacheProvider.class.getName());
+		return props;
+	}*/
+
+
+}

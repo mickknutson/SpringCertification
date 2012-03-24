@@ -1,0 +1,72 @@
+package com.baselogic.service;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+import com.baselogic.dao.OrderDAO;
+import com.baselogic.util.ExampleUtils;
+
+
+/**
+ * {@link ExampleService} with hard-coded input data.
+ */
+@Component
+public class ExampleServiceInitializingBeanImpl 
+implements ExampleService, InitializingBean, DisposableBean {
+	
+	private static final Logger logger = LoggerFactory.getLogger(ExampleServiceInitializingBeanImpl.class);
+	
+	@Autowired
+	String message;
+	
+	/**
+	 * Reads next record from input
+	 */
+	public String getMessage() {
+		return message;	
+	}
+	
+	public void setMessage(String msg){
+		this.message = msg;
+	}
+	
+	@PostConstruct
+	public void initService(){
+        logger.debug(">>>>> {}: @PostConstruct <<<<<", this.getClass());
+        message += ": PostConstruct";
+	}
+	
+	@PreDestroy
+	public void destroyService(){
+		logger.debug(">>>>> {}: @PreDestroy <<<<<", this.getClass());
+		message += ": PreDestroy";
+	}
+
+    public void init() {
+        logger.debug(">>>>> {}: Init-Method Attribute <<<<<", this.getClass());
+        message += ": init";
+    }
+
+    @Override
+    public void afterPropertiesSet() throws Exception {
+        logger.debug(">>>>> {}: afterPropertiesSet <<<<<", this.getClass());
+        message += ": afterPropertiesSet";
+    }
+    
+    @Override
+    public void destroy() throws Exception {
+    	logger.debug(">>>>> {}: destroy <<<<<", this.getClass());
+    	message += ": destroy";
+    	logger.debug(">>>>> message: {} <<<<<", message);
+  	}
+
+}

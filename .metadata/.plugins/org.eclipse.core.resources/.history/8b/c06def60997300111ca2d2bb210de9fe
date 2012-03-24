@@ -1,0 +1,35 @@
+package com.baselogic.common;
+
+import org.springframework.beans.factory.FactoryBean;
+
+import com.baselogic.components.CustomComponent;
+
+/**
+ * http://blog.springsource.org/2011/08/09/whats-a-factorybean/
+ * http://blog.springsource.org/2011/08/10/beyond-the-factorybean/
+ * @author MKnuts6173c
+ *
+ */
+public class ComponentFactory implements FactoryBean<CustomComponent> {
+	
+	CustomComponent customComponent = null;
+
+	@Override
+	public CustomComponent getObject() throws Exception {
+		if (!isSingleton() || customer == null) {
+			customer = new CustomerImpl();
+		}
+		return customer;
+	}
+
+	@Override
+	public Class<? extends CustomComponent> getObjectType() {
+		return CustomComponent.class;
+	}
+
+	@Override
+	public boolean isSingleton() {
+		return false;
+	}
+
+}

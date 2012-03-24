@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+	">
+
+	<description>Example configuration to get you started.</description>
+
+	<context:component-scan base-package="com.baselogic" />
+	
+	<context:property-placeholder location="app.properties" />
+
+    <!--
+        <bean
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="app.properties" /></bean>
+    -->
+
+    <bean id="xmlService" class="com.baselogic.service.ExampleServiceImpl">
+        <property name="message" value="xml Message parent" />
+    </bean>
+
+    <bean id="xmlService2" 
+          class="com.baselogic.service.ExampleServiceImpl"
+          parent="xmlService">
+        <property name="message" value="xml Message child" />
+    </bean>
+
+    <bean id="exampleUtils" class="com.baselogic.util.ExampleUtils">
+        <property name="names">
+            <!-- This will always create an ArrayList, use "util" namespace to change
+                impl type -->
+            <!-- Can specify the value type for "Generics" -->
+            
+                <list  value-type="java.lang.String">
+                <value>Mick</value>
+                <value>Jasmine</value>
+                <value>Jaimi</value>
+                <value>Ging</value>
+                <value>Michele</value>
+                <value>Teresa</value>
+                </list>            
+            <!-- 
+            <util:list  list-class="java.util.ArrayList" value-type="java.lang.String">
+                <value>Mick</value>
+                <value>Jasmine</value>
+                <value>Jaimi</value>
+                <value>Ging</value>
+                <value>Michele</value>
+                <value>Teresa</value>
+            </util:list>
+            -->
+        </property>
+
+        <property name="otherNames" ref="somenames" />
+
+    </bean>
+
+    <!-- Can define SCOPE, LIST-CLASS & VALUE-TYPE -->
+    <util:list id="somenames" 
+               list-class="java.util.LinkedList" 
+               value-type="java.lang.String">
+        <value>Mick</value>
+        <value>Bob</value>
+        <value>Frank</value>
+    </util:list>
+    
+    <util:map>
+        <entry key="mick" value="mick@someplace.com" />
+        <entry key="Age" value="1234567890L" />
+    </util:map>
+
+</beans>

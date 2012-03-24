@@ -1,0 +1,58 @@
+package com.baselogic.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+import com.baselogic.dao.OrderDAO;
+
+
+/**
+ * {@link ExampleService} with hard-coded input data.
+ */
+@Component("service")
+public class ExampleServiceImpl implements ExampleService {
+
+	@Autowired
+	OrderDAO orderDao;
+
+	@Autowired
+	OrderDAO aliasedDao;
+	
+	@Autowired
+	String message;
+	
+	/**
+	 * Reads next record from input
+	 */
+	public String getMessage() {
+		return message;	
+	}
+	
+	public void setMessage(String msg){
+		this.message = msg;
+	}
+	
+	
+
+	public static String staticFunction(){
+		return "";
+	}
+
+	public String privateFunction(){
+		return "";
+	}
+
+	
+	public static void main(String...args){
+				
+		//classpath:/META-INF/spring/app-context.xml
+		ApplicationContext context =
+			    new ClassPathXmlApplicationContext(new String[] {"/META-INF/spring/app-context.xml"});
+		
+		ExampleService service = context.getBean("xmlService", ExampleService.class);
+		System.out.println(service.getMessage());
+	}
+
+}

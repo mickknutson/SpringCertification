@@ -1,0 +1,68 @@
+package com.baselogic.demos;
+
+//Static imports
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.*;
+import static org.mockito.BDDMockito.given;
+import static org.mockito.Matchers.any;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.*;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.baselogic.util.ExampleUtils;
+
+//Equivalent to: @ContextConfiguration("classpath:/com/baselogic/demos/UtilsTest-context.xml")
+@ContextConfiguration
+
+//Equivalent to: @ContextConfiguration("classpath:/com/baselogic/demos/utils-context.xml")
+//@ContextConfiguration("utils-context.xml")
+
+//Equivalent to: @ContextConfiguration("classpath:/com/baselogic/demos/META-INF/spring/utils-context.xml")
+//@ContextConfiguration(value = "META-INF/spring/utils-context.xml")
+
+//TODO: Not correct
+//Equivalent to: @ContextConfiguration("classpath:/META-INF/spring/utils-context.xml")
+
+//Equivalent to:
+//@ContextConfiguration("classpath:/META-INF/spring/utils-context.xml")
+@RunWith(SpringJUnit4ClassRunner.class)
+public class UtilsTests {
+	
+	private final Logger logger = LoggerFactory.getLogger(UtilsTests.class);
+
+	@Autowired
+	ApplicationContext context;
+
+	
+	@Test
+	public void showUtilsInfo() {
+		ExampleUtils exampleUtils = context.getBean(ExampleUtils.class);
+		assertNotNull(exampleUtils);
+		logger.debug(
+				"\n\n************\n ExampleUtils Results:\n\t{} \n************\n\n",
+				exampleUtils.toString());
+	}
+
+	
+	@Test
+	@SuppressWarnings("unchecked")
+	public void someNamesTest() {
+		List<String> somenames = context.getBean("somenames", LinkedList.class);
+		assertThat((somenames instanceof LinkedList), is(true));
+		logger.debug("somenames instanceof LinkedList: {}", (somenames instanceof LinkedList));
+	}
+}

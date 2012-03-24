@@ -1,0 +1,11 @@
+package com.baselogic.aspects;
+
+public class SimpleAdvice implements MethodBeforeAdvice {
+
+	@Override
+	public void before(Method method, Object[] objects, Object object)
+			throws Throwable {
+		// TODO Auto-generated method stub
+		System.out.println("Currently Processing " + method);
+	}
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="C:\usr\bin\Java\jdk1.7.0_01" version="1.7.0_01">
+<bootpath>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\resources.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\rt.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\sunrsasign.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\jsse.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\jce.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\charsets.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\usr\bin\Java\jdk1.7.0_01\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\usr\bin\Java\jdk1.6.0_27\jre" version="1.6.0_27">
+<bootpath>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\resources.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\rt.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\sunrsasign.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\jsse.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\jce.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\charsets.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\usr\bin\Java\jdk1.6.0_27\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\usr\bin\Java\jdk1.7.0_03" version="1.7.0_03">
+<bootpath>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\resources.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\rt.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\sunrsasign.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\jsse.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\jce.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\charsets.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\usr\bin\Java\jdk1.7.0_03\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="C:\usr\bin\Java\jdk1.6.0_31" version="1.6.0_31">
+<bootpath>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\resources.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\rt.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\sunrsasign.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\jsse.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\jce.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\charsets.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\modules\jdk.boot.jar"/>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="C:\usr\bin\Java\jdk1.6.0_31\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>

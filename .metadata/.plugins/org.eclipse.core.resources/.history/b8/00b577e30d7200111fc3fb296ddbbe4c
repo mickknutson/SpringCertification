@@ -1,0 +1,5 @@
+package com.baselogic.components;
+
+public class ConstructorInjectionComponent {
+
+}

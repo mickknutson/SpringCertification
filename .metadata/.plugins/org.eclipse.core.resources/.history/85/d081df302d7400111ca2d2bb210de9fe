@@ -1,0 +1,63 @@
+package com.baselogic.domain;
+
+import java.util.Collection;
+import java.util.LinkedHashSet;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
+
+/**
+ * An order.
+ */
+public class Order {
+	
+	private Long id;
+	
+	private String description;
+	
+	private Collection<Item> items = new LinkedHashSet<Item>();
+
+	/**
+	 * @return the customer
+	 */
+	public String getCustomer() {
+		return description;
+	}
+
+	/**
+	 * @param customer the customer to set
+	 */
+	public void setCustomer(String customer) {
+		this.description = customer;
+	}
+
+	/**
+	 * @return the items
+	 */
+	public Collection<Item> getItems() {
+		return items;
+	}
+
+	/**
+	 * @param items the items to set
+	 */
+	public void setItems(Collection<Item> items) {
+		this.items = items;
+	}
+
+	/**
+	 * @return the id
+	 */
+	public Long getId() {
+		return id;
+	}
+	
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	@Override
+	public String toString() {
+		return ToStringBuilder.reflectionToString(this);
+	}
+}

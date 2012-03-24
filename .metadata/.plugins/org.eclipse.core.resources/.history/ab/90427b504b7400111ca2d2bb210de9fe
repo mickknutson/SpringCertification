@@ -1,0 +1,10 @@
+package com.baselogic.common;
+
+/**
+ * @see http://www.jpalace.org/docs/tutorials/spring/beans_11.html
+ * @author mknuts6173c
+ *
+ */
+public class ComponentBeanPostProcessor {
+
+}

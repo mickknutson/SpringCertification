@@ -1,0 +1,23 @@
+package com.baselogic.aspects;
+
+import java.lang.reflect.Method;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.aop.MethodBeforeAdvice;
+
+import com.baselogic.demos.ProxyFactoryBeanTests;
+
+public class SimpleAdvice implements MethodBeforeAdvice {
+	
+	private final Logger logger = LoggerFactory.getLogger(SimpleAdvice.class);
+
+	@Override
+	public void before(Method method, Object[] objects, Object object)
+			throws Throwable {
+		// TODO Auto-generated method stub
+		logger.info(">>>>> SimpleAdvice >>>>> Currently Processing {} on Object {}",
+				method,
+				object);
+	}
+}

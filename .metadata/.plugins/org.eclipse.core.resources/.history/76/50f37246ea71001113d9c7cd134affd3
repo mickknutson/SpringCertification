@@ -1,0 +1,46 @@
+package com.baselogic.demos;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.baselogic.util.ExampleUtils;
+
+//Equivalent to: @ContextConfiguration("classpath:/com/baselogic/demos/UtilsTest-context.xml")
+@ContextConfiguration
+
+//Equivalent to: @ContextConfiguration("classpath:/com/baselogic/demos/utils-context.xml")
+//@ContextConfiguration("utils-context.xml")
+
+//Equivalent to: @ContextConfiguration("classpath:/com/baselogic/demos/META-INF/spring/utils-context.xml")
+//@ContextConfiguration(value = "META-INF/spring/utils-context.xml")
+
+//TODO: Not correct
+//Equivalent to: @ContextConfiguration("classpath:/META-INF/spring/utils-context.xml")
+
+//Equivalent to:
+//@ContextConfiguration("classpath:/META-INF/spring/utils-context.xml")
+@RunWith(SpringJUnit4ClassRunner.class)
+public class UtilsTests {
+	
+	private final Logger logger = LoggerFactory.getLogger(UtilsTests.class);
+
+	@Autowired
+	ApplicationContext context;
+
+	@Test
+	public void showUtilsInfo() {
+		ExampleUtils exampleUtils = context.getBean(ExampleUtils.class);
+		assertNotNull(exampleUtils);
+		logger.debug(
+				"\n\n************\n ExampleUtils Results:\n\t{} \n\n************\n\n",
+				exampleUtils.toString());
+	}
+}

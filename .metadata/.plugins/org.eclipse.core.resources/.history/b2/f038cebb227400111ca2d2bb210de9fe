@@ -1,0 +1,5 @@
+package com.baselogic.domain;
+
+public class Customer {
+
+}

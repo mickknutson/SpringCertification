@@ -1,0 +1,48 @@
+package com.baselogic.service;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+
+/**
+ * {@link Service} with hard-coded input data.
+ */
+@Component("service")
+public class ExampleService implements Service {
+	
+	String message = "Hello world!";	
+	
+	/**
+	 * Reads next record from input
+	 */
+	public String getMessage() {
+		return message;	
+	}
+	
+	public void setMessage(String msg){
+		this.message = msg;
+	}
+	
+	
+
+	public static String staticFunction(){
+		return "";
+	}
+
+	public static String privateFunction(){
+		return "";
+	}
+
+	
+	public static void main(String...args){
+				
+		//classpath:/META-INF/spring/app-context.xml
+		ApplicationContext context =
+			    new ClassPathXmlApplicationContext(new String[] {"/META-INF/spring/app-context.xml"});
+		
+		Service service = context.getBean("xmlService", Service.class);
+		System.out.println(service.getMessage());
+	}
+
+}

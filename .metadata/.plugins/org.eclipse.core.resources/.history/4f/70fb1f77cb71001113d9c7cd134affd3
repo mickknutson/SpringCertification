@@ -1,0 +1,9 @@
+package com.baselogic.dao;
+
+public interface OrderDAO {
+	
+	placeOrder(Order order){
+		return new Object();
+	}
+
+}

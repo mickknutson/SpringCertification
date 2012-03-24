@@ -1,0 +1,88 @@
+package com.baselogic.configuration;
+
+import java.util.Random;
+import java.util.UUID;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Scope;
+
+import com.baselogic.domain.Customer;
+import com.baselogic.domain.Item;
+import com.baselogic.domain.Order;
+
+@Configuration
+@PropertySource("app-2.properties")
+public class JavaConfiguration {
+
+	/*@Value("#{dataSource}")
+	private javax.sql.DataSource dataSource;*/
+
+	@Bean
+	public String message() {
+		return "JavaConfiguration message";
+	}
+
+
+	@Bean
+	public Customer javaConfigCustomer() {
+		
+		Customer customer = new Customer();
+		
+		customer.setOrder(order());
+		
+		Order order = new Order();
+		order.setItems(
+				//
+		);
+
+		return customer;
+	}
+
+	@Bean
+	public Customer javaConfigOrder() {
+		
+		Customer customer = new Customer();
+		
+		Order order = new Order();
+		order.setItems(
+				//
+		);
+		
+		return "JavaConfiguration message";
+	}
+
+	@Bean
+	@Scope("prototype")
+	public Item item() {
+		
+		Item item = new Item();
+		item.setId(new Random(1234567890L).nextLong());
+		item.setPrice(new Random(1234567890L).nextDouble());
+		item.setProduct(UUID.randomUUID().toString());
+		
+		return item;
+	}
+
+	/*
+	 * 	<bean id="order" class="com.baselogic.common.ComponentFactory">
+		<property name="items">
+			<util:list list-class="java.util.LinkedList"
+				value-type="com.baselogic.domain.Item">
+				<value>#{item1}</value>
+				<value>#{item2}</value>
+			</util:list>
+		</property>
+	</bean>
+
+	<bean  id="mick"
+	       class="com.baselogic.domain.Customer"
+	       p:firstName="Mick"
+	       p:lastName="Knutson"
+	       p:order-ref="order" />
+
+	 */
+
+}
