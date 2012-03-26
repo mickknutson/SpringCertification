@@ -1,0 +1,53 @@
+package com.baselogic.configuration;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.baselogic.service.ExampleService;
+
+public class SimpleTarget {
+
+	public static void main(String... args) {
+
+		ApplicationContext springApplicationContext = new ClassPathXmlApplicationContext(
+				"/META-INF/spring/simple.xml");
+
+		ExampleService exampleService = springApplicationContext.getBean("exampleService", ExampleService.class);
+
+		System.out.println("exampleService:getMessage() is "
+				+ exampleService.getMessage());
+
+		ExampleService altExampleService = springApplicationContext.getBean("altExampleServiceBAD", ExampleService.class);
+
+		System.out.println("altExampleService:getMessage() is "
+				+ altExampleService.getMessage());
+
+		ExampleService exampleServiceTwo = springApplicationContext.getBean("exampleServiceTwo", ExampleService.class);
+
+		System.out.println("exampleServiceTwo:getMessage() is "
+				+ exampleServiceTwo.getMessage());
+
+
+		
+		
+		
+		
+		/*ApplicationContext springApplicationContext2 = new ClassPathXmlApplicationContext(
+				"/META-INF/spring/simple2.xml");
+
+		ExampleService exampleService2 = (ExampleService) springApplicationContext2
+				.getBean("exampleService");
+
+		System.out.println("exampleService2:getMessage() is "
+				+ exampleService2.getMessage());
+
+		ExampleService altExampleService2 = (ExampleService) springApplicationContext2
+				.getBean("altExampleService");
+
+		System.out.println("altExampleService2:getMessage() is "
+				+ altExampleService2.getMessage());*/
+
+
+	}
+
+}

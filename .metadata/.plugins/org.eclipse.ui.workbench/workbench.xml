@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="68" version="2.0">
+<workbench progressCount="66" version="2.0">
 <workbenchAdvisor/>
 <window height="706" maximized="true" width="1024" x="77" y="0">
 <fastViewData fastViewLocation="1024">
@@ -33,7 +33,7 @@
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.springsource.sts.config.ui.editors.SpringConfigEditor" itemType="typePlaceholder" x="125" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -46,13 +46,21 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExampleServiceInitializingBeanImpl.java" partName="ExampleServiceInitializingBeanImpl.java" path="C:/usr/svn_workspaces/sandbox/SpringClass/SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java" title="ExampleServiceInitializingBeanImpl.java" tooltip="SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ExampleServiceInitializingBeanImpl.java" partName="ExampleServiceInitializingBeanImpl.java" path="C:/usr/SYNCH/projects/Git-Hub/SpringCertification/SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java" title="ExampleServiceInitializingBeanImpl.java" tooltip="SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1435" selectionTopPixel="45"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1170" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" title="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" tooltip="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/usr/svn_workspaces/sandbox/SpringClass/pom.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="SpringUtility/pom.xml" path="C:/usr/SYNCH/projects/Git-Hub/SpringCertification/SpringUtility/pom.xml" title="SpringUtility/pom.xml" tooltip="SpringUtility/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/SpringUtility/pom.xml"/>
 </editor>
 </editors>
 <views>
@@ -157,8 +165,8 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="com.springsource.sts.ide.perspective">
-<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<perspectives activePart="org.eclipse.m2e.editor.MavenPomEditor" activePerspective="com.springsource.sts.ide.perspective">
+<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.springsource.sts.internal.ide.ui.perspective.StsPerspective" id="com.springsource.sts.ide.perspective" label="Spring"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.help.actionSet"/>
 <alwaysOnActionSet id="com.springsource.sts.ide.ui.actionSet.workbench"/>
@@ -238,35 +246,44 @@
 <perspective_action id="com.springsource.sts.grails.perspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
-<view id="org.eclipse.ui.views.AllMarkersView"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
-<view id="ecobertura.ui.views.session.CoverageSessionView"/>
-<view id="org.eclipse.jdt.junit.ResultView"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
-<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
-<view id="org.eclipse.wst.server.ui.ServersView"/>
 <fastViews>
 <view id="org.springframework.ide.eclipse.aop.ui.navigator.aopReferenceModelNavigator" ratio="0.25"/>
 <view id="org.eclipse.contribution.xref.ui.views.XReferenceView" ratio="0.25"/>
 </fastViews>
-<fastViewBars/>
+<fastViewBars>
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="1">
+<fastViews>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="org.eclipse.ui.views.AllMarkersView" ratio="0.3"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" ratio="0.3"/>
+<view id="ecobertura.ui.views.session.CoverageSessionView" ratio="0.3"/>
+<view id="org.eclipse.jdt.junit.ResultView" ratio="0.4"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="server" orientation="256" selectedTabId="org.eclipse.wst.server.ui.ServersView" style="1">
+<fastViews>
+<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="16384" id="left" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
+<fastViews>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
+<view id="org.springframework.ide.eclipse.ui.navigator.springExplorer" ratio="0.3"/>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+</fastViewBars>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
-<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="Spring Explorer"/>
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.springframework.ide.eclipse.ui.navigator.springExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@585309d8" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
@@ -284,13 +301,13 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="bottom" ratio="0.632107" ratioLeft="378" ratioRight="220" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<page content="ecobertura.ui.views.session.CoverageSessionView" label="Coverage Session View"/>
-<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<info folder="true" part="bottom" ratio="0.53511703" ratioLeft="320" ratioRight="278" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.AllMarkersView" label="LabelNotFound"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<page content="ecobertura.ui.views.session.CoverageSessionView" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
@@ -300,21 +317,13 @@
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="com.springsource.sts.ide.metadata.ui.RequestMappingView" label="LabelNotFound"/>
 <page content="*" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="server" ratio="0.8044497" ratioLeft="687" ratioRight="167" relationship="4" relative="left">
-<folder activePageID="org.eclipse.wst.server.ui.ServersView" appearance="2" expanded="2">
-<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -432,73 +441,18 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/SpringUtility/src/test/resources/com/baselogic/demos/ProxyFactoryBeanTests-context.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpringUtility/src/test/java/com/baselogic/demos/ProxyFactoryBeanTests.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpringUtility/src/main/java/com/baselogic/aspects/SimpleAdvice.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpringUtility/src/main/java/com/baselogic/service/ExampleService.java"/>
 <editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/SpringUtility/README.txt"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/SpringUtility/src/test/resources/com/baselogic/demos/ProxyFactoryBeanTests-context.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpringUtility/src/main/java/com/baselogic/aspects/SimpleAdvice.java"/>
+<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/SpringUtility/README.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/SpringUtility/src/main/java/com/baselogic/service/ExampleServiceInitializingBeanImpl.java"/>
+<editor factoryID="com.springsource.sts.ide.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" uri="file:/C:/usr/svn_workspaces/sandbox/SpringClass/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/SpringUtility/pom.xml"/>
 </editors>
-<item historyLabel="SimpleAdvice.java" index="3">
-<position info="not_deleted" x="984" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests-context.xml" index="1"/>
-<item historyLabel="SimpleAdvice.java" index="3">
-<position info="not_deleted" x="984" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2804" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="3510" y="0"/>
-</item>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="0">
-<position info="not_deleted" x="1614" y="95"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2962" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests-context.xml" index="1"/>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2962" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="3109" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2413" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="3023" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="3504" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2732" y="0"/>
-</item>
-<item historyLabel="SimpleAdvice.java" index="3">
-<position info="not_deleted" x="991" y="0"/>
-</item>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="0">
-<position info="not_deleted" x="2318" y="13"/>
-</item>
-<item historyLabel="SimpleAdvice.java" index="3">
-<position info="not_deleted" x="471" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2732" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests-context.xml" index="1"/>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2790" y="14"/>
-</item>
-<item historyLabel="ExampleService.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ProxyFactoryBeanTests.java" index="2">
-<position info="not_deleted" x="2790" y="14"/>
-</item>
 <item historyLabel="ProxyFactoryBeanTests-context.xml" index="1"/>
 <item historyLabel="ProxyFactoryBeanTests.java" index="2">
 <position info="not_deleted" x="3019" y="92"/>
@@ -540,41 +494,71 @@
 <item historyLabel="ProxyFactoryBeanTests.java" index="2">
 <position info="not_deleted" x="3531" y="0"/>
 </item>
-<item historyLabel="Dashboard" index="5"/>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="6">
+<item historyLabel="Dashboard" index="4"/>
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="5">
 <position info="not_deleted" x="3984" y="0"/>
 </item>
 <item historyLabel="ProxyFactoryBeanTests.java" index="2">
 <position info="not_deleted" x="3384" y="0"/>
 </item>
-<item historyLabel="README.txt" index="7">
+<item historyLabel="README.txt" index="6">
 <position info="not_deleted" x="209" y="0"/>
 </item>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="6">
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="5">
 <position info="not_deleted" x="1917" y="0"/>
 </item>
-<item historyLabel="ProxyFactoryBeanTests-context.xml" index="8"/>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="6">
+<item historyLabel="ProxyFactoryBeanTests-context.xml" index="7"/>
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="5">
 <position info="not_deleted" x="1917" y="0"/>
 </item>
 <item historyLabel="ProxyFactoryBeanTests.java" index="2">
 <position info="not_deleted" x="2730" y="0"/>
 </item>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="6">
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="5">
 <position info="not_deleted" x="1917" y="0"/>
 </item>
-<item historyLabel="SimpleAdvice.java" index="9">
+<item historyLabel="SimpleAdvice.java" index="8">
 <position info="not_deleted" x="812" y="0"/>
 </item>
-<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="6">
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="5">
 <position info="not_deleted" x="1917" y="0"/>
 </item>
-<item historyLabel="README.txt" index="7">
+<item historyLabel="README.txt" index="6">
 <position info="not_deleted" x="209" y="0"/>
 </item>
-<item active="true" historyLabel="ExampleServiceInitializingBeanImpl.java" index="6">
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="5">
 <position info="not_deleted" x="1917" y="0"/>
 </item>
+<item historyLabel="Dashboard" index="9"/>
+<item historyLabel="README.txt" index="10">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="11">
+<position info="not_deleted" x="1170" y="0"/>
+</item>
+<item historyLabel="Dashboard" index="12"/>
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="11">
+<position info="not_deleted" x="1170" y="0"/>
+</item>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item historyLabel="ExampleServiceInitializingBeanImpl.java" index="11">
+<position info="not_deleted" x="1170" y="0"/>
+</item>
+<item historyLabel="SpringUtility/pom.xml" index="14"/>
+<item historyLabel="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml" index="13"/>
+<item active="true" historyLabel="SpringUtility/pom.xml" index="14"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -584,9 +568,6 @@
 <trimArea IMemento.internal.id="16384">
 <trimItem IMemento.internal.id="left"/>
 <trimItem IMemento.internal.id="server"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -601,6 +582,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="SpringUtility/pom.xml">
+<persistable path="/SpringUtility/pom.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="C:\usr\svn_workspaces\sandbox\SpringClass\pom.xml">
+<persistable uri="file:/C:/usr/svn_workspaces/sandbox/SpringClass/pom.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="README.txt" tooltip="SpringUtility/README.txt">
 <persistable path="/SpringUtility/README.txt"/>
 </file>
@@ -639,12 +626,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="BeanPostProcessingTests-context.xml" tooltip="SpringUtility/src/test/resources/com/baselogic/demos/BeanPostProcessingTests-context.xml">
 <persistable path="/SpringUtility/src/test/resources/com/baselogic/demos/BeanPostProcessingTests-context.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="BeanFactoryPostProcessorTests-context.xml" tooltip="SpringUtility/src/test/resources/com/baselogic/demos/BeanFactoryPostProcessorTests-context.xml">
-<persistable path="/SpringUtility/src/test/resources/com/baselogic/demos/BeanFactoryPostProcessorTests-context.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="ProxyFactoryBeanTests-context.xml" tooltip="SpringUtility/src/test/resources/com/baselogic/demos/ProxyFactoryBeanTests-context.xml">
-<persistable path="/SpringUtility/src/test/resources/com/baselogic/demos/ProxyFactoryBeanTests-context.xml"/>
 </file>
 </mruList>
 </workbench>

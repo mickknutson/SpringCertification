@@ -1,0 +1,5 @@
+package com.baselogic.configuration;
+
+public class SimpleTarget {
+
+}

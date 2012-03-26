@@ -1,0 +1,19 @@
+package com.baselogic.configuration;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.baselogic.service.ExampleService;
+
+public class SimpleTarget {
+
+	public static void main(String... args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext(
+				"/META-INF/spring/simple.xml");
+		
+		ExampleService service = (ExampleService) context.getBean("exampleService");
+		
+		System.out.println("ExampleService: " + service.getMessage());
+	}
+
+}

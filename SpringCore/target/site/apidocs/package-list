@@ -1,0 +1,10 @@
+com.baselogic.annotations
+com.baselogic.aspects
+com.baselogic.common
+com.baselogic.components
+com.baselogic.configuration
+com.baselogic.dao
+com.baselogic.domain
+com.baselogic.editors
+com.baselogic.service
+com.baselogic.util

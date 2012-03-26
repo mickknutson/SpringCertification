@@ -2401,3 +2401,93 @@ HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcu
 HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
 	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@6bdf9516,
 	expression=,sourcePriority=0)
+!SESSION 2012-03-26 07:30:20.423 -----------------------------------------------
+eclipse.buildId=2.9.1.201203221000-RELEASE
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.springsource.sts.ide
+Command-line arguments:  -data C:\usr\SYNCH\projects\Git-Hub\SpringCertification -os win32 -ws win32 -arch x86_64 -product com.springsource.sts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2012-03-26 08:30:06.123
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2012-03-26 08:30:06.123
+!MESSAGE Conflict for 'ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode':
+HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@67543738,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@49f57287,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-26 08:40:03.455
+!MESSAGE Could not read pom.xml
+!SESSION 2012-03-26 08:46:28.695 -----------------------------------------------
+eclipse.buildId=2.9.1.201203221000-RELEASE
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.springsource.sts.ide
+Command-line arguments:  -data C:\usr\SYNCH\projects\Git-Hub\SpringCertification -os win32 -ws win32 -arch x86_64 -product com.springsource.sts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2012-03-26 08:46:40.743
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2012-03-26 08:46:40.743
+!MESSAGE Conflict for 'ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode':
+HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@3a0557b7,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@34c1cd23,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-26 08:53:45.061
+!MESSAGE File /SpringUtility/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-26 08:53:45.065
+!MESSAGE File /SpringUtility/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.ltk.core.refactoring 4 10009 2012-03-26 17:03:39.506
+!MESSAGE Participant 'org.eclipse.jdt.debug.refactoring.breakpoint.projectRename' removed due to the following exception
+!STACK 1
+org.eclipse.debug.core.DebugException: Resource '/SpringCore/java/com/baselogic/service/OrderMockServiceTests.java' does not exist.
+	at org.eclipse.debug.core.model.Breakpoint.run(Breakpoint.java:331)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:153)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:132)
+	at org.eclipse.jdt.debug.core.JDIDebugModel.createLineBreakpoint(JDIDebugModel.java:274)
+	at org.eclipse.jdt.internal.debug.core.refactoring.LineBreakpointTypeChange.perform(LineBreakpointTypeChange.java:59)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-03-26 17:03:39.507
+!MESSAGE Resource '/SpringCore/java/com/baselogic/service/OrderMockServiceTests.java' does not exist.
+
+!ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2012-03-26 17:03:40.066
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.debug.core.DebugException: Resource '/SpringCore/java/com/baselogic/service/OrderMockServiceTests.java' does not exist.
+	at org.eclipse.debug.core.model.Breakpoint.run(Breakpoint.java:331)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:153)
+	at org.eclipse.jdt.internal.debug.core.breakpoints.JavaLineBreakpoint.<init>(JavaLineBreakpoint.java:132)
+	at org.eclipse.jdt.debug.core.JDIDebugModel.createLineBreakpoint(JDIDebugModel.java:274)
+	at org.eclipse.jdt.internal.debug.core.refactoring.LineBreakpointTypeChange.perform(LineBreakpointTypeChange.java:59)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2012-03-26 17:03:40.066
+!MESSAGE Resource '/SpringCore/java/com/baselogic/service/OrderMockServiceTests.java' does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2012-03-26 17:03:40.068
+!MESSAGE Resource '/SpringCore/java/com/baselogic/service/OrderMockServiceTests.java' does not exist.
