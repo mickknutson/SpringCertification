@@ -5,9 +5,9 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
 /**
  * PropertyInjectionComponent
  * 
- * <p>Spring Certification objective: 1.2</p>
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -30,9 +30,9 @@ public class PropertyInjectionComponent {
 	
 	private String message;
 	
-	private int someInt;
+	private Integer someInt;
 	
-	private double someDouble;
+	private Double someDouble;
 
 	public String getMessage() {
 		return message;

@@ -1,11 +1,19 @@
 package com.baselogic.components;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * ConstructorInjectionComponent
  * 
- * <p>Spring Certification objective: 1.2</p>
+ * This example shows how to construct a non-mutable object.
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
+ * 
+ * <p>Spring Certification objective: 1.3 Annotations</p>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.3 Annotations</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -23,6 +31,7 @@ package com.baselogic.components;
  * @see http://springindepth.com/book/in-depth-ioc-constructor-setter-injection.html
  * @see http://springindepth.com/book/in-depth-ioc-multiple-parameter-constructor-injection.html
  */
+@Component
 public class ConstructorInjectionComponent {
 
 	private String message;
@@ -31,12 +40,9 @@ public class ConstructorInjectionComponent {
 		message = "default constructor";
 	}
 	
+	@Autowired
 	public ConstructorInjectionComponent(String message){
 		this.message = message;
-	}
-	
-	public ConstructorInjectionComponent(String message1, String message2){
-		this.message = message +"::"+message2;
 	}
 
 	public String getMessage() {
@@ -45,6 +51,6 @@ public class ConstructorInjectionComponent {
 
 	@Override
 	public String toString() {
-		return "ConstructorInjectionComponent [message=" + message + "]";
-	}	
+		return ToStringBuilder.reflectionToString(this);
+	}
 }

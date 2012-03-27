@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	">
+    
+    <!-- 
+        <p>Spring Certification objective: 1.1 General</p>
+        http://springcert.sourceforge.net/core-3/index.html#beans 
+    -->
+    
+    <!-- Setting message bean via direct property: -->
+    <bean   id="simpleComponent"
+            name="simpleComponentAlias"
+            class="com.baselogic.service.SimpleComponent"
+            p:message="Simple p namespaced XML Configuration" />
+
+    <!-- Setting message bean via property reference: -->
+    <bean   name="simpleComponentTwo"
+            class="com.baselogic.service.SimpleComponent"
+            p:message-ref="message" />
+	<!--
+	// Singleton Pattern
+	ExampleService service = new ExampleServiceImpl();
+	
+	
+	// What this would look like in Java:
+	HashMap<String, Object> springApplicationContext = new HashMap<String, Object>();
+	
+	// Add entry by ID:
+    springApplicationContext.put( "exampleService", service );
+    
+    // Add entry by Name
+    springApplicationContext.put( "altExampleService", service );
+    springApplicationContext.put( "exampleServiceTwo", service );
+	
+	
+	
+	// Get Entry:
+	(ExampleService) springApplicationContext.get( "exampleService" );
+	
+	// Create a Proxy (Proxy Pattern)
+	ExampleService exampleService = springApplicationContext.getBean("exampleService", ExampleService.class);
+	
+	 -->
+
+	<bean id="message" class="java.lang.String">
+		<constructor-arg type="java.lang.String" value="String Bean Message Reference" />
+	</bean>
+
+	<bean name="messageName" class="java.lang.String">
+		<constructor-arg type="java.lang.String"
+			value="String Bean Message Reference without ID." />
+	</bean>
+
+    <bean id="constructorInjectionComponent" class="com.baselogic.components.ConstructorInjectionComponent">
+        <constructor-arg ref="messageName" />
+    </bean>
+
+    <bean id="multipleConstructorInjectionComponent" class="com.baselogic.components.MultipleConstructorInjectionComponent">
+        <constructor-arg index="0" type="java.lang.String"
+            value="Constructor Arg 1"  />
+        <constructor-arg index="1" type="java.lang.String"
+            value="Constructor Arg 2" />
+    </bean>
+
+    <!-- Singleton by default -->
+    <bean  id="propertyInjectionComponent"
+           class="com.baselogic.components.PropertyInjectionComponent"
+           p:message="string message"
+           p:someInt="1234567890"
+           p:someDouble="#{ T(java.lang.Math).random() * 100.0 }"
+    />
+
+    <!-- Prototype Scope -->
+    <bean  id="prototypePropertyInjectionComponent"
+           class="com.baselogic.components.PropertyInjectionComponent"
+           p:message="string message"
+           p:someInt="1234567890"
+           p:someDouble="#{ T(java.lang.Math).random() * 100.0 }"
+           scope="prototype"
+    />
+
+
+</beans>

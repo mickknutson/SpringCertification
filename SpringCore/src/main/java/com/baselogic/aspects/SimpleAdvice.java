@@ -11,9 +11,9 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
 /**
  * SimpleAdvice
  * 
- * <p>Spring Certification objective: 1.2</p>
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -34,8 +34,6 @@ public class SimpleAdvice implements MethodBeforeAdvice {
 	@Override
 	public void before(Method method, Object[] objects, Object object)
 			throws Throwable {
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>>> SimpleAdvice >>>>> Currently Processing {} on Object {}",
 				method,

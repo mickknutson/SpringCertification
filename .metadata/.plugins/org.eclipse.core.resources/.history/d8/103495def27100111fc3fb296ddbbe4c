@@ -1,7 +1,0 @@
-package com.baselogic.domain;
-
-public enum ActivityType {
-	
-	PARACHUTE, BICYCLE, WATER, SNOW
-
-}

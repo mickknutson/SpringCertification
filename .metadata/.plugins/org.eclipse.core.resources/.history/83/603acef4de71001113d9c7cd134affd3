@@ -1,7 +1,0 @@
-package com.baselogic.service;
-
-public interface OrderService {
-	
-	String getMessage();
-
-}

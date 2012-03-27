@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+    ">
+
+    <bean  id="customer" 
+           class="com.baselogic.domain.Customer"
+           p:firstName="Mick"
+           p:lastName="Knutson"
+           p:phoneNumber="8552273564"
+           p:order-ref="order"
+    />
+
+    <bean  id="order" 
+           class="com.baselogic.domain.Order"
+           p:id-ref="orderNumber"
+           p:note="note"
+    />
+
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="com.baselogic.domain.PhoneNumber"
+                value="com.baselogic.editors.PhoneNumberEditor" />
+            </map>
+        </property>
+    </bean>
+
+    <bean id="orderNumber" class="java.lang.Integer">
+        <constructor-arg type="java.lang.Integer"
+            value="#{ T(java.lang.Math).random() * 100.0 }" />
+    </bean>
+
+    <!-- <bean id="note" class="org.spring.samples.NumberGuess">
+        <property name="randomNumber" value="#{ T(java.lang.Math).random() * 100.0 }"/> 
+    </bean> -->
+
+</beans>

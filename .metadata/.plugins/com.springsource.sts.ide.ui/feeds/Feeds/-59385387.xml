@@ -21,7 +21,7 @@
 &lt;li&gt;integrated into Eclipse and STS&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;And, last but not least, the project is now open-source under the EPL and available from GitHub:&lt;br /&gt;
-&lt;a href=&quot;https://github.com/SpringSource/ecli...n-cloudfoundry&quot;&gt;https://github.com/SpringSource/ecli...n-cloudfoundry&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&quot;https://github.com/SpringSource/eclipse-integration-cloudfoundry&quot;&gt;https://github.com/SpringSource/eclipse-integration-cloudfoundry&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You can install it into STS (2.9.0 or higher required) using the STS Dashboard or directly into a plain Eclipse JEE package (Indigo recommended) using the Eclipse Marketplace.&lt;/p&gt;
 &lt;p&gt;Attention: if you have a previous version of the Cloud Foundry tooling installed (the old milestone or nightly builds, having the old STS version 2.7.0 on them), please uninstall them before installing the new release. Since we moved to GitHub, this is a new and separate project and would be installed in addition to the old stuff that you have. So please uninstall the old feature before.&lt;/p&gt;
 &lt;p&gt;More detailed user documentation will follow shortly on &lt;a href=&quot;http://start.cloudfoundry.com/&quot;&gt;http://start.cloudfoundry.com/&lt;/a&gt;. Stay tuned!&lt;/p&gt;

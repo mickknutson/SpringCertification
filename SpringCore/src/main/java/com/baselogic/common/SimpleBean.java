@@ -1,5 +1,6 @@
 package com.baselogic.common;
 
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.springframework.context.annotation.Scope;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 
@@ -33,6 +34,6 @@ public class SimpleBean {
 
 	@Override
 	public String toString() {
-		return "SimpleBean [message=" + message + "]";
+		return ToStringBuilder.reflectionToString(this);
 	}	
 }

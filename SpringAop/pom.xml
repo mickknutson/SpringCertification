@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.baselogic.demos</groupId>
+	<artifactId>SpringAop</artifactId>
+	<name>Spring Aop</name>
+	<packaging>jar</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+
+    <parent>
+        <groupId>com.baselogic</groupId>
+        <artifactId>demos</artifactId>
+        <version>1.0.0-RELEASE</version>
+    </parent>
+
+	<url>http://www.baselogic.com</url>
+	<description>
+		<![CDATA[Spring AOP Project.]]>
+	</description>
+
+	<dependencies>		
+
+		<!-- @Inject -->
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+
+		</plugins>
+	</build>
+
+
+	<reporting>
+	   <plugins>
+
+        </plugins>
+	</reporting>
+
+</project>

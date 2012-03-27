@@ -1,5 +1,0 @@
-package com.baselogic.domain;
-
-public enum ActivityTypes {
-
-}

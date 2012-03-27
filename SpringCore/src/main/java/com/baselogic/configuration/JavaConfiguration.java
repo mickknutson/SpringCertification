@@ -20,7 +20,7 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
  *
  * <p>Spring Certification objective: 1.5</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -52,7 +52,7 @@ public class JavaConfiguration {
 		
 		Customer customer = new Customer();
 		
-		customer.setOrder(javaConfigOrder());		
+		customer.setOrder(javaConfigOrder());
 
 		return customer;
 	}
@@ -64,19 +64,37 @@ public class JavaConfiguration {
 		Order order = new Order();
 		order.setItems(
 				new LinkedList<Item>(){{
-					add(item());
-					add(item());
-					add(item());
-					add(item());
+					add(item()); //#1
+					add(item()); //#2
+					add(item()); //#3
+					add(item()); //#4 items
 				}}
 		);
 		
 		return order;
 	}
 
+	/**
+	 * When called from a Singleton, and NOT Proxied, this
+	 * prototype Object is also a Singleton.
+	 * 
+	 * @return
+	 */
 	@Bean
 	@Scope("prototype")
 	public Item item() {
+		
+		Item item = new Item();
+		item.setId(new Random(1234567890L).nextLong());
+		item.setPrice(new Random(1234567890L).nextDouble());
+		item.setProduct(UUID.randomUUID().toString());
+		
+		return item;
+	}
+
+	@Bean
+	@Scope("prototype")
+	public Item scopedItem() {
 		
 		Item item = new Item();
 		item.setId(new Random(1234567890L).nextLong());

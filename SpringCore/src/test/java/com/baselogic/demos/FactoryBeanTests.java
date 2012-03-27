@@ -38,6 +38,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.baselogic.common.LegacySingletonComponent;
+import com.baselogic.components.ConstructorInjectionComponent;
+import com.baselogic.components.PropertyInjectionComponent;
 import com.baselogic.domain.Customer;
 import com.baselogic.domain.Item;
 import com.baselogic.domain.Order;
@@ -45,9 +48,9 @@ import com.baselogic.domain.Order;
 /**
  * FactoryBean Tests
  *
- * <p>Spring Certification objective: 1.2</p>
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -71,36 +74,71 @@ public class FactoryBeanTests {
 	ApplicationContext applicationContext;
 
 	@Test
-	public void testCustomerWithXmlFactoryOrder(){
+	public void testLegacySingletonFactoryPattern(){
+		
 		logger.info(">>>------------------------------------------------->>>");
 		
-		//TODO: get bean ordering:
+		// Matches LegacySingletonComponent.class by type because there is only one LegacySingletonComponent.class type
+		// in context.
+		LegacySingletonComponent legacySingletonComponent = applicationContext.getBean(LegacySingletonComponent.class);
+		
+		logger.info("legacySingletonComponent: {}", legacySingletonComponent.toString());
+
+		assertThat(legacySingletonComponent.getName(), is("default LegacySingletonComponent Name"));
+	}
+
+	@Test
+	public void testLegacyFactoryPatternClass(){
+		
+		logger.info(">>>------------------------------------------------->>>");
+		ConstructorInjectionComponent legacyConstructorInjectionComponent = 
+				applicationContext.getBean(ConstructorInjectionComponent.class);
+		
+		logger.info("legacyConstructorInjectionComponent: {}", legacyConstructorInjectionComponent.toString());
+
+		assertThat(legacyConstructorInjectionComponent.getMessage(), 
+				is("default legacyConstructorInjectionComponent from LegacyComponentFactory"));		
+	}
+
+
+	@Test
+	public void testCustomerWithXmlFactoryOrder(){
+		
+		logger.info(">>>------------------------------------------------->>>");
 		
 		Customer customer = applicationContext.getBean("customer", Customer.class);
 		
 		logger.info("customer: {}", customer.toString());
-		logger.info("order: {}", applicationContext.getBean("order", Order.class));
-		
-		logger.info("item1: {}", applicationContext.getBean("item1", Item.class));
-		logger.info("item2: {}", applicationContext.getBean("item2", Item.class));
 
 		assertThat(customer.getFirstName(), is("Mick"));
 		assertThat(customer.getLastName(), is("Knutson"));
 
 		assertThat(customer.getOrder().getItems().size(), is(2));
+		
+		assertThat(customer instanceof Customer, is(true));
 	}
 
 	@Test
 	public void testCustomerWithJavaConfigFactoryOrder(){
 		logger.info(">>>------------------------------------------------->>>");
+		Customer customer1 = applicationContext.getBean("javaConfigCustomer", Customer.class);
 		
-		//TODO: get bean ordering:
+		Customer customer2 = applicationContext.getBean("javaConfigCustomer", Customer.class);
 		
-		Customer customer = applicationContext.getBean("javaConfigCustomer", Customer.class);
-		
-		logger.info("customer: {}", customer.toString());
+		logger.info("javaConfigCustomer1: {}", customer1.toString());
+		logger.info("javaConfigCustomer2: {}", customer2.toString());
 		logger.info("order: {}", applicationContext.getBean("javaConfigOrder", Order.class));
 
-		assertThat(customer.getOrder().getItems().size(), is(4));
+		assertThat(customer1.getOrder().getItems().size(), is(4));
+		
+		assertThat(customer1, equalTo(customer2));
+
+		/*assertThat((customer1.getOrder().getItems()).get(0),
+				not(equalTo(prototypePropertyInjectionComponent2.getSomeDouble())));*/
+
+		assertThat(customer1 instanceof Customer, is(true));
+
+		assertThat(customer1.getOrder() instanceof Order, is(true));
+
 	}
 }

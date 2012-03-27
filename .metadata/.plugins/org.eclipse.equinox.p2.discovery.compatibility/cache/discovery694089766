@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
+    <entry url="https://repository.sonatype.org/content/repositories/forge-sites/m2e-discovery-catalog/org.eclipse.m2e.discovery.oss-catalog.jar" permitCategories="true"/>
+</directory>

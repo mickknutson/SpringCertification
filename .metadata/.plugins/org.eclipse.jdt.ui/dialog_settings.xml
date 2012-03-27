@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="2" key="TypeHierarchyViewPart.hierarchyview"/>
-	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.qualifiednames"/>
+	<item value="3" key="TypeHierarchyViewPart.orientation"/>
 	<item value="false" key="TypeHierarchyViewPart.linkeditors"/>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
@@ -22,29 +22,29 @@
 		<item value="400" key="height"/>
 		<item value="600" key="width"/>
 	</section>
-	<section name="RenameInformationPopup">
-	</section>
-	<section name="quick_assist_proposal_size">
-	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
-		<item value="false" key="renameSubpackages"/>
-		<item value="false" key="updateQualifiedNames"/>
 		<item value="*" key="patterns"/>
+		<item value="false" key="updateQualifiedNames"/>
+		<item value="false" key="renameSubpackages"/>
 		<item value="1" key="updateSimilarElementsMatchStrategy"/>
 		<item value="false" key="updateTextualMatches"/>
 		<item value="false" key="updateSimilarElements"/>
 	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SkipNull"/>
 		<item value="10" key="LimitValue"/>
-		<item value="1" key="VisibilityModifier"/>
-		<item value="false" key="Comments"/>
-		<item value="0" key="StringStyle"/>
 		<item value="0" key="ToStringTemplateSelected"/>
+		<item value="0" key="StringStyle"/>
+		<item value="false" key="Comments"/>
+		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="LimitElements"/>
 		<item value="false" key="SynchronizedModifier"/>
-		<item value="false" key="FinalModifier"/>
 		<item value="true" key="IgnoreDefault"/>
+		<item value="false" key="FinalModifier"/>
 	</section>
 	<section name="AddGetterSetterDialog">
 		<item value="false" key="RemoveFinal"/>

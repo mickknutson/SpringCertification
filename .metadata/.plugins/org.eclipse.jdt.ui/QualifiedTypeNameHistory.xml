@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="com.baselogic.dao.OrderDAO"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
 <fullyQualifiedTypeName name="com.baselogic.util.ContextUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.ToStringBuilder"/>
@@ -50,4 +49,11 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.baselogic.common.SimpleBean"/>
 <fullyQualifiedTypeName name="com.baselogic.service.ExampleServiceInitializingBeanImpl"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.baselogic.service.ExampleService"/>
+<fullyQualifiedTypeName name="com.baselogic.service.OrderService"/>
+<fullyQualifiedTypeName name="com.baselogic.components.ConstructorInjectionComponent"/>
+<fullyQualifiedTypeName name="com.baselogic.components.PropertyInjectionComponent"/>
+<fullyQualifiedTypeName name="com.baselogic.domain.Customer"/>
 </qualifiedTypeNameHistroy>

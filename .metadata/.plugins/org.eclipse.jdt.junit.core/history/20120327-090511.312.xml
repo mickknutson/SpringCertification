@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SpringUtility Tests" project="SpringCore" tests="31" started="31" failures="0" errors="12" ignored="0">
+  <testsuite name="com.baselogic.demos.SpelTests" time="0.371">
+    <testcase name="testOrderNumberGenerator" classname="com.baselogic.demos.SpelTests" time="0.371"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.FactoryBeanTests" time="0.32">
+    <testcase name="testLegacySingletonFactoryPattern" classname="com.baselogic.demos.FactoryBeanTests" time="0.313"/>
+    <testcase name="testLegacyFactoryPatternClass" classname="com.baselogic.demos.FactoryBeanTests" time="0.002"/>
+    <testcase name="testCustomerWithXmlFactoryOrder" classname="com.baselogic.demos.FactoryBeanTests" time="0.002"/>
+    <testcase name="testCustomerWithJavaConfigFactoryOrder" classname="com.baselogic.demos.FactoryBeanTests" time="0.003"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.UtilsTests" time="0.853">
+    <testcase name="showUtilsInfo" classname="com.baselogic.demos.UtilsTests" time="0.223">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testLinkedListUtil" classname="com.baselogic.demos.UtilsTests" time="0.183">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testSetUtil" classname="com.baselogic.demos.UtilsTests" time="0.15">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testMapUtils" classname="com.baselogic.demos.UtilsTests" time="0.146">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testActivity" classname="com.baselogic.demos.UtilsTests" time="0.151">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.BeanFactoryPostProcessorTests" time="0.123">
+    <testcase name="testAddBeanFactoryPostProcessorAlias" classname="com.baselogic.demos.BeanFactoryPostProcessorTests" time="0.123">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.ProxyFactoryBeanTests" time="0.249">
+    <testcase name="testCustomerWithProxyFactoryService" classname="com.baselogic.demos.ProxyFactoryBeanTests" time="0.249"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.AspectTests" time="0.069">
+    <testcase name="testHolder" classname="com.baselogic.demos.AspectTests" time="0.069">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testcase name="no tests in this class" classname="org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl" incomplete="true"/>
+  <testsuite name="com.baselogic.service.OrderPowerMockServiceTests" time="0.312">
+    <testcase name="staticRemoteMock" classname="com.baselogic.service.OrderPowerMockServiceTests" time="0.235"/>
+    <testcase name="privatePartialMock" classname="com.baselogic.service.OrderPowerMockServiceTests" time="0.077"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.BeanPostProcessingTests" time="0.083">
+    <testcase name="testAddBeanPostProcessorNewTimestamp" classname="com.baselogic.demos.BeanPostProcessingTests" time="0.083">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.baselogic.service.OrderMockServiceTests" time="0.119">
+    <testcase name="testGetMessage" classname="com.baselogic.service.OrderMockServiceTests" time="0.003"/>
+    <testcase name="testNonMockedTest" classname="com.baselogic.service.OrderMockServiceTests" time="0.007"/>
+    <testcase name="simpleMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.004"/>
+    <testcase name="partialMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.034"/>
+    <testcase name="mockException" classname="com.baselogic.service.OrderMockServiceTests" time="0.0"/>
+    <testcase name="stubVoidMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.003"/>
+    <testcase name="multipleCallsToMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.007"/>
+    <testcase name="mockUnImplementedService" classname="com.baselogic.service.OrderMockServiceTests" time="0.004"/>
+    <testcase name="timeDelayMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.056"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.PropertyEditorTests" time="0.032">
+    <testcase name="testCustomerPhoneNumberEditor" classname="com.baselogic.demos.PropertyEditorTests" time="0.031"/>
+    <testcase name="testNeedMoreExamples" classname="com.baselogic.demos.PropertyEditorTests" time="0.001"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.SimpleTests" time="0.156">
+    <testcase name="testSingletonPropertyInjectionComponent" classname="com.baselogic.demos.SimpleTests" time="0.08">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testPrototypePropertyInjectionComponent" classname="com.baselogic.demos.SimpleTests" time="0.076">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+  <testsuite name="com.baselogic.service.ExampleConfigurationTests" time="0.351">
+    <testcase name="testInitializationSteps" classname="com.baselogic.service.ExampleConfigurationTests" time="0.188">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testBeansInContext" classname="com.baselogic.service.ExampleConfigurationTests" time="0.163">
+      <error>java.lang.IllegalStateException: Failed to load ApplicationContext&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)&#13;
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)&#13;
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+Caused by: org.springframework.beans.factory.BeanCreationException: Invalid autowire-marked constructor: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String,java.lang.Integer). Found another constructor with 'required' Autowired annotation: public com.baselogic.components.ConstructorInjectionComponent(java.lang.String)&#13;
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:237)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:962)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:935)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:485)&#13;
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:456)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:294)&#13;
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:225)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:291)&#13;
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:193)&#13;
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:585)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:913)&#13;
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)&#13;
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)&#13;
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)&#13;
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)&#13;
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)&#13;
+	... 24 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

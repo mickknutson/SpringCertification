@@ -12,7 +12,27 @@
     <context:component-scan base-package="com.baselogic.configuration" />
 
     <!-- Creation of a Factory Bean with XML -->
+
+    <!-- 
+        Legacy Singleton class acting as its own Factory
+        NOTE: getInstance() must be static
+    -->
+    <bean id="legacySingletonComponent" class="com.baselogic.common.LegacySingletonComponent"
+          factory-method="getInstance" />
     
+
+    <!-- 
+        Legacy Factory Pattern creating an instance of an Object 
+        NOTE: getInstance() must _NOT_ be static
+    -->
+    <bean id="legacyComponentFactory" class="com.baselogic.common.LegacyComponentFactory" />
+
+    <bean id="legacyConstructorInjectionComponent" factory-bean="legacyComponentFactory"
+          factory-method="getInstance" />
+
+
+    
+    <!-- New Spring FactoryBean<T> interface  -->
 	<bean id="order" class="com.baselogic.common.ComponentFactory">
 		<property name="items">
 			<util:list list-class="java.util.LinkedList"
@@ -23,6 +43,7 @@
 		</property>
 	</bean>
 
+    <!-- Standard Beans -->
     <bean  id="item1"
            class="com.baselogic.domain.Item"
            scope="prototype"

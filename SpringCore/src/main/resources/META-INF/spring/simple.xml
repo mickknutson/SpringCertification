@@ -5,15 +5,20 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
 	">
     
+    <!-- 
+        <p>Spring Certification objective: 1.1 General</p>
+        http://springcert.sourceforge.net/core-3/index.html#beans 
+    -->
+    
     <!-- Setting message bean via direct property: -->
-    <bean   id="exampleService"
-            name="altExampleService, exampleServiceAlias"
-            class="com.baselogic.service.ExampleServiceImpl"
+    <bean   id="simpleComponent"
+            name="simpleComponentAlias"
+            class="com.baselogic.components.SimpleComponent"
             p:message="Simple p namespaced XML Configuration" />
 
     <!-- Setting message bean via property reference: -->
-    <bean   name="exampleServiceTwo"
-            class="com.baselogic.service.ExampleServiceImpl"
+    <bean   name="simpleComponentTwo"
+            class="com.baselogic.components.SimpleComponent"
             p:message-ref="message" />
 
 	<!--
@@ -50,15 +55,34 @@
 			value="String Bean Message Reference without ID." />
 	</bean>
 
-	<bean id="constructorInjectionComponent" class="com.baselogic.components.ConstructorInjectionComponent">
-		<constructor-arg ref="messageName" />
-	</bean>
-	
-	<bean  id="propertyInjectionComponent"
-	       class="com.baselogic.components.PropertyInjectionComponent"
-	       p:message="string message"
-	       p:someInt="1234567890"
-	       p:someDouble="9876.5432"
+    <bean id="constructorInjectionComponent" class="com.baselogic.components.ConstructorInjectionComponent">
+        <constructor-arg ref="messageName" />
+    </bean>
+
+    <bean id="multipleConstructorInjectionComponent" class="com.baselogic.components.MultipleConstructorInjectionComponent">
+        <constructor-arg index="0" type="java.lang.String"
+            value="Constructor Arg 1"  />
+        <constructor-arg index="1" type="java.lang.String"
+            value="Constructor Arg 2" />
+    </bean>
+
+    <!-- 
+        Singleton by default (property scope="singleton" is assumed)
+    -->
+    <bean  id="propertyInjectionComponent"
+           class="com.baselogic.components.PropertyInjectionComponent"
+           p:message="singleton string message"
+           p:someInt="1234567890"
+           p:someDouble="#{ T(java.lang.Math).random() * 100.0 }"
+    />
+
+    <!-- Prototype Scope -->
+    <bean  id="prototypePropertyInjectionComponent"
+           class="com.baselogic.components.PropertyInjectionComponent"
+           p:message="prototype string message"
+           p:someInt="1234567890"
+           p:someDouble="#{ T(java.lang.Math).random() * 100.0 }"
+           scope="prototype"
     />
 
 

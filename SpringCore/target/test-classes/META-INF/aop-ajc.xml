@@ -1,6 +1,0 @@
-<aspectj>
-<aspects>
-<aspect name="com.baselogic.demos.TestAdvice"/>
-</aspects>
-</aspectj>
-

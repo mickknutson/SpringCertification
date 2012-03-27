@@ -12,9 +12,9 @@ import com.baselogic.domain.Order;
 /**
  * ComponentFactory
  *
- * <p>Spring Certification objective: 1.2</p>
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -29,6 +29,7 @@ import com.baselogic.domain.Order;
  * 
  */
 public class ComponentFactory implements FactoryBean<Order> {
+	
 	private Order order = null;
 
 	private List<Item> items;
@@ -39,6 +40,7 @@ public class ComponentFactory implements FactoryBean<Order> {
 
 	@Override
 	public Order getObject() throws Exception {
+		
 		if (!isSingleton() || order == null) {
 			order = new Order();
 		}

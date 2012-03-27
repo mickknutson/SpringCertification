@@ -3,11 +3,14 @@
 	<section name="">
 		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
 	</section>
+	<section name="">
+		<item value="1000" key="org.eclipse.search.resultpage.limit"/>
+	</section>
 	<section name="DialogBounds_SearchDialog">
 		<item value="958" key="DIALOG_WIDTH"/>
 		<item value="77" key="DIALOG_Y_ORIGIN"/>
-		<item value="427" key="DIALOG_HEIGHT"/>
 		<item value="8" key="DIALOG_X_ORIGIN"/>
+		<item value="427" key="DIALOG_HEIGHT"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="Search">
@@ -41,11 +44,23 @@
 		<item value="false" key="CASE_SENSITIVE"/>
 		<item value="false" key="REG_EX_SEARCH"/>
 		<item value="false" key="SEARCH_DERIVED"/>
-		<item value="1" key="HISTORY_SIZE"/>
+		<item value="2" key="HISTORY_SIZE"/>
 		<section name="EXTENSIONS">
-			<item value="*Tests.java" key="0"/>
+			<item value="*Tests.java" key="1"/>
+			<item value="*.*" key="0"/>
 		</section>
 		<section name="HISTORY0">
+			<item value="false" key="isRegExSearch"/>
+			<item value="uuid" key="textPattern"/>
+			<item value="0" key="scope"/>
+			<item value="true" key="ignoreCase"/>
+			<list key="fileNamePatterns">
+				<item value="*.*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY1">
 			<item value="false" key="isRegExSearch"/>
 			<item value="notNullValue" key="textPattern"/>
 			<item value="0" key="scope"/>

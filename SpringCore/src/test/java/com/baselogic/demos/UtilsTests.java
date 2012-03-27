@@ -36,9 +36,9 @@ import java.lang.annotation.Target;
 /**
  * UtilsTests
  * 
- * <p>Spring Certification objective: 1.2</p>
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -80,10 +80,7 @@ public class UtilsTests {
 		ExampleUtils exampleUtils = applicationContext.getBean(ExampleUtils.class);
 		assertNotNull(exampleUtils);
 		logger.info(">>>------------------------------------------------->>>");
-		logger.info(">>>------------------------------------------------->>>");
 		logger.info("ExampleUtils Results: {}", exampleUtils.toString());
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info(">>>------------------------------------------------->>>");
 	}
 
 	@Test
@@ -93,7 +90,6 @@ public class UtilsTests {
 		List<String> namedIds = applicationContext.getBean("namedIds", LinkedList.class);
 		assertThat((namedIds instanceof LinkedList), is(true));
 		logger.debug("namedIds: {} ... namedIds instanceof LinkedList: {}", namedIds, (namedIds instanceof LinkedList));
-		logger.info(">>>------------------------------------------------->>>");
 	}
 
 	@Test
@@ -104,7 +100,6 @@ public class UtilsTests {
 		assertThat((otherSet instanceof Set), is(true));
 		assertThat(otherSet.size(), is(4));
 		logger.debug("otherSet instanceof Set: {}", (otherSet instanceof Set));
-		logger.info(">>>------------------------------------------------->>>");
 	}
 
 	@Test
@@ -115,7 +110,6 @@ public class UtilsTests {
 		assertThat((additionalData instanceof Map), is(true));
 		logger.debug("additionalData instanceof Map: {}", (additionalData instanceof Map));
 		logger.debug("additionalData: {}", additionalData.toString());
-		logger.info(">>>------------------------------------------------->>>");
 	}
 
 	@Test
@@ -125,6 +119,5 @@ public class UtilsTests {
 		Activity activity = exampleUtils.getActivity();
 		assertThat(activity, is(Activity.PARACHUTE));
 		logger.debug("activity: {}", activity);
-		logger.info(">>>------------------------------------------------->>>");
 	}
 }
