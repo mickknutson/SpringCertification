@@ -1,0 +1,7 @@
+#------------------------------------------------
+# Creates named Global variables to be used/injected
+# into Bean's are load time.
+#------------------------------------------------
+
+foo=Foo Value
+bar=Bar value

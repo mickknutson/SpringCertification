@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SpringCore Tests" project="SpringCore" tests="4" started="4" failures="0" errors="4" ignored="0">
+  <testsuite name="com.baselogic.demos.FactoryBeanTests" time="0.0">
+    <testcase name="testLegacySingletonFactoryPattern" classname="com.baselogic.demos.FactoryBeanTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problems: 
+	The import com.baselogic.common cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	LegacySingletonComponent cannot be resolved to a type
+	The method getBean(Class&lt;LegacySingletonComponent&gt;) from the type BeanFactory refers to the missing type LegacySingletonComponent
+	LegacySingletonComponent cannot be resolved to a type
+	ConstructorInjectionComponent cannot be resolved to a type
+	The method getBean(Class&lt;ConstructorInjectionComponent&gt;) from the type BeanFactory refers to the missing type ConstructorInjectionComponent
+	ConstructorInjectionComponent cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Order&gt;) from the type BeanFactory refers to the missing type Order
+	Order cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Order cannot be resolved to a type
+&#13;
+	at com.baselogic.demos.FactoryBeanTests.&lt;init&gt;(FactoryBeanTests.java:41)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:187)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:210)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testLegacyFactoryPatternClass" classname="com.baselogic.demos.FactoryBeanTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problems: 
+	The import com.baselogic.common cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	LegacySingletonComponent cannot be resolved to a type
+	The method getBean(Class&lt;LegacySingletonComponent&gt;) from the type BeanFactory refers to the missing type LegacySingletonComponent
+	LegacySingletonComponent cannot be resolved to a type
+	ConstructorInjectionComponent cannot be resolved to a type
+	The method getBean(Class&lt;ConstructorInjectionComponent&gt;) from the type BeanFactory refers to the missing type ConstructorInjectionComponent
+	ConstructorInjectionComponent cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Order&gt;) from the type BeanFactory refers to the missing type Order
+	Order cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Order cannot be resolved to a type
+&#13;
+	at com.baselogic.demos.FactoryBeanTests.&lt;init&gt;(FactoryBeanTests.java:41)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:187)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:210)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCustomerWithXmlFactoryBeanOrder" classname="com.baselogic.demos.FactoryBeanTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problems: 
+	The import com.baselogic.common cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	LegacySingletonComponent cannot be resolved to a type
+	The method getBean(Class&lt;LegacySingletonComponent&gt;) from the type BeanFactory refers to the missing type LegacySingletonComponent
+	LegacySingletonComponent cannot be resolved to a type
+	ConstructorInjectionComponent cannot be resolved to a type
+	The method getBean(Class&lt;ConstructorInjectionComponent&gt;) from the type BeanFactory refers to the missing type ConstructorInjectionComponent
+	ConstructorInjectionComponent cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Order&gt;) from the type BeanFactory refers to the missing type Order
+	Order cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Order cannot be resolved to a type
+&#13;
+	at com.baselogic.demos.FactoryBeanTests.&lt;init&gt;(FactoryBeanTests.java:41)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:187)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:210)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testCustomerWithJavaConfigFactoryOrder" classname="com.baselogic.demos.FactoryBeanTests" time="0.0">
+      <error>java.lang.Error: Unresolved compilation problems: 
+	The import com.baselogic.common cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.components cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	The import com.baselogic.domain cannot be resolved
+	LegacySingletonComponent cannot be resolved to a type
+	The method getBean(Class&lt;LegacySingletonComponent&gt;) from the type BeanFactory refers to the missing type LegacySingletonComponent
+	LegacySingletonComponent cannot be resolved to a type
+	ConstructorInjectionComponent cannot be resolved to a type
+	The method getBean(Class&lt;ConstructorInjectionComponent&gt;) from the type BeanFactory refers to the missing type ConstructorInjectionComponent
+	ConstructorInjectionComponent cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Customer&gt;) from the type BeanFactory refers to the missing type Customer
+	Customer cannot be resolved to a type
+	The method getBean(String, Class&lt;Order&gt;) from the type BeanFactory refers to the missing type Order
+	Order cannot be resolved to a type
+	Customer cannot be resolved to a type
+	Order cannot be resolved to a type
+&#13;
+	at com.baselogic.demos.FactoryBeanTests.&lt;init&gt;(FactoryBeanTests.java:41)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)&#13;
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:187)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:210)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)&#13;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#13;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)&#13;
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197)&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

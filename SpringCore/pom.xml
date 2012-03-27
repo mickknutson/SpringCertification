@@ -4,8 +4,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.baselogic.demos</groupId>
-	<artifactId>spring-utility</artifactId>
-	<name>Spring Utility</name>
+	<artifactId>springCore</artifactId>
+	<name>Spring Core</name>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 

@@ -46,9 +46,9 @@
 	</profiles>
 
 	<modules>
-		<module>SpringUtility</module>
+		<module>SpringCore</module>
 		<module>MvcDemo</module>
-		<module>SpringHibernate</module>
+		<!-- <module>SpringHibernate</module> -->
 	</modules>
 
 	<!-- Centrally manage all versions & transitive dependency versions -->

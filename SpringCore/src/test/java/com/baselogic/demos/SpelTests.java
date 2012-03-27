@@ -26,6 +26,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.baselogic.domain.Activity;
 import com.baselogic.domain.Customer;
+import com.baselogic.domain.Order;
 import com.baselogic.util.ExampleUtils;
 
 
@@ -61,7 +62,7 @@ public class SpelTests {
 
 	@Autowired
 	ApplicationContext applicationContext;
-	
+
 	@Test
 	public void testOrderNumberGenerator() {
 		Customer customer = applicationContext.getBean(Customer.class);
@@ -69,6 +70,16 @@ public class SpelTests {
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info("SpEL Customer: {}", customer.toString());
+	}
+
+	@Test
+	public void testOrderNoteFormatter() {
+		
+		Order order = applicationContext.getBean(Order.class);
+		
+		logger.info(">>>------------------------------------------------->>>");
+		logger.info(">>>------------------------------------------------->>>");
+		logger.info("SpEL Order: {}", order.toString());
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>------------------------------------------------->>>");

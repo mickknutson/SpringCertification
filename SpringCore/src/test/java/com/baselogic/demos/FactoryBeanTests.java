@@ -102,7 +102,7 @@ public class FactoryBeanTests {
 
 
 	@Test
-	public void testCustomerWithXmlFactoryOrder(){
+	public void testCustomerWithXmlFactoryBeanOrder(){
 		
 		logger.info(">>>------------------------------------------------->>>");
 		
