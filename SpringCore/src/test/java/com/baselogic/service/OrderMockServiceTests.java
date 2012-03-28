@@ -263,13 +263,13 @@ public class OrderMockServiceTests {
 	@Test
 	public void stubVoidMock() throws Exception {
 
-		doThrow(new RuntimeException("void stubbed void method"))
+		doNothing()
 			.when(supportingUtils)
 			.voidMethod();
 
 		String result = classUnderTest.voidedFunction();
 
-		assertThat(result, is("OrderServiceImpl: localFunction: void stubbed void method"));
+		assertThat(result, is("OrderServiceImpl: localFunction"));
 
 		verify(supportingUtils).voidMethod();
 	}

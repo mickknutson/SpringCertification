@@ -5,6 +5,7 @@ target/
 src/logs/
 reports/
 src/main/webapp/index.html
+.metadata/
 .metadata
 .project
 .classpath
