@@ -1,0 +1,17 @@
+.clover/
+.rvmrc
+.DS_Store
+target/
+src/logs/
+reports/
+src/main/webapp/index.html
+.metadata
+.project
+.classpath
+.settings
+.springBeans
+*.iml
+*.ipr
+*.iws
+*.bak
+
