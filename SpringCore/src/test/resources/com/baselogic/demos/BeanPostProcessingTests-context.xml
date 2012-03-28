@@ -36,8 +36,8 @@
     <bean   name="exampleService" 
             class="com.baselogic.service.ExampleServiceImpl"
             p:message="exampleServiceXml"
-            init-method="initService"
-            destroy-method="destroyService">
+            init-method="postConstruct"
+            destroy-method="preDestroy">
     </bean>
 
 </beans>

@@ -4033,3 +4033,9 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 10:38:49.736
 !MESSAGE Launch configuration SpringAop Tests references closed project SpringAop
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 13:46:34.256
+!MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 13:46:34.311
+!MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.

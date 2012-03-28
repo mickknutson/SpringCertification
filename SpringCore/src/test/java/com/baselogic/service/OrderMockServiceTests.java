@@ -61,13 +61,20 @@ import java.util.Date;
 @RunWith(MockitoJUnitRunner.class)
 public class OrderMockServiceTests {
 
-	@InjectMocks OrderServiceImpl classUnderTest = new OrderServiceImpl();
-
-	@Mock OrderDAO orderDao;
+	/** 
+	 * Prepare Objects that will execute user defined API behavior
+	 */
+	@Mock OrderDAO supportingDao;
 	
-	@Mock ExampleUtils exampleUtils;
+	@Mock ExampleUtils supportingUtils;
 	
 	@Mock UnImplementedService unImplementedService;
+
+	/**
+	 * After Mocks are created
+	 */
+	@InjectMocks OrderServiceImpl classUnderTest = new OrderServiceImpl();
+	
 	
 	@Before
 	public void beforeEachUnitTest(){
@@ -82,6 +89,7 @@ public class OrderMockServiceTests {
 
 	@Test
 	public void testGetMessage() throws Exception {
+		
 		String result = classUnderTest.getMessage();
 		
 		assertThat(result, is(nullValue()));
@@ -91,21 +99,29 @@ public class OrderMockServiceTests {
 	@Test
 	public void testNonMockedTest() throws Exception {
 		
-		String result = classUnderTest.getMessage();
+		String result = classUnderTest.getMessage();		
+		assert result == null;
 		
 		result = classUnderTest.staticFunction();
+		assert result != null;
 		
 		result = classUnderTest.localFunction();
+		assert result != null;
 		
 		result = classUnderTest.voidedFunction();
+		assert result != null;
 		
 		result = classUnderTest.staticFunctions();
+		assert result != null;
 		
 		result = classUnderTest.complexFunctions();
+		assert result != null;
 		
 		result = classUnderTest.duplicateCallsFunction();
+		assert result != null;
 		
 		result = classUnderTest.executeInternalPrivate();
+		assert result != null;
 		
 		//assertThat(result, is(nullValue()));
 	}
@@ -132,24 +148,55 @@ public class OrderMockServiceTests {
 	 */
 	@Test // basic
 	public void simpleMock() throws Exception {
-		
-		Order order = new Order();		
-		order.setDescription("Mick's Order");
-		
-		Order mockOrder = new Order();
-		mockOrder.setDescription("Someone Else's Order");
-		
-		when(orderDao.placeOrder(any(Order.class)))
-			.thenReturn(mockOrder);
-		
-		// execute
-		Order newOrder = classUnderTest.placeOrder(order);
-		
-		assertThat(newOrder.getDescription(), is("Someone Else's Order"));
 
-		verify(orderDao).placeOrder(any(Order.class));
+		// Control input
+		Order orderInput = new Order();		
+		orderInput.setDescription("Mick's Order");
+		
+		// Control Sample
+		Order orderOutput = new Order();
+		orderOutput.setDescription("Someone Else's Order");
+		
+		// Create Mock Behavior
+		when(supportingDao.placeOrder(any(Order.class)))
+			.thenReturn(orderOutput);
+
+		// No need to manually wire Mock's into classUnderTest (CUT).
+		// no-op
+		
+		// execute class under test
+		Order resultOrder = classUnderTest.placeOrder(orderInput);
+		
+		assertThat(resultOrder.getDescription(), is("Someone Else's Order"));
+
+		// Verify behavior for supporting were executed
+		verify(supportingDao).placeOrder(any(Order.class));
 	}
 
+	/*@Test //basic
+	public void mockNotInvoked() throws Exception {
+
+		// Control input
+		Order orderInput = new Order();		
+		orderInput.setDescription("Mick's Order");
+		
+		// Control Sample
+		Order orderOutput = new Order();
+		orderOutput.setDescription("Someone Else's Order");
+		
+		// Create Mock Behavior
+		when(supportingDao.placeOrder(orderInput))
+			.thenReturn(orderOutput);
+		
+		// execute class under test
+		Order resultOrder = classUnderTest.placeOrder2(orderInput);
+		
+		assertThat(resultOrder.getDescription(), is(notNullValue()));
+
+		// Verify behavior was executed
+		verify(supportingDao).placeOrder(orderInput);
+	}*/
+	
 	/**
 	 * Basic
 	 * 
@@ -161,21 +208,21 @@ public class OrderMockServiceTests {
 	public void partialMock() throws Exception {
 		
 		// Not mocked
-		String result = classUnderTest.getMessage();
+		String result = classUnderTest.getProxiedMessage();
 		
 		assertThat(result, is(nullValue()));
 		
-		// Mock
-		OrderServiceImpl partialOrderServiceMock = spy(classUnderTest);
+		// Partial Mock
+		OrderServiceImpl partialMock = spy(classUnderTest);
 		
-		when(partialOrderServiceMock.getMessage())
+		when(partialMock.getMessage())
 			.thenReturn("partially mocked message");
 		
-		String partialResult = partialOrderServiceMock.getMessage();
+		String partialResult = partialMock.getProxiedMessage();
 		
 		assertThat(partialResult, is("partially mocked message"));
 
-		verify(partialOrderServiceMock).getMessage();
+		verify(partialMock).getMessage();
 	}
 
 	/**
@@ -188,36 +235,17 @@ public class OrderMockServiceTests {
 	@Test
 	public void mockException() throws Exception {		
 
-		when(exampleUtils.nestedFunction())
+		when(supportingUtils.nestedFunction())
 			.thenThrow(new RuntimeException("mock Exception"));
 		
 		String result = classUnderTest.localFunction();
 
 		assertThat(result, is("OrderServiceImpl: localFunction: mock Exception"));
 
-		verify(exampleUtils).nestedFunction();
+		verify(supportingUtils).nestedFunction();
 	}
 
-	/*TODO: @Test //basic
-	public void mockNotInvoked() throws Exception {
 
-		when(exampleUtils.nestedFunction())
-			.thenReturn("un-used mocked message");
-
-		// Omit the Mock to simulate this test
-		//orderService.exampleUtils = exampleUtils;
-		/////orderService.exampleUtils = new ExampleUtils();
-		
-		String result = orderService.shadowedeFunction();
-
-		assertThat(result, is("OrderServiceImpl: localFunction: nestedFunction(): privateFunction"));
-
-		// This will fail:
-		//verify(exampleUtils).nestedFunction();
-
-		verify(exampleUtils, never()).nestedFunction();
-	}*/
-	
 	/*TODO: @Test //int
 	public void mockMultipleExceptions() throws Exception {
 		//orderService.complexFunctions()
@@ -236,14 +264,36 @@ public class OrderMockServiceTests {
 	public void stubVoidMock() throws Exception {
 
 		doThrow(new RuntimeException("void stubbed void method"))
-			.when(exampleUtils)
+			.when(supportingUtils)
 			.voidMethod();
 
 		String result = classUnderTest.voidedFunction();
 
 		assertThat(result, is("OrderServiceImpl: localFunction: void stubbed void method"));
 
-		verify(exampleUtils).voidMethod();
+		verify(supportingUtils).voidMethod();
+	}
+
+	/**
+	 * Basic
+	 * 
+	 * Stub the call to a method that returns void inside the 
+	 * Class under test.
+	 * 
+	 * @throws Exception
+	 */
+	@Test
+	public void stubVoidMockException() throws Exception {
+
+		doThrow(new RuntimeException("void stubbed method exception"))
+			.when(supportingUtils)
+			.voidMethod();
+
+		String result = classUnderTest.voidedFunction();
+
+		assertThat(result, is("OrderServiceImpl: localFunction: void stubbed method exception"));
+
+		verify(supportingUtils).voidMethod();
 	}
 
 	/**
@@ -256,7 +306,7 @@ public class OrderMockServiceTests {
 	@Test
 	public void multipleCallsToMock() throws Exception {		
 
-		when(exampleUtils.nestedFunction())
+		when(supportingUtils.nestedFunction())
 			.thenReturn("1st mocked message")
 			.thenReturn("2nd mocked message")
 			.thenReturn("nth mocked message");
@@ -265,11 +315,11 @@ public class OrderMockServiceTests {
 
 		assertThat(result, is("OrderServiceImpl: duplicateCallsFunction(): 1st mocked message: 2nd mocked message: nth mocked message: nth mocked message"));
 
-		verify(exampleUtils, atLeastOnce()).nestedFunction();
+		verify(supportingUtils, atLeastOnce()).nestedFunction();
 
-		verify(exampleUtils, atLeast(2)).nestedFunction();
+		verify(supportingUtils, atLeast(2)).nestedFunction();
 
-		verify(exampleUtils, times(4)).nestedFunction();
+		verify(supportingUtils, times(4)).nestedFunction();
 	}
 
 	/**
@@ -304,7 +354,7 @@ public class OrderMockServiceTests {
 	@Test
 	public void timeDelayMock() throws Exception {
 		
-		when(exampleUtils.nestedFunction())
+		when(supportingUtils.nestedFunction())
 			.thenAnswer(				
 				delayedAnswerWithObject("delayed response", 50)
 			);
@@ -319,7 +369,7 @@ public class OrderMockServiceTests {
 
 		assertThat(end - start, is(greaterThan(49L)));
 
-		verify(exampleUtils, times(1)).nestedFunction();
+		verify(supportingUtils, times(1)).nestedFunction();
 	}
 
 	// Helper method for mock delays.

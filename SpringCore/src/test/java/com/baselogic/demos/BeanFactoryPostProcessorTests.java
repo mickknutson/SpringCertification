@@ -65,7 +65,6 @@ public class BeanFactoryPostProcessorTests {
 	@Test
 	public void testAddBeanFactoryPostProcessorAlias(){
 		logger.info(">>>------------------------------------------------->>>");
-		logger.info("testAddBeanFactoryPostProcessorAlias");
 		
 		assertThat(exampleServiceInitializingBeanImplBeanFactoryPostProcessed, is(notNullValue()));
 

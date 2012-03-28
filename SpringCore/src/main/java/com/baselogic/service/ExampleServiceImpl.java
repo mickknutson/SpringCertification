@@ -1,5 +1,8 @@
 package com.baselogic.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -12,7 +15,6 @@ import org.springframework.stereotype.Component;
 
 import com.baselogic.dao.OrderDAO;
 import com.baselogic.util.ExampleUtils;
-
 
 /**
  * {@link ExampleService}
@@ -32,6 +34,8 @@ public class ExampleServiceImpl implements ExampleService {
 	@Autowired
 	private String message;
 	
+	List<String> initializationOrder = new ArrayList<String>();
+
 	/**
 	 * Reads next record from input
 	 */
@@ -44,16 +48,18 @@ public class ExampleServiceImpl implements ExampleService {
 	}
 	
 	@PostConstruct
-	public void initService(){
+	public void postConstruct(){
         if (orderDao != null) {
             logger.debug("MY DEP BEAN {}", orderDao.toString());
         }
         logger.debug("> pc > {}: @PostConstruct <<<<<", this.getClass());
+        initializationOrder.add("postConstruct");
 	}
 	
 	@PreDestroy
-	public void destroyService(){
+	public void preDestroy(){
 		logger.debug("> pd > {}: @PreDestroy <<<<<", this.getClass());
+		initializationOrder.add("preDestroy");
 	}
 	
 }

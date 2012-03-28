@@ -82,7 +82,7 @@ public class FactoryBeanTests {
 		// in context.
 		LegacySingletonComponent legacySingletonComponent = applicationContext.getBean(LegacySingletonComponent.class);
 		
-		logger.info("legacySingletonComponent: {}", legacySingletonComponent.toString());
+		logger.debug("legacySingletonComponent: {}", legacySingletonComponent.toString());
 
 		assertThat(legacySingletonComponent.getName(), is("default LegacySingletonComponent Name"));
 	}
@@ -94,7 +94,7 @@ public class FactoryBeanTests {
 		ConstructorInjectionComponent legacyConstructorInjectionComponent = 
 				applicationContext.getBean(ConstructorInjectionComponent.class);
 		
-		logger.info("legacyConstructorInjectionComponent: {}", legacyConstructorInjectionComponent.toString());
+		logger.debug("legacyConstructorInjectionComponent: {}", legacyConstructorInjectionComponent.toString());
 
 		assertThat(legacyConstructorInjectionComponent.getMessage(), 
 				is("default legacyConstructorInjectionComponent from LegacyComponentFactory"));		
@@ -108,7 +108,7 @@ public class FactoryBeanTests {
 		
 		Customer customer = applicationContext.getBean("customer", Customer.class);
 		
-		logger.info("customer: {}", customer.toString());
+		logger.debug("customer: {}", customer.toString());
 
 		assertThat(customer.getFirstName(), is("Mick"));
 		assertThat(customer.getLastName(), is("Knutson"));
@@ -125,9 +125,9 @@ public class FactoryBeanTests {
 		
 		Customer customer2 = applicationContext.getBean("javaConfigCustomer", Customer.class);
 		
-		logger.info("javaConfigCustomer1: {}", customer1.toString());
-		logger.info("javaConfigCustomer2: {}", customer2.toString());
-		logger.info("order: {}", applicationContext.getBean("javaConfigOrder", Order.class));
+		logger.debug("javaConfigCustomer1: {}", customer1.toString());
+		logger.debug("javaConfigCustomer2: {}", customer2.toString());
+		logger.debug("order: {}", applicationContext.getBean("javaConfigOrder", Order.class));
 
 		assertThat(customer1.getOrder().getItems().size(), is(4));
 		

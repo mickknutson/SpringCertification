@@ -58,8 +58,8 @@ public class BeanPostProcessingTests {
 	@Test
 	public void testAddBeanPostProcessorNewTimestamp(){
 		logger.info(">>>------------------------------------------------->>>");
-		logger.info("testAddBeanPostProcessorNewTimestamp: {}", exampleServiceInitializingBeanImplXml);
-		logger.info("testAddBeanPostProcessorNewTimestamp..getCreationDate(): {}", exampleServiceInitializingBeanImplXml.getCreationDate());
+		logger.debug("testAddBeanPostProcessorNewTimestamp: {}", exampleServiceInitializingBeanImplXml);
+		logger.debug("testAddBeanPostProcessorNewTimestamp..getCreationDate(): {}", exampleServiceInitializingBeanImplXml.getCreationDate());
 		
 		assertThat(exampleServiceInitializingBeanImplXml, is(notNullValue()));
 		assertThat(exampleServiceInitializingBeanImplXml.getCreationDate(), is(notNullValue()));

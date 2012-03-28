@@ -83,7 +83,6 @@ public class ProxyFactoryBeanTests {
 		ExampleService service = applicationContext.getBean("exampleServiceInitializingBeanImplProxy", ExampleService.class);
 		
 		logger.info("service: {}", service.toString());
-		logger.info("service: {}", service.getMessage());
 
 		//SimpleBean simpleBean = ((ExampleServiceInitializingBeanImpl)service).getSimpleBean();
 		//logger.info("simpleBean: {}", simpleBean.getMessage());

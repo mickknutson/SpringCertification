@@ -68,14 +68,12 @@ public class PropertyEditorTests {
 		assertNotNull(customer);
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info("customer: {}", customer.toString());
-		logger.info(">>>------------------------------------------------->>>");
 	}
 
 	@Test
 	public void testNeedMoreExamples() {
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info("NEED MORE EXAMPLES FOR EDITORS");
-		logger.info(">>>------------------------------------------------->>>");
 	}
 
 }

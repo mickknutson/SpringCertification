@@ -75,8 +75,8 @@ public class SimpleTests {
 				applicationContext.getBean("propertyInjectionComponent", PropertyInjectionComponent.class);
 
 		logger.info(">>>------------------------------------------------->>>");
-		logger.info("propertyInjectionComponent1: {}", propertyInjectionComponent1.toString());
-		logger.info("propertyInjectionComponent2: {}", propertyInjectionComponent2.toString());
+		logger.debug("propertyInjectionComponent1: {}", propertyInjectionComponent1.toString());
+		logger.debug("propertyInjectionComponent2: {}", propertyInjectionComponent2.toString());
 		
 		assertThat(propertyInjectionComponent1,
 				equalTo(propertyInjectionComponent2));
@@ -100,8 +100,8 @@ public class SimpleTests {
 				applicationContext.getBean("prototypePropertyInjectionComponent", PropertyInjectionComponent.class);
 
 		logger.info(">>>------------------------------------------------->>>");
-		logger.info("prototypePropertyInjectionComponent1: {}", prototypePropertyInjectionComponent1.toString());
-		logger.info("prototypePropertyInjectionComponent2: {}", prototypePropertyInjectionComponent2.toString());
+		logger.debug("prototypePropertyInjectionComponent1: {}", prototypePropertyInjectionComponent1.toString());
+		logger.debug("prototypePropertyInjectionComponent2: {}", prototypePropertyInjectionComponent2.toString());
 
 		assertThat(prototypePropertyInjectionComponent1,
 				not(equalTo(prototypePropertyInjectionComponent2)));

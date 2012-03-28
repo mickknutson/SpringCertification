@@ -62,9 +62,9 @@ public class OrderPowerMockServiceTests {
 
 	@InjectMocks OrderServiceImpl classUnderTest = new OrderServiceImpl();
 
-	@Mock OrderDAO orderDao;
+	@Mock OrderDAO supportingDao;
 	
-	@Mock ExampleUtils exampleUtils;
+	@Mock ExampleUtils supportingUtils;
 	
 	@Before
 	public void beforeEachUnitTest(){
@@ -101,6 +101,8 @@ public class OrderPowerMockServiceTests {
 		PowerMockito.mockStatic(ExampleUtils.class);
 		
 		when(ExampleUtils.staticFunction()).thenReturn("some static mocked value");
+		
+		// Mock Local functions.
 
 		String result = classUnderTest.staticFunctions();
 		

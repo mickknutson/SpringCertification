@@ -22,10 +22,10 @@ public class OrderServiceImpl implements OrderService {
 	private OrderDAO orderDao;
 	
 	@Autowired
-	private String message;
+	private ExampleUtils exampleUtils;
 	
 	@Autowired
-	private ExampleUtils exampleUtils;
+	private String message;
 
 
 	/**
@@ -35,19 +35,23 @@ public class OrderServiceImpl implements OrderService {
 		return message;	
 	}
 	
+	public String getProxiedMessage() {
+		return getMessage();	
+	}
+	
 	public Order placeOrder(Order order){		
 		
 		return orderDao.placeOrder(order);
 	}
 	
-	public void placeOrder2(Order order){
+	public Order placeOrder2(Order order){
 		
 		// pass by value ** BeanFactoryPostProcessor
 		//
 		// or pass by reference ** BeanPostProcessor
 		order.setDescription("modified description");
 		
-		orderDao.placeOrder(order);
+		return orderDao.placeOrder(order);
 	}
 
 	//----- Mockable methods --------------------------------------------------------//
@@ -92,7 +96,7 @@ public class OrderServiceImpl implements OrderService {
 		
 		String result = "OrderServiceImpl: function()";
 		
-		result += ": " + ExampleUtils.staticFunction();
+		result += ": " + ExampleUtils.staticFunction(); // Static Call
 		
 		result += ": " + staticFunction();
 		
