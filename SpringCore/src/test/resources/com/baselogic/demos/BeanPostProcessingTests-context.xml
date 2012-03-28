@@ -29,7 +29,15 @@
 
     <bean   name="exampleServiceInitializingBeanImplXml" 
             class="com.baselogic.service.ExampleServiceInitializingBeanImpl"
-            p:message="exampleServiceInitializingBeanImplXml">
+            p:message="exampleServiceInitializingBeanImplXml"
+            init-method="init">
+    </bean>
+
+    <bean   name="exampleService" 
+            class="com.baselogic.service.ExampleServiceImpl"
+            p:message="exampleServiceXml"
+            init-method="initService"
+            destroy-method="destroyService">
     </bean>
 
 </beans>

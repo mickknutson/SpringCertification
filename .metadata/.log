@@ -4024,3 +4024,12 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.723
 !MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 10:38:49.727
+!MESSAGE Launch configuration SpringAop Tests references closed project SpringAop
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 10:38:49.728
+!MESSAGE Launch configuration SpringAop Tests references closed project SpringAop
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 10:38:49.736
+!MESSAGE Launch configuration SpringAop Tests references closed project SpringAop

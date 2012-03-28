@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="SpringCore Tests" project="SpringCore" tests="33" started="33" failures="0" errors="0" ignored="0">
+  <testsuite name="com.baselogic.demos.SpelTests" time="0.545">
+    <testcase name="testOrderNumberGenerator" classname="com.baselogic.demos.SpelTests" time="0.543"/>
+    <testcase name="testOrderNoteFormatter" classname="com.baselogic.demos.SpelTests" time="0.002"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.FactoryBeanTests" time="0.521">
+    <testcase name="testLegacySingletonFactoryPattern" classname="com.baselogic.demos.FactoryBeanTests" time="0.508"/>
+    <testcase name="testLegacyFactoryPatternClass" classname="com.baselogic.demos.FactoryBeanTests" time="0.005"/>
+    <testcase name="testCustomerWithXmlFactoryBeanOrder" classname="com.baselogic.demos.FactoryBeanTests" time="0.004"/>
+    <testcase name="testCustomerWithJavaConfigFactoryOrder" classname="com.baselogic.demos.FactoryBeanTests" time="0.004"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.UtilsTests" time="0.577">
+    <testcase name="showUtilsInfo" classname="com.baselogic.demos.UtilsTests" time="0.562"/>
+    <testcase name="testLinkedListUtil" classname="com.baselogic.demos.UtilsTests" time="0.003"/>
+    <testcase name="testSetUtil" classname="com.baselogic.demos.UtilsTests" time="0.002"/>
+    <testcase name="testMapUtils" classname="com.baselogic.demos.UtilsTests" time="0.01"/>
+    <testcase name="testActivity" classname="com.baselogic.demos.UtilsTests" time="0.0"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.BeanFactoryPostProcessorTests" time="0.382">
+    <testcase name="testAddBeanFactoryPostProcessorAlias" classname="com.baselogic.demos.BeanFactoryPostProcessorTests" time="0.382"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.ProxyFactoryBeanTests" time="0.371">
+    <testcase name="testCustomerWithProxyFactoryService" classname="com.baselogic.demos.ProxyFactoryBeanTests" time="0.371"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.AspectTests" time="0.294">
+    <testcase name="testHolder" classname="com.baselogic.demos.AspectTests" time="0.294"/>
+  </testsuite>
+  <testcase name="no tests in this class" classname="org.powermock.modules.junit4.common.internal.impl.JUnit4TestSuiteChunkerImpl" incomplete="true"/>
+  <testsuite name="com.baselogic.service.OrderPowerMockServiceTests" time="0.395">
+    <testcase name="staticRemoteMock" classname="com.baselogic.service.OrderPowerMockServiceTests" time="0.308"/>
+    <testcase name="privatePartialMock" classname="com.baselogic.service.OrderPowerMockServiceTests" time="0.087"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.BeanPostProcessingTests" time="0.34">
+    <testcase name="testAddBeanPostProcessorNewTimestamp" classname="com.baselogic.demos.BeanPostProcessingTests" time="0.34"/>
+  </testsuite>
+  <testsuite name="com.baselogic.service.OrderMockServiceTests" time="0.184">
+    <testcase name="testGetMessage" classname="com.baselogic.service.OrderMockServiceTests" time="0.031"/>
+    <testcase name="testNonMockedTest" classname="com.baselogic.service.OrderMockServiceTests" time="0.0"/>
+    <testcase name="simpleMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.0"/>
+    <testcase name="partialMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.038"/>
+    <testcase name="mockException" classname="com.baselogic.service.OrderMockServiceTests" time="0.01"/>
+    <testcase name="stubVoidMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.007"/>
+    <testcase name="multipleCallsToMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.006"/>
+    <testcase name="mockUnImplementedService" classname="com.baselogic.service.OrderMockServiceTests" time="0.005"/>
+    <testcase name="timeDelayMock" classname="com.baselogic.service.OrderMockServiceTests" time="0.087"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.PropertyEditorTests" time="0.043">
+    <testcase name="testCustomerPhoneNumberEditor" classname="com.baselogic.demos.PropertyEditorTests" time="0.04"/>
+    <testcase name="testNeedMoreExamples" classname="com.baselogic.demos.PropertyEditorTests" time="0.003"/>
+  </testsuite>
+  <testsuite name="com.baselogic.demos.SimpleTests" time="0.123">
+    <testcase name="testSingletonPropertyInjectionComponent" classname="com.baselogic.demos.SimpleTests" time="0.12"/>
+    <testcase name="testPrototypePropertyInjectionComponent" classname="com.baselogic.demos.SimpleTests" time="0.003"/>
+  </testsuite>
+  <testsuite name="com.baselogic.service.ExampleConfigurationTests" time="0.43">
+    <testcase name="testProxyExampleService" classname="com.baselogic.service.ExampleConfigurationTests" time="0.407"/>
+    <testcase name="testInitializationSteps" classname="com.baselogic.service.ExampleConfigurationTests" time="0.001"/>
+    <testcase name="testBeansInContext" classname="com.baselogic.service.ExampleConfigurationTests" time="0.022"/>
+  </testsuite>
+</testrun>

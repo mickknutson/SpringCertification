@@ -41,13 +41,10 @@ import com.baselogic.domain.Order;
 public class AroundAdvice {
 	
 	private final Logger logger = LoggerFactory.getLogger(AroundAdvice.class);
-	
+
 	@Pointcut("execution(* com.baselogic.service.*.placeDelayedOrder(..))")
     public void placeDelayedOrderService() {}	
 
-
-	
-	
 	
 	
     //@Around("placeDelayedOrderService()")

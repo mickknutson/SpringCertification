@@ -68,6 +68,10 @@ public class BeanFactoryPostProcessorTests {
 		logger.info("testAddBeanFactoryPostProcessorAlias");
 		
 		assertThat(exampleServiceInitializingBeanImplBeanFactoryPostProcessed, is(notNullValue()));
+
+		assertThat(exampleServiceInitializingBeanImpl, 
+				equalTo(exampleServiceInitializingBeanImplBeanFactoryPostProcessed));
+
 	}
 
 }

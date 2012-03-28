@@ -13,8 +13,8 @@
     </encoder>
   </appender>
  
- <root level="INFO">
-  <appender-ref ref="STDOUT" />
+ <root level="DEBUG">
+    <appender-ref ref="STDOUT" />
  </root>
  
 </configuration>

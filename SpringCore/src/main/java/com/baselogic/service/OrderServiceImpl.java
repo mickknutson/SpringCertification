@@ -35,9 +35,19 @@ public class OrderServiceImpl implements OrderService {
 		return message;	
 	}
 	
-	public Order placeOrder(Order order){
+	public Order placeOrder(Order order){		
 		
 		return orderDao.placeOrder(order);
+	}
+	
+	public void placeOrder2(Order order){
+		
+		// pass by value ** BeanFactoryPostProcessor
+		//
+		// or pass by reference ** BeanPostProcessor
+		order.setDescription("modified description");
+		
+		orderDao.placeOrder(order);
 	}
 
 	//----- Mockable methods --------------------------------------------------------//

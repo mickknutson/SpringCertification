@@ -48,12 +48,12 @@ public class ExampleServiceImpl implements ExampleService {
         if (orderDao != null) {
             logger.debug("MY DEP BEAN {}", orderDao.toString());
         }
-        logger.debug(">>>>> {}: @PostConstruct <<<<<", this.getClass());
+        logger.debug("> pc > {}: @PostConstruct <<<<<", this.getClass());
 	}
 	
 	@PreDestroy
 	public void destroyService(){
-		logger.debug(">>>>> {}: @PreDestroy <<<<<", this.getClass());
+		logger.debug("> pd > {}: @PreDestroy <<<<<", this.getClass());
 	}
 	
 }

@@ -1,6 +1,6 @@
 Console.console_tab_width=16
-Console.highWaterMark=1007999
-Console.lowWaterMark=999999
+Console.highWaterMark=1008000
+Console.lowWaterMark=1000000
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<launchPerspectives/>\r\n
 org.eclipse.debug.ui.switch_perspective_on_suspend=always

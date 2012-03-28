@@ -11,8 +11,8 @@ import org.springframework.stereotype.Component;
 /**
  * ComponentBeanFactoryPostProcessor
  * 
- * NOTE: A BeanFactoryPostProcessor modifies bean definitions, 
- * while a BeanPostProcessor replaces bean instances (such as when creating a proxy).
+ * NOTE: A BeanFactoryPostProcessor modifies bean definitions,
+ * while a BeanPostProcessor replaces/modifies bean instances (such as when creating a proxy).
  *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
@@ -38,19 +38,16 @@ public class ComponentBeanFactoryPostProcessor implements BeanFactoryPostProcess
 	@Override
 	public void postProcessBeanFactory(
 			ConfigurableListableBeanFactory beanFactory) throws BeansException {
-		logger.info(">>> bfpp.ppBf >> postProcessBeanFactory...");
+		logger.debug(">>> bfpp.ppBf >> postProcessBeanFactory...");
 		
 		BeanDefinition beanDefinition = beanFactory
 				.getBeanDefinition("exampleServiceInitializingBeanImpl");
 		
-		logger.info(beanDefinition.toString());
-
 		// Register a new Alias
 		beanFactory.registerAlias("exampleServiceInitializingBeanImpl",
 				"exampleServiceInitializingBeanImplBeanFactoryPostProcessed");
-		
-		logger.info(">>> bfpp.ppBf >> Can change bean definition here.. for beanDefinition: {}"
+
+		logger.debug(">>> bfpp.ppBf >> Can change bean definition here.. for beanDefinition: {}"
 						, beanDefinition.toString());
-	}
-	
+	}	
 }

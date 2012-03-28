@@ -21,6 +21,9 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
 /**
  * ComponentBeanPostProcessor
  *
+ * NOTE: A BeanFactoryPostProcessor modifies bean definitions,
+ * while a BeanPostProcessor replaces/modifies bean instances (such as when creating a proxy).
+ * 
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
@@ -47,30 +50,34 @@ public class ComponentBeanPostProcessor implements BeanPostProcessor {
 	 */
 	@Override	
 	public Object postProcessBeforeInitialization(final Object bean, String beanName) throws BeansException {
-		logger.info(">>> bpp.ppBi >> Bean : {} can be postProcessedAfterInitialization here..", bean);
+		logger.debug(">>> bpp.ppBi >> Bean : {} can be postProcessedAfterInitialization: {}", beanName, bean);
 
         Class<? extends Object> clazz = bean.getClass();
         
         ReflectionUtils.doWithMethods(clazz, new ReflectionUtils.MethodCallback() {
             public void doWith(Method method) {
+            	
                 if (method.isAnnotationPresent(Timestamp.class)) {
-                	logger.info(">>>---postProcessBeforeInitialization---------------------------------------------->>>");
+                	logger.info(">>>--- post process Annotated method >");
                     try {
                         PropertyDescriptor pd = BeanUtils.findPropertyForMethod(method);
 
                         Date originalValue = (Date) pd.getReadMethod().invoke(bean, null);
+                        
                         if(originalValue == null){ originalValue = new Date(0); }
+                        
                         Date doubledValue = new Date(originalValue.getTime() * 2 );
 
                         // set doubled value
                         pd.getWriteMethod().invoke(bean, new Object[] { doubledValue });
 
 						logger.info(">>> Bean : {} original date value: {}", bean, originalValue);
-						logger.info(">>> Bean : {} new date value: {}", bean, doubledValue);
+						
+						logger.debug("new date value: {}", bean, doubledValue);
+						
                     } catch (Throwable e) {
                         logger.error(e.getMessage(), e);
                     }
-                	logger.info(">>>---end postProcessBeforeInitialization---------------------------------------------->>>");
                 }
             }
         });
@@ -104,7 +111,7 @@ public class ComponentBeanPostProcessor implements BeanPostProcessor {
 	@Override
 	public Object postProcessAfterInitialization(final Object bean,
 			final String beanName) throws BeansException {
-		logger.info(">>> bpp.ppAi >> Bean : {} can be postProcessedBeforeInitialization here..", bean);
+		logger.debug(">>> bpp.ppAi >> Bean : {} can be postProcessedBeforeInitialization here..", bean);
 		return bean;
 	}
 }
