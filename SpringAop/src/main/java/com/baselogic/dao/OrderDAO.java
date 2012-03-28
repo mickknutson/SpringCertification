@@ -23,6 +23,8 @@ import com.baselogic.domain.Order;
  */
 public interface OrderDAO {
 	
-	Order placeOrder(Order order);
+	Order placeOrder(Order order) throws Exception;
+
+	Order placeDelayedOrder(Order order, long delay) throws Exception;
 
 }

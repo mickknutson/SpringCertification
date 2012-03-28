@@ -26,5 +26,8 @@ public interface OrderService {
 	String getMessage();
 
 	Order placeOrder(Order order);
+	
+	Order placeDelayedOrder(Order order, long delay);
+
 
 }

@@ -1,7 +1,9 @@
 package com.baselogic.domain;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashSet;
+import java.util.List;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
@@ -31,6 +33,11 @@ public class Order {
 	private String description;
 	
 	private Collection<Item> items = new LinkedHashSet<Item>();
+	
+	/**
+	 * This is used for demonstration purposes only to show the advice given.
+	 */
+	public List<String> adviceGiven = new ArrayList<String>();
 
 	/**
 	 * @return the description

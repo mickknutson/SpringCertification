@@ -6,6 +6,17 @@
  <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
  <language>en</language>
 <item>
+ <title>Spring Web Flow 2.3.1 released</title>
+ <link>http://www.springsource.org/node/3516</link>
+ <description>&lt;p&gt;Spring Web Flow 2.3.1 is now available for &lt;a href=&quot;http://www.springsource.com/download/community?project=Spring%20Web%20Flow&quot;&gt;download&lt;/a&gt;. This maintenance release includes an upgrade to Spring 3.1.1, JavaServer Faces 2.1.7 along with a number of bug fixes. For those tracking the project it is now &lt;a href=&quot;https://github.com/SpringSource/spring-webflow&quot;&gt;hosted on Github&lt;/a&gt; including a separate &lt;a href=&quot;https://github.com/SpringSource/spring-webflow-issues#readme&quot;&gt;issue repository&lt;/a&gt; to help reproduce issues based on one of several project templates.&lt;/p&gt;
+</description>
+ <comments>http://www.springsource.org/node/3516#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Tue, 27 Mar 2012 20:48:18 +0000</pubDate>
+ <dc:creator>Rossen Stoyanchev</dc:creator>
+ <guid isPermaLink="false">3516 at http://www.springsource.org</guid>
+</item>
+<item>
  <title>Cloud Foundry Integration for Eclipse 1.0 released</title>
  <link>http://www.springsource.org/node/3515</link>
  <description>&lt;p&gt;I am happy to announce the first release of the Cloud Foundry Integration for Eclipse 1.0.&lt;/p&gt;
@@ -219,25 +230,6 @@ More details on new features and bug fixes can be found in the&amp;nbsp;&lt;a hr
  <pubDate>Tue, 13 Mar 2012 00:34:54 +0000</pubDate>
  <dc:creator>Adam Fitzgerald</dc:creator>
  <guid isPermaLink="false">3505 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Video: Creating Spring Insight Plugins</title>
- <link>http://www.springsource.org/node/3504</link>
- <description>&lt;p&gt;&lt;a href=&quot;/insight&quot;&gt;Spring Insight&lt;/a&gt; is a developer tool that provides visibility into your application&#039;s runtime performance and behavior by tracing how low level SQL queries, transaction times and application pages are performing. Optimized out of the box for standard Spring-developed applications, Insight also provides a pluggable architecture for enhancing trace capabilities to provide further visibility into your application performance. In this video, John Kew, SpringSource Staff Engineer, describes the capabilities of Spring Insight&#039;s plugin framework and best practices in development of plug-ins. &lt;/p&gt;
-
-&lt;p style=&quot;text-align: center&quot;&gt;&lt;object width=&quot;560&quot; height=&quot;349&quot;&gt;
-&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/embed/YR3CYnryflw?version=3&amp;amp;hl=en_US&quot; /&gt;
-&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;
-&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/YR3CYnryflw?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;560&quot; height=&quot;349&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
-
-
-&lt;p&gt;Spring Insight is part of &lt;a href=&quot;http://www.vmware.com/go/vfabric-tcserver-dev&quot;&gt;vFabric tc Server Developer Edition&lt;/a&gt; and &lt;a href=&quot;/springsource-tool-suite-download&quot;&gt;SpringSource Tool Suite&lt;/a&gt;. Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;
-</description>
- <comments>http://www.springsource.org/node/3504#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Mon, 12 Mar 2012 16:36:37 +0000</pubDate>
- <dc:creator>Adam Fitzgerald</dc:creator>
- <guid isPermaLink="false">3504 at http://www.springsource.org</guid>
 </item>
 </channel>
 </rss>

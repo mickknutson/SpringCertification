@@ -3816,3 +3816,211 @@ Contains: Could not delete: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\Sp
 !MESSAGE Problems encountered while deleting files.
 !SUBENTRY 4 org.eclipse.core.filesystem 4 273 2012-03-27 07:25:08.328
 !MESSAGE Could not delete: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringCore\target\classes\META-INF.
+!SESSION 2012-03-27 21:03:20.571 -----------------------------------------------
+eclipse.buildId=2.9.1.201203221000-RELEASE
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.springsource.sts.ide
+
+!ENTRY org.eclipse.ui.workbench 2 0 2012-03-27 21:03:34.360
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2012-03-27 21:03:34.360
+!MESSAGE Conflict for 'ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode':
+HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@33ca6705,
+	expression=,sourcePriority=0)
+HandlerActivation(commandId=ecobertura.ui.launching.javaApplicationLaunchShortcut.ecobertura.core.coverageLaunchMode,
+	handler=org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension$LaunchCommandHandler@51d043e5,
+	expression=,sourcePriority=0)
+
+!ENTRY org.eclipse.search 4 0 2012-03-28 06:48:42.507
+!MESSAGE Problems encountered during text search.
+!SUBENTRY 1 org.eclipse.search 4 4 2012-03-28 06:48:42.507
+!MESSAGE File 'SpringAop/target/test-classes/test-context.xml' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/SpringAop/target/test-classes/test-context.xml'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SpringAop/target/test-classes/test-context.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:40)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2012-03-28 06:48:42.534
+!MESSAGE Resource is out of sync with the file system: '/SpringAop/target/test-classes/test-context.xml'.
+!SUBENTRY 1 org.eclipse.search 4 4 2012-03-28 06:48:42.534
+!MESSAGE File 'SpringAop/target/test-classes/logback.xml' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/SpringAop/target/test-classes/logback.xml'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SpringAop/target/test-classes/logback.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.<init>(FileCharSequenceProvider.java:255)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:36)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2012-03-28 06:48:42.535
+!MESSAGE Resource is out of sync with the file system: '/SpringAop/target/test-classes/logback.xml'.
+!SUBENTRY 1 org.eclipse.search 4 4 2012-03-28 06:48:42.535
+!MESSAGE File 'SpringAop/target/test-classes/log4j.xml' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/SpringAop/target/test-classes/log4j.xml'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SpringAop/target/test-classes/log4j.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.<init>(FileCharSequenceProvider.java:255)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:36)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2012-03-28 06:48:42.535
+!MESSAGE Resource is out of sync with the file system: '/SpringAop/target/test-classes/log4j.xml'.
+!SUBENTRY 1 org.eclipse.search 4 4 2012-03-28 06:48:42.535
+!MESSAGE File 'SpringAop/target/classes/builddef.lst' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/SpringAop/target/classes/builddef.lst'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SpringAop/target/classes/builddef.lst'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.<init>(FileCharSequenceProvider.java:255)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:36)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2012-03-28 06:48:42.535
+!MESSAGE Resource is out of sync with the file system: '/SpringAop/target/classes/builddef.lst'.
+!SUBENTRY 1 org.eclipse.search 4 4 2012-03-28 06:48:42.535
+!MESSAGE File 'SpringAop/target/classes/app.properties' has been skipped, problem while reading: ('Resource is out of sync with the file system: '/SpringAop/target/classes/app.properties'.').
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/SpringAop/target/classes/app.properties'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.getInputStream(FileCharSequenceProvider.java:283)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.initializeReader(FileCharSequenceProvider.java:277)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.reset(FileCharSequenceProvider.java:269)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider$FileCharSequence.<init>(FileCharSequenceProvider.java:255)
+	at org.eclipse.search.internal.core.text.FileCharSequenceProvider.newCharSequence(FileCharSequenceProvider.java:36)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFile(TextSearchVisitor.java:260)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.processFiles(TextSearchVisitor.java:196)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:172)
+	at org.eclipse.search.internal.core.text.TextSearchVisitor.search(TextSearchVisitor.java:184)
+	at org.eclipse.search.core.text.TextSearchEngine$1.search(TextSearchEngine.java:54)
+	at org.eclipse.search.internal.ui.text.FileSearchQuery.run(FileSearchQuery.java:182)
+	at org.eclipse.search2.internal.ui.InternalSearchUI$InternalSearchJob.run(InternalSearchUI.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2012-03-28 06:48:42.535
+!MESSAGE Resource is out of sync with the file system: '/SpringAop/target/classes/app.properties'.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:50:24.301
+!MESSAGE File /SpringAop/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:50:24.334
+!MESSAGE File /SpringAop/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:50:24.792
+!MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:50:24.793
+!MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:52:00.714
+!MESSAGE File /SpringAop/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:52:00.716
+!MESSAGE File /SpringAop/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:52:01.178
+!MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 06:52:01.180
+!MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 07:44:06.524
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 07:44:06.529
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 07:44:06.551
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 07:44:06.557
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 07:44:06.561
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 07:44:06.577
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:18:39.613
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:18:39.617
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:18:39.630
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:18:39.634
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:18:39.643
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:18:39.654
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.672
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.676
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.689
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.694
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.698
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 08:20:18.723
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore

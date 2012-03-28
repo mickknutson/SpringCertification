@@ -17,6 +17,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.baselogic.domain.Order;
 import com.baselogic.service.OrderService;
 import com.baselogic.service.OrderServiceImpl;
 
@@ -54,12 +55,13 @@ public class BeforeAdviceTests {
 
 	@Test
 	public void testBeforeAdvice(){
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info(">>>------------------------------------------------->>>");
 		logger.info("testAddBeanFactoryPostProcessorAlias");
-		logger.info("orderService: {}", orderService);
+		Order original = new Order();
+		original.adviceGiven.add("created in BeforeAdviceTests");
+		
+		Order returned = orderService.placeOrder(original);
+
+		logger.info(">>> returned: {}", returned);
 	}
 	
 

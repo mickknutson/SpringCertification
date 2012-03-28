@@ -3,16 +3,53 @@ package com.baselogic.aspects;
 import java.lang.reflect.Method;
 
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.MethodBeforeAdvice;
 
+import com.baselogic.dao.OrderDAO;
+import com.baselogic.domain.Order;
+
 /**
  * BeforeAdvice
  * 
+ * Spring supported types of pointcuts:
+ * 
+ * <b>execution</b> - for matching method execution join points, this is the primary pointcut designator you
+ * will use when working with Spring AOP
+ * 
+ * <b>within</b> - limits matching to join points within certain types (simply the execution of a method
+ * declared within a matching type when using Spring AOP)
+ * 
+ * <b>this</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
+ * bean reference (Spring AOP proxy) is an instance of the given type
+ * 
+ * <b>target</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
+ * target object (application object being proxied) is an instance of the given type
+ * 
+ * <b>args</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
+ * arguments are instances of the given types
+ * 
+ * <b>@target</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
+ * class of the executing object has an annotation of the given type
+ * 
+ * <b>@args</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
+ * runtime type of the actual arguments passed have annotations of the given type(s)
+ * 
+ * <b>@within</b> - limits matching to join points within types that have the given annotation (the execution
+ * of methods declared in types with the given annotation when using Spring AOP)
+ * 
+ * <b>@annotation</b> - limits matching to join points where the subject of the join point (method being
+ * executed in Spring AOP) has the given annotation
+ * 
+ * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
+ * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>
  * <p>Spring Certification objective: 2.3 AOP Advice</p>
  * 
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.1 AOP Recommendations</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.2 AOP Pointcuts</a>
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.3 AOP Advice</a>
  *
  * @author Mick Knutson
@@ -32,43 +69,86 @@ public class BeforeAdvice {
 	
 	private final Logger logger = LoggerFactory.getLogger(BeforeAdvice.class);
 	
-	@Pointcut("execution(* transfer(..))")// the pointcut expression
-	private void anyOldTransfer() {}// the pointcut signature
+    /**
+     * Any public method execution
+     */
+	/*@Pointcut("execution(public * *(..))")
+    private void anyPublicOperation() {}*/
 	
-	
-	/*
-	 * TODO: Must create these types of pointcuts:
-	 * 
-	 * execution - for matching method execution join points, this is the primary pointcut designator you will use when working with Spring AOP
-
-	 * within - limits matching to join points within certain types (simply the execution of a method declared within a matching type when using Spring AOP)
-
-	 * this - limits matching to join points (the execution of methods when using Spring AOP) where the bean reference (Spring AOP proxy) is an instance of the given type
-
-     * target - limits matching to join points (the execution of methods when using Spring AOP) where the target object (application object being proxied) is an instance of the given type
-
-	 * args - limits matching to join points (the execution of methods when using Spring AOP) where the arguments are instances of the given types
-
-	 * @target - limits matching to join points (the execution of methods when using Spring AOP) where the class of the executing object has an annotation of the given type
-
-	 * @args - limits matching to join points (the execution of methods when using Spring AOP) where the runtime type of the actual arguments passed have annotations of the given type(s)
-
-	 * @within - limits matching to join points within types that have the given annotation (the execution of methods declared in types with the given annotation when using Spring AOP)
-
-	 * @annotation - limits matching to join points where the subject of the join point (method being executed in Spring AOP) has the given annotation
-
-
-	@Pointcut("execution(public * *(..))")
-    private void anyPublicOperation() {}
-    
-    @Pointcut("within(com.xyz.someapp.trading..*)")
-    private void inTrading() {}
-    
-    @Pointcut("anyPublicOperation() && inTrading()")
-    private void tradingOperation() {}
-    
-    
+	/**
+	 * Specific method execution
 	 */
+    @Pointcut("execution(* com.baselogic.*.placeOrder(..))")
+    public void placeOrderService() {}
+
+	/**
+	 * Specific method execution
+	 */
+    /*@Pointcut("execution(* com.baselogic.*.placeOrder(order))")
+    public void placeOrderServiceWithArgument() {}*/
+
+    /**
+     * Any private method execution
+     */
+	@Pointcut("execution(private * *(..))")
+    private void anyPrivateOperation() {}
+    
+	/**
+	 * Within a given package
+	 */
+    @Pointcut("within(com.baselogic.service..*)")
+    private void inService() {}
+    
+    /** 
+     * combining reusable pointcut 
+     */
+    @Pointcut("placeOrderService() && inService()")
+    private void serviceOperation() {}
+    
+    /**
+     * Execution in any method in any class in a package
+     */
+    @Pointcut("execution(* com.baselogic.dao.*.*(..))")
+    public void dataAccessOperation() {}
+
+    
+    
+    
+    
+    
+    /**
+     * Before advice on single pointcut
+     * @throws Throwable
+     */
+	@Before("serviceOperation()")
+	public void beforePublicMethodsInService() throws Throwable {
+		logger.info(">>> ----- beforePublicMethodsInService...");
+	}
+
+	/**
+	 * Advice on multiple pointcut's
+	 * @throws Throwable
+	 */
+	@Before("anyPrivateOperation() && inService()")
+	public void beforePrivateMethodsInService() throws Throwable {
+		logger.info(">>> ----- beforePrivateMethodsInService...>>>");
+	}
+
+	@Before("serviceOperation()")
+	public void beforePlacingServiceOrder() throws Throwable {
+		logger.info(">>> ----- beforePlacingServiceOrder...>>>");
+	}
+	
+	/**
+	 * Advice with pointcut in different class.
+	 * @throws Throwable
+	 */
+	@Before("dataAccessOperation() &&" +
+	        "args(order,..)")
+	public void beforeOrderDao(Order order) throws Throwable {
+		logger.info(">>> ----- beforeOrderDao...>>> {}", order);
+		order.adviceGiven.add("beforeOrderDao advice");
+	}	
 
 
 }
