@@ -46,7 +46,8 @@
 	</profiles>
 
 	<modules>
-		<module>SpringCore</module>
+        <module>SpringCore</module>
+        <module>SpringAop</module>
 		<module>MvcDemo</module>
 		<!-- <module>SpringHibernate</module> -->
 	</modules>
@@ -354,7 +355,7 @@
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.5.1</version>
 				<configuration>
-					<check>
+                <!--<check>
 						<branchRate>85</branchRate>
 						<lineRate>85</lineRate>
 						<haltOnFailure>true</haltOnFailure>
@@ -383,13 +384,13 @@
 							<exclude>com/example/dullcode/**/*.class</exclude>
 							<exclude>com/example/**/*Test.class</exclude>
 						</excludes>
-					</instrumentation>
+					</instrumentation> -->
 				</configuration>
 				<executions>
 					<execution>
 						<goals>
 							<goal>clean</goal>
-							<goal>check</goal>
+							<!-- <goal>check</goal> -->
 						</goals>
 					</execution>
 				</executions>

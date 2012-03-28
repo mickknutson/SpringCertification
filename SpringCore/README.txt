@@ -19,3 +19,9 @@ http://www.roseindia.net/tutorial/spring/spring3/aop/proxyfactorybeanexample.htm
 http://www.jpalace.org/docs/tutorials/spring/beans_16.html
 
 
+
+Add Mockito:
+    <bean id="mockDao" class="org.mockito.Mockito" factory-method="mock">
+        <constructor-arg value="com.baselogic.OrderDao"/>
+    </bean>
+

@@ -35,7 +35,7 @@ public class ConstructorInjectionComponent {
 		message = "default constructor";
 	}
 	
-	@Autowired
+	//@Autowired
 	public ConstructorInjectionComponent(String message){
 		this.message = message;
 	}

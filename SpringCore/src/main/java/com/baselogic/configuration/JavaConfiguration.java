@@ -37,16 +37,30 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
 @Configuration
 @PropertySource("app-2.properties")
 public class JavaConfiguration {
+	
+	@Value("static JavaConfiguration message")
+	private String staticPropertyMessage;
 
-	/*@Value("#{dataSource}")
-	private javax.sql.DataSource dataSource;*/
+	//@Value("${property.message.placeholder}")
+	@Value("${foo}")
+	private String propertyMessage;
 
+	/**
+	 * referenced by getBean("message")
+	 * 
+	 * @return
+	 */
 	@Bean
 	public String message() {
-		return "JavaConfiguration message";
+		return staticPropertyMessage + ": " + propertyMessage;
 	}
 
 
+	/**
+	 * referenced by getBean("javaConfigCustomer")
+	 * 
+	 * @return
+	 */
 	@Bean
 	public Customer javaConfigCustomer() {
 		
@@ -57,6 +71,11 @@ public class JavaConfiguration {
 		return customer;
 	}
 
+	/**
+	 * referenced by getBean("javaConfigOrder")
+	 * 
+	 * @return
+	 */
 	@Bean
 	@SuppressWarnings("serial")
 	public Order javaConfigOrder() {
@@ -77,6 +96,8 @@ public class JavaConfiguration {
 	/**
 	 * When called from a Singleton, and NOT Proxied, this
 	 * prototype Object is also a Singleton.
+	 * 
+	 * referenced by getBean("item")
 	 * 
 	 * @return
 	 */

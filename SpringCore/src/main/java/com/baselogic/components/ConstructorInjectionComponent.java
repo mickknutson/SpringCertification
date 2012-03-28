@@ -30,6 +30,9 @@ import org.springframework.stereotype.Component;
 /*
  * @see http://springindepth.com/book/in-depth-ioc-constructor-setter-injection.html
  * @see http://springindepth.com/book/in-depth-ioc-multiple-parameter-constructor-injection.html
+ * 
+ * <bean id="constructorInjectionComponent" 
+ * 		 class="com.baselogic.components.ConstructorInjectionComponent" />
  */
 @Component
 public class ConstructorInjectionComponent {

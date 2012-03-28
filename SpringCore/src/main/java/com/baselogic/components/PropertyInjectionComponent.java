@@ -33,6 +33,8 @@ public class PropertyInjectionComponent {
 	private Integer someInt;
 	
 	private Double someDouble;
+	
+	public PropertyInjectionComponent(){}
 
 	public String getMessage() {
 		return message;

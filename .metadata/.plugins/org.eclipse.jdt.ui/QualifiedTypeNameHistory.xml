@@ -8,16 +8,13 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
 <fullyQualifiedTypeName name="com.baselogic.util.ContextUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.ToStringBuilder"/>
-<fullyQualifiedTypeName name="com.baselogic.domain.Order"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.baselogic.domain.ActivityType"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Around"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
 <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
@@ -52,8 +49,12 @@
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 <fullyQualifiedTypeName name="com.baselogic.service.ExampleService"/>
-<fullyQualifiedTypeName name="com.baselogic.service.OrderService"/>
+<fullyQualifiedTypeName name="com.baselogic.common.LegacySingletonComponent"/>
 <fullyQualifiedTypeName name="com.baselogic.components.ConstructorInjectionComponent"/>
 <fullyQualifiedTypeName name="com.baselogic.components.PropertyInjectionComponent"/>
 <fullyQualifiedTypeName name="com.baselogic.domain.Customer"/>
+<fullyQualifiedTypeName name="com.baselogic.domain.Order"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
+<fullyQualifiedTypeName name="com.baselogic.service.OrderService"/>
 </qualifiedTypeNameHistroy>

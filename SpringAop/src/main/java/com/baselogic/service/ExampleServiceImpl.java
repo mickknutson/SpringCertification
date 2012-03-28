@@ -11,7 +11,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 import com.baselogic.dao.OrderDAO;
-import com.baselogic.util.ExampleUtils;
 
 
 /**
@@ -28,7 +27,7 @@ public class ExampleServiceImpl implements ExampleService {
 	@Autowired
 	OrderDAO aliasedDao;
 	
-	@Autowired
+	//@Autowired
 	String message;
 	
 	/**

@@ -6,8 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.MethodBeforeAdvice;
 
-import com.baselogic.service.ExampleServiceInitializingBeanImpl;
-
 /**
  * SimpleAdvice
  * 
@@ -40,8 +38,8 @@ public class SimpleAdvice implements MethodBeforeAdvice {
 		logger.info(">>>>> SimpleAdvice >>>>> Currently Processing {} on Object {}",
 				method,
 				object);
-		if( object instanceof ExampleServiceInitializingBeanImpl){
+		/*if( object instanceof ExampleServiceInitializingBeanImpl){
 			((ExampleServiceInitializingBeanImpl)object).setMessage("SimpleAdvice.before advice");
-		}
+		}*/
 	}
 }

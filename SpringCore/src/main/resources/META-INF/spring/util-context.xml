@@ -9,7 +9,28 @@
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
 	">
     
+    <!--
+        * Class Level Metadata:
+        @Configuration  : Configuration Component
+        @PropertySource : Properties importing
+
+        @Component      : General Component / service
+        @Repository     : DAO Service
+        @Controller     : MVC Controller
+        
+        * Method or Field level Metadata
+        @Bean
+        @Value
+        @Scope
+
+        @Autowire
+        @Qualifier
+    -->
     <context:component-scan base-package="com.baselogic" />
+    
+    
+    <!-- Default BeanPostProcessors -->
+    <context:property-placeholder location="app.properties" />
     
     <!-- <context:property-override location="override.properties" /> -->
 
@@ -77,6 +98,11 @@
             <util:constant static-field="java.lang.Integer.MAX_VALUE" />
         </entry>
         <entry key="otherSet" value-ref="otherSet"/>
+        
+        <entry key="staticPostProcessedDataBinding" value="#{utilConfiguration.activity1}" />
+        
+        <entry key="staticBeanFactoryPostProcessingBinding" value="${some.bean.factory.post.processing.data}" />
+        
     </util:map>
 
 </beans>

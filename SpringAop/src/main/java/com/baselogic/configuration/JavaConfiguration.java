@@ -13,7 +13,6 @@ import org.springframework.context.annotation.Scope;
 import com.baselogic.domain.Customer;
 import com.baselogic.domain.Item;
 import com.baselogic.domain.Order;
-import com.baselogic.service.ExampleServiceInitializingBeanImpl;
 
 /**
  * Java Configuration
@@ -35,66 +34,6 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
  * 
  */
 @Configuration
-@PropertySource("app-2.properties")
 public class JavaConfiguration {
-
-	/*@Value("#{dataSource}")
-	private javax.sql.DataSource dataSource;*/
-
-	@Bean
-	public String message() {
-		return "JavaConfiguration message";
-	}
-
-
-	@Bean
-	public Customer javaConfigCustomer() {
-		
-		Customer customer = new Customer();
-		
-		customer.setOrder(javaConfigOrder());		
-
-		return customer;
-	}
-
-	@Bean
-	@SuppressWarnings("serial")
-	public Order javaConfigOrder() {
-		
-		Order order = new Order();
-		order.setItems(
-				new LinkedList<Item>(){{
-					add(item());
-					add(item());
-					add(item());
-					add(item());
-				}}
-		);
-		
-		return order;
-	}
-
-	@Bean
-	@Scope("prototype")
-	public Item item() {
-		
-		Item item = new Item();
-		item.setId(new Random(1234567890L).nextLong());
-		item.setPrice(new Random(1234567890L).nextDouble());
-		item.setProduct(UUID.randomUUID().toString());
-		
-		return item;
-	}
-	
-	@Bean
-	public ExampleServiceInitializingBeanImpl exampleServiceInitializingBeanImplJavaConfig(){
-		
-		ExampleServiceInitializingBeanImpl exampleServiceInitializingBeanImplJavaConfig 
-			= new ExampleServiceInitializingBeanImpl();
-		
-		exampleServiceInitializingBeanImplJavaConfig.setMessage("exampleServiceInitializingBeanImplJavaConfig");
-		
-		return exampleServiceInitializingBeanImplJavaConfig;
-	}
 
 }

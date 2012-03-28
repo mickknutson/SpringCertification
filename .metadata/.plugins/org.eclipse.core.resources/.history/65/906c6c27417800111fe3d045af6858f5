@@ -1,0 +1,10 @@
+#------------------------------------------------
+# Creates named Global variables to be used/injected
+# into Bean's at load time as a BeanFactoryPostProcessor (bfpp)
+#
+# To access: ${foo}
+# ${bar.baz}
+#------------------------------------------------
+
+foo=Foo Value
+bar.baz=Bar value

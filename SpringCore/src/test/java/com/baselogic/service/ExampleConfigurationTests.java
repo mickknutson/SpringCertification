@@ -71,6 +71,21 @@ public class ExampleConfigurationTests {
 	public void afterEachUnitTest(){}
 
 	@Test
+	public void testProxyExampleService() throws Exception {
+
+		logger.info(">>>------------------------------------------------->>>");
+		logger.info(">>>------------------------------------------------->>>");
+		logger.info(">>>------------------------------------------------->>>");
+		logger.info("--> testProxyExampleService: {}", service.getMessage());
+		
+		assertThat(service instanceof ExampleService, is(true));
+		
+		/*assertThat(initializationOrder.size(), is(2));
+		assertThat(initializationOrder.get(0), is("postConstruct"));
+		assertThat(initializationOrder.get(1), is("afterPropertiesSet"));*/
+	}
+
+	@Test
 	public void testInitializationSteps() throws Exception {
 		List<String> initializationOrder = exampleServiceInitializingBeanImpl.initializationOrder;
 		logger.info("--> exampleServiceInitializingBeanImpl: {}", initializationOrder);

@@ -18,18 +18,19 @@ import com.baselogic.util.ExampleUtils;
  * {@link ExampleService}
  */
 @Component("exampleService")
+//@Component would create bean "exampleServiceImpl"
 public class ExampleServiceImpl implements ExampleService {
 	
 	private static final Logger logger = LoggerFactory.getLogger(ExampleServiceImpl.class);
 
 	@Autowired
-	OrderDAO orderDao;
+	private OrderDAO orderDao;
 
 	@Autowired
-	OrderDAO aliasedDao;
+	private OrderDAO aliasedDao;
 	
 	@Autowired
-	String message;
+	private String message;
 	
 	/**
 	 * Reads next record from input
