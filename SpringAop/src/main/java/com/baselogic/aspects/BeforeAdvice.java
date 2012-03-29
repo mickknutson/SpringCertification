@@ -98,13 +98,7 @@ public class BeforeAdvice {
 	 */
     @Pointcut("within(com.baselogic.service..*)")
     private void inService() {}
-    
-    /** 
-     * combining reusable pointcut 
-     */
-    @Pointcut("placeOrderService() && inService()")
-    private void serviceOperation() {}
-    
+       
     /**
      * Execution in any method in any class in a package
      */
@@ -117,14 +111,6 @@ public class BeforeAdvice {
     //=== Join Points =======================================================//
     
     
-    /**
-     * Before advice on single pointcut
-     * @throws Throwable
-     */
-	@Before("serviceOperation()")
-	public void beforeOrderMethodInServicePackage() throws Throwable {
-		logger.info(">>> ----- beforeOrderMethodInServicePackage...");
-	}
 
 	/**
 	 * Advice on multiple pointcut's
@@ -135,10 +121,6 @@ public class BeforeAdvice {
 		logger.info(">>> ----- beforePrivateMethodsInService...>>>");
 	}
 
-	@Before("serviceOperation()")
-	public void beforePlacingServiceOrder() throws Throwable {
-		logger.info(">>> ----- beforePlacingServiceOrder...>>>");
-	}
 	
 	/**
 	 * Advice with pointcut in different class.

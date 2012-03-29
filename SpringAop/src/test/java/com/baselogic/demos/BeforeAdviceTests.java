@@ -22,7 +22,7 @@ import com.baselogic.service.OrderService;
 import com.baselogic.service.OrderServiceImpl;
 
 /**
- * ExampleMockServiceTests
+ * BeforeAdviceTests
  * 
  * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
  * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>

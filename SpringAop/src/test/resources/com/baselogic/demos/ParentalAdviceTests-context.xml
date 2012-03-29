@@ -14,18 +14,23 @@
     <context:component-scan base-package="com.baselogic.domain" />
     <context:component-scan base-package="com.baselogic.service" />
     
-    <bean id="aroundAdvice" class="com.baselogic.aspects.AroundAdvice" />
+    <bean id="parentalAdvice" class="com.baselogic.aspects.ParentalAdvice" />
+
+    <aop:aspectj-autoproxy proxy-target-class="true">
+        <aop:include name="parentalAdvice" />
+    </aop:aspectj-autoproxy>
 
     <aop:config>
-        <!-- <aop:aspect ref="aroundAdvice">
-            <aop:pointcut id="orderTimer" expression=
-                    "execution(* com.baselogic.service.*.placeDelayedOrder(..))"
-                    />
 
-            <aop:around
-                    pointcut-ref="orderTimer"
-                    method="aroundPlaceDelayedOrderService"/>
+       <!-- Declare new Parents -->
+       <!-- <aop:aspect>
+            <aop:declare-parents
+                    types-matching="com.baselogic.service.OrderServiceImpl"
+                    implement-interface="com.baselogic.service.UnImplementedService"
+                    default-impl="com.baselogic.service.DefaultService"
+                    />
         </aop:aspect> -->
+
     </aop:config>
 
 </beans>

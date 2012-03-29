@@ -1,5 +1,7 @@
 package com.baselogic.demos;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -17,12 +19,14 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.baselogic.domain.Customer;
 import com.baselogic.domain.Order;
 import com.baselogic.service.OrderService;
 import com.baselogic.service.OrderServiceImpl;
+import com.baselogic.service.UsageTracked;
 
 /**
- * AroundAdviceTests
+ * ParentalAdviceTests
  * 
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
  * 
@@ -42,10 +46,10 @@ import com.baselogic.service.OrderServiceImpl;
  */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-public class AroundAdviceTests {
+public class ParentalAdviceTests {
 	
 	private final Logger logger = LoggerFactory
-			.getLogger(AroundAdviceTests.class);
+			.getLogger(ParentalAdviceTests.class);
 
 	@Autowired
 	ApplicationContext applicationContext;
@@ -54,14 +58,31 @@ public class AroundAdviceTests {
 	OrderService orderService;
 
 	@Test
-	public void testAroundAdvice(){
+	public void testParentalAdviceNewInterface(){
 		Order original = new Order();
-		original.adviceGiven.add("created in AroundAdviceTests");
-		
-		Order returned = orderService.placeDelayedOrder(original, 100L);
+		original.adviceGiven.add("created in testParentalAdviceNewInterface()");
 
-		logger.info(">>> returned: {}", returned);
+		Order returned = orderService.placeOrder(original);
+
+		logger.info(">>> testParentalAdviceTrackedAdvice returned: {}", returned);
+		
+		assertThat(orderService instanceof UsageTracked, is(true));
 	}
 	
+	/*@Test
+	public void testParentalAdviceTrackedAdvice(){
+		Order original = new Order();
+		original.adviceGiven.add("created in testParentalAdviceTrackedAdvice()");
 
+		Order returned = orderService.placeOrder(original);
+
+		logger.info(">>> testParentalAdviceTrackedAdvice returned: {}", returned);
+		
+		assertThat(orderService instanceof UsageTracked, is(true));
+		
+		UsageTracked usageTracked = (UsageTracked) applicationContext.getBean("orderService");
+		
+		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+	}*/
+	
 }

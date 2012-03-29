@@ -2,10 +2,10 @@ package com.baselogic.aspects;
 
 import java.lang.reflect.Method;
 
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.DeclareParents;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,9 +13,17 @@ import org.springframework.aop.MethodBeforeAdvice;
 
 import com.baselogic.dao.OrderDAO;
 import com.baselogic.domain.Order;
+import com.baselogic.service.OrderService;
+import com.baselogic.service.UnImplementedService;
+import com.baselogic.service.UsageTracked;
 
 /**
- * AroundAdvice
+ * ParentalAdvice
+ * 
+ * Introductions (known as inter-type declarations in AspectJ) enable an 
+ * aspect to declare that advised objects implement a given interface, 
+ * and to provide an implementation of that interface on behalf of 
+ * those objects.
  * 
  * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
  * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>
@@ -38,42 +46,30 @@ import com.baselogic.domain.Order;
  * 
  */
 @Aspect
-public class AroundAdvice {
+public class ParentalAdvice {
 	
-	private final Logger logger = LoggerFactory.getLogger(AroundAdvice.class);
+	private final Logger logger = LoggerFactory.getLogger(ParentalAdvice.class);
 
-	@Pointcut("execution(* com.baselogic.service.*.placeDelayedOrder(..))")
-    public void placeDelayedOrderService() {}	
+	//OrderService
+	//UsageTracked
+	@DeclareParents(value="com.baselogic.service.OrderService*+",
+			defaultImpl=UsageTracked.class)
+	public static UsageTracked mixin;
 
+	/*@DeclareParents(value="com.xzy.myapp.service.*+",
+            defaultImpl=DefaultUsageTracked.class)*/
+	
+    @Pointcut("execution(* com.baselogic.*.place*Order(..))")
+    public void placeOrderService() {}
 
-	/**
-	 * 
-	 * Potential issue:
-	 * Multiple markers at this line
-	 * - advice defined in com.baselogic.aspects.AroundAdvice has not been applied [Xlint:adviceDidNotMatch]
-	 * - applying to join point that doesn't return void: method-execution(com.baselogic.domain.Order
-	 * com.baselogic.service.OrderServiceImpl.placeDelayedOrder(com.baselogic.domain.Order, long))
-	 * 
-	 * @param joinpoint
-	 */
-    @Around("placeDelayedOrderService()")
-    public Object aroundPlaceDelayedOrderService(ProceedingJoinPoint joinpoint){
-    	Object returnVal = null;
-    	
-	    try {
-		    logger.debug(">>> ----- aroundPlaceDelayedOrderService...>>>");
-		    long start = System.currentTimeMillis();
-		    
-		    returnVal = joinpoint.proceed();
-		    
-		    long end = System.currentTimeMillis();
+    
+	@Before("placeOrderService() && this(usageTracked)")
+	public void recordUsage(UsageTracked usageTracked) {
+		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+	}
 
-		    logger.info(">>> ----- The order took {} milliseconds to complete.", (end-start));
-
-	    } catch(Throwable t){
-	    	logger.error(t.getMessage());
-	    }
-
-	    return returnVal;
-    }
 }
