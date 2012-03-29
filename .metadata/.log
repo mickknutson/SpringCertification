@@ -4039,3 +4039,355 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-28 13:46:34.311
 !MESSAGE File /SpringCore/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 16:00:00.085
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 16:00:00.087
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 16:00:00.092
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 16:00:00.095
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 16:00:00.097
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-28 16:00:00.103
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+!SESSION 2012-03-29 07:01:07.596 -----------------------------------------------
+eclipse.buildId=2.9.1.201203221000-RELEASE
+java.version=1.7.0_03
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product com.springsource.sts.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.springsource.sts.ide
+
+!ENTRY org.eclipse.core.resources 2 10035 2012-03-29 07:02:06.321
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:12.027
+!MESSAGE Compiler configuration for project SpringAop doesn't know previous state, so assuming EVERYTHING has changed.
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:14.422
+!MESSAGE ===========================================================================================
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:14.425
+!MESSAGE Build kind = FULLBUILD
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:20.516
+!MESSAGE Project=SpringAop, kind of build requested=Full AspectJ compilation
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:20.900
+!MESSAGE Timer event: 61ms: Flush included source file cache
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:20.901
+!MESSAGE Timer event: 0ms: Check delta
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:21.077
+!MESSAGE Builder: Tidied output folder(s), removed class files and derived resources
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:21.318
+!MESSAGE AJC: Starting new build for project SpringAop
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:21.522
+!MESSAGE Classpath = C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\target\classes;C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\target\test-classes;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/resources.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/rt.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/jsse.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/jce.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/charsets.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/dnsns.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/localedata.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/sunjce_provider.jar;C:/Users/mknuts6173c/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-context-support/3.1.0.RELEASE/spring-context-support-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar;C:/Users/mknuts6173c/.m2/repository/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar;C:/Users/mknuts6173c/.m2/repository/org/aspectj/aspectjtools/1.6.9/aspectjtools-1.6.9.jar;C:/Users/mknuts6173c/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar;C:/Users/mknuts6173c/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar;C:/Users/mknuts6173c/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar;C:/Users/mknuts6173c/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar;C:/Users/mknuts6173c/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.4/jcl-over-slf4j-1.6.4.jar;C:/Users/mknuts6173c/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar;C:/Users/mknuts6173c/.m2/repository/ch/qos/logback/logback-classic/1.0.0/logback-classic-1.0.0.jar;C:/Users/mknuts6173c/.m2/repository/ch/qos/logback/logback-core/1.0.1/logback-core-1.0.1.jar;C:/Users/mknuts6173c/.m2/repository/junit/junit/4.10/junit-4.10.jar;C:/Users/mknuts6173c/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-test/3.1.0.RELEASE/spring-test-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-module-junit4/1.4.11/powermock-module-junit4-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-module-junit4-common/1.4.11/powermock-module-junit4-common-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-core/1.4.11/powermock-core-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-reflect/1.4.11/powermock-reflect-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-api-mockito/1.4.11/powermock-api-mockito-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-api-support/1.4.11/powermock-api-support-1.4.11.jar;
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:21.524
+!MESSAGE Timer event: 7145ms: Pre compile
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:22.698
+!MESSAGE Compiler configuration for project SpringAop has been read by compiler.  Resetting.
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:22.700
+!MESSAGE      Configuration was [PROJECTSOURCEFILES_CHANGED, JAVAOPTIONS_CHANGED, ASPECTPATH_CHANGED, CLASSPATH_CHANGED, INPATH_CHANGED, NONSTANDARDOPTIONS_CHANGED, OUTJAR_CHANGED, PROJECTSOURCERESOURCES_CHANGED, OUTPUTDESTINATIONS_CHANGED, INJARS_CHANGED]
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:22.702
+!MESSAGE Resetting list of modified source files.  Was null
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:27.173
+!MESSAGE AJC: compiling source files
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:29.625
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:29.733
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterAdvice.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:29.746
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:29.754
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:29.761
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.022
+!MESSAGE AJC: woven aspect com.baselogic.aspects.AroundAdvice (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.036
+!MESSAGE AJC: woven aspect com.baselogic.aspects.AfterAdvice (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterAdvice.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.040
+!MESSAGE AJC: woven aspect com.baselogic.aspects.BeforeAdvice (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.043
+!MESSAGE AJC: woven aspect com.baselogic.aspects.AfterReturningAdvice (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.046
+!MESSAGE AJC: woven aspect com.baselogic.aspects.AfterThrowingAdvice (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.055
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java:3:0::0 The import java.lang.reflect.Method is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.056
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java:6:0::0 The import org.aspectj.lang.annotation.Around is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.059
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java:8:0::0 The import org.aspectj.lang.annotation.Before is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.060
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java:12:0::0 The import org.springframework.aop.MethodBeforeAdvice is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.061
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java:14:0::0 The import com.baselogic.dao.OrderDAO is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.063
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AroundAdvice.java:15:0::0 The import com.baselogic.domain.Order is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.068
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterAdvice.java:3:0::0 The import java.lang.reflect.Method is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.070
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterAdvice.java:7:0::0 The import org.aspectj.lang.annotation.Before is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.071
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterAdvice.java:11:0::0 The import org.springframework.aop.MethodBeforeAdvice is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.073
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterAdvice.java:13:0::0 The import com.baselogic.dao.OrderDAO is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.086
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java:3:0::0 The import java.lang.reflect.Method is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.087
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java:10:0::0 The import org.springframework.aop.MethodBeforeAdvice is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.088
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java:12:0::0 The import com.baselogic.dao.OrderDAO is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.093
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java:3:0::0 The import java.lang.reflect.Method is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.094
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java:6:0::0 The import org.aspectj.lang.annotation.Before is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.095
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java:10:0::0 The import org.springframework.aop.MethodBeforeAdvice is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.096
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java:12:0::0 The import com.baselogic.dao.OrderDAO is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.097
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java:13:0::0 The import com.baselogic.domain.Order is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.098
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterReturningAdvice.java:70:0::0 The value of the field AfterReturningAdvice.logger is not used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.102
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java:3:0::0 The import java.lang.reflect.Method is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.103
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java:6:0::0 The import org.aspectj.lang.annotation.Before is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.104
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java:10:0::0 The import org.springframework.aop.MethodBeforeAdvice is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.105
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java:12:0::0 The import com.baselogic.dao.OrderDAO is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.106
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java:13:0::0 The import com.baselogic.domain.Order is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.107
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\AfterThrowingAdvice.java:70:0::0 The value of the field AfterThrowingAdvice.logger is not used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.212
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Activity.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.215
+!MESSAGE AJC: woven class com.baselogic.domain.Activity (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Activity.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.318
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.320
+!MESSAGE AJC: woven class com.baselogic.configuration.JavaConfiguration (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.325
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:3:0::0 The import java.util.LinkedList is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.326
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:4:0::0 The import java.util.Random is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.327
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:5:0::0 The import java.util.UUID is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.328
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:7:0::0 The import org.springframework.beans.factory.annotation.Value is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.330
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:8:0::0 The import org.springframework.context.annotation.Bean is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.331
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:10:0::0 The import org.springframework.context.annotation.PropertySource is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.332
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:11:0::0 The import org.springframework.context.annotation.Scope is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.333
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:13:0::0 The import com.baselogic.domain.Customer is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.334
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:14:0::0 The import com.baselogic.domain.Item is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.335
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\configuration\JavaConfiguration.java:15:0::0 The import com.baselogic.domain.Order is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.368
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.371
+!MESSAGE AJC: woven class com.baselogic.demos.BeforeAdviceTests (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.376
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java:3:0::0 The import org.junit.Assert.assertTrue is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.377
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java:4:0::0 The import org.junit.Assert.fail is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.378
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java:6:0::0 The import java.util.zip.DataFormatException is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.379
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java:8:0::0 The import javax.naming.InsufficientResourcesException is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.380
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java:12:0::0 The import org.mockito.InjectMocks is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.381
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\BeforeAdviceTests.java:22:0::0 The import com.baselogic.service.OrderServiceImpl is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.411
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Item.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.415
+!MESSAGE AJC: woven class com.baselogic.domain.Item (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Item.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.427
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\dao\OrderDAO.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.429
+!MESSAGE AJC: woven class com.baselogic.dao.OrderDAO (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\dao\OrderDAO.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.439
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\common\ComponentProxyFactoryBean.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.442
+!MESSAGE AJC: woven class com.baselogic.common.ComponentProxyFactoryBean (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\common\ComponentProxyFactoryBean.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.452
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\OrderService.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.454
+!MESSAGE AJC: woven class com.baselogic.service.OrderService (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\OrderService.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.467
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\PhoneNumber.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.471
+!MESSAGE AJC: woven class com.baselogic.domain.PhoneNumber (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\PhoneNumber.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.482
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Customer.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.485
+!MESSAGE AJC: woven class com.baselogic.domain.Customer (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Customer.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.500
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\common\SimpleBean.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.502
+!MESSAGE AJC: woven class com.baselogic.common.SimpleBean (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\common\SimpleBean.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.509
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\UnImplementedService.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.511
+!MESSAGE AJC: woven class com.baselogic.service.UnImplementedService (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\UnImplementedService.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.555
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\OrderServiceImpl.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.603
+!MESSAGE AJC: woven class com.baselogic.service.OrderServiceImpl (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\OrderServiceImpl.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.645
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\OrderServiceImpl.java:10:0::0 The import org.springframework.context.ApplicationContext is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.646
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\service\OrderServiceImpl.java:11:0::0 The import org.springframework.context.support.ClassPathXmlApplicationContext is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.654
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.656
+!MESSAGE AJC: woven class com.baselogic.demos.AroundAdviceTests (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.661
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java:3:0::0 The import org.junit.Assert.assertTrue is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.662
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java:4:0::0 The import org.junit.Assert.fail is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.663
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java:6:0::0 The import java.util.zip.DataFormatException is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.664
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java:8:0::0 The import javax.naming.InsufficientResourcesException is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.665
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java:12:0::0 The import org.mockito.InjectMocks is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.666
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\test\java\com\baselogic\demos\AroundAdviceTests.java:22:0::0 The import com.baselogic.service.OrderServiceImpl is never used
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.742
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\dao\OrderHibernateDAOImpl.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.758
+!MESSAGE AJC: woven class com.baselogic.dao.OrderHibernateDAOImpl (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\dao\OrderHibernateDAOImpl.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.820
+!MESSAGE AJC: compiled: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Order.java
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.828
+!MESSAGE AJC: woven class com.baselogic.domain.Order (from C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\domain\Order.java)
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.836
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java:139::0 advice defined in com.baselogic.aspects.BeforeAdvice has not been applied [Xlint:adviceDidNotMatch]
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.837
+!MESSAGE AJC: warning at C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAop\src\main\java\com\baselogic\aspects\BeforeAdvice.java:125::0 advice defined in com.baselogic.aspects.BeforeAdvice has not been applied [Xlint:adviceDidNotMatch]
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.839
+!MESSAGE AJC: Build finished. Was full build: true
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.840
+!MESSAGE Timer event: 9315ms: Total time spent in AJDE
+
+!ENTRY org.eclipse.ajdt.core 1 0 2012-03-29 07:02:30.841
+!MESSAGE Timer event: 0ms: Refresh after build

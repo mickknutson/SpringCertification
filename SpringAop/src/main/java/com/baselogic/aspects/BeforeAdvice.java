@@ -114,6 +114,7 @@ public class BeforeAdvice {
     
     
     
+    //=== Join Points =======================================================//
     
     
     /**
@@ -121,8 +122,8 @@ public class BeforeAdvice {
      * @throws Throwable
      */
 	@Before("serviceOperation()")
-	public void beforePublicMethodsInService() throws Throwable {
-		logger.info(">>> ----- beforePublicMethodsInService...");
+	public void beforeOrderMethodInServicePackage() throws Throwable {
+		logger.info(">>> ----- beforeOrderMethodInServicePackage...");
 	}
 
 	/**

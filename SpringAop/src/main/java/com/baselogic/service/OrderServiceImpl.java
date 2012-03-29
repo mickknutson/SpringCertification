@@ -36,19 +36,60 @@ public class OrderServiceImpl implements OrderService {
 		return message;	
 	}
 	
+	// PointCut on 'placeOrder()'
+	// joinPoint: @Before
+	// Advice: order.adviceGiven.add("@Before advice");
 	public Order placeOrder(Order order){
-		
-		logger.debug("> placing order...");
-		
+
+		// Apply an Audit Aspect
 		order.adviceGiven.add("OrderServiceImpl.placeOrder advice");
 		
+		// Give direct Advice:
 		somePrivateFunction(order);
 		
 		try {
+			
+			// Give direct Advice:
 			return orderDao.placeOrder(order);
-		} catch (Exception e) {		
-			logger.error(e.getMessage());
+			
+		} catch (Exception e) {
+			//logger.error(e.getMessage());
 			//e.printStackTrace();
+		}
+		
+		return null;
+	}	
+	
+	/**
+	 * Code cluttering example
+	 * @param order
+	 * @return
+	 */
+	public Order placeSecuredOrder(Order order){
+		
+		// Cluttered with logging code
+		logger.debug("> placing order...");
+		
+		// Cluttering with Audit log information
+		if(true /* order.isAuditable() */){
+			// create an audit log
+			order.adviceGiven.add("OrderServiceImpl.placeOrder advice");
+		}		
+
+		// Cluttering with Security information
+		if(true /* user.isAuthenticated() */){
+			somePrivateFunction(order);
+		}
+		
+		try {
+			// Did transaction complete?
+			return orderDao.placeOrder(order);
+			// Throw exceptions
+			
+		} catch (Exception e) {
+			
+			// Cluttered with logging code
+			logger.error(e.getMessage());
 		}
 		
 		return null;

@@ -6,6 +6,51 @@
  <description>Welcome to the home of Spring, the leading platform to build and run enterprise Java applications. Led and sustained by SpringSource, Spring delivers significant benefits for many projects, increasing development productivity and runtime performance while improving test coverage and application quality.</description>
  <language>en</language>
 <item>
+ <title> This Week in Spring  - March 27th, 2012 </title>
+ <link>http://www.springsource.org/node/3517</link>
+ <description> 
+&lt;P&gt; Welcome to another installation of &lt;EM&gt;This Week in Spring&lt;/EM&gt;.
+ As usual, we have a lot to cover.  As  this post goes up, the
+ &lt;a href = &quot;http://opentour.cloudfoundry.com/&quot;&gt;Cloud Foundry Open Tour&lt;/A&gt; is underway &lt;a href = &quot;http://opentour.cloudfoundry.com/2012/beijing&quot;&gt;in Beijing&lt;/A&gt;, and coming to a city near you, soon. This show&#039;s a very unique opportunity to learn more about Cloud Foundry and Spring from the experts - don&#039;t miss out, register today. 
+ &lt;/P&gt;
+
+&lt;OL&gt; &lt;LI&gt; Spring web dude &lt;a href = &quot;http://www.springone2gx.com/conference/speaker/rossen_stoyanchev&quot;&gt;Rossen Stoyanchev&lt;/a&gt; announced that &lt;a href   = &quot;http://www.springsource.org/node/3516&quot;&gt;Spring Web Flow 2.3.1 has been released&lt;/a&gt;. This is a maintenance release featuring an upgrade to Spring 3.1.1, and JavaServer Faces 2.1.7 along with a number of bug fixes.    &lt;/LI&gt;
+	 &lt;LI&gt; SpringSource Tool Suite lead &lt;a href = &quot;http://www.springone2gx.com/conference/speaker/martin_lippert&quot;&gt;Martin Lippert&lt;/A&gt; announced the release of the &lt;a href  = &quot;http://www.springsource.org/node/3515&quot;&gt;Cloud Foundry Integration for Eclipse 1.0&lt;/A&gt;.    
+		 This release brings a complete, cohesive   &lt;a href = &quot;http://www.cloudfoundry.org&quot;&gt;Cloud Foundry&lt;/A&gt; integration  for all Eclipse distributions, including the &lt;a href = &quot;http://www.springsource.com/developer/sts&quot;&gt;SpringSource Tool Suite&lt;/A&gt;.
+		 &lt;/LI&gt;
+	 &lt;LI&gt;  &lt;a href = &quot;http://www.springone2gx.com/conference/speaker/martin_lippert&quot;&gt;Martin&lt;/a&gt; &lt;EM&gt;also&lt;/EM&gt;  announced the release of   &lt;a href = &quot;http://www.springsource.org/node/3514&quot;&gt;SpringSource Tool Suite release, 2.9.1&lt;/A&gt;, featuring new features and bug fixes.  &lt;/LI&gt;
+ 
+
+	&lt;LI&gt;    &lt;a href = &quot;http://www.springone2gx.com/conference/speaker/mark_fisher&quot;&gt;Mark Fisher&lt;/A&gt; and &lt;a href = &quot;http://www.springone2gx.com/conference/speaker/thomas_risberg&quot;&gt;Thomas Risberg&lt;/A&gt;&#039;s epic talk from &lt;a href = &quot;http://www.springone2gx.com&quot;&gt;SpringOne 2GX 2011&lt;/A&gt;  - &lt;EM&gt;&lt;A href = &quot;http://www.infoq.com/presentations/Architecture-Choices-for-Scalable-Cloud-Apps&quot;&gt;Architecture Choices for Scalable Cloud Apps&lt;/A&gt;&lt;/EM&gt; -  that introduces how to build scalable architectures in the cloud using technologies like Spring Integration and Cloud Foundry is now up on InfoQ. 
+		  &lt;/LI&gt;
+		
+ 
+ &lt;LI&gt; Maciej Walkowiak has a blog that introduces how to use &lt;a href = &quot;http://maciejwalkowiak.pl/blog/2012/03/27/spring-3-1-profiles-and-tomcat-configuration/&quot;&gt;Spring 3.1 profiles in conjunction with some custom Tomcat configuration to activate Spring profiles&lt;/a&gt; without changing the deployed binary.
+ &lt;/LI&gt;
+
+
+ &lt;LI&gt; 
+   Michal Jastak has put together a wonderful post introducing how to use &lt;a href  = &quot;http://java.dzone.com/articles/spring-mvc-flash-attributes&quot;&gt;Spring MVC 3.1&#039;s support for &lt;em&gt; flash attributes&lt;/EM&gt;&lt;/A&gt;.   
+ &lt;/LI&gt; 
+ &lt;LI&gt;  
+	Tobias Flohre is at it again, this time with two posts on &lt;a href = &quot;http://www.springsource.org/spring-batch&quot;&gt;Spring Batch&lt;/A&gt;. The first post introduces &lt;a href = &quot;http://blog.codecentric.de/en/2012/03/transactions-in-spring-batch-part-1-the-basics/&quot;&gt;the basics of transactions in Spring Batch&lt;/A&gt;, and the second post introduces some of the &lt;a href = &quot;http://blog.codecentric.de/en/2012/03/transactions-in-spring-batch-part-2-restart-cursor-based-reading-and-listeners/&quot;&gt;finer points of restarting cursor-based readers and writers&lt;/A&gt;.
+	 
+	 
+	 &lt;/LI&gt; 
+ &lt;LI&gt; Artur Mkrtchyan has a great post introducing both how to install &lt;a href = &quot;http://redis.io/&quot;&gt;Redis&lt;/A&gt; (a fast, highly optimized data-structure server) and how to use &lt;a href = &quot;http://www.springsource.org/spring-data/redis&quot;&gt;Spring Data Redis&lt;/A&gt; (part of the Spring Data umbrella project that facilitates access to the wide varieties of so-called NoSQL and big-data stores) &lt;a href = &quot;http://java.dzone.com/articles/spring-data-redis-0&quot;&gt;to build Spring applications that talk to Redis&lt;/A&gt;.   &lt;/LI&gt;
+
+  
+ &lt;LI&gt; Vijay Rawat has a detailed post introducing &lt;a href = &quot;http://xebee.xebia.in/2012/03/24/handling-session-failover-on-a-load-balanced-tomcat-using-memcached/#more-12863&quot;&gt;how to use Memcached  in your Spring applications to acheive  session replication&lt;/a&gt;.  This approach relies on the developer specifically delegating to Memcached for Session persistence in his code. While this works, I hope that users will take a look at more transparent options.   Tomcat   supports pluggable session storage engines. There are numerous available implementations, including a  &lt;a href = &quot;http://www.atlas365.com/blog/2011/redis-sessions-store-for-tomcat&quot;&gt;Redis-based implementation&lt;/A&gt; and a &lt;a href =&quot;http://community.gemstone.com/display/gemfire/HTTP+Session+Management+Module&quot;&gt;GemFire-based implementation&lt;/A&gt;. 
+	  &lt;/LI&gt; 
+	&lt;LI&gt; Speaking of Apache Tomcat, blogger Ramki has an interesting post introducing how to setup  &lt;a href =&quot;http://www.ramkitech.com/2012/03/virtual-host-apache-httpd-server-tomcat.html&quot;&gt;virtual hosts (&quot;vhosts&quot;) using Apache Tomcat, Apache and ModJK&lt;/A&gt;. 
+ &lt;/OL&gt;</description>
+ <comments>http://www.springsource.org/node/3517#comments</comments>
+ <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
+ <pubDate>Wed, 28 Mar 2012 05:39:58 +0000</pubDate>
+ <dc:creator>Josh Long</dc:creator>
+ <guid isPermaLink="false">3517 at http://www.springsource.org</guid>
+</item>
+<item>
  <title>Spring Web Flow 2.3.1 released</title>
  <link>http://www.springsource.org/node/3516</link>
  <description>&lt;p&gt;Spring Web Flow 2.3.1 is now available for &lt;a href=&quot;http://www.springsource.com/download/community?project=Spring%20Web%20Flow&quot;&gt;download&lt;/a&gt;. This maintenance release includes an upgrade to Spring 3.1.1, JavaServer Faces 2.1.7 along with a number of bug fixes. For those tracking the project it is now &lt;a href=&quot;https://github.com/SpringSource/spring-webflow&quot;&gt;hosted on Github&lt;/a&gt; including a separate &lt;a href=&quot;https://github.com/SpringSource/spring-webflow-issues#readme&quot;&gt;issue repository&lt;/a&gt; to help reproduce issues based on one of several project templates.&lt;/p&gt;
@@ -210,26 +255,6 @@ More details on new features and bug fixes can be found in the&amp;nbsp;&lt;a hr
  <pubDate>Tue, 13 Mar 2012 22:54:07 +0000</pubDate>
  <dc:creator>Josh Long</dc:creator>
  <guid isPermaLink="false">3506 at http://www.springsource.org</guid>
-</item>
-<item>
- <title>Video: Native Android Development with Spring</title>
- <link>http://www.springsource.org/node/3505</link>
- <description>&lt;p&gt;This video will provide an introductory overview of Android’s architecture, the layout of an Android project, the use of various Maven plugins and tools for enabling dependency management in your Android project. When building Android apps, you can use a third party library, like &lt;a href=&quot;http://www.springsource.org/spring-android&quot;&gt;Spring for Android&lt;/a&gt;, that provides an abstraction for consuming RESTful services within your native Android app. Spring Android also supports the use of Spring Social on Android, and this presentation will discuss how Spring Social can help you connect your apps to OAuth protected services like Facebook and Twitter. &lt;/p&gt;
-
-&lt;p style=&quot;text-align: center&quot;&gt;&lt;object width=&quot;560&quot; height=&quot;349&quot;&gt;
-&lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/embed/kvPpu-pTTMY?version=3&amp;amp;hl=en_US&quot; /&gt;
-&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;
-&lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;&lt;embed src=&quot;http://www.youtube.com/v/kvPpu-pTTMY?version=3&amp;amp;hl=en_US&quot; type=&quot;application/x-shockwave-flash&quot; width=&quot;560&quot; height=&quot;349&quot; allowscriptaccess=&quot;always&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
-
-
-
-&lt;p&gt;Be sure to thumbs up the presentation if you find it useful and &lt;a href=&quot;http://www.youtube.com/subscription_center?adduser=SpringSourceDev&quot;&gt;subscribe to the SpringSourceDev channel&lt;/a&gt; to see other recordings and screencasts.&lt;/p&gt;
-</description>
- <comments>http://www.springsource.org/node/3505#comments</comments>
- <category domain="http://www.springsource.org/taxonomy/term/4">News and Announcements</category>
- <pubDate>Tue, 13 Mar 2012 00:34:54 +0000</pubDate>
- <dc:creator>Adam Fitzgerald</dc:creator>
- <guid isPermaLink="false">3505 at http://www.springsource.org</guid>
 </item>
 </channel>
 </rss>

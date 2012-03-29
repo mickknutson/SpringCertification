@@ -24,9 +24,13 @@ import com.baselogic.service.OrderServiceImpl;
 /**
  * ExampleMockServiceTests
  * 
- * <p>Spring Certification objective: 1.2 Lifecycle</p>
+ * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
+ * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>
+ * <p>Spring Certification objective: 2.3 AOP Advice</p>
  * 
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.1 AOP Recommendations</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.2 AOP Pointcuts</a>
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.3 AOP Advice</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>

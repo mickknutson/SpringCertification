@@ -311,6 +311,9 @@ public class OrderMockServiceTests {
 			.thenReturn("2nd mocked message")
 			.thenReturn("nth mocked message");
 		
+		// 2nd mock called
+		// 3rd mock called
+		
 		String result = classUnderTest.duplicateCallsFunction();
 
 		assertThat(result, is("OrderServiceImpl: duplicateCallsFunction(): 1st mocked message: 2nd mocked message: nth mocked message: nth mocked message"));
@@ -320,6 +323,18 @@ public class OrderMockServiceTests {
 		verify(supportingUtils, atLeast(2)).nestedFunction();
 
 		verify(supportingUtils, times(4)).nestedFunction();
+		
+		/*
+		 * // http://mockito.googlecode.com/svn/branches/1.5/javadoc/org/mockito/Mockito.html
+		 * 
+		 * //create inOrder object passing any mocks that need to be verified in order
+		 * InOrder inOrder = inOrder(firstMock, secondMock);
+		 * 
+		 * //following will make sure that firstMock was called before secondMock
+		 * inOrder.verify(firstMock).add("was called first");
+		 * inOrder.verify(secondMock).add("was called second");
+		 * 
+		 */
 	}
 
 	/**
