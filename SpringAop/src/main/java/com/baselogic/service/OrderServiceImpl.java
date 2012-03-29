@@ -11,6 +11,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
+import com.baselogic.annotations.Auditable;
 import com.baselogic.dao.OrderDAO;
 import com.baselogic.domain.Order;
 
@@ -39,6 +40,7 @@ public class OrderServiceImpl implements OrderService {
 	// PointCut on 'placeOrder()'
 	// joinPoint: @Before
 	// Advice: order.adviceGiven.add("@Before advice");
+	@Auditable( "someAuditableCode" )
 	public Order placeOrder(Order order){
 
 		// Apply an Audit Aspect
@@ -53,7 +55,7 @@ public class OrderServiceImpl implements OrderService {
 			return orderDao.placeOrder(order);
 			
 		} catch (Exception e) {
-			//logger.error(e.getMessage());
+			logger.error(e.getMessage());
 			//e.printStackTrace();
 		}
 		

@@ -13,34 +13,7 @@
     <context:component-scan base-package="com.baselogic.dao" />
     <context:component-scan base-package="com.baselogic.domain" />
     <context:component-scan base-package="com.baselogic.service" />
-    
-    <bean id="aroundAdviceXml" class="com.baselogic.aspects.AroundAdvice" />
 
-    <!--
-        NOTE:
-        XML configuration get higher priority than Annotations
-    -->
-    <aop:config>
-        <aop:aspect ref="aroundAdviceXml">
-            <aop:pointcut id="orderTimer" expression=
-                    "execution(* com.baselogic.service.*.placeDelayedOrder(..))"
-                    />
-
-            <!-- XML advice priority is top to bottom.
-
-            <aop:before
-                    pointcut-ref="orderTimer"
-                    method="beforeXmlPlaceDelayedOrderService"/> -->
-
-            <aop:around
-                    pointcut-ref="orderTimer"
-                    method="aroundXmlPlaceDelayedOrderService"/>
-
-            <aop:before
-                    pointcut-ref="orderTimer"
-                    method="beforeXmlPlaceDelayedOrderService"/>
-
-        </aop:aspect>
-    </aop:config>
+    <!-- <bean id="aroundAdvice" class="com.baselogic.aspects.AroundAdvice" /> -->
 
 </beans>

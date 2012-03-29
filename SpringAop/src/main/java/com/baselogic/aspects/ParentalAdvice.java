@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.MethodBeforeAdvice;
 
+import com.baselogic.components.ParentalAdvisor;
 import com.baselogic.dao.OrderDAO;
 import com.baselogic.domain.Order;
 import com.baselogic.service.OrderService;
@@ -50,26 +51,25 @@ public class ParentalAdvice {
 	
 	private final Logger logger = LoggerFactory.getLogger(ParentalAdvice.class);
 
-	//OrderService
-	//UsageTracked
+
 	@DeclareParents(value="com.baselogic.service.OrderService*+",
-			defaultImpl=UsageTracked.class)
+			defaultImpl = ParentalAdvisor.class)
 	public static UsageTracked mixin;
 
-	/*@DeclareParents(value="com.xzy.myapp.service.*+",
-            defaultImpl=DefaultUsageTracked.class)*/
 	
-    @Pointcut("execution(* com.baselogic.*.place*Order(..))")
+    @Pointcut("execution(* com.baselogic.service.*.placeOrder(..))")
     public void placeOrderService() {}
 
-    
-	@Before("placeOrderService() && this(usageTracked)")
+
+    @Before("placeOrderService() && this(usageTracked)")
 	public void recordUsage(UsageTracked usageTracked) {
-		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
-		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
-		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
-		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
-		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
+		logger.info(">>> ----- recordUsage ----->>>");
+		logger.info(">>> Parental trackUsage: {}", usageTracked.trackUsage());
+		logger.info(">>> Parental toString: {}", usageTracked.toString());
+
+		//interact with the target class...
+
+		logger.info(">>> ----- recordUsage ----->>>");
 	}
 
 }

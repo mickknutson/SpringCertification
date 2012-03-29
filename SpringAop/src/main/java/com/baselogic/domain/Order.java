@@ -5,6 +5,8 @@ import java.util.Collection;
 import java.util.LinkedHashSet;
 import java.util.List;
 
+import javax.persistence.Entity;
+
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 /**
@@ -26,6 +28,7 @@ import org.apache.commons.lang3.builder.ToStringBuilder;
  * @since 2012
  * 
  */
+@Entity
 public class Order {
 	
 	private Long id;

@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.aop.MethodBeforeAdvice;
 
+import com.baselogic.annotations.Auditable;
 import com.baselogic.dao.OrderDAO;
 import com.baselogic.domain.Order;
 
@@ -45,50 +46,25 @@ public class AfterAdvice {
 	/**
 	 * Specific method execution
 	 */
-    @Pointcut("execution(* com.baselogic.*.placeOrder(..))")
+    @Pointcut("execution(* com.baselogic.service.*.placeOrder(..))")
     public void placeOrderService() {}
 
-	/**
-	 * Specific method execution
-	 */
-    /*@Pointcut("execution(* com.baselogic.*.placeOrder(order))")
-    public void placeOrderServiceWithArgument() {}*/
-
-    /**
-     * Any private method execution
-     */
-	@Pointcut("execution(private * *(..))")
-    private void anyPrivateOperation() {}
-    
 	/**
 	 * Within a given package
 	 */
     @Pointcut("within(com.baselogic.service..*)")
-    private void inService() {}
-    
-    /** 
-     * combining reusable pointcut 
-     */
-    @Pointcut("placeOrderService() && inService()")
-    private void serviceOperation() {}
-    
-    /**
-     * Execution in any method in any class in a package
-     */
-    @Pointcut("execution(* com.baselogic.dao.*.*(..))")
-    public void dataAccessOperation() {}   
+    private void inService() {}       
     
     
-    
-    /**
-     * Before advice on single pointcut
-     * @throws Throwable
-     */
-	@After("dataAccessOperation() &&" +
-	        "args(order,..)")
-	public void afterOrderDao(Order order) throws Throwable {
-		logger.info(">>> ----- afterOrderDao...>>> {}", order);
-		order.adviceGiven.add("afterOrderDao advice");
+	@After("inService() " +
+			"&& @annotation(auditable) " +
+			"&& args(order,..)")
+
+	public void afterOrderDao(Auditable auditable, Order order) throws Throwable {
+		
+		logger.info(">>> ----- afterOrderDao...>>> {}", auditable.value());
+		
+		order.adviceGiven.add("afterOrderDao advice" + auditable.value());
 	}
 
 }

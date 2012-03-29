@@ -2,6 +2,8 @@ package com.baselogic.aspects;
 
 import java.lang.reflect.Method;
 
+import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -69,22 +71,18 @@ public class AfterThrowingAdvice {
 	
 	private final Logger logger = LoggerFactory.getLogger(AfterThrowingAdvice.class);
 	
-    /** reusable pointcut */
-	@Pointcut("execution(public * *(..))")
-    private void anyPublicOperation() {}
-	
-	@Pointcut("execution(private * *(..))")
-    private void anyPrivateOperation() {}
-    
-    @Pointcut("within(com.baselogic.service..*)")
-    private void inService() {}
-    
-    /** combining reusable pointcut */
-    @Pointcut("anyPublicOperation() && inService()")
-    private void serviceOperation() {}
-    
-    @Pointcut("execution(* com.baselogic.dao.*.*(..))")
+	@Pointcut("execution(* com.baselogic.dao.*.*(..))")
     public void dataAccessOperation() {}
 
+	
+	@AfterThrowing(
+		    pointcut="execution(* com.baselogic.dao.*.*(..))",
+		    throwing="ex")
+	
+	//@AfterThrowing("dataAccessOperation() && throwing(ex,..)")
+	public void afterThrowingOrderDao(Exception ex) throws Throwable {
+    	
+		logger.info(">>> ----- afterThrowingOrderDao...>>> {}", ex.getMessage());
+	}	
 
 }

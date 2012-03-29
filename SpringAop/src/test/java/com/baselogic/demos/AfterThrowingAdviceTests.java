@@ -42,10 +42,10 @@ import com.baselogic.service.OrderServiceImpl;
  */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-public class AroundAdviceTests {
+public class AfterThrowingAdviceTests {
 	
 	private final Logger logger = LoggerFactory
-			.getLogger(AroundAdviceTests.class);
+			.getLogger(AfterThrowingAdviceTests.class);
 
 	@Autowired
 	ApplicationContext applicationContext;
@@ -54,13 +54,25 @@ public class AroundAdviceTests {
 	OrderService orderService;
 
 	@Test
-	public void testAroundAdvice(){
+	public void testAfterThrowingAdvice(){
 		Order original = new Order();
-		original.adviceGiven.add("created in AroundAdviceTests");
+		original.setId(1234L);
+		original.adviceGiven.add("created in testAfterThrowingAdvice");
+		
+		Order returned = orderService.placeOrder(original);
+
+		logger.info(">>> testAfterThrowingAdvice returned: {}", returned);
+	}
+
+	@Test
+	public void testAfterThrowingAdviceWithAroundAdvice(){
+		Order original = new Order();
+		original.setId(1234L);
+		original.adviceGiven.add("created in testAfterThrowingAdviceWithAroundAdvice");
 		
 		Order returned = orderService.placeDelayedOrder(original, 100L);
 
-		logger.debug(">>> testAroundAdvice returned: {}", returned);
+		logger.info(">>> testAfterThrowingAdviceWithAroundAdvice returned: {}", returned);
 	}
 	
 

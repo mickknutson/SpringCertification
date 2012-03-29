@@ -60,7 +60,6 @@ public class ParentalAdviceTests {
 	@Test
 	public void testParentalAdviceNewInterface(){
 		Order original = new Order();
-		original.adviceGiven.add("created in testParentalAdviceNewInterface()");
 
 		Order returned = orderService.placeOrder(original);
 
@@ -68,11 +67,10 @@ public class ParentalAdviceTests {
 		
 		assertThat(orderService instanceof UsageTracked, is(true));
 	}
-	
-	/*@Test
+
+	@Test
 	public void testParentalAdviceTrackedAdvice(){
 		Order original = new Order();
-		original.adviceGiven.add("created in testParentalAdviceTrackedAdvice()");
 
 		Order returned = orderService.placeOrder(original);
 
@@ -80,9 +78,10 @@ public class ParentalAdviceTests {
 		
 		assertThat(orderService instanceof UsageTracked, is(true));
 		
-		UsageTracked usageTracked = (UsageTracked) applicationContext.getBean("orderService");
-		
-		logger.info(">>> Parental Advice: {}", usageTracked.trackUsage());
-	}*/
+		UsageTracked parentalAdvisor = applicationContext.getBean("orderService", UsageTracked.class);
+
+		logger.info(">>> UsageTracked parentalAdvisor: {}", parentalAdvisor.trackUsage());
+		logger.info(">>> UsageTracked parentalAdvisor: {}", parentalAdvisor.toString());
+	}
 	
 }

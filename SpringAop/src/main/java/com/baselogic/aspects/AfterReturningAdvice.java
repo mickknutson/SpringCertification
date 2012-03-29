@@ -2,6 +2,7 @@ package com.baselogic.aspects;
 
 import java.lang.reflect.Method;
 
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -68,23 +69,25 @@ import com.baselogic.domain.Order;
 public class AfterReturningAdvice {
 	
 	private final Logger logger = LoggerFactory.getLogger(AfterReturningAdvice.class);
-	
-    /** reusable pointcut */
-	@Pointcut("execution(public * *(..))")
-    private void anyPublicOperation() {}
-	
-	@Pointcut("execution(private * *(..))")
-    private void anyPrivateOperation() {}
-    
-    @Pointcut("within(com.baselogic.service..*)")
-    private void inService() {}
-    
-    /** combining reusable pointcut */
-    @Pointcut("anyPublicOperation() && inService()")
-    private void serviceOperation() {}
-    
-    @Pointcut("execution(* com.baselogic.dao.*.*(..))")
+
+	@Pointcut("execution(* com.baselogic.dao.*.*(..))")
     public void dataAccessOperation() {}
+
+    @AfterReturning("dataAccessOperation() && this(dao)")
+	public void afterReturningOrderDaoThis(OrderDAO dao) throws Throwable {
+    	
+		logger.info(">>> ----- afterReturningOrderDaoThis...>>> {}", dao);		
+	}	
+
+    @AfterReturning("dataAccessOperation() && args(order,..)")
+	public void afterReturningOrderDaoArgs(Order order) throws Throwable {
+    	
+		logger.info(">>> ----- afterReturningOrderDaoArgs...>>> {}", order);
+		
+		order.setDescription("altered in the afterReturningOrderDaoArgs() method.");
+		
+		order.adviceGiven.add("afterReturningOrderDaoArgs advice");
+	}	
 
 
 }

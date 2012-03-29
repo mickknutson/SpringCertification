@@ -47,6 +47,7 @@ public class AroundAdvice {
 
 
 	/**
+	 * Runs @Before, (jp) then allow code to execute, (jp) then @AfterReturning
 	 * 
 	 * Potential issue:
 	 * Multiple markers at this line
@@ -57,23 +58,77 @@ public class AroundAdvice {
 	 * @param joinpoint
 	 */
     @Around("placeDelayedOrderService()")
-    public Object aroundPlaceDelayedOrderService(ProceedingJoinPoint joinpoint){
+    public Object aroundPlaceDelayedOrderService(ProceedingJoinPoint joinpoint) 
+    		throws Throwable {
+    	
     	Object returnVal = null;
     	
+    	// get execution control here.
+    	
 	    try {
-		    logger.debug(">>> ----- aroundPlaceDelayedOrderService...>>>");
+		    logger.info(">>> ----- aroundPlaceDelayedOrderService...>>>");
 		    long start = System.currentTimeMillis();
 		    
+		    // Return control back to the executing code's at the join-point
+		    // give control back to code execution.
 		    returnVal = joinpoint.proceed();
+		    
+		    // get execution control again.
 		    
 		    long end = System.currentTimeMillis();
 
-		    logger.info(">>> ----- The order took {} milliseconds to complete.", (end-start));
+		    logger.info(">>> ----- The order took {} milliseconds to complete...>>>", (end-start));
 
 	    } catch(Throwable t){
 	    	logger.error(t.getMessage());
+	    	// if error is thrown, will NOT stop code execution.
+	    	
+	    	// Can propagate Throwable.
+	    	throw t;
 	    }
 
+	    // return control again to execution code.
 	    return returnVal;
+    }
+
+    /**
+     * No annotation version of advice
+     * @param joinpoint
+     * @return
+     */
+    public Object aroundXmlPlaceDelayedOrderService(ProceedingJoinPoint joinpoint){
+    	Object returnVal = null;
+    	
+    	// get execution control here.
+    	
+	    try {
+		    logger.info(">>> ----- aroundXmlPlaceDelayedOrderService...>>>");
+		    long start = System.currentTimeMillis();
+		    
+		    // Return control back to the executing code's at the join-point
+		    // give control back to code execution.
+		    returnVal = joinpoint.proceed();
+		    
+		    // get execution control again.
+		    
+		    long end = System.currentTimeMillis();
+
+		    logger.info(">>> ----- The xml order took {} milliseconds to complete...>>>", (end-start));
+
+	    } catch(Throwable t){
+	    	logger.error(t.getMessage());
+	    	// if error is thrown, will stop all execution.
+	    }
+
+	    // return control again to execution code.
+	    return returnVal;
+    }
+    
+    /**
+     * @deprecated For testing ONLY!
+     * @param joinpoint
+     */
+    public void beforeXmlPlaceDelayedOrderService(){
+    	logger.info(">>> ----- beforeXmlPlaceDelayedOrderService...>>>");
     }
 }

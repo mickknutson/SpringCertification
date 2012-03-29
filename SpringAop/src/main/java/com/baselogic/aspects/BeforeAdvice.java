@@ -110,7 +110,7 @@ public class BeforeAdvice {
     
     //=== Join Points =======================================================//
     
-    
+    //@args(javax.persistence.Entity)
 
 	/**
 	 * Advice on multiple pointcut's
@@ -126,12 +126,11 @@ public class BeforeAdvice {
 	 * Advice with pointcut in different class.
 	 * @throws Throwable
 	 */
-	@Before("dataAccessOperation() &&" +
-	        "args(order,..)")
-	public void beforeOrderDao(Order order) throws Throwable {
+	@Before("dataAccessOperation() && args(order,..)")
+	public void beforeOrderDao(Order order) throws Throwable {		
 		logger.info(">>> ----- beforeOrderDao...>>> {}", order);
+		
 		order.adviceGiven.add("beforeOrderDao advice");
-	}	
-
+	}
 
 }

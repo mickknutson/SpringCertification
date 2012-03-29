@@ -18,7 +18,7 @@ public class OrderHibernateDAOImpl implements OrderDAO {
 		
 		Long id = new Random(1234567890L).nextLong();
 		order.setId(id);
-		order.adviceGiven.add("OrderHibernateDAOImpl.placeOrder advice");
+		order.adviceGiven.add("OrderHibernateDAOImpl.placeOrder()");
 		return order;
 	}
 	
@@ -28,11 +28,12 @@ public class OrderHibernateDAOImpl implements OrderDAO {
 		if(order.getId() != null){
 			throw new Exception("Order ID exists");
 		}
+		
 		Thread.sleep(delay);
 		
 		Long id = new Random(1234567890L).nextLong();
 		order.setId(id);
-		order.adviceGiven.add("OrderHibernateDAOImpl.placeDelayedOrder advice");
+		order.adviceGiven.add("OrderHibernateDAOImpl.placeDelayedOrder()");
 		return order;		
 	}
 

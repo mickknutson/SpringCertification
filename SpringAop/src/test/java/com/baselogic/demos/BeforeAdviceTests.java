@@ -59,13 +59,13 @@ public class BeforeAdviceTests {
 
 	@Test
 	public void testBeforeAdvice(){
-		logger.info("testAddBeanFactoryPostProcessorAlias");
+		logger.info("testBeforeAdvice");
 		Order original = new Order();
 		original.adviceGiven.add("created in BeforeAdviceTests");
 		
 		Order returned = orderService.placeOrder(original);
 
-		logger.info(">>> returned: {}", returned);
+		logger.debug(">>> beforeAdvice returned: {}", returned);
 	}
 	
 
