@@ -1,4 +1,5 @@
 //org.eclipse.ui.commands/state/ecobertura.ui.views.session.commands.selectRecentCoverageSession/org.eclipse.ui.commands.radioState=2012-03-20 20\:54\:42
+//org.eclipse.ui.commands/state/org.eclipse.ui.window.lockToolBar/org.eclipse.ui.commands.toggleState=true
 //org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
 ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc\tTorg.eclipse.jdt.ui.presentation
 ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.textfont

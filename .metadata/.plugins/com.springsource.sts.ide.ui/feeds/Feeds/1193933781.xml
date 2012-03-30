@@ -6,12 +6,27 @@
 	
 	<link>http://blog.springsource.org</link>
 	<description>The voice of SpringSource</description>
-	<lastBuildDate>Tue, 20 Mar 2012 04:21:50 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 29 Mar 2012 19:24:12 +0000</lastBuildDate>
 	<language>en</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>http://wordpress.org/?v=3.1.1</generator>
 		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/SpringSourceTeamBlog" /><feedburner:info uri="springsourceteamblog" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><item>
+		<title>Secure Data Binding With Grails</title>
+		<link>http://feedproxy.google.com/~r/SpringSourceTeamBlog/~3/uvbKBMTEqXA/</link>
+		<comments>http://blog.springsource.org/2012/03/28/secure-data-binding-with-grails/#comments</comments>
+		<pubDate>Wed, 28 Mar 2012 16:43:36 +0000</pubDate>
+		<dc:creator>Jeff Brown</dc:creator>
+				<category><![CDATA[Groovy/Grails]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">http://blog.springsource.org/?p=10734</guid>
+		<description>Introduction The Grails Framework provides a lot of tools and techniques to web application developers to simplify solving common application development challenges. Among those are a number of things which simplify the complicated and tedious problems often associated with data binding. In general, data binding is made very simple by Grails as it offers several  &lt;a href="http://blog.springsource.org/2012/03/28/secure-data-binding-with-grails/"&gt;&lt;em&gt;Read more...&lt;/em&gt;&lt;/a&gt;&lt;img src="http://feeds.feedburner.com/~r/SpringSourceTeamBlog/~4/uvbKBMTEqXA" height="1" width="1"/&gt;</description>
+		<wfw:commentRss>http://blog.springsource.org/2012/03/28/secure-data-binding-with-grails/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		<feedburner:origLink>http://blog.springsource.org/2012/03/28/secure-data-binding-with-grails/</feedburner:origLink></item>
+		<item>
 		<title>Early Access: SpringSource Tool Suite for Eclipse Juno (4.2)</title>
 		<link>http://feedproxy.google.com/~r/SpringSourceTeamBlog/~3/c8_c5x5FA14/</link>
 		<comments>http://blog.springsource.org/2012/03/14/early-access-springsource-tool-suite-for-eclipse-juno-4-2/#comments</comments>
@@ -23,7 +38,7 @@
 		<guid isPermaLink="false">http://blog.springsource.org/?p=10708</guid>
 		<description>Wanna use the SpringSource Tool Suite on the latest Eclipse Juno (4.2) milestone builds? Here you go:  How to install Download and install the latest: Eclipse Juno JEE milestone build Download the bookmarks.xml and import that to your list of update sites (Preferences -&amp;#62; Install/Update -&amp;#62; Available Update Sites -&amp;#62; Import). Go to &amp;#034;Install New Software&amp;#034; and  &lt;a href="http://blog.springsource.org/2012/03/14/early-access-springsource-tool-suite-for-eclipse-juno-4-2/"&gt;&lt;em&gt;Read more...&lt;/em&gt;&lt;/a&gt;&lt;img src="http://feeds.feedburner.com/~r/SpringSourceTeamBlog/~4/c8_c5x5FA14" height="1" width="1"/&gt;</description>
 		<wfw:commentRss>http://blog.springsource.org/2012/03/14/early-access-springsource-tool-suite-for-eclipse-juno-4-2/feed/</wfw:commentRss>
-		<slash:comments>15</slash:comments>
+		<slash:comments>16</slash:comments>
 		<feedburner:origLink>http://blog.springsource.org/2012/03/14/early-access-springsource-tool-suite-for-eclipse-juno-4-2/</feedburner:origLink></item>
 		<item>
 		<title>Introducing Spring Integration Scala DSL</title>
@@ -57,7 +72,7 @@
 		<guid isPermaLink="false">http://blog.springsource.org/?p=10582</guid>
 		<description>I am happy to announce that the first milestone release (1.0.0.M1) for Spring for Apache Hadoop project is available and talk about some of the work we have been doing over the last few months. Part of the Spring Data umbrella, Spring for Apache Hadoop provides support for developing applications based on Apache Hadoop technologies  &lt;a href="http://blog.springsource.org/2012/02/29/introducing-spring-hadoop/"&gt;&lt;em&gt;Read more...&lt;/em&gt;&lt;/a&gt;&lt;img src="http://feeds.feedburner.com/~r/SpringSourceTeamBlog/~4/h4yR-7up9FU" height="1" width="1"/&gt;</description>
 		<wfw:commentRss>http://blog.springsource.org/2012/02/29/introducing-spring-hadoop/feed/</wfw:commentRss>
-		<slash:comments>30</slash:comments>
+		<slash:comments>31</slash:comments>
 		<feedburner:origLink>http://blog.springsource.org/2012/02/29/introducing-spring-hadoop/</feedburner:origLink></item>
 		<item>
 		<title>Spring Roo 1.2.1.RELEASE available</title>
@@ -142,18 +157,5 @@
 		<wfw:commentRss>http://blog.springsource.org/2011/12/15/grails-2-0-released/feed/</wfw:commentRss>
 		<slash:comments>45</slash:comments>
 		<feedburner:origLink>http://blog.springsource.org/2011/12/15/grails-2-0-released/</feedburner:origLink></item>
-		<item>
-		<title>Countdown to Grails 2.0: User experience</title>
-		<link>http://feedproxy.google.com/~r/SpringSourceTeamBlog/~3/YZic2TTMh1A/</link>
-		<comments>http://blog.springsource.org/2011/12/14/countdown-to-grails-2-0-user-experience/#comments</comments>
-		<pubDate>Wed, 14 Dec 2011 22:30:18 +0000</pubDate>
-		<dc:creator>Peter Ledbrook</dc:creator>
-				<category><![CDATA[Groovy/Grails]]></category>
-
-		<guid isPermaLink="false">http://blog.springsource.org/?p=10454</guid>
-		<description>Welcome to this final Countdown to Grails 2.0 post: the final release is imminent! I&amp;#039;m not really going to say much here because some of the most interesting new features of Grails 2.0 are much better seen. For that reason, I&amp;#039;ve created a screencast so you can see exactly what awaits you when you install  &lt;a href="http://blog.springsource.org/2011/12/14/countdown-to-grails-2-0-user-experience/"&gt;&lt;em&gt;Read more...&lt;/em&gt;&lt;/a&gt;&lt;img src="http://feeds.feedburner.com/~r/SpringSourceTeamBlog/~4/YZic2TTMh1A" height="1" width="1"/&gt;</description>
-		<wfw:commentRss>http://blog.springsource.org/2011/12/14/countdown-to-grails-2-0-user-experience/feed/</wfw:commentRss>
-		<slash:comments>2</slash:comments>
-		<feedburner:origLink>http://blog.springsource.org/2011/12/14/countdown-to-grails-2-0-user-experience/</feedburner:origLink></item>
 	</channel>
 </rss>

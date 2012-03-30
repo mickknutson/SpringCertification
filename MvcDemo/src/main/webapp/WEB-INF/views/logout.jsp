@@ -1,4 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
 <%@ page session="false" %>
 <html>
 <head>
@@ -10,7 +10,7 @@
 </h1>
 
 <P>You are logged out</P>
-<P>Go <a href="<c:url value="/"/>">Home</a></P>
+<P>Go <a href="<c:url value="/" />">Home</a></P>
 
 </body>
 </html>

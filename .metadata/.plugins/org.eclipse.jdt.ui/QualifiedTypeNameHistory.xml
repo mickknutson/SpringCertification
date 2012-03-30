@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.junit.After"/>
-<fullyQualifiedTypeName name="org.powermock.core.classloader.annotations.SuppressStaticInitializationFor"/>
-<fullyQualifiedTypeName name="com.baselogic.dao.OrderDAO"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
 <fullyQualifiedTypeName name="com.baselogic.util.ContextUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang3.builder.ToStringBuilder"/>
@@ -17,7 +12,6 @@
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.After"/>
-<fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.JoinPoint"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="com.baselogic.util.ExampleUtils"/>
@@ -38,10 +32,8 @@
 <fullyQualifiedTypeName name="org.springframework.web.context.request.RequestScope"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.support.BeanDefinitionBuilder"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.Scope"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
 <fullyQualifiedTypeName name="java.beans.PropertyDescriptor"/>
-<fullyQualifiedTypeName name="com.baselogic.service.UnImplementedService"/>
 <fullyQualifiedTypeName name="org.springframework.aop.MethodBeforeAdvice"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="com.baselogic.common.SimpleBean"/>
@@ -56,5 +48,16 @@
 <fullyQualifiedTypeName name="com.baselogic.domain.Order"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
 <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.DeclareParents"/>
 <fullyQualifiedTypeName name="com.baselogic.service.OrderService"/>
+<fullyQualifiedTypeName name="com.baselogic.service.UnImplementedService"/>
+<fullyQualifiedTypeName name="com.baselogic.service.UsageTracked"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+<fullyQualifiedTypeName name="com.baselogic.components.ParentalAdvisor"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterReturning"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.AfterThrowing"/>
+<fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
+<fullyQualifiedTypeName name="com.baselogic.annotations.Auditable"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
 </qualifiedTypeNameHistroy>

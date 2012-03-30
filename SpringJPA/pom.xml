@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.baselogic.demos</groupId>
 	<artifactId>springJPA</artifactId>
-    <name>Spring JPA Utility</name>
+    <name>Spring Core Certification JPA Utility Demos</name>
     <packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -17,13 +17,8 @@
 	
 	<url>http://www.baselogic.com</url>
 	<description>
-		<![CDATA[Spring JPA Project.]]>
+		<![CDATA[Spring Core Certification JPA Utility Demos]]>
 	</description>
-
-	<properties>
-		<maven.test.failure.ignore>true</maven.test.failure.ignore>
-		<spring.framework.version>3.0.5.RELEASE</spring.framework.version>
-	</properties>
 
 	<dependencies>
 		<dependency>
@@ -58,12 +53,5 @@
 
         </plugins>
     </build>
-
-
-    <reporting>
-       <plugins>
-
-        </plugins>
-    </reporting>
 
 </project>

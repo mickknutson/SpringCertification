@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.baselogic.demos</groupId>
 	<artifactId>springCore</artifactId>
-	<name>Spring Core</name>
+	<name>Spring Core Certification Core Demos</name>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 

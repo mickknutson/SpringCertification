@@ -16,7 +16,7 @@
             </Realm>
             <Host appBase="webapps" autoDeploy="true" deployOnStartup="true" deployXML="true" name="localhost" unpackWARs="true">
                 <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
-            <Context docBase="SpringMvc" path="/SpringMvc" reloadable="true" source="org.eclipse.jst.jee.server:SpringMvc"/><Context docBase="MvcDemo" path="/MvcDemo" reloadable="true" source="org.eclipse.jst.jee.server:MvcDemo"/></Host>
+            <Context docBase="SpringMVC" path="/SpringMVC" reloadable="true" source="org.eclipse.jst.jee.server:SpringMVC"/></Host>
             <Valve className="com.springsource.insight.collection.tcserver.request.HttpRequestOperationCollectionValve"/>
         </Engine>
         <Connector acceptCount="100" connectionTimeout="20000" executor="tomcatThreadPool" maxKeepAliveRequests="15" port="${bio.http.port}" protocol="org.apache.coyote.http11.Http11Protocol" redirectPort="${bio.https.port}"/>

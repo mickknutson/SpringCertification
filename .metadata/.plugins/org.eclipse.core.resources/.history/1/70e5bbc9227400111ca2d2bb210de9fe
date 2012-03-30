@@ -1,9 +1,0 @@
-package com.baselogic.domain;
-
-public class Customer {
-
-    private String firstName = null;
-    private String lastName = null;
-    private  Order order = null;
-
-}

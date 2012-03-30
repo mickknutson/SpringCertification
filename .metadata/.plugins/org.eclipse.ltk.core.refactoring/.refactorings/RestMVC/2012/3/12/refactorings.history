@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename package &apos;com.ku.rest&apos; to &apos;com.baselogic.demos.rest&apos;&#x0D;&#x0A;- Original project: &apos;RestMVC&apos;&#x0D;&#x0A;- Original element: &apos;RestMVC/src/main/java/com.ku.rest&apos;&#x0D;&#x0A;- Renamed element: &apos;RestMVC/src/main/java/com.baselogic.demos.rest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.ku.rest&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.ku.rest" name="com.baselogic.demos.rest" qualified="false" references="true" stamp="1332296731173" textual="false" version="1.0"/>
-</session>

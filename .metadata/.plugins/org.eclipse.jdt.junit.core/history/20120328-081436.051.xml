@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testrun name="SpringAop Tests" project="SpringAop" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.baselogic.demos.BeforeAdviceTests" time="0.467">
-    <testcase name="testBeforeAdvice" classname="com.baselogic.demos.BeforeAdviceTests" time="0.467"/>
-  </testsuite>
-</testrun>

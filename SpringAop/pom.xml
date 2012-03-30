@@ -4,8 +4,8 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.baselogic.demos</groupId>
-	<artifactId>SpringAop</artifactId>
-	<name>Spring Aop</name>
+	<artifactId>SpringAOP</artifactId>
+	<name>Spring Core Certification AOP Demos</name>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -25,10 +25,6 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-validator</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>javax.validation</groupId>

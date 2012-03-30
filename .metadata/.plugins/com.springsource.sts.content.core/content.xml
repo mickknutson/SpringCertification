@@ -3,6 +3,9 @@
 <descriptor id="org.springframework.samples.spring.hibernate" kind="template" local="true" name="Simple Spring Hibernate Utility Project" size="0" version="2.6.0">
 <description>A simple jar project that has some Spring and Hibernate configuration and an integration test</description>
 </descriptor>
+<descriptor id="org.springframework.samples.spring.jpa" kind="template" local="true" name="Simple Spring JPA Utility Project" size="0" version="2.4.0">
+<description>A simple jar project that has some Spring and JPA configuration and an integration test.</description>
+</descriptor>
 <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" size="0" version="3.1.0">
 <description>A new Spring MVC web application development project</description>
 </descriptor>
