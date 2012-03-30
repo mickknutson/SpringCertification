@@ -8,6 +8,7 @@
 
         <class>com.baselogic.demos.Item</class>
         <class>com.baselogic.demos.Order</class>
+        
 		<exclude-unlisted-classes>true</exclude-unlisted-classes>
 
 	</persistence-unit>

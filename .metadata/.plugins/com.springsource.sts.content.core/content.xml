@@ -9,6 +9,9 @@
 <descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" size="0" version="3.1.0">
 <description>A new Spring MVC web application development project</description>
 </descriptor>
+<descriptor id="org.springframework.templates.mvc" kind="template" local="true" name="Spring MVC Project" size="0" version="3.1.2">
+<description>A new Spring MVC web application development project</description>
+</descriptor>
 <descriptor id="com.springsource.sts.org.apache.tomcat" kind="server" local="false" name="Apache Tomcat 6.0.20" size="6282517" url="http://dist.springsource.com/release/STS/help/com.springsource.sts.org.apache.tomcat-6.0.20.20090615-0000.zip" version="6.0.20.20090615-0000">
 <description/>
 </descriptor>

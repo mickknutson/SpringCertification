@@ -18877,3 +18877,1145 @@ org.eclipse.core.runtime.CoreException: Problems encountered while setting proje
 2012-03-30 10:04:46,062 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2012-03-30 10:04:46,063 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2012-03-30 10:04:46,064 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:09:23,363 [Worker-72] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-03-30 10:09:23,377 [Worker-72] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 10:09:23,717 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCForm/src/main/java
+2012-03-30 10:09:23,717 [Worker-72] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCForm/src/main/resources
+2012-03-30 10:09:23,718 [Worker-72] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 10:09:23,720 [Worker-72] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 10:09:23,784 [Worker-72] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 0 sec
+2012-03-30 10:09:24,671 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:09:24,672 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:09:24,673 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:09:24,673 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 10:09:24,674 [Worker-72] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 10:09:24,674 [Worker-72] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 10:09:24,684 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:22,904 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:22,909 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:16:22,923 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:22,924 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-03-30 10:16:25,374 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:25,374 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:16:25,375 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:25,375 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:16:29,565 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:29,591 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:16:29,594 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:16:29,594 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:18:57,403 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:18:57,405 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:18:57,418 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:18:57,419 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:23:22,997 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:23:23,005 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:23:23,021 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:23:23,021 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:25:12,856 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:25:12,857 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:25:12,858 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:25:12,858 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:29:28,181 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:29:28,207 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 10:29:28,210 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:29:28,210 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:32:37,101 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:32:37,102 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:32:37,103 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:32:37,104 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:34:04,833 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:34:04,833 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:34:04,834 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:34:04,835 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:34:33,676 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:34:33,676 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:34:33,677 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:34:33,678 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:35:35,707 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:35:35,735 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:35:35,736 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:35:35,736 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:35:38,829 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:35:38,830 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:35:38,831 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:35:38,832 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:35:45,043 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:35:45,043 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:35:45,044 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:35:45,045 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:36:12,482 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:36:12,482 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:36:12,483 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:36:12,484 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:37:28,552 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:37:28,584 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:37:28,585 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:37:28,585 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:38:15,241 [Worker-76] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA
+2012-03-30 10:38:15,242 [Worker-76] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B test
+2012-03-30 10:38:23,665 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:38:23,667 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:38:23,669 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:38:23,671 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:39:50,356 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:39:50,356 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:39:50,357 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:39:50,358 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:44:44,145 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:44:44,146 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 10:44:44,186 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:44:44,214 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 10:44:47,069 [Worker-95] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Hibernate Tests references closed project SpringHibernate
+org.eclipse.core.runtime.CoreException: Launch configuration Hibernate Tests references closed project SpringHibernate
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 10:44:47,112 [Worker-95] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Hibernate Tests references closed project SpringHibernate
+org.eclipse.core.runtime.CoreException: Launch configuration Hibernate Tests references closed project SpringHibernate
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 10:44:47,118 [Worker-95] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Hibernate Tests references closed project SpringHibernate
+org.eclipse.core.runtime.CoreException: Launch configuration Hibernate Tests references closed project SpringHibernate
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 10:45:11,614 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:45:11,615 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 10:45:11,616 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 10:45:11,617 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:03:11,379 [Worker-105] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springCore:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringCore\pom.xml.
+2012-03-30 11:03:11,789 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:03:11,791 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2012-03-30 11:03:11,819 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:03:11,820 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 11 resources
+2012-03-30 11:03:16,156 [Worker-102] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SimpleComponent references closed project SpringCore
+org.eclipse.core.runtime.CoreException: Launch configuration SimpleComponent references closed project SpringCore
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:03:16,162 [Worker-102] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SimpleComponent references closed project SpringCore
+org.eclipse.core.runtime.CoreException: Launch configuration SimpleComponent references closed project SpringCore
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:03:16,173 [Worker-102] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SimpleComponent references closed project SpringCore
+org.eclipse.core.runtime.CoreException: Launch configuration SimpleComponent references closed project SpringCore
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:03:16,209 [Worker-102] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringCore Tests references closed project SpringCore
+org.eclipse.core.runtime.CoreException: Launch configuration SpringCore Tests references closed project SpringCore
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:03:16,212 [Worker-102] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringCore Tests references closed project SpringCore
+org.eclipse.core.runtime.CoreException: Launch configuration SpringCore Tests references closed project SpringCore
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:03:16,220 [Worker-102] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringCore Tests references closed project SpringCore
+org.eclipse.core.runtime.CoreException: Launch configuration SpringCore Tests references closed project SpringCore
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:03:18,434 [Worker-103] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringAOP:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringAOP\pom.xml.
+2012-03-30 11:03:18,944 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:03:18,946 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:03:18,953 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:03:18,955 [Worker-105] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2012-03-30 11:43:15,045 [Worker-114] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringAop Tests references closed project SpringAOP
+org.eclipse.core.runtime.CoreException: Launch configuration SpringAop Tests references closed project SpringAOP
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:43:15,092 [Worker-114] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringAop Tests references closed project SpringAOP
+org.eclipse.core.runtime.CoreException: Launch configuration SpringAop Tests references closed project SpringAOP
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:43:15,098 [Worker-114] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration SpringAop Tests references closed project SpringAOP
+org.eclipse.core.runtime.CoreException: Launch configuration SpringAop Tests references closed project SpringAOP
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 11:44:13,138 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:44:13,139 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:44:13,145 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:44:13,145 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:44:30,326 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:44:30,362 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:44:30,367 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:44:30,368 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:44:59,906 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:44:59,908 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:44:59,914 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:44:59,915 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:45:29,027 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:45:29,028 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:45:29,094 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:45:29,094 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:48:06,233 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:48:06,235 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:48:06,245 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:48:06,246 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:48:25,560 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:48:25,679 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 11:48:25,683 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:48:25,684 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:49:28,589 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:49:28,590 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:49:28,590 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:49:28,591 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:51:53,474 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:51:53,474 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:51:53,477 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:51:53,478 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:54:53,789 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:54:53,789 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:54:53,790 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:54:53,791 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:56:23,344 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:56:23,430 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:56:23,431 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:56:23,432 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:56:32,013 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:56:32,013 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:56:32,014 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:56:32,015 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:57:38,341 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:57:38,341 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:57:38,342 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:57:38,343 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:58:41,169 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:58:41,169 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:58:41,170 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:58:41,171 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:59:39,108 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:59:39,143 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:59:39,144 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:59:39,145 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 11:59:55,120 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:59:55,121 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 11:59:55,123 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 11:59:55,125 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:00:01,758 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:00:01,758 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:00:01,759 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:00:01,760 [Worker-124] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:00:25,858 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:00:25,859 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:00:25,860 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:00:25,862 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:00:29,906 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:00:29,933 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:00:29,934 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:00:29,935 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:01:06,205 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:01:06,206 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:01:06,206 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:01:06,207 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:43:09,968 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 12:43:10,023 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:43:10,146 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:43:10,193 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:43:10,276 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:43:10,304 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:43:12,180 [Worker-139] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 12:43:12,221 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:43:12,225 [Worker-139] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 12:43:12,256 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:43:12,658 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 12:43:12,710 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:43:12,819 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:43:12,974 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:43:13,064 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:43:13,099 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:43:13,233 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 12:43:13,275 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:43:13,416 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:43:13,485 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:43:13,557 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:43:13,653 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:43:14,515 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,518 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:43:14,522 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,710 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:43:14,725 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,727 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:43:14,733 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,734 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:43:14,758 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,759 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:43:14,761 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,761 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:43:14,776 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,778 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:43:14,785 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,786 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:43:14,813 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,813 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:43:14,814 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:43:14,818 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 12:43:14,865 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 12:43:14,867 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:43:14,869 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 12:43:14,871 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:52:09,610 [Worker-147] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:52:09,710 [Worker-147] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:52:09,754 [Worker-147] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:52:09,804 [Worker-147] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:52:09,827 [Worker-147] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:52:11,257 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,257 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,261 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,262 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,277 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,277 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,306 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,306 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,320 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,321 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,322 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,323 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,338 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,339 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,340 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,340 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,358 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,359 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:11,361 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:11,361 [Worker-146] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 12:52:39,841 [Worker-148] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for MvcDemo
+2012-03-30 12:52:39,987 [Worker-148] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SpringMVC
+2012-03-30 12:52:40,050 [Worker-148] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SpringMVCForm
+2012-03-30 12:52:40,499 [Worker-140] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:52:40,915 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:40,915 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:52:40,917 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:40,917 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:52:41,087 [Worker-140] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:52:41,292 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:41,292 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:52:41,299 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:41,300 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:52:41,479 [Worker-140] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:52:41,655 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:41,656 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:52:41,662 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:41,662 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:52:41,929 [Worker-140] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:52:42,202 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:42,203 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:52:42,205 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:42,205 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:52:42,776 [Worker-140] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:52:43,121 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:43,122 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:52:43,131 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:43,131 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 12:52:53,842 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:53,844 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:52:53,861 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:52:53,861 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:53:05,347 [Worker-141] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-03-30 12:53:05,440 [Worker-141] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:53:05,809 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MvcDemo/src/main/java
+2012-03-30 12:53:05,810 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MvcDemo/src/main/resources
+2012-03-30 12:53:05,810 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MvcDemo/src/test/java
+2012-03-30 12:53:05,810 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MvcDemo/src/test/resources
+2012-03-30 12:53:05,811 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:05,861 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:06,028 [Worker-141] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:53:06,183 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJMS/src/main/java
+2012-03-30 12:53:06,183 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJMS/src/main/resources
+2012-03-30 12:53:06,184 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJMS/src/test/java
+2012-03-30 12:53:06,184 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJMS/src/test/resources
+2012-03-30 12:53:06,186 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:06,192 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:06,293 [Worker-141] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:53:06,465 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJPA/src/main/java
+2012-03-30 12:53:06,465 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJPA/src/main/resources
+2012-03-30 12:53:06,471 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJPA/src/test/java
+2012-03-30 12:53:06,471 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJPA/src/test/resources
+2012-03-30 12:53:06,472 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:06,474 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:06,567 [Worker-141] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:53:06,797 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCForm/src/main/java
+2012-03-30 12:53:06,798 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCForm/src/main/resources
+2012-03-30 12:53:06,799 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:06,801 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:07,112 [Worker-141] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:53:07,323 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/main/java
+2012-03-30 12:53:07,323 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVC/src/main/resources
+2012-03-30 12:53:07,323 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/test/java
+2012-03-30 12:53:07,323 [Worker-141] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVC/src/test/resources
+2012-03-30 12:53:07,324 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:07,326 [Worker-141] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 12:53:07,449 [Worker-141] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 2 sec
+2012-03-30 12:53:07,754 [Worker-150] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 12:53:08,085 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,086 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:53:08,088 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,088 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 12:53:08,089 [Worker-150] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MvcDemo
+2012-03-30 12:53:08,089 [Worker-150] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for MvcDemo
+2012-03-30 12:53:08,102 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,179 [Worker-150] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 12:53:08,367 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,368 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:53:08,369 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,370 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:53:08,447 [Worker-150] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 12:53:08,645 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,651 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:53:08,670 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:08,671 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:53:08,769 [Worker-150] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 12:53:09,076 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:09,077 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:53:09,079 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:09,079 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 12:53:09,079 [Worker-150] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVC
+2012-03-30 12:53:09,080 [Worker-150] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVC
+2012-03-30 12:53:09,086 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:09,271 [Worker-150] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 12:53:09,719 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:09,721 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:53:09,723 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:53:09,723 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 12:53:09,728 [Worker-150] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 12:53:09,728 [Worker-150] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 12:53:09,738 [Worker-150] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:56:41,762 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:56:41,764 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 12:56:41,765 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 12:56:41,766 [Worker-155] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:00:11,225 [Worker-151] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-03-30 13:00:11,262 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 13:00:12,027 [New I/O client worker #44-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/codehaus/groovy/groovy-all/1.9.0-beta-4/groovy-all-1.9.0-beta-4.pom
+2012-03-30 13:00:12,351 [New I/O client worker #45-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/1.9.0-beta-4/groovy-all-1.9.0-beta-4.pom
+2012-03-30 13:00:12,358 [New I/O client worker #45-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/1.9.0-beta-4/groovy-all-1.9.0-beta-4.pom
+2012-03-30 13:00:13,337 [New I/O client worker #46-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/codehaus/groovy/groovy-all/1.9.0-beta-4/groovy-all-1.9.0-beta-4.jar
+2012-03-30 13:00:13,528 [New I/O client worker #47-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/1.9.0-beta-4/groovy-all-1.9.0-beta-4.jar
+2012-03-30 13:00:17,667 [New I/O client worker #47-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-all/1.9.0-beta-4/groovy-all-1.9.0-beta-4.jar
+2012-03-30 13:00:18,403 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MvcDemo/src/main/java
+2012-03-30 13:00:18,432 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MvcDemo/src/main/resources
+2012-03-30 13:00:18,432 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /MvcDemo/src/test/java
+2012-03-30 13:00:18,432 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /MvcDemo/src/test/resources
+2012-03-30 13:00:18,433 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:18,477 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:18,618 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:00:18,793 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJMS/src/main/java
+2012-03-30 13:00:18,793 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJMS/src/main/resources
+2012-03-30 13:00:18,793 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJMS/src/test/java
+2012-03-30 13:00:18,793 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJMS/src/test/resources
+2012-03-30 13:00:18,794 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:18,795 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:18,880 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:00:19,082 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJPA/src/main/java
+2012-03-30 13:00:19,083 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJPA/src/main/resources
+2012-03-30 13:00:19,083 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringJPA/src/test/java
+2012-03-30 13:00:19,089 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringJPA/src/test/resources
+2012-03-30 13:00:19,089 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:19,091 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:19,186 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:00:19,490 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCForm/src/main/java
+2012-03-30 13:00:19,490 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCForm/src/main/resources
+2012-03-30 13:00:19,491 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:19,492 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:19,637 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:00:20,061 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/main/java
+2012-03-30 13:00:20,061 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVC/src/main/resources
+2012-03-30 13:00:20,062 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVC/src/test/java
+2012-03-30 13:00:20,062 [Worker-151] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVC/src/test/resources
+2012-03-30 13:00:20,062 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:20,071 [Worker-151] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:00:20,186 [Worker-151] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 8 sec
+2012-03-30 13:00:25,685 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:MvcDemo:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\MvcDemo\pom.xml.
+2012-03-30 13:00:26,010 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:26,011 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:00:26,013 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:26,014 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:00:26,014 [Worker-151] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of MvcDemo
+2012-03-30 13:00:26,014 [Worker-151] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for MvcDemo
+2012-03-30 13:00:26,022 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:26,470 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:00:26,689 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:26,690 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:00:26,691 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:26,692 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:00:27,238 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:00:27,515 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:27,516 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:00:27,584 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:27,585 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:00:27,800 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:00:28,123 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:28,124 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:00:28,125 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:28,126 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:00:28,126 [Worker-151] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVC
+2012-03-30 13:00:28,126 [Worker-151] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVC
+2012-03-30 13:00:28,132 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:28,585 [Worker-151] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:00:28,941 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:28,943 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:00:28,945 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:00:28,945 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:00:28,945 [Worker-151] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:00:29,047 [Worker-151] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:00:29,058 [Worker-151] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:07:32,076 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:07:32,076 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:07:32,077 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:07:32,077 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:07:54,110 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:07:54,110 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:07:54,111 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:07:54,112 [Worker-169] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:08:33,269 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:08:33,269 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:08:33,270 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:08:33,271 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:09:49,973 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:09:49,974 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:09:50,035 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:09:50,035 [Worker-160] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:10:43,007 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:10:43,008 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:10:43,008 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:10:43,009 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:11:30,279 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:11:30,279 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:11:30,280 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:11:30,280 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:11:54,871 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:11:54,871 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:11:54,872 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:11:54,873 [Worker-165] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:12:09,807 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:12:09,807 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:12:09,836 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:12:09,836 [Worker-172] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:12:16,524 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:12:16,524 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:12:16,525 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:12:16,526 [Worker-175] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:13:13,992 [Worker-171] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:13:14,043 [Worker-171] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:13:14,144 [Worker-171] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:13:14,194 [Worker-171] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:13:14,233 [Worker-171] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:13:14,954 [Worker-171] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:13:14,986 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:13:14,987 [Worker-171] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:13:14,988 [Worker-171] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:13:15,769 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:13:15,873 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:13:15,977 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:13:16,039 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:13:16,079 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:13:16,186 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:13:16,223 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:13:16,283 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:13:16,323 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:13:16,363 [Worker-165] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:13:17,067 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,068 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,070 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,070 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,087 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,087 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,089 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,096 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,112 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,112 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,113 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,113 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,127 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,128 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:13:17,129 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:13:17,129 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:13:17,166 [Worker-168] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:13:17,168 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:13:17,169 [Worker-168] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:13:17,171 [Worker-168] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:15:44,521 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:15:44,521 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:15:44,523 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:15:44,557 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:16:03,507 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:16:03,508 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:16:03,508 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:16:03,509 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:16:37,155 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:16:37,156 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:16:37,157 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:16:37,157 [Worker-176] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:24:23,848 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:24:23,882 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:24:23,886 [Worker-184] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:24:23,890 [Worker-184] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:27,628 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:26:27,702 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:26:27,778 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:26:27,822 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:26:27,858 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:26:28,430 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:26:28,462 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:28,463 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:26:28,464 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:28,464 [Worker-177] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMvcTemp
+2012-03-30 13:26:28,464 [Worker-177] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMvcTemp
+2012-03-30 13:26:28,471 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:26:29,608 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,608 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,610 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,611 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,633 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,634 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,636 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,644 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,656 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,656 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,657 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,658 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,670 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,670 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:26:29,671 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:26:29,671 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:26:29,745 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:26:29,747 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:26:29,748 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:26:29,750 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:27:04,072 [Worker-185] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic:demos:1.0.0-BUILD-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:27:04,142 [Worker-185] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:27:04,219 [Worker-185] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:27:04,333 [Worker-185] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:27:04,381 [Worker-185] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:27:04,905 [Worker-185] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:04,938 [Worker-185] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:04,940 [Worker-185] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:04,941 [Worker-185] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:04,941 [Worker-185] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMvcTemp
+2012-03-30 13:27:04,941 [Worker-185] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMvcTemp
+2012-03-30 13:27:04,944 [Worker-185] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:06,036 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,037 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,038 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,038 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,050 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,050 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,051 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,057 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,069 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,070 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,070 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,071 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,082 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,082 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:27:06,083 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:27:06,083 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:27:06,150 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:06,157 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:27:06,158 [Worker-177] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:06,160 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:27:10,660 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:10,667 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:27:10,669 [Worker-188] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:27:10,697 [Worker-188] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:30:34,524 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:30:34,753 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:34,753 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:30:34,754 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:34,754 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:30:34,754 [Worker-177] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:30:34,754 [Worker-177] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:30:34,761 [Worker-177] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:39,399 [Worker-183] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:30:39,603 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:39,603 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:30:39,604 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:39,604 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:30:39,604 [Worker-183] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:30:39,604 [Worker-183] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:30:39,632 [Worker-183] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:56,311 [Worker-194] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-03-30 13:30:56,331 [Worker-194] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:30:56,548 [Worker-194] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCForm/src/main/java
+2012-03-30 13:30:56,549 [Worker-194] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCForm/src/main/resources
+2012-03-30 13:30:56,549 [Worker-194] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:30:56,620 [Worker-194] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:30:56,754 [Worker-194] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 0 sec
+2012-03-30 13:30:57,512 [Worker-193] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:30:57,795 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:57,796 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:30:57,798 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:30:57,798 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:30:57,798 [Worker-193] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:30:57,798 [Worker-193] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:30:57,804 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:32:48,426 [Worker-196] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:32:48,427 [Worker-196] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:32:48,428 [Worker-196] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:32:48,429 [Worker-196] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:34:47,763 [Worker-199] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-03-30 13:34:47,781 [Worker-199] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:34:48,070 [Worker-199] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringMVCForm/src/main/java
+2012-03-30 13:34:48,070 [Worker-199] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringMVCForm/src/main/resources
+2012-03-30 13:34:48,071 [Worker-199] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:34:48,108 [Worker-199] WARN  o.m.i.e.a.AjdtProjectConfigurator - File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+2012-03-30 13:34:48,214 [Worker-199] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 0 sec
+2012-03-30 13:34:49,561 [Worker-195] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:34:49,795 [Worker-195] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:34:49,796 [Worker-195] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:34:49,797 [Worker-195] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:34:49,797 [Worker-195] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:34:49,830 [Worker-195] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:34:49,830 [Worker-195] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:34:49,838 [Worker-195] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:35:51,881 [Worker-194] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:35:51,883 [Worker-194] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:35:51,884 [Worker-194] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:35:51,884 [Worker-194] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:36:24,098 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:36:24,099 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:36:24,101 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:36:24,101 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:36:39,245 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:36:39,246 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:36:39,247 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:36:39,247 [Worker-199] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:36:45,501 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:36:45,528 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:36:45,529 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:36:45,529 [Worker-200] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:43:25,583 [Worker-209] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringRemoting:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringRemoting\pom.xml.
+2012-03-30 13:43:26,998 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:43:27,000 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:43:27,009 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:43:27,010 [Worker-202] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:45:07,549 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:45:07,623 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:45:07,626 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:45:07,630 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:45:09,928 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:45:09,989 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:45:09,991 [Worker-213] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:45:09,994 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:45:46,628 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:45:46,636 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:45:46,637 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:45:46,639 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:46:01,655 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:46:01,707 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 3 resources
+2012-03-30 13:46:01,708 [Worker-211] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:46:01,710 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:46:04,056 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:46:04,067 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:46:04,069 [Worker-203] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2012-03-30 13:46:04,070 [Worker-203] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:46:58,479 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCTemp:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:46:58,594 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJMS:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJMS\pom.xml.
+2012-03-30 13:46:58,621 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 13:46:58,664 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:springJPA:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\pom.xml.
+2012-03-30 13:46:58,744 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:46:58,762 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringRemoting:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringRemoting\pom.xml.
+2012-03-30 13:46:59,727 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:46:59,727 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:46:59,728 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:46:59,728 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:46:59,728 [Worker-208] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMvcTemp
+2012-03-30 13:46:59,728 [Worker-208] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMvcTemp
+2012-03-30 13:46:59,733 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:46:59,751 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:46:59,751 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:46:59,752 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:46:59,752 [Worker-208] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,920 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,921 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,922 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,942 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,954 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,955 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,955 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,956 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,968 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,968 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,969 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,969 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,990 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,991 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:47:00,992 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:00,992 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:47:01,049 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:01,050 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:47:01,051 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:47:01,056 [Worker-211] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:49:27,689 [Worker-213] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:49:28,164 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:49:28,165 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:49:28,166 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:49:28,166 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:49:28,166 [Worker-213] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:49:28,166 [Worker-213] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:49:28,172 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:49:47,303 [Worker-220] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration JPA Tests references closed project SpringJPA
+org.eclipse.core.runtime.CoreException: Launch configuration JPA Tests references closed project SpringJPA
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 13:49:47,335 [Worker-220] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration JPA Tests references closed project SpringJPA
+org.eclipse.core.runtime.CoreException: Launch configuration JPA Tests references closed project SpringJPA
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 13:49:47,346 [Worker-220] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration JPA Tests references closed project SpringJPA
+org.eclipse.core.runtime.CoreException: Launch configuration JPA Tests references closed project SpringJPA
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1249) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.200.20111228-1245.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-03-30 13:50:58,839 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:50:58,840 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:50:58,842 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:50:58,842 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:51:22,088 [Worker-217] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCTemp:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMvcTemp\pom.xml.
+2012-03-30 13:51:22,413 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:22,413 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:51:22,414 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:22,414 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:51:22,414 [Worker-217] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMvcTemp
+2012-03-30 13:51:22,414 [Worker-217] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMvcTemp
+2012-03-30 13:51:22,436 [Worker-217] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:23,722 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:23,723 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:51:23,724 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:23,725 [Worker-213] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:51:27,817 [Worker-221] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:51:28,247 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:28,247 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:51:28,248 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:28,253 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 13:51:28,254 [Worker-221] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 13:51:28,254 [Worker-221] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 13:51:28,260 [Worker-221] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:48,611 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:48,611 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:51:48,614 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:51:48,615 [Worker-216] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-03-30 13:54:51,031 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:54:51,033 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:54:51,034 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:54:51,035 [Worker-224] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:54:58,341 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:54:58,342 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-03-30 13:54:58,343 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:54:58,344 [Worker-220] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:56:07,605 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:56:07,605 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:56:07,606 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:56:07,606 [Worker-193] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:56:17,541 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:56:17,541 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:56:17,542 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 13:56:17,542 [Worker-227] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 13:59:47,259 [Worker-229] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 13:59:48,045 [New I/O client worker #48-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-entitymanager/3.5.6-Final/hibernate-entitymanager-3.5.6-Final.pom
+2012-03-30 13:59:48,228 [New I/O client worker #48-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-entitymanager/3.5.6-Final/hibernate-entitymanager-3.5.6-Final.pom
+2012-03-30 13:59:49,006 [New I/O client worker #49-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-parent/3.5.6-Final/hibernate-parent-3.5.6-Final.pom
+2012-03-30 13:59:49,464 [New I/O client worker #49-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-parent/3.5.6-Final/hibernate-parent-3.5.6-Final.pom
+2012-03-30 13:59:50,397 [New I/O client worker #50-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-core/3.5.6-Final/hibernate-core-3.5.6-Final.pom
+2012-03-30 13:59:50,401 [New I/O client worker #50-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-core/3.5.6-Final/hibernate-core-3.5.6-Final.pom
+2012-03-30 13:59:51,342 [New I/O client worker #51-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.pom
+2012-03-30 13:59:51,370 [New I/O client worker #51-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.pom
+2012-03-30 13:59:52,136 [New I/O client worker #52-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/javassist/javassist/3.9.0.GA/javassist-3.9.0.GA.pom
+2012-03-30 13:59:52,139 [New I/O client worker #52-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/javassist/javassist/3.9.0.GA/javassist-3.9.0.GA.pom
+2012-03-30 13:59:52,912 [New I/O client worker #53-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/3.5.6-Final/hibernate-validator-3.5.6-Final.pom
+2012-03-30 13:59:53,041 [New I/O client worker #54-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/3.5.6-Final/hibernate-validator-3.5.6-Final.pom
+2012-03-30 13:59:53,338 [New I/O client worker #55-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/3.5.6-Final/hibernate-validator-3.5.6-Final.pom
+2012-03-30 13:59:53,349 [Worker-229] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.hibernate:hibernate-validator:jar:3.5.6-Final is missing, no dependency information available
+2012-03-30 13:59:54,192 [New I/O client worker #56-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-entitymanager/3.5.6-Final/hibernate-entitymanager-3.5.6-Final.jar
+2012-03-30 13:59:54,287 [New I/O client worker #56-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-core/3.5.6-Final/hibernate-core-3.5.6-Final.jar
+2012-03-30 13:59:54,415 [New I/O client worker #56-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.jar
+2012-03-30 13:59:54,511 [New I/O client worker #56-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/javassist/javassist/3.9.0.GA/javassist-3.9.0.GA.jar
+2012-03-30 13:59:54,647 [New I/O client worker #56-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/3.5.6-Final/hibernate-validator-3.5.6-Final.jar
+2012-03-30 13:59:55,676 [New I/O client worker #56-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-entitymanager/3.5.6-Final/hibernate-entitymanager-3.5.6-Final.jar
+2012-03-30 13:59:56,518 [New I/O client worker #56-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.jar
+2012-03-30 13:59:56,560 [New I/O client worker #56-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/javassist/javassist/3.9.0.GA/javassist-3.9.0.GA.jar
+2012-03-30 14:00:06,102 [New I/O client worker #56-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-core/3.5.6-Final/hibernate-core-3.5.6-Final.jar
+2012-03-30 14:00:06,959 [New I/O client worker #57-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/3.5.6-Final/hibernate-validator-3.5.6-Final.jar
+2012-03-30 14:00:07,210 [New I/O client worker #58-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/hibernate/hibernate-validator/3.5.6-Final/hibernate-validator-3.5.6-Final.jar
+2012-03-30 14:00:07,308 [Worker-229] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.hibernate:hibernate-validator:jar:3.5.6-Final is missing, no dependency information available
+2012-03-30 14:00:07,504 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:00:07,504 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:00:07,505 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:00:07,505 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 14:00:07,505 [Worker-229] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 14:00:07,505 [Worker-229] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 14:00:07,510 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:01:39,846 [Worker-229] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 14:01:40,569 [New I/O client worker #59-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/3.1.0.GA/hibernate-validator-3.1.0.GA.pom
+2012-03-30 14:01:40,572 [New I/O client worker #59-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/3.1.0.GA/hibernate-validator-3.1.0.GA.pom
+2012-03-30 14:01:41,434 [New I/O client worker #60-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-core/3.3.0.SP1/hibernate-core-3.3.0.SP1.pom
+2012-03-30 14:01:41,439 [New I/O client worker #60-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-core/3.3.0.SP1/hibernate-core-3.3.0.SP1.pom
+2012-03-30 14:01:42,180 [New I/O client worker #61-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-parent/3.3.0.SP1/hibernate-parent-3.3.0.SP1.pom
+2012-03-30 14:01:42,360 [New I/O client worker #61-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-parent/3.3.0.SP1/hibernate-parent-3.3.0.SP1.pom
+2012-03-30 14:01:43,108 [New I/O client worker #62-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.pom
+2012-03-30 14:01:43,111 [New I/O client worker #62-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.pom
+2012-03-30 14:01:43,963 [New I/O client worker #63-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/3.1.0.GA/hibernate-validator-3.1.0.GA.jar
+2012-03-30 14:01:44,059 [New I/O client worker #63-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.jar
+2012-03-30 14:01:44,504 [New I/O client worker #63-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/3.1.0.GA/hibernate-validator-3.1.0.GA.jar
+2012-03-30 14:01:44,672 [New I/O client worker #63-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.jar
+2012-03-30 14:01:45,395 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:01:45,395 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:01:45,396 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:01:45,396 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 14:01:45,396 [Worker-229] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 14:01:45,396 [Worker-229] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 14:01:45,402 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:02:04,510 [Worker-215] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 14:02:04,926 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:02:04,962 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:02:04,963 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:02:04,964 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:02:04,964 [Worker-215] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVC
+2012-03-30 14:02:04,964 [Worker-215] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVC
+2012-03-30 14:02:04,970 [Worker-215] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:34,698 [Worker-232] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 14:05:35,389 [New I/O client worker #64-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.pom
+2012-03-30 14:05:35,571 [New I/O client worker #64-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.pom
+2012-03-30 14:05:36,314 [New I/O client worker #65-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator-parent/4.2.0.Final/hibernate-validator-parent-4.2.0.Final.pom
+2012-03-30 14:05:36,584 [New I/O client worker #65-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator-parent/4.2.0.Final/hibernate-validator-parent-4.2.0.Final.pom
+2012-03-30 14:05:37,439 [New I/O client worker #66-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar
+2012-03-30 14:05:38,714 [New I/O client worker #66-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/releases/org/hibernate/hibernate-validator/4.2.0.Final/hibernate-validator-4.2.0.Final.jar
+2012-03-30 14:05:38,997 [Worker-232] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVC:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVC\pom.xml.
+2012-03-30 14:05:39,497 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:39,498 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:05:39,523 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:39,524 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 14:05:39,524 [Worker-232] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 14:05:39,524 [Worker-232] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 14:05:39,530 [Worker-232] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:40,661 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:40,662 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:05:40,665 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:40,666 [Worker-237] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:05:50,414 [Worker-226] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.baselogic.demos:SpringMVCForm:1.0.0-SNAPSHOT @ C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\pom.xml.
+2012-03-30 14:05:50,819 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:50,819 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-03-30 14:05:50,820 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-03-30 14:05:50,820 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringMVCForm\src\test\resources
+2012-03-30 14:05:50,820 [Worker-226] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringMVCForm
+2012-03-30 14:05:50,821 [Worker-226] INFO  o.m.i.e.w.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringMVCForm
+2012-03-30 14:05:50,833 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.

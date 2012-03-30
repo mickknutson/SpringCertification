@@ -2,13 +2,18 @@ package com.baselogic.demos.customer.model;
 
 import java.util.Arrays;
 
-import org.springmodules.validation.bean.conf.loader.annotation.handler.*;
+import javax.validation.Valid;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.Size;
+import javax.validation.constraints.NotNull;
 
 public class Customer {
 	
 	//textbox
-	@NotBlank
-    @Length(max = 80)
+	@NotNull
+    @Min(3)
+    @Max(80)
 	String userName;
 	
 	//textarea

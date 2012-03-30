@@ -10,7 +10,7 @@ import javax.persistence.ManyToOne;
 /**
  * An item in an order
  */
-@Entity
+@Entity(name="T_ITEM")
 public class Item {
 	
 	@Id

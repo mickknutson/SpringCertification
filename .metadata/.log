@@ -16320,3 +16320,410 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 10:01:56.579
 !MESSAGE Server VMware vFabric tc Server Developer Edition v2.6 failed to start.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 10:09:23.719
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 10:09:23.720
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.core 2 4 2012-03-30 10:09:23.891
+!MESSAGE Unable to update Maven configuration
+!SUBENTRY 1 org.eclipse.core.resources 2 568 2012-03-30 10:09:23.891
+!MESSAGE Problems encountered while setting project description.
+!SUBENTRY 2 org.eclipse.core.resources 2 35 2012-03-30 10:09:23.891
+!MESSAGE Cannot remove nature org.springframework.ide.eclipse.core.springnature because it is a prerequisite of nature com.springsource.sts.roo.core.nature.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 10:44:47.110
+!MESSAGE Launch configuration Hibernate Tests references closed project SpringHibernate
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 10:44:47.112
+!MESSAGE Launch configuration Hibernate Tests references closed project SpringHibernate
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 10:44:47.119
+!MESSAGE Launch configuration Hibernate Tests references closed project SpringHibernate
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:03:16.157
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:03:16.163
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:03:16.207
+!MESSAGE Launch configuration SimpleComponent references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:03:16.210
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:03:16.213
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:03:16.221
+!MESSAGE Launch configuration SpringCore Tests references closed project SpringCore
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:43:15.091
+!MESSAGE Launch configuration SpringAop Tests references closed project SpringAOP
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:43:15.092
+!MESSAGE Launch configuration SpringAop Tests references closed project SpringAOP
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 11:43:15.098
+!MESSAGE Launch configuration SpringAop Tests references closed project SpringAOP
+
+!ENTRY org.eclipse.ajdt.ui 4 0 2012-03-30 11:59:55.086
+!MESSAGE Compile error: BCException thrown: Unexpected problem processing class
+when incrementally building with classpath: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\target\classes;C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\target\test-classes;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/resources.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/rt.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/jsse.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/jce.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/charsets.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/dnsns.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/localedata.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/sunjce_provider.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-entitymanager/3.6.0.Final/hibernate-entitymanager-3.6.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-core/3.6.0.Final/hibernate-core-3.6.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar;C:/Users/mknuts6173c/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar;C:/Users/mknuts6173c/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar;C:/Users/mknuts6173c/.m2/repository/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-validator/4.1.0.Final/hibernate-validator-4.1.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-orm/3.1.0.RELEASE/spring-orm-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-jdbc/3.1.0.RELEASE/spring-jdbc-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-tx/3.1.0.RELEASE/spring-tx-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar;C:/Users/mknuts6173c/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar;C:/Users/mknuts6173c/.m2/repository/com/h2database/h2/1.3.165/h2-1.3.165.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-context-support/3.1.0.RELEASE/spring-context-support-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar;C:/Users/mknuts6173c/.m2/repository/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar;C:/Users/mknuts6173c/.m2/repository/org/aspectj/aspectjtools/1.6.9/aspectjtools-1.6.9.jar;C:/Users/mknuts6173c/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar;C:/Users/mknuts6173c/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar;C:/Users/mknuts6173c/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar;C:/Users/mknuts6173c/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar;C:/Users/mknuts6173c/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.4/jcl-over-slf4j-1.6.4.jar;C:/Users/mknuts6173c/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar;C:/Users/mknuts6173c/.m2/repository/ch/qos/logback/logback-classic/1.0.0/logback-classic-1.0.0.jar;C:/Users/mknuts6173c/.m2/repository/ch/qos/logback/logback-core/1.0.1/logback-core-1.0.1.jar;C:/Users/mknuts6173c/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar;C:/Users/mknuts6173c/.m2/repository/junit/junit/4.10/junit-4.10.jar;C:/Users/mknuts6173c/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-test/3.1.0.RELEASE/spring-test-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-module-junit4/1.4.11/powermock-module-junit4-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-module-junit4-common/1.4.11/powermock-module-junit4-common-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-core/1.4.11/powermock-core-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-reflect/1.4.11/powermock-reflect-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-api-mockito/1.4.11/powermock-api-mockito-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-api-support/1.4.11/powermock-api-support-1.4.11.jar;C:\Program Files\Java\jre7\lib\ext\dnsns.jar;C:\Program Files\Java\jre7\lib\ext\localedata.jar;C:\Program Files\Java\jre7\lib\ext\sunec.jar;C:\Program Files\Java\jre7\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre7\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre7\lib\ext\zipfs.jar;C:\usr\bin\springsource\sts-2.9.0.RELEASE\\plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar;
+
+!STACK 0
+org.aspectj.weaver.BCException: Unexpected problem processing class
+when incrementally building with classpath: C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\target\classes;C:\usr\SYNCH\projects\Git-Hub\SpringCertification\SpringJPA\target\test-classes;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/resources.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/rt.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/jsse.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/jce.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/charsets.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/dnsns.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/localedata.jar;C:/usr/bin/Java/jdk1.6.0_31/jre/lib/ext/sunjce_provider.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-entitymanager/3.6.0.Final/hibernate-entitymanager-3.6.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-core/3.6.0.Final/hibernate-core-3.6.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar;C:/Users/mknuts6173c/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar;C:/Users/mknuts6173c/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar;C:/Users/mknuts6173c/.m2/repository/javassist/javassist/3.12.0.GA/javassist-3.12.0.GA.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/javax/validation/validation-api/1.0.0.GA/validation-api-1.0.0.GA.jar;C:/Users/mknuts6173c/.m2/repository/org/hibernate/hibernate-validator/4.1.0.Final/hibernate-validator-4.1.0.Final.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-orm/3.1.0.RELEASE/spring-orm-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-beans/3.1.0.RELEASE/spring-beans-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-core/3.1.0.RELEASE/spring-core-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-jdbc/3.1.0.RELEASE/spring-jdbc-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-tx/3.1.0.RELEASE/spring-tx-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar;C:/Users/mknuts6173c/.m2/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar;C:/Users/mknuts6173c/.m2/repository/com/h2database/h2/1.3.165/h2-1.3.165.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-context/3.1.0.RELEASE/spring-context-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-expression/3.1.0.RELEASE/spring-expression-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-asm/3.1.0.RELEASE/spring-asm-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-context-support/3.1.0.RELEASE/spring-context-support-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-aop/3.1.0.RELEASE/spring-aop-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar;C:/Users/mknuts6173c/.m2/repository/org/aspectj/aspectjrt/1.6.9/aspectjrt-1.6.9.jar;C:/Users/mknuts6173c/.m2/repository/org/aspectj/aspectjtools/1.6.9/aspectjtools-1.6.9.jar;C:/Users/mknuts6173c/.m2/repository/cglib/cglib/2.2.2/cglib-2.2.2.jar;C:/Users/mknuts6173c/.m2/repository/asm/asm/3.3.1/asm-3.3.1.jar;C:/Users/mknuts6173c/.m2/repository/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar;C:/Users/mknuts6173c/.m2/repository/org/slf4j/slf4j-api/1.6.4/slf4j-api-1.6.4.jar;C:/Users/mknuts6173c/.m2/repository/org/slf4j/jcl-over-slf4j/1.6.4/jcl-over-slf4j-1.6.4.jar;C:/Users/mknuts6173c/.m2/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar;C:/Users/mknuts6173c/.m2/repository/ch/qos/logback/logback-classic/1.0.0/logback-classic-1.0.0.jar;C:/Users/mknuts6173c/.m2/repository/ch/qos/logback/logback-core/1.0.1/logback-core-1.0.1.jar;C:/Users/mknuts6173c/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar;C:/Users/mknuts6173c/.m2/repository/junit/junit/4.10/junit-4.10.jar;C:/Users/mknuts6173c/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar;C:/Users/mknuts6173c/.m2/repository/org/springframework/spring-test/3.1.0.RELEASE/spring-test-3.1.0.RELEASE.jar;C:/Users/mknuts6173c/.m2/repository/org/mockito/mockito-all/1.9.0/mockito-all-1.9.0.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-module-junit4/1.4.11/powermock-module-junit4-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-module-junit4-common/1.4.11/powermock-module-junit4-common-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-core/1.4.11/powermock-core-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-reflect/1.4.11/powermock-reflect-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/objenesis/objenesis/1.2/objenesis-1.2.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-api-mockito/1.4.11/powermock-api-mockito-1.4.11.jar;C:/Users/mknuts6173c/.m2/repository/org/powermock/powermock-api-support/1.4.11/powermock-api-support-1.4.11.jar;C:\Program Files\Java\jre7\lib\ext\dnsns.jar;C:\Program Files\Java\jre7\lib\ext\localedata.jar;C:\Program Files\Java\jre7\lib\ext\sunec.jar;C:\Program Files\Java\jre7\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jre7\lib\ext\sunmscapi.jar;C:\Program Files\Java\jre7\lib\ext\zipfs.jar;C:\usr\bin\springsource\sts-2.9.0.RELEASE\\plugins/org.eclipse.equinox.launcher_1.2.0.v20110502.jar;
+
+	at org.aspectj.ajdt.internal.core.builder.AjState.recordClassFile(AjState.java:1500)
+	at org.aspectj.ajdt.internal.core.builder.AjState.noteResult(AjState.java:1322)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager$3.acceptResult(AjBuildManager.java:1058)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:426)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:98)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:805)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1028)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:309)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.incrementalBuild(AjBuildManager.java:189)
+	at org.aspectj.ajde.core.internal.AjdeCoreBuildManager.performBuild(AjdeCoreBuildManager.java:127)
+	at org.aspectj.ajde.core.AjCompiler.build(AjCompiler.java:91)
+	at org.eclipse.ajdt.core.builder.AJBuilder.build(AJBuilder.java:257)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.aspectj.org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+org.aspectj.org.eclipse.jdt.internal.compiler.classfmt.ClassFormatException
+	at org.aspectj.org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:372)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.classfmt.ClassFileReader.<init>(ClassFileReader.java:134)
+	at org.aspectj.ajdt.internal.core.builder.AjState.recordClassFile(AjState.java:1492)
+	at org.aspectj.ajdt.internal.core.builder.AjState.noteResult(AjState.java:1322)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager$3.acceptResult(AjBuildManager.java:1058)
+	at org.aspectj.ajdt.internal.compiler.AjPipeliningCompilerAdapter.afterProcessing(AjPipeliningCompilerAdapter.java:426)
+	at org.aspectj.ajdt.internal.compiler.CompilerAdapter.ajc$after$org_aspectj_ajdt_internal_compiler_CompilerAdapter$5$6b855184(CompilerAdapter.aj:98)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.process(Compiler.java:805)
+	at org.aspectj.org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:468)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performCompilation(AjBuildManager.java:1028)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.performBuild(AjBuildManager.java:309)
+	at org.aspectj.ajdt.internal.core.builder.AjBuildManager.incrementalBuild(AjBuildManager.java:189)
+	at org.aspectj.ajde.core.internal.AjdeCoreBuildManager.performBuild(AjdeCoreBuildManager.java:127)
+	at org.aspectj.ajde.core.AjCompiler.build(AjCompiler.java:91)
+	at org.eclipse.ajdt.core.builder.AJBuilder.build(AJBuilder.java:257)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:43:12.217
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:43:12.252
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:43:14.866
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:43:14.869
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:05.857
+!MESSAGE File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:05.861
+!MESSAGE File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:06.191
+!MESSAGE File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:06.193
+!MESSAGE File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:06.473
+!MESSAGE File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:06.474
+!MESSAGE File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:06.799
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:06.801
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:07.325
+!MESSAGE File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 12:53:07.331
+!MESSAGE File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:18.475
+!MESSAGE File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:18.477
+!MESSAGE File /MvcDemo/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:18.794
+!MESSAGE File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:18.795
+!MESSAGE File /SpringJMS/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:19.090
+!MESSAGE File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:19.091
+!MESSAGE File /SpringJPA/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:19.491
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:19.493
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:20.070
+!MESSAGE File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:00:20.072
+!MESSAGE File /SpringMVC/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:13:14.985
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:13:14.987
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:13:17.166
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:13:17.169
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:24:23.875
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:24:23.887
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:26:28.461
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:26:28.463
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:26:28.471
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:26:29.746
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:26:29.749
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:04.936
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:04.940
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:04.944
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:06.156
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:06.158
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:10.665
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:27:10.696
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:30:56.616
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:30:56.621
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:34:48.106
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:34:48.108
+!MESSAGE File /SpringMVCForm/src/main/aspect does not exist yet. Create it and re-run configuration.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\aopalliance-1.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\aspectjrt-1.6.9.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\javax.inject-1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\jcl-over-slf4j-1.5.10.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\jstl-1.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\log4j-1.2.15.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\slf4j-api-1.5.10.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\slf4j-log4j12-1.5.10.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-aop-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-asm-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-beans-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.653
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-context-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.654
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-context-support-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.654
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-core-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.654
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-expression-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.654
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-web-3.1.0.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2012-03-30 13:38:18.654
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMvcTemp\WEB-INF\lib\spring-webmvc-3.1.0.RELEASE.jar. May be locked by another process.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:45:07.619
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:45:07.627
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:45:09.985
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:45:09.991
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:45:46.634
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:45:46.637
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:46:01.705
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:46:01.709
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:46:04.064
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:46:04.069
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 13:49:47.332
+!MESSAGE Launch configuration JPA Tests references closed project SpringJPA
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 13:49:47.336
+!MESSAGE Launch configuration JPA Tests references closed project SpringJPA
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-03-30 13:49:47.347
+!MESSAGE Launch configuration JPA Tests references closed project SpringJPA
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 13:59:53.405
+!MESSAGE The POM for org.hibernate:hibernate-validator:jar:3.5.6-Final is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-03-30 14:00:07.345
+!MESSAGE The POM for org.hibernate:hibernate-validator:jar:3.5.6-Final is missing, no dependency information available
+
+!ENTRY org.eclipse.jst.j2ee 4 0 2012-03-30 14:00:07.807
+!MESSAGE C:\Users\mknuts6173c\.m2\repository\org\hibernate\hibernate-validator\3.5.6-Final\hibernate-validator-3.5.6-Final.jar
+!STACK 0
+org.eclipse.jst.jee.archive.ArchiveOpenFailureException: C:\Users\mknuts6173c\.m2\repository\org\hibernate\hibernate-validator\3.5.6-Final\hibernate-validator-3.5.6-Final.jar
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:45)
+	at org.eclipse.jst.j2ee.internal.archive.JavaEEArchiveUtilities.openBinaryArchive(JavaEEArchiveUtilities.java:243)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper$ArchiveCache.openArchive(JavaEEBinaryComponentHelper.java:601)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.openArchive(JavaEEBinaryComponentHelper.java:459)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getUniqueArchive(JavaEEBinaryComponentHelper.java:411)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getArchive(JavaEEBinaryComponentHelper.java:404)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentHelper.getJavaEEQuickPeek(JavaEEBinaryComponentHelper.java:87)
+	at org.eclipse.jst.j2ee.project.JavaEEProjectUtilities.getJ2EEComponentType(JavaEEProjectUtilities.java:273)
+	at org.eclipse.jst.j2ee.internal.common.exportmodel.JEEHeirarchyExportParticipant.isChildModule(JEEHeirarchyExportParticipant.java:42)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.isChildModule(FlatVirtualComponent.java:300)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.addUsedReferences(FlatVirtualComponent.java:238)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.treeWalk(FlatVirtualComponent.java:168)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.cacheResources(FlatVirtualComponent.java:121)
+	at org.eclipse.wst.common.componentcore.internal.flat.FlatVirtualComponent.fetchResources(FlatVirtualComponent.java:101)
+	at org.eclipse.wst.web.internal.deployables.FlatComponentDeployable.members(FlatComponentDeployable.java:147)
+	at org.eclipse.wst.server.core.internal.ModulePublishInfo.hasDelta(ModulePublishInfo.java:415)
+	at org.eclipse.wst.server.core.internal.ServerPublishInfo.hasDelta(ServerPublishInfo.java:440)
+	at org.eclipse.wst.server.core.internal.Server.hasPublishedResourceDelta(Server.java:1578)
+	at org.eclipse.wst.server.core.internal.Server$ResourceChangeJob$1.visit(Server.java:217)
+	at org.eclipse.wst.server.core.internal.Server.visitModule(Server.java:2969)
+	at org.eclipse.wst.server.core.internal.Server.visit(Server.java:2953)
+	at org.eclipse.wst.server.core.internal.Server$ResourceChangeJob.run(Server.java:228)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: C:\Users\mknuts6173c\.m2\repository\org\hibernate\hibernate-validator\3.5.6-Final\hibernate-validator-3.5.6-Final.jar (The system cannot find the file specified)
+	at java.util.zip.ZipFile.open(Native Method)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at java.util.zip.ZipFile.<init>(Unknown Source)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities$1.<init>(ManifestUtilities.java:259)
+	at org.eclipse.jst.common.internal.modulecore.util.ManifestUtilities.newZipFile(ManifestUtilities.java:259)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:248)
+	at org.eclipse.jst.jee.archive.internal.ArchiveUtil.newZipFile(ArchiveUtil.java:234)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.resetZipFile(JavaEEBinaryComponentLoadAdapter.java:56)
+	at org.eclipse.jst.j2ee.internal.componentcore.JavaEEBinaryComponentLoadAdapter.<init>(JavaEEBinaryComponentLoadAdapter.java:40)
+	... 22 more
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 14:00:09.536
+!MESSAGE Error reading file C:\Users\mknuts6173c\.m2\repository\org\hibernate\hibernate-validator\3.5.6-Final\hibernate-validator-3.5.6-Final.jar
+!STACK 0
+java.io.FileNotFoundException: C:\Users\mknuts6173c\.m2\repository\org\hibernate\hibernate-validator\3.5.6-Final\hibernate-validator-3.5.6-Final.jar (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.wst.server.core.util.PublishHelper.copyFile(PublishHelper.java:501)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishSmart(PublishHelper.java:343)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishSmart(PublishHelper.java:367)
+	at org.eclipse.wst.server.core.util.PublishHelper.publishSmart(PublishHelper.java:367)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishDir(TomcatServerBehaviour.java:348)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.publishModule(TomcatServerBehaviour.java:268)
+	at com.springsource.sts.internal.server.tc.core.TcServerBehaviour.publishModule(TcServerBehaviour.java:446)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModule(ServerBehaviourDelegate.java:1046)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publishModules(ServerBehaviourDelegate.java:1138)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:955)
+	at org.eclipse.wst.server.core.model.ServerBehaviourDelegate.publish(ServerBehaviourDelegate.java:774)
+	at org.eclipse.wst.server.core.internal.Server.publishImpl(Server.java:3086)
+	at org.eclipse.wst.server.core.internal.Server$PublishJob.run(Server.java:344)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 14:01:46.943
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMVCForm\WEB-INF\lib\hibernate-commons-annotations-3.2.0.Final.jar. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 14:02:06.490
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMVCForm\WEB-INF\lib\hibernate-commons-annotations-3.2.0.Final.jar. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 14:05:52.897
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMVCForm\WEB-INF\lib\hibernate-annotations-3.5.6-Final.jar. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 14:07:05.948
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMVCForm\WEB-INF\lib\hibernate-annotations-3.5.6-Final.jar. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2012-03-30 14:07:05.965
+!MESSAGE Could not delete C:\usr\bin\springsource\vfabric-tc-server-developer-2.6.3.RELEASE\spring-insight-instance\wtpwebapps\SpringMVCForm\WEB-INF\lib\hibernate-annotations-3.5.6-Final.jar. May be locked by another process.
