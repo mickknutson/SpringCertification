@@ -9,7 +9,7 @@
 	Hello SpringMVCForm!  
 </h1>
 
-<P>Customer Form: <a href="customer.htm">customer.htm</a></P>
+<P>Customer Form: <a href="customer.html">customer.html</a></P>
 
 </body>
 </html>

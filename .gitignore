@@ -5,8 +5,8 @@ target/
 src/logs/
 reports/
 src/main/webapp/index.html
-.metadata/
-.metadata
+.metadata_REMOVE/
+.metadata_REMOVE
 .project
 .classpath
 .settings

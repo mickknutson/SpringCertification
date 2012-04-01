@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/util
+							http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="messagePublisher" class="notification.MessagePublisher"/>
+
+    <bean id="messageReceiver" class="notification.MessageReceiver"/>
+
+    <bean class="org.springframework.jmx.export.MBeanExporter">
+        <property name="beans">
+            <util:map>
+                <entry key="springsource:service=messagePublisher" value-ref="messagePublisher"/>
+                <entry key="springsource:service=messageReceiver" value-ref="messageReceiver"/>
+            </util:map>
+        </property>
+        <property name="assembler">
+            <bean class="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssembler">
+                <property name="interfaceMappings">
+                    <util:map>
+                        <entry key="springsource:service=messagePublisher"
+                               value="notification.MessagePublisherManagement"/>
+                        <entry key="springsource:service=messageReceiver"
+                               value="notification.MessageReceiverManagement"/>
+                    </util:map>
+                </property>
+            </bean>
+        </property>
+        <property name="notificationListenerMappings">
+            <util:map>
+                <entry key="springsource:service=messagePublisher" value-ref="messageReceiver"/>
+            </util:map>
+        </property>
+    </bean>
+
+</beans>

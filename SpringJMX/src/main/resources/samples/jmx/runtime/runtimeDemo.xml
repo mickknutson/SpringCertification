@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- define a simple service bean -->
+    <bean id="service" class="samples.jmx.runtime.MessageService" />
+
+    <!-- define an MBeanExporter -->
+    <bean id="exporter" class="org.springframework.jmx.export.MBeanExporter">
+        <!-- the beans to be exported to JMX -->
+        <property name="beans">
+            <map>
+                <entry key="bingo" value-ref="service" />
+            </map>
+        </property>
+        <property name="ensureUniqueRuntimeObjectNames" value="true" />
+        <property name="namingStrategy" ref="namingStrategy"/>
+    </bean>
+
+    <!-- naming strategy -->
+    <bean id="namingStrategy" class="org.springframework.jmx.export.naming.MetadataNamingStrategy">
+        <property name="attributeSource">
+            <bean class="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource"/>
+        </property>
+    </bean>
+</beans>

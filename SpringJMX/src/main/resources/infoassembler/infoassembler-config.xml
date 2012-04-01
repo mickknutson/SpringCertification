@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/util
+							http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean id="mBeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean">
+		<property name="locateExistingServerIfPossible" value="true" />
+	</bean>
+
+	<bean id="messageService" class="infoassembler.MessageService" />
+
+	<bean class="org.springframework.jmx.export.MBeanExporter">
+		<property name="server" ref="mBeanServer" />
+		<property name="beans">
+			<util:map>
+				<entry key="service:name=messageService" value-ref="messageService" />
+			</util:map>
+		</property>
+		<property name="assembler">
+			<bean class="org.springframework.jmx.export.assembler.InterfaceBasedMBeanInfoAssembler">
+				<property name="interfaceMappings">
+					<util:map>
+						<entry key="service:name=messageService" value="infoassembler.MessageCapable" />
+					</util:map>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- create a mbean server for the VM -->
+    <bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean"/>
+
+    <!-- define an MBeanExporter -->
+    <bean id="mbeanExporter" class="org.springframework.jmx.export.MBeanExporter"
+          depends-on="mbeanServer">
+        <property name="autodetect">
+            <value>true</value>
+        </property>
+        <property name="assembler">
+            <ref local="assembler"/>
+        </property>
+    </bean>
+
+    <!-- define the assembler bean -->
+    <bean id="assembler" class="org.springframework.jmx.export.assembler.MetadataMBeanInfoAssembler">
+        <property name="attributeSource">
+            <ref local="attributeSource"/>
+        </property>
+    </bean>
+
+    <!-- define a 'reader' for JDK 5.0 annotations -->
+    <bean id="attributeSource " class="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource"/>
+
+    <!-- define some services -->
+    <bean name="springsource:service=messageService" class="samples.jmx.annotations.MessageService"/>
+
+    <bean name="springsource:service=messageService2" class="samples.jmx.annotations.MessageService">
+        <property name="message">
+            <value>This is another message service</value>
+        </property>
+    </bean>
+
+</beans>

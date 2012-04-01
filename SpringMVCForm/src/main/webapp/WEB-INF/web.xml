@@ -31,7 +31,7 @@
     </servlet-mapping> -->
     <servlet-mapping>
         <servlet-name>appServlet</servlet-name>
-        <url-pattern>*.htm</url-pattern>
+        <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
     <error-page>

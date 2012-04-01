@@ -1,9 +1,0 @@
-INDEX VERSION 1.126+C:\usr\SYNCH\projects\Git-Hub\SpringCertification\.metadata\.plugins\org.eclipse.jdt.core
-2605194677.index
-1150169522.index
-282853395.index
-2791073816.index
-3134889607.index
-934052833.index
-2746914624.index
-145002494.index

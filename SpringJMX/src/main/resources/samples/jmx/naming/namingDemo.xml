@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- define a simple service bean -->
+    <bean id="service" class="samples.jmx.basic.MessageService"/>
+    <!-- define with assembler -->
+    <bean id="serviceWithAnnotations" class="samples.jmx.naming.MessageService"/>
+    <!-- define an MBeanExporter -->
+    <bean id="mbeanExporter" class="org.springframework.jmx.export.MBeanExporter">
+        <!-- the beans to be exported to JMX -->
+        <property name="beans">
+            <map>
+                <entry key="not.important" value-ref="serviceWithAnnotations"/>
+            </map>
+        </property>
+        <property name="namingStrategy" ref="identityNamingStrategy"/>
+    </bean>
+    <!-- Use the identity naming strategy -->
+    <bean id="identityNamingStrategy" class="org.springframework.jmx.export.naming.IdentityNamingStrategy"/>
+    <!-- Use with Java 5 assembler -->
+    <bean id="metadataNamingStrategy" class="org.springframework.jmx.export.naming.MetadataNamingStrategy">
+        <property name="attributeSource">
+            <bean class="org.springframework.jmx.export.annotation.AnnotationJmxAttributeSource"/>
+        </property>
+    </bean>
+    <!-- Use for custom key naming -->
+    <bean id="keyNamingStrategy" class="org.springframework.jmx.export.naming.KeyNamingStrategy">
+        <property name="mappings">
+            <value>
+                not.important=springsource:type=MessageService
+            </value>
+        </property>
+    </bean>
+</beans>

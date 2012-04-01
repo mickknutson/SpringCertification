@@ -1,0 +1,62 @@
+<beans:beans 
+    xmlns="http://www.springframework.org/schema/security"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                    http://www.springframework.org/schema/beans/spring-beans.xsd
+                    http://www.springframework.org/schema/security 
+                    http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<http use-expressions="true">
+        <!-- pattern = pointcut, access = advice -->
+        <!-- <intercept-url pattern="/echo" access="denyAll" /> -->
+
+        <intercept-url pattern="/" access="permitAll" />
+        <intercept-url pattern="/home" access="permitAll" />
+        <intercept-url pattern="/open" access="permitAll" />
+        <intercept-url pattern="/images/**" access="permitAll" />
+		
+        <!-- Authorization -->
+		<intercept-url pattern="/secured/customer/**" access="hasRole('customer')" />
+		<intercept-url pattern="/secured/user/**" access="hasRole('user')" />
+		<intercept-url pattern="/secured/admin/**" access="hasRole('admin')" />
+
+        <!-- Authentication -->
+        <!-- <intercept-url pattern="/secured/**" access="isAuthenticated()" /> -->
+
+		<!-- <intercept-url pattern="/secured/extreme/**" access="hasRole('admin')" />
+		<intercept-url pattern="/listAccounts.html" access="isAuthenticated()" />
+		<intercept-url pattern="/post.html"
+			access="hasAnyRole('supervisor','teller')" />
+		<intercept-url pattern="/**" access="denyAll" /> -->
+		
+		<form-login />
+		<!-- <http-basic/> -->
+				
+		<logout logout-url="/j_spring_security_logout" logout-success-url="/" />
+	</http>
+
+	<authentication-manager>
+        <!--
+            Database Authentication
+            LDAP Authentication
+            In-Memory Database Authentication
+        -->
+		<authentication-provider>
+		
+            <password-encoder hash="md5" />
+			<user-service>
+                <!-- password: admin -->
+                <user name="admin" password="21232f297a57a5a743894a0e4a801fc3" authorities="admin, user" />
+                
+                <!-- password: customer -->
+                <user name="customer" password="91ec1f9324753048c0096d036a694f86" authorities="customer" />
+                
+                <!-- password: user -->
+                <user name="user" password="ee11cbb19052e40b07aac0ca060c23ee" authorities="user" />
+
+			</user-service>
+		</authentication-provider>
+	</authentication-manager>
+	
+</beans:beans>

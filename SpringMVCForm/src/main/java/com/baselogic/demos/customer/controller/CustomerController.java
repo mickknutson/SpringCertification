@@ -9,10 +9,11 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.SimpleFormController;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
@@ -26,6 +27,8 @@ import com.baselogic.demos.customer.model.Customer;
 
 @Controller
 public class CustomerController {
+	
+	private static final Logger logger = LoggerFactory.getLogger(CustomerController.class);
 
     @Autowired
     private Validator validator;
@@ -49,7 +52,9 @@ public class CustomerController {
             			   BindingResult result) {   
 
         validator.validate(customerForm, result);
-        if (result.hasErrors()) { return "CustomerForm"; }
+        if (result.hasErrors()) { 
+        	return "CustomerForm"; 
+        }
         
         // Use the redirect-after-post pattern to reduce double-submits.
         return "CustomerSuccess";

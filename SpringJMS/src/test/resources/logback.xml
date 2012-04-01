@@ -1,19 +1,29 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<configuration>
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true" scan="true" scanPeriod="30 seconds">
 
-    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <contextListener class="ch.qos.logback.classic.jul.LevelChangePropagator">
+        <resetJUL>true</resetJUL>
+    </contextListener>
 
-        <!-- encoders are assigned by default the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+    <!-- To enable JMX Management -->
+    <jmxConfigurator/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>
-                %d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
-            </pattern>
+            <pattern>%-5level %logger{0} - %msg%n</pattern>
         </encoder>
     </appender>
 
-    <!-- Use level="DEBUG" for more detailed logging -->
-    <root level="INFO">
-        <appender-ref ref="STDOUT" />
-    </root>
+	<logger name="rewards" level="debug" />
+	<logger name="common" level="debug" />
+	<logger name="org.apache.activemq" level="debug"/>
+	
+	<logger name="org.springframework.beans" level="warn" />
+	<logger name="org.springframework.transaction" level="warn" />
+	<logger name="org.springframework.oxm" level="warn" />
+	<logger name="org.springframework.jms" level="debug" />
 
+	<root level="warn">
+		<appender-ref ref="console" />
+	</root>
 </configuration>

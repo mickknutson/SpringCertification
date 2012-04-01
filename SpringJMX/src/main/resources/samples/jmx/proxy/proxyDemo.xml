@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- create a mbean server for the VM -->
+	<bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean"/>
+
+   <bean id="runtime" class="org.springframework.jmx.access.MBeanProxyFactoryBean">
+		 <property name="objectName" value="java.lang:type=Runtime"/>
+		 <property name="proxyInterface">
+			 <value>samples.jmx.proxy.RuntimeInfo</value>
+		 </property>
+   </bean>
+</beans>

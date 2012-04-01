@@ -1,2 +1,0 @@
-INDEX VERSION 1.122+C:\usr\SYNCH\projects\Git-Hub\SpringCertification\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1686169984.index

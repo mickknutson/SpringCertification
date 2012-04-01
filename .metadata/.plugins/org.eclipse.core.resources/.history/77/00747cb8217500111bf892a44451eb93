@@ -1,5 +1,0 @@
-package com.baselogic.aspects;
-
-public class SimpleAdvice {
-
-}
