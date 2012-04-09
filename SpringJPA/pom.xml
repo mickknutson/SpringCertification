@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.baselogic.demos</groupId>
 	<artifactId>springJPA</artifactId>
-    <name>Spring Core Certification JPA Utility Demos</name>
+    <name>JPA Utility Demos</name>
     <packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -15,10 +15,13 @@
         <version>1.0.0-RELEASE</version>
     </parent>
 	
-	<url>http://www.baselogic.com</url>
 	<description>
 		<![CDATA[Spring Core Certification JPA Utility Demos]]>
 	</description>
+	
+	<properties>
+    	<site.basedir>${project.parent.basedir}</site.basedir>
+	</properties>
 
 	<dependencies>
 		<dependency>

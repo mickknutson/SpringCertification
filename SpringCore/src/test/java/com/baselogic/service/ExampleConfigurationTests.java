@@ -96,7 +96,8 @@ public class ExampleConfigurationTests {
 
 	@Test
 	public void testBeansInContext() throws Exception {
-		contextUtils.showBeansInContext();
+		logger.info(contextUtils.showBeansInContext());
+		//contextUtils.printBeansInContext();
 	}
 
 }

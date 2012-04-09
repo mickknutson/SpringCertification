@@ -33,6 +33,15 @@ public class Item {
 	
 	private int quantity;
 	
+	public Item() {}
+
+	public Item(String product, double price, int quantity) {
+		super();
+		this.product = product;
+		this.price = price;
+		this.quantity = quantity;
+	}
+
 	/**
 	 * @return the order
 	 */

@@ -12,9 +12,9 @@ import com.baselogic.domain.Activity;
 
 /**
  * ExampleUtils
- * 
+ *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -22,17 +22,17 @@ import com.baselogic.domain.Activity;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
+ *
  * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
  * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
  * @since 2012
- * 
+ *
  */
 public class ExampleUtils {
 
 	private static final Logger logger = LoggerFactory.getLogger(ExampleUtils.class);
-	
+
 	private List<String> names; 				// Lists contain objects in insertion order. Can have duplicates.
 	private List<Integer> namedIds;
 	private Set<String> otherSet;				// Sets contains unique things. No duplicates allowed.
@@ -89,67 +89,71 @@ public class ExampleUtils {
 	}
 
 	//----- Mock Test methods -----------------------------------------------//
-	
+
 	public static String staticFunction(){
 		return "staticFunction";
 	}
-	
+
+	public static String staticFunctionTwo() {
+		return "staticFunctionTwo";
+	}
+
 	public void voidMethod(){}
 
 	public String nestedFunction(){
-		
+
 		String result = "nestedFunction()";
 
 		try{
-			
+
 			result += ": " + privateFunction();
-			
+
 		} catch (Exception e){
-			
+
 			result += ": Exception " +e.getMessage()+ " : " + privateFunction();
-			
+
 		}
-		
+
 		return result;
-		
+
 	}
 
 	public String nestedFunctionTwo(){
-		
+
 		String result = "nestedFunctionTwo()";
 
 		try{
-		
+
 			result += ": " + privateFunction();
-			
+
 		} catch (Exception e){
-			
+
 			result += ": Exception " +e.getMessage()+ " : " + privateFunction();
-			
+
 		} finally {
-			
+
 			try{
-				
+
 				result += ": finally : " + privateFunction();
-				
+
 			} catch (Exception e){
 
 				result += ": finally : Exception " +e.getMessage()+ " : " + privateFunction();
-				
+
 			}
 		}
-		
+
 		return result;
-		
+
 	}
 
 	private String privateFunction() throws RuntimeException {
 		return "privateFunction";
 	}
 
-	
-	
-	
+
+
+
 	//----- toString --------------------------------------------------------//
 	@Override
 	public String toString() {

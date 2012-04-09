@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
     <groupId>com.baselogic.demos</groupId>
     <artifactId>SpringMVC</artifactId>
-    <name>Spring Core Certification MVC Demos</name>
+    <name>MVC Demos</name>
     <packaging>war</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -14,10 +14,13 @@
         <version>1.0.0-RELEASE</version>
     </parent>
     
-    <url>http://www.baselogic.com</url>
     <description>
         <![CDATA[Spring Core Certification MVC Demos]]>
     </description>
+	
+	<properties>
+    	<site.basedir>${project.parent.basedir}</site.basedir>
+	</properties>
     
     <dependencies>
         <!-- Spring -->     
@@ -86,6 +89,8 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
         </dependency>
+        
+        
     </dependencies>
 
     <build>
@@ -97,6 +102,30 @@
                     <warName>${project.artifactId}</warName>
                 </configuration>
             </plugin>
+
+			<!-- mvn clean test easyb:test thucydides:aggregate -e -->
+			<plugin>
+				<groupId>org.easyb</groupId>
+				<artifactId>maven-easyb-plugin</artifactId>
+				<configuration>
+					<storyType>html</storyType>
+					<storyReport>${basedir}/target/easyb/easyb.html</storyReport>
+					<easybTestDirectory>${basedir}/src/test/stories</easybTestDirectory>
+					<parallel>true</parallel>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>test</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>net.thucydides.maven.plugins</groupId>
+				<artifactId>maven-thucydides-plugin</artifactId>
+			</plugin>				
 
         </plugins>
     </build>

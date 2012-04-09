@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.baselogic.demos</groupId>
     <artifactId>SpringRemoting</artifactId>
-    <name>Spring Core Certification SpringRemoting Demos</name>
+    <name>SpringRemoting Demos</name>
     <packaging>war</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -14,10 +14,13 @@
         <version>1.0.0-RELEASE</version>
     </parent>
     
-    <url>http://www.baselogic.com</url>
     <description>
         <![CDATA[Spring Core Certification SpringRemoting Demos]]>
     </description>
+	
+	<properties>
+    	<site.basedir>${project.parent.basedir}</site.basedir>
+	</properties>
 
     <dependencies>
         <!-- Spring -->     
@@ -57,13 +60,34 @@
     
     <build>
         <plugins>
-            <plugin>
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <warName>${project.name}</warName>
-                </configuration>
-            </plugin>
+            </plugin> -->
+
+			<!-- TODO: Need to integrate this in:
+			<plugin>
+				<groupId>eviware</groupId>
+				<artifactId>maven-soapui-plugin</artifactId>
+				<version>${soapui.plugin.version}</version>
+				<configuration>
+					<outputFolder>${project.basedir}\target\soapui\output</outputFolder>
+					<junitReport>true</junitReport>
+				</configuration>
+				<executions>
+					<execution>
+						<id>Customer Service Test Suite</id>
+						<phase>test</phase>
+						<goals>
+							<goal>test</goal>
+						</goals>
+						<configuration>
+							<projectFile>${project.basedir}\src\test\resources\soapui\3166-soapui-project.xml</projectFile>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin> -->
+
         </plugins>
     </build>
 </project>

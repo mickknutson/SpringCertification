@@ -1,21 +1,20 @@
 package com.baselogic.aspects;
 
-import java.lang.reflect.Method;
-
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.aop.MethodBeforeAdvice;
-
-import com.baselogic.dao.OrderDAO;
-import com.baselogic.domain.Order;
 
 /**
  * AroundAdvice
+ * 
+ * @Around
+ * Surrounds
+ * Takes ProceedingJoinPoint, can intercept call or ignore exception
+ * First parameter of the advice method must be of type ProceedingJoinPoint
+ * Call proceed() on the ProceedingJoinPoint to execute the method
  * 
  * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
  * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>

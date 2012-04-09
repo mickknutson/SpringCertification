@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="BASE Logic: ${project.name}">
+
+	<!-- http://maven.apache.org/skins/maven-fluido-skin/ 
+	http://maven.apache.org/doxia/doxia-sitetools/doxia-decoration-model/decoration.html 
+	-->
+
+	<bannerLeft>
+		<name>BASE Logic: ${project.name}</name>
+		<href>index.html</href>
+	</bannerLeft>
+
+	<poweredBy>
+		<logo img="http://baselogic.com/images/topbar-logo99.png" />
+	</poweredBy>
+
+
+	<!-- <skin> <groupId>org.springframework.maven.skins</groupId> <artifactId>maven-spring-skin</artifactId> 
+		<version>1.0.5</version> </skin> -->
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>1.2.1</version>
+	</skin>
+
+	<custom>
+		<fluidoSkin>
+			<topBarEnabled>false</topBarEnabled>
+			<sideBarEnabled>true</sideBarEnabled>
+
+			<topBarIcon>
+				<name>${project.artifactId}</name>
+				<alt>${project.name}</alt>
+				<src>http://baselogic.com/images/topbar-logo24.png</src>
+				<href>/index.html</href>
+			</topBarIcon>
+
+			<googleSearch>
+				<sitesearch />
+			</googleSearch>
+
+			<googlePlusOne />
+
+			<sourceLineNumbersEnabled>true</sourceLineNumbersEnabled>
+
+			<gitHub>
+				<projectId>mickknutson/SpringCertification</projectId>
+				<ribbonOrientation>right</ribbonOrientation>
+				<ribbonColor>black</ribbonColor>
+			</gitHub>
+
+			<!-- <profile>sandbox</profile> -->
+
+			<ohloh>
+				<projectId>97428</projectId>
+				<widget>factoids</widget>
+			</ohloh>
+
+			<twitter>
+				<user>mickknutson</user>
+				<showUser>true</showUser>
+				<showFollowers>true</showFollowers>
+			</twitter>
+
+			<facebookLike />
+
+		</fluidoSkin>
+	</custom>
+
+	<body>
+
+		<links>
+			<item name="${project.name}" href="index.html" />
+		</links>
+
+		<!-- <breadcrumbs> <item /> </breadcrumbs> -->
+
+		<menu name="Development">
+			<item name="Home" href="/" />
+			<item name="Getting started" href="designenv.html" />
+			<item name="FAQ" href="designfaq.html" />
+			<item name="Javadoc" href="target/site/javadoc/index.htmls" />
+		</menu>
+		<menu ref="modules" />
+		<menu ref="reports" />
+
+		<footer />
+
+	</body>
+
+</project>

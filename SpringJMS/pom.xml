@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
     <groupId>com.baselogic.demos</groupId>
     <artifactId>springJMS</artifactId>
-    <name>Spring Core Certification JMS Demos</name>
+    <name>JMS Demos</name>
     <packaging>jar</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -15,11 +15,13 @@
         <version>1.0.0-RELEASE</version>
     </parent>
     
-    <url>http://www.baselogic.com</url>
     <description>
         <![CDATA[Spring Core Certification JMS Demos]]>
     </description>
-	 
+	
+	<properties>
+    	<site.basedir>${project.parent.basedir}</site.basedir>
+	</properties>
     
     <dependencies>
     

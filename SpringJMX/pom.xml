@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
     <groupId>com.baselogic.demos</groupId>
     <artifactId>SpringJMX</artifactId>
-    <name>Spring Core Certification JMX Demos</name>
+    <name>JMX Demos</name>
     <packaging>war</packaging>
     <version>1.0.0-SNAPSHOT</version>
 
@@ -14,10 +14,13 @@
         <version>1.0.0-RELEASE</version>
     </parent>
     
-    <url>http://www.baselogic.com</url>
     <description>
         <![CDATA[Spring Core Certification JMX Demos]]>
     </description>
+	
+	<properties>
+    	<site.basedir>${project.parent.basedir}</site.basedir>
+	</properties>
     
     <dependencies>
 	

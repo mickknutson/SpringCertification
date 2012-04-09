@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.baselogic.demos</groupId>
 	<artifactId>springCore</artifactId>
-	<name>Spring Core Certification Core Demos</name>
+	<name>Core Demos</name>
 	<packaging>jar</packaging>
 	<version>1.0.0-SNAPSHOT</version>
 
@@ -15,38 +15,40 @@
         <version>1.0.0-RELEASE</version>
     </parent>
 
-	<url>http://www.baselogic.com</url>
 	<description>
-		<![CDATA[
-      This project is a minimal jar utility with Spring configuration.
+	<![CDATA[
+      This is a project to test the various Core Spring functions such
+      as Bean lifecycle, interacting with the iOc container and various
+      forms of unit testing with Mocks and Spring.
     ]]>
 	</description>
+	
+	<properties>
+    	<site.basedir>${project.parent.basedir}</site.basedir>
+	</properties>
 
 	<dependencies>
 		<!-- Spring -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
-			<version>${org.springframework-version}</version>
 			<exclusions>
-				<!-- Exclude Commons Logging in favor of SLF4j -->
+				Exclude Commons Logging in favor of SLF4j
 				<exclusion>
 					<groupId>commons-logging</groupId>
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>	
-
-		<!-- @Inject -->
-		<dependency>
-			<groupId>javax.inject</groupId>
-			<artifactId>javax.inject</artifactId>
-			<version>1</version>
-		</dependency>		
+		</dependency>-->
 	</dependencies>
 
 	<build>
 		<plugins>
+
+			<plugin>
+				<groupId>org.easyb</groupId>
+				<artifactId>maven-easyb-plugin</artifactId>
+			</plugin>
 
 		</plugins>
 	</build>
@@ -54,14 +56,15 @@
 
 	<reporting>
 	   <plugins>
-            <plugin>
+	   
+            <!-- <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
                     <author>true</author>
                     <bottom>true</bottom>
                     <destDir>target/site/javadoc</destDir>
-                    <!-- <header><![CDATA[<a href="/" target="_top">Spring Utility</a>]]></header> -->
+                    <header><![CDATA[<a href="/" target="_top">Spring Utility</a>]]></header>
                     <header><![CDATA[<a href="/" target="_top">${project.description}</a>]]></header>
                     <minmemory>128m</minmemory>
                     <maxmemory>512</maxmemory>
@@ -76,7 +79,8 @@
                     <tag name="noinspection" description="IntelliJ Inspection Ignore tag"
                         enabled="false" />
                 </configuration>
-            </plugin>
+            </plugin> -->
+
         </plugins>
 	</reporting>
 

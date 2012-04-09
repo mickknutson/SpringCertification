@@ -1,19 +1,20 @@
 package com.baselogic.aspects;
 
-import java.lang.reflect.Method;
-
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.aop.MethodBeforeAdvice;
 
-import com.baselogic.dao.OrderDAO;
 import com.baselogic.domain.Order;
 
 /**
  * BeforeAdvice
+ * 
+ * @Before:
+ * Before call code
+ * Aborts if throw exception
+ * Can prevent target method being called
  * 
  * Spring supported types of pointcuts:
  * 
@@ -63,29 +64,19 @@ import com.baselogic.domain.Order;
  * 
  * @since 2012
  * 
+ * 
  */
 @Aspect
 public class BeforeAdvice {
 	
 	private final Logger logger = LoggerFactory.getLogger(BeforeAdvice.class);
 	
-    /**
-     * Any public method execution
-     */
-	/*@Pointcut("execution(public * *(..))")
-    private void anyPublicOperation() {}*/
 	
 	/**
 	 * Specific method execution
 	 */
     @Pointcut("execution(* com.baselogic.*.placeOrder(..))")
     public void placeOrderService() {}
-
-	/**
-	 * Specific method execution
-	 */
-    /*@Pointcut("execution(* com.baselogic.*.placeOrder(order))")
-    public void placeOrderServiceWithArgument() {}*/
 
     /**
      * Any private method execution

@@ -53,7 +53,7 @@ public class HomeController {
 	 * public String home(String pathVariable, Model model, HttpServletRequest request, HttpServletResponse response)
 	 * 
 	 */		
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		
 		logger.info("Welcome home! the client locale is "+ locale.toString());
@@ -63,7 +63,7 @@ public class HomeController {
 		
 		String formattedDate = dateFormat.format(date);
 		
-		@SuppressWarnings({ "serial", "rawtypes" })
+		@SuppressWarnings({ "serial" })
 		List<String> items = new ArrayList<String>(){{ //orderService.findAllProducts()
 			add("Foo");
 			add("bar");

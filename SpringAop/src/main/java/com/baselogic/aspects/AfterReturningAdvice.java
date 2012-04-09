@@ -1,14 +1,10 @@
 package com.baselogic.aspects;
 
-import java.lang.reflect.Method;
-
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.aop.MethodBeforeAdvice;
 
 import com.baselogic.dao.OrderDAO;
 import com.baselogic.domain.Order;
@@ -16,34 +12,18 @@ import com.baselogic.domain.Order;
 /**
  * AfterReturningAdvice
  * 
+ * @AfterReturning
+ * After on success only
+ * Can change return value but it is not possible to return a totally different reference when using after-returning advice.
+ * Use:
+ * view sourceprint?
+ * 		@AfterReturning(pointcut="...", returning="retval")
+ * 		public void doAdvice(Object retVal)
+ * 
  * Spring supported types of pointcuts:
- * 
- * <b>execution</b> - for matching method execution join points, this is the primary pointcut designator you
- * will use when working with Spring AOP
- * 
- * <b>within</b> - limits matching to join points within certain types (simply the execution of a method
- * declared within a matching type when using Spring AOP)
  * 
  * <b>this</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
  * bean reference (Spring AOP proxy) is an instance of the given type
- * 
- * <b>target</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
- * target object (application object being proxied) is an instance of the given type
- * 
- * <b>args</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
- * arguments are instances of the given types
- * 
- * <b>@target</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
- * class of the executing object has an annotation of the given type
- * 
- * <b>@args</b> - limits matching to join points (the execution of methods when using Spring AOP) where the
- * runtime type of the actual arguments passed have annotations of the given type(s)
- * 
- * <b>@within</b> - limits matching to join points within types that have the given annotation (the execution
- * of methods declared in types with the given annotation when using Spring AOP)
- * 
- * <b>@annotation</b> - limits matching to join points where the subject of the join point (method being
- * executed in Spring AOP) has the given annotation
  * 
  * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
  * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>

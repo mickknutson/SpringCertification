@@ -20,12 +20,12 @@ import com.baselogic.domain.Order;
  */
 @Component("orderService")
 public class OrderServiceImpl implements OrderService {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
 
 	@Autowired
 	private OrderDAO orderDao;
-	
+
 	//@Autowired
 	private String message;
 
@@ -33,93 +33,96 @@ public class OrderServiceImpl implements OrderService {
 	/**
 	 * Reads next record from input
 	 */
+	@Override
 	public String getMessage() {
-		return message;	
+		return message;
 	}
-	
+
 	// PointCut on 'placeOrder()'
 	// joinPoint: @Before
 	// Advice: order.adviceGiven.add("@Before advice");
+	@Override
 	@Auditable( "someAuditableCode" )
 	public Order placeOrder(Order order){
 
 		// Apply an Audit Aspect
 		order.adviceGiven.add("OrderServiceImpl.placeOrder advice");
-		
+
 		// Give direct Advice:
 		somePrivateFunction(order);
-		
+
 		try {
-			
+
 			// Give direct Advice:
 			return orderDao.placeOrder(order);
-			
+
 		} catch (Exception e) {
 			logger.error(e.getMessage());
 			//e.printStackTrace();
 		}
-		
+
 		return null;
-	}	
-	
+	}
+
 	/**
 	 * Code cluttering example
 	 * @param order
 	 * @return
 	 */
 	public Order placeSecuredOrder(Order order){
-		
+
 		// Cluttered with logging code
 		logger.debug("> placing order...");
-		
+
 		// Cluttering with Audit log information
 		if(true /* order.isAuditable() */){
 			// create an audit log
 			order.adviceGiven.add("OrderServiceImpl.placeOrder advice");
-		}		
+		}
 
 		// Cluttering with Security information
 		if(true /* user.isAuthenticated() */){
 			somePrivateFunction(order);
 		}
-		
+
 		try {
 			// Did transaction complete?
 			return orderDao.placeOrder(order);
 			// Throw exceptions
-			
+
 		} catch (Exception e) {
-			
+
 			// Cluttered with logging code
 			logger.error(e.getMessage());
 		}
-		
-		return null;
-	}	
 
+		return null;
+	}
+
+	@Override
 	public Order placeDelayedOrder(Order order, long delay){
-		
+
 		logger.debug("> placing order...");
-		
+
 		order.adviceGiven.add("OrderServiceImpl.placeDelayedOrder advice");
-		
+
 		somePrivateFunction(order);
-		
+
 		try {
 			return orderDao.placeDelayedOrder(order, delay);
-		} catch (Exception e) {		
+		} catch (Exception e) {
 			logger.error(e.getMessage());
 			//e.printStackTrace();
 		}
-		
+
 		return null;
-	}	
+	}
 
 	private void somePrivateFunction(Order order){
 		logger.debug("somePrivateFunction...");
 		order.adviceGiven.add("OrderServiceImpl.somePrivateFunction advice");
 	}
-	
+
 	@PostConstruct
 	public void initService(){
         if (orderDao != null) {
@@ -127,7 +130,7 @@ public class OrderServiceImpl implements OrderService {
         }
         logger.debug("> {}: @PostConstruct <", this.getClass());
 	}
-	
+
 	@PreDestroy
 	public void destroyService(){
 		logger.debug("> {}: @PreDestroy <", this.getClass());
@@ -136,5 +139,5 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public String toString() {
 		return ToStringBuilder.reflectionToString(this);
-	}    
+	}
 }

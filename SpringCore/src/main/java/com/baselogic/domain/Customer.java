@@ -31,6 +31,8 @@ public class Customer { // JavaBean (Java) or POJO (Java) or Bean (Spring)
     
     private PhoneNumber phoneNumber = null;
     
+    private Activity activity;
+    
 	public String getFirstName() {
 		return firstName;
 	}
@@ -56,6 +58,15 @@ public class Customer { // JavaBean (Java) or POJO (Java) or Bean (Spring)
 	public void setPhoneNumber(PhoneNumber phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
+	
+	
+	public Activity getActivity() {
+		return activity;
+	}
+	public void setActivity(Activity activity) {
+		this.activity = activity;
+	}
+	
 	@Override
 	public String toString() {
 		return ToStringBuilder.reflectionToString(this);
