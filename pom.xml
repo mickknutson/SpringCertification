@@ -37,13 +37,31 @@
 	
 	<developers>
 		<developer>
-			<!-- <email>kevinsawicki@gmail.com</email> -->
+			<id>mickknutson</id>
 			<name>Mick Knutson</name>
 			<url>https://github.com/mickknutson</url>
-			<id>mickknutson</id>
+			<organization>BASE Logic, Inc.</organization>
+			<organizationUrl>http://baselogic.com</organizationUrl>
 		</developer>
 	</developers>
     
+	<distributionManagement>
+		<site>
+			<id>baselogic.website</id>
+			<url>scp://baselogic.com/var/www/sites/baselogic.com/public/code/SpringCertification</url>
+		</site>
+
+		<!-- <repository>
+			<id>repo</id>
+			<url>https://github.com/mickknutson/SpringCertification/raw/master/releases</url>
+		</repository> -->
+		<!-- <snapshotRepository>
+			<id>snapshot-repo</id>
+			<url>https://github.com/mickknutson/SpringCertificationo/raw/master/snapshots</url>
+		</snapshotRepository> -->
+   
+	</distributionManagement>
+
     <properties>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
         <java.version>1.6</java.version>
@@ -128,6 +146,12 @@
         <easyb.version>1.5</easyb.version>
         <thucydides.version>0.7.11</thucydides.version>
         <thucydides.plugin.version>0.7.11</thucydides.plugin.version>
+
+		<!-- Behave -->
+        <jbehave.plugin.version>2.5.1</jbehave.plugin.version>
+        <jbehave.core.version>3.6.1</jbehave.core.version>
+        <jbehave.web.version>3.5.1</jbehave.web.version>        
+        
         
         <!-- Webdriver ===================================================== -->        
         <webdriver.driver>firefox</webdriver.driver>
@@ -151,7 +175,7 @@
         <module>SpringJPA</module>
         <module>SpringHibernate</module>
         <module>SpringMVC</module>
-        <module>SpringMVCForm</module>
+        <!-- <module>SpringMVCForm</module> -->
         
         <!-- <module>SpringJMS</module> -->
         <module>SpringSupport</module>
@@ -522,7 +546,6 @@
     </dependencies>
 
     <!-- =================================================================== -->
-    <!-- =================================================================== -->
     <build>
 	    <!-- =============================================================== -->
 
@@ -750,7 +773,7 @@
                                 <bannedDependencies>
                                     <searchTransitive>true</searchTransitive>
                                     <excludes>
-                                        <exclude>commons-lang</exclude>
+                                        <exclude>commons-lang:2.5</exclude>
                                         <exclude>commons-digester</exclude>
                                         <exclude>commons-logging</exclude>
                                         <exclude>aspectj:aspectj*</exclude>
@@ -801,6 +824,7 @@
 				<groupId>net.thucydides.maven.plugins</groupId>
 				<artifactId>maven-thucydides-plugin</artifactId>
 			</plugin>
+		
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -827,14 +851,14 @@
 					<repositoryOwner>${github.global.userName}</repositoryOwner>
 					<message>Creating site for ${project.version}</message>
 				</configuration>
-				<!-- <executions>
+				<executions>
 					<execution>
 						<goals>
 							<goal>site</goal>
 						</goals>
-						<phase>site</phase>
+						<phase>site-stage</phase>
 					</execution>
-				</executions> -->
+				</executions>
 			</plugin>
     
      	</plugins>
@@ -872,6 +896,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <configuration>
+                	<aggregate>true</aggregate>
                     <author>true</author>
                     <bottom>true</bottom>
                     <destDir>javadoc</destDir>
@@ -906,8 +931,9 @@
                             <windowtitle>API for ${project.name} ${project.version}</windowtitle>
                         </configuration>
                         <reports>
-                            <report>javadoc</report>
-                            <report>test-javadoc</report>
+                        	<report>aggregate</report>
+                            <!-- <report>javadoc</report>
+                            <report>test-javadoc</report> -->
                         </reports>
                     </reportSet>
                     <reportSet>
@@ -917,7 +943,8 @@
                             <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle>
                         </configuration>
                         <reports>
-                            <report>test-javadoc</report>
+                        	<report>aggregate</report>
+                            <!-- <report>test-javadoc</report> -->
                         </reports>
                     </reportSet>
                 </reportSets>                  
@@ -1060,22 +1087,5 @@
    		</pluginRepository>
    
 	</pluginRepositories>
-
-	<distributionManagement>
-		<site>
-			<id>baselogic.website</id>
-			<url>scp://baselogic.com/var/www/sites/baselogic.com/public/code</url>
-		</site>
-
-		<!-- <repository>
-			<id>repo</id>
-			<url>https://github.com/mickknutson/SpringCertification/raw/master/releases</url>
-		</repository> -->
-		<!-- <snapshotRepository>
-			<id>snapshot-repo</id>
-			<url>https://github.com/mickknutson/SpringCertificationo/raw/master/snapshots</url>
-		</snapshotRepository> -->
-   
-	</distributionManagement>
 
 </project>
