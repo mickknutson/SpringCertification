@@ -28,14 +28,14 @@ These are the modules I have created to cover each objective on the test.
 
 * [SpringAOP](http://baselogic.com/code/SpringCertification/SpringAOP/index.html)
 * [SpringJMX](http://baselogic.com/code/SpringCertification/SpringJMX/index.html)
-* [SpringJDBC](http://baselogic.com/code/SpringCertification/springJDBC/index.html)
-* [SpringJPA](http://baselogic.com/code/SpringCertification/springJPA/index.html)
-* [SpringHibernate](http://baselogic.com/code/SpringCertification/springHibernate/index.html)
+* [SpringJDBC](http://baselogic.com/code/SpringCertification/SpringJDBC/index.html)
+* [SpringJPA](http://baselogic.com/code/SpringCertification/SpringJPA/index.html)
+* [SpringHibernate](http://baselogic.com/code/SpringCertification/SpringHibernate/index.html)
 * [SpringMVC](http://baselogic.com/code/SpringCertification/SpringMVC/index.html)
 
 * SpringJMS 'not released' (http://baselogic.com/code/SpringCertification/SpringJMS/index.html)
 
-* [SpringSupport](http://baselogic.com/code/SpringCertification/springSupport/index.html)
+* [SpringSupport](http://baselogic.com/code/SpringCertification/SpringSupport/index.html)
 * SpringRemoting 'not released' (http://baselogic.com/code/SpringCertification/SpringRemoting/index.html)
 
 

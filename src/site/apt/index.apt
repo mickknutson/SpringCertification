@@ -1,27 +1,33 @@
             ------
-            BASE Logic: ${project.name}
+            BASE Logic: Spring Certification Demos
             ------
             Mick Knutson
             ------
              Date
 
-BASE Logic: ${project.name} Modules:
+BASE Logic: Spring Certification Demos
 
-The project is located on Github {{https://github.com/mickknutson/SpringCertification}}
+  This project is located on {{{https://github.com/mickknutson/SpringCertification} Github}}
 
-* SpringCore {{http://baselogic.com/code/SpringCertification/springCore/index.html}}
-
-* SpringAOP {{http://baselogic.com/code/SpringCertification/SpringAOP/index.html}}
-* SpringJMX {{http://baselogic.com/code/SpringCertification/SpringJMX/index.html}}
-* SpringJDBC {{http://baselogic.com/code/SpringCertification/springJDBC/index.html}}
-* SpringJPA {{http://baselogic.com/code/SpringCertification/springJPA/index.html}}
-* SpringHibernate {{http://baselogic.com/code/SpringCertification/springHibernate/index.html}}
-* SpringMVC {{http://baselogic.com/code/SpringCertification/SpringMVC/index.html}}
-
-* SpringJMS 'not released' (http://baselogic.com/code/SpringCertification/SpringJMS/index.html}}
-
-* SpringSupport {{http://baselogic.com/code/SpringCertification/springSupport/index.html}}
-* SpringRemoting 'not released' (http://baselogic.com/code/SpringCertification/SpringRemoting/index.html}}
+  * {{{http://baselogic.com/code/SpringCertification/SpringCore/index.html} SpringCore}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringAOP/index.html} SpringAOP}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringJMX/index.html} SpringJMX}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringJDBC/index.html} SpringJDBC}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringJPA/index.html} SpringJPA}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringHibernate/index.html} SpringHibernate}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringMVC/index.html} SpringMVC}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringJMS/index.html}SpringJMS 'not released'}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringSupport/index.html} SpringSupport}}
+	
+  * {{{http://baselogic.com/code/SpringCertification/SpringRemoting/index.html} SpringRemoting 'not released'}}
 
 
 
@@ -124,3 +130,5 @@ Table caption
   Copyright symbol: \251, \xA9, \u00a9.
 
 ~~Commented out.
+
+
