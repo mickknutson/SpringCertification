@@ -79,8 +79,24 @@ Contributing
 ------------
 
 1. Fork it.
-2. Create a branch (`git checkout -b my_markup`)
-3. Commit your changes (`git commit -am "Added Snarkdown"`)
-4. Push to the branch (`git push origin my_markup`)
+2. Create a branch (`git checkout -b my_spring_certification`)
+3. Commit your changes (`git commit -am "Added Certification code"`)
+4. Push to the branch (`git push origin my_spring_certification`)
 5. Create an [Issue][1] with a link to your branch
-6. Enjoy a refreshing Diet Coke and wait
+6. Enjoy a Beer and wait
+
+
+More references
+------------
+
+[BASE Logic, Inc](http://baselogic.com")
+[LinkdIN](http://linkedin.com/in/mickknutson")
+[Twitter](http://twitter.com/mickknutson")
+[Github](http://github.com/mickknutson")
+[Github Spring Certification](http://mickknutson.github.com/SpringCertification/")
+[Packt Book](http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book")
+[Amazon Book](http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166")
+
+
+
+[1]: https://github.com/mickknutson/SpringCertification/issues

@@ -110,7 +110,7 @@
 
 		<menu name="Development">
 			<item name="Home" href="/" />
-			<item name="Modules" href="/modules.html" />
+			<!-- <item name="Modules" href="/modules.html" /> -->
 			<item name="Javadoc" href="/javadoc/index.html" />
 		</menu>
 		<menu ref="modules" />
