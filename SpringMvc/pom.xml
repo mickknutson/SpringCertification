@@ -19,13 +19,7 @@
     </description>
 	
 	<properties>
-    	<site.basedir>${project.parent.basedir}</site.basedir>    	
-    	
-	    <jbehave.site.version>3.1.1</jbehave.site.version>
-	    <fluent.selenium.version>1.5.1</fluent.selenium.version>
-	    <selenium.version>2.20.0</selenium.version>
-    	<stories>**/EtsyDotComStories.java</stories>
-
+    	<site.basedir>${project.parent.basedir}</site.basedir>    	    	
 	</properties>
     
     <dependencies>
@@ -90,7 +84,7 @@
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
-        </dependency>       
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -98,39 +92,30 @@
         
         <!-- JBehave -->
 
-		<!-- <dependency>
-			<groupId>org.seleniumhq.selenium.client-drivers</groupId>
-			<artifactId>selenium-java-client-driver</artifactId>
-			<version>1.0.2</version>
-			<scope>test</scope>
-		</dependency> -->
-	
 		<dependency>
 			<groupId>org.jbehave</groupId>
 			<artifactId>jbehave-core</artifactId>
 			<version>${jbehave.core.version}</version>
-			<scope>test</scope>
-			<exclusions>
-				<!-- <exclusion>
-					<groupId>commons-lang</groupId>
-					<artifactId>commons-lang</artifactId>
-				</exclusion> -->
-				<exclusion>
-					<groupId>log4j</groupId>
-					<artifactId>log4j</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>commons-logging</groupId>
-					<artifactId>commons-logging</artifactId>
-				</exclusion>
-			</exclusions>
+			<classifier>resources</classifier>
+			<type>zip</type>
 		</dependency>
+		<dependency>
+			<groupId>org.jbehave.site</groupId>
+			<artifactId>jbehave-site-resources</artifactId>
+			<version>${jbehave.site.version}</version>
+			<type>zip</type>
+		</dependency>
+    
 		<dependency>
 			<groupId>org.jbehave.web</groupId>
 			<artifactId>jbehave-web-selenium</artifactId>
 			<version>${jbehave.web.version}</version>
 			<scope>test</scope>
 			<exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-java</artifactId>
+                </exclusion>
 				<exclusion>
 					<groupId>commons-lang</groupId>
 					<artifactId>commons-lang</artifactId>
@@ -146,18 +131,7 @@
 			</exclusions>
 		</dependency>
 
-
-		<dependency>
-			<groupId>org.jbehave.web</groupId>
-			<artifactId>jbehave-web-selenium</artifactId>
-			<version>${jbehave.web.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.seleniumhq.selenium</groupId>
-					<artifactId>selenium-java</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
+		<!--
 		<dependency>
 			<groupId>org.seleniumhq.selenium.fluent</groupId>
 			<artifactId>fluent-selenium</artifactId>
@@ -193,13 +167,7 @@
 					<artifactId>hamcrest-core</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-
-		<dependency>
-			<groupId>org.jbehave</groupId>
-			<artifactId>jbehave-spring</artifactId>
-			<version>${jbehave.core.version}</version>
-		</dependency>
+		</dependency> -->
 
         
     </dependencies>
@@ -230,7 +198,35 @@
 				<groupId>net.thucydides.maven.plugins</groupId>
 				<artifactId>maven-thucydides-plugin</artifactId>
 			</plugin>
-			
+
+
+			<plugin>
+				<groupId>org.jbehave</groupId>
+				<artifactId>jbehave-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>run-stories</id>
+						<phase>integration-test</phase>
+						<configuration>
+							<includes>
+								<include>**/*Stories.java</include>
+							</includes>
+							<executorsClass>org.jbehave.core.embedder.executors.SameThreadExecutors</executorsClass>
+						</configuration>
+						<goals>
+							<goal>run-stories-as-embeddables</goal>
+						</goals>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>com.google.guava</groupId>
+						<artifactId>guava</artifactId>
+						<version>${guava.version}</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+      			
         </plugins>
     </build>
 </project>

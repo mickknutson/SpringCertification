@@ -89,13 +89,19 @@ Contributing
 More references
 ------------
 
-[BASE Logic, Inc](http://baselogic.com")
-[LinkdIN](http://linkedin.com/in/mickknutson")
-[Twitter](http://twitter.com/mickknutson")
-[Github](http://github.com/mickknutson")
-[Github Spring Certification](http://mickknutson.github.com/SpringCertification/")
-[Packt Book](http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book")
-[Amazon Book](http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166")
+[BASE Logic, Inc](http://baselogic.com)
+
+[LinkdIN](http://linkedin.com/in/mickknutson)
+
+[Twitter](http://twitter.com/mickknutson)
+
+[Github](http://github.com/mickknutson)
+
+[Github Spring Certification](http://mickknutson.github.com/SpringCertification/)
+
+[Packt Book](http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book)
+
+[Amazon Book](http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166)
 
 
 

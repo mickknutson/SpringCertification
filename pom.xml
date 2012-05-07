@@ -15,7 +15,7 @@
       This is the Spring demo [Parent].
     ]]>
     </description>
-    
+
     <issueManagement>
 		<url>https://github.com/mickknutson/SpringCertification/issues</url>
 		<system>GitHub Issues</system>
@@ -28,13 +28,13 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
+
 	<scm>
 		<url>https://github.com/mickknutson/SpringCertification</url>
 		<connection>scm:git:git://github.com/mickknutson/SpringCertification.git</connection>
 		<developerConnection>scm:git:git@github.com:mickknutson/SpringCertification.git</developerConnection>
 	</scm>
-	
+
 	<developers>
 		<developer>
 			<id>mickknutson</id>
@@ -44,7 +44,7 @@
 			<organizationUrl>http://baselogic.com</organizationUrl>
 		</developer>
 	</developers>
-    
+
 	<distributionManagement>
 		<site>
 			<id>baselogic.website</id>
@@ -59,18 +59,18 @@
 			<id>snapshot-repo</id>
 			<url>https://github.com/mickknutson/SpringCertificationo/raw/master/snapshots</url>
 		</snapshotRepository> -->
-   
+
 	</distributionManagement>
 
     <properties>
         <maven.test.failure.ignore>true</maven.test.failure.ignore>
         <java.version>1.6</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
+
         <site.basedir>${project.basedir}</site.basedir>
-        
+
         <!-- plugins ========================================================= -->
-        
+
         <maven.ant.plugin>1.7</maven.ant.plugin>
 		<maven.aspectj.plugin>1.4</maven.aspectj.plugin>
 		<maven.assembly.plugin>2.3</maven.assembly.plugin>
@@ -87,7 +87,7 @@
 		<maven.failsafe.plugin>2.12</maven.failsafe.plugin>
 		<maven.groovy.plugin>1.4</maven.groovy.plugin>
 		<maven.help.plugin>2.1.1</maven.help.plugin>
-		<maven.idea.plugin>2.2</maven.idea.plugin>
+		<!-- <maven.idea.plugin>2.2</maven.idea.plugin> -->
 		<maven.install.plugin>2.3.1</maven.install.plugin>
 		<maven.jar.plugin>2.4</maven.jar.plugin>
 		<maven.javadoc.plugin>2.8.1</maven.javadoc.plugin>
@@ -107,42 +107,45 @@
 		<maven.version.range>[2.2.1,3.1.0)</maven.version.range>
 		<maven.versions.plugin>1.3.1</maven.versions.plugin>
 		<maven.war.plugin>2.2</maven.war.plugin>
-		
+
 		<wagon_ssh.version>2.2</wagon_ssh.version>
-        
-        
+
+
         <!-- plugins ======================================================= -->
         <easyb.plugin.version>1.4</easyb.plugin.version>
-        
+
 
         <!-- Dependencies ================================================== -->
-        
+
         <log4j.version>1.2.15</log4j.version>
         <slf4j.version>1.6.4</slf4j.version>
         <logback.version>1.0.1</logback.version>
 
         <springframework.version>3.1.0.RELEASE</springframework.version>
-        <aspectj.version>1.6.9</aspectj.version>
+        <aspectj.version>1.6.12</aspectj.version>
         <cglib.version>2.2.2</cglib.version>
-        
+
         <!-- Hibernate / JPA -->
         <hibernate.version>3.6.0.Final</hibernate.version>
         <hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
         <hibernate.jmx.version>3.5.6-Final</hibernate.jmx.version>
         <h2.version>1.3.165</h2.version>
         <javax.validation.version>1.0.0.GA</javax.validation.version>
-        
+
         <groovy.version>1.9.0-beta-4</groovy.version>
 
         <!-- Common -->
         <commons_lang3.version>3.1</commons_lang3.version>
-        <commons_dbcp.version>1.4</commons_dbcp.version>        
+        <commons_dbcp.version>1.4</commons_dbcp.version>
+        <commons_io.version>2.2</commons_io.version>
+        <guava.version>11.0.1</guava.version>
 
         <!-- Testing -->
         <junit.version>4.10</junit.version>
         <hamcrest.version>1.1</hamcrest.version>
         <mockito.version>1.9.0</mockito.version>
         <powermock.version>1.4.11</powermock.version>
+
         <easyb.version>1.5</easyb.version>
         <thucydides.version>0.7.11</thucydides.version>
         <thucydides.plugin.version>0.7.11</thucydides.plugin.version>
@@ -150,11 +153,17 @@
 		<!-- Behave -->
         <jbehave.plugin.version>2.5.1</jbehave.plugin.version>
         <jbehave.core.version>3.6.1</jbehave.core.version>
-        <jbehave.web.version>3.5.1</jbehave.web.version>        
-        
-        
-        <!-- Webdriver ===================================================== -->        
+        <jbehave.web.version>3.5.1</jbehave.web.version>
+
+
+        <!-- Webdriver ===================================================== -->
         <webdriver.driver>firefox</webdriver.driver>
+
+        <!-- jBehave ======================================================= -->
+        <jbehave.site.version>3.1.1</jbehave.site.version>
+        <fluent.selenium.version>1.5.1</fluent.selenium.version>
+        <selenium.version>2.20.0</selenium.version>
+        <stories>**/EtsyDotComStories.java</stories>
 
     </properties>
 
@@ -175,8 +184,7 @@
         <module>SpringJPA</module>
         <module>SpringHibernate</module>
         <module>SpringMVC</module>
-        <!-- <module>SpringMVCForm</module> -->
-        
+
         <!-- <module>SpringJMS</module> -->
         <module>SpringSupport</module>
         <!-- <module>SpringRemoting</module> -->
@@ -185,6 +193,65 @@
     <!-- Centrally manage all versions & transitive dependency versions -->
     <dependencyManagement>
         <dependencies>
+
+	        <!-- Spring -->
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-context</artifactId>
+	            <version>${springframework.version}</version>
+	            <exclusions>
+	                <!-- Exclude Commons Logging in favor of SLF4j -->
+	                <exclusion>
+	                    <groupId>commons-logging</groupId>
+	                    <artifactId>commons-logging</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-core</artifactId>
+	            <version>${springframework.version}</version>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>commons-logging</groupId>
+	                    <artifactId>commons-logging</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-asm</artifactId>
+	            <version>${springframework.version}</version>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>commons-logging</groupId>
+	                    <artifactId>commons-logging</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-aspects</artifactId>
+	            <version>${springframework.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-context-support</artifactId>
+	            <version>${springframework.version}</version>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>quartz</groupId>
+	                    <artifactId>quartz</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-aop</artifactId>
+	            <version>${springframework.version}</version>
+	        </dependency>
+
 
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -221,6 +288,114 @@
                 <version>${springframework.version}</version>
             </dependency>
 
+	        <!-- AspectJ -->
+	        <dependency>
+	            <groupId>org.aspectj</groupId>
+	            <artifactId>aspectjrt</artifactId>
+	            <version>${aspectj.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.aspectj</groupId>
+	            <artifactId>aspectjtools</artifactId>
+	            <version>${aspectj.version}</version>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>cglib</groupId>
+	            <artifactId>cglib</artifactId>
+	            <version>${cglib.version}</version>
+	        </dependency>
+
+	        <!-- Common -->
+	        <dependency>
+	            <groupId>org.apache.commons</groupId>
+	            <artifactId>commons-lang3</artifactId>
+	            <version>${commons_lang3.version}</version>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>commons-io</groupId>
+	            <artifactId>commons-io</artifactId>
+	            <version>${commons_io.version}</version>
+	        </dependency>
+
+			<dependency>
+				<groupId>com.google.guava</groupId>
+				<artifactId>guava</artifactId>
+				<version>${guava.version}</version>
+			</dependency>
+
+	        <!-- Logging -->
+	        <dependency>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-api</artifactId>
+	            <version>${slf4j.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>jcl-over-slf4j</artifactId>
+	            <version>${slf4j.version}</version>
+	            <scope>runtime</scope>
+	        </dependency>
+
+	        <!-- <dependency>
+	            <groupId>org.slf4j</groupId>
+	            <artifactId>slf4j-log4j12</artifactId>
+	            <version>${slf4j.version}</version>
+	            <scope>runtime</scope>
+	        </dependency> -->
+	        <!-- <dependency>
+	            <groupId>log4j</groupId>
+	            <artifactId>log4j</artifactId>
+	            <version>${log4j.version}</version>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>javax.mail</groupId>
+	                    <artifactId>mail</artifactId>
+	                </exclusion>
+	                <exclusion>
+	                    <groupId>javax.jms</groupId>
+	                    <artifactId>jms</artifactId>
+	                </exclusion>
+	                <exclusion>
+	                    <groupId>com.sun.jdmk</groupId>
+	                    <artifactId>jmxtools</artifactId>
+	                </exclusion>
+	                <exclusion>
+	                    <groupId>com.sun.jmx</groupId>
+	                    <artifactId>jmxri</artifactId>
+	                </exclusion>
+	            </exclusions>
+	            <scope>runtime</scope>
+	        </dependency> -->
+
+	        <dependency>
+	            <groupId>ch.qos.logback</groupId>
+	            <artifactId>logback-classic</artifactId>
+	            <version>${logback.version}</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>ch.qos.logback</groupId>
+	            <artifactId>logback-core</artifactId>
+	            <version>${logback.version}</version>
+	        </dependency>
+
+
+	        <!-- @Inject -->
+	        <dependency>
+	            <groupId>javax.inject</groupId>
+	            <artifactId>javax.inject</artifactId>
+	            <version>1</version>
+	        </dependency>
+
+
+	        <dependency>
+	            <groupId>org.codehaus.groovy</groupId>
+	            <artifactId>groovy-all</artifactId>
+	            <version>${groovy.version}</version>
+	        </dependency>
+
+
             <!-- Servlet -->
             <dependency>
                 <groupId>javax.servlet</groupId>
@@ -244,7 +419,7 @@
                 <artifactId>standard</artifactId>
                 <version>1.1.2</version>
             </dependency>
-            
+
             <!-- Hibernate / JPA -->
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -276,13 +451,13 @@
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
                 <version>${commons_dbcp.version}</version>
-            </dependency>       
+            </dependency>
             <dependency>
                 <groupId>com.h2database</groupId>
                 <artifactId>h2</artifactId>
                 <version>${h2.version}</version>
             </dependency>
-            
+
             <!-- JMS -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -294,68 +469,160 @@
                 <artifactId>activemq-core</artifactId>
                 <version>5.5.1</version>
             </dependency>
-            
+
+	        <!-- Test -->
+	        <dependency>
+	            <groupId>junit</groupId>
+	            <artifactId>junit</artifactId>
+	            <version>${junit.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.hamcrest</groupId>
+	            <artifactId>hamcrest-all</artifactId>
+	            <version>${hamcrest.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>org.springframework</groupId>
+	            <artifactId>spring-test</artifactId>
+	            <version>${springframework.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>org.mockito</groupId>
+	            <artifactId>mockito-all</artifactId>
+	            <version>${mockito.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.powermock</groupId>
+	            <artifactId>powermock-module-junit4</artifactId>
+	            <version>${powermock.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.powermock</groupId>
+	            <artifactId>powermock-api-mockito</artifactId>
+	            <version>${powermock.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+
+	        <!-- EasyB -->
+	        <dependency>
+	            <groupId>org.easyb</groupId>
+	            <artifactId>easyb-core</artifactId>
+	            <version>${easyb.version}</version>
+	            <scope>test</scope>
+	            <exclusions>
+	                <!-- Exclude Commons Logging in favor of SLF4j -->
+	                <exclusion>
+	                    <groupId>commons-lang</groupId>
+	                    <artifactId>commons-lang</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+
+	        <!-- thucydides -->
+	        <dependency>
+	            <groupId>net.thucydides</groupId>
+	            <artifactId>thucydides-core</artifactId>
+	            <version>${thucydides.version}</version>
+	            <scope>test</scope>
+	            <exclusions>
+	                <!-- Exclude Commons Logging in favor of SLF4j -->
+	                <exclusion>
+	                    <groupId>commons-lang</groupId>
+	                    <artifactId>commons-lang</artifactId>
+	                </exclusion>
+	                <exclusion>
+	                    <groupId>log4j</groupId>
+	                    <artifactId>log4j</artifactId>
+	                </exclusion>
+	                <exclusion>
+	                    <groupId>commons-logging</groupId>
+	                    <artifactId>commons-logging</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>net.thucydides</groupId>
+	            <artifactId>thucydides-junit</artifactId>
+	            <version>${thucydides.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+	        <dependency>
+	            <groupId>net.thucydides.easyb</groupId>
+	            <artifactId>thucydides-easyb-plugin</artifactId>
+	            <version>${thucydides.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+
+	        <!-- JBehave -->
+	        <dependency>
+	            <groupId>org.jbehave</groupId>
+	            <artifactId>jbehave-core</artifactId>
+	            <version>${jbehave.core.version}</version>
+	            <scope>test</scope>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>log4j</groupId>
+	                    <artifactId>log4j</artifactId>
+	                </exclusion>
+	                <exclusion>
+	                    <groupId>commons-logging</groupId>
+	                    <artifactId>commons-logging</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+
+	        <dependency>
+	            <groupId>org.jbehave</groupId>
+	            <artifactId>jbehave-spring</artifactId>
+	            <version>${jbehave.core.version}</version>
+	            <scope>test</scope>
+	        </dependency>
+
+            <dependency>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven.javadoc.plugin}</version>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
 
+    <!-- =================================================================== -->
     <dependencies>
+
         <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>${springframework.version}</version>
-            <exclusions>
-                <!-- Exclude Commons Logging in favor of SLF4j -->
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
-    
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>${springframework.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-asm</artifactId>
-            <version>${springframework.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
-            <version>${springframework.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>quartz</groupId>
-                    <artifactId>quartz</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>${springframework.version}</version>
         </dependency>
 
 
@@ -363,80 +630,45 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
-            <version>${aspectj.version}</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjtools</artifactId>
-            <version>${aspectj.version}</version>
         </dependency>
 
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
-            <version>${cglib.version}</version>
         </dependency>
 
         <!-- Common -->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
-            <version>${commons_lang3.version}</version>
         </dependency>
+
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		</dependency>
 
         <!-- Logging -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>jcl-over-slf4j</artifactId>
-            <version>${slf4j.version}</version>
-            <scope>runtime</scope>
         </dependency>
-
-        <!-- <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j.version}</version>
-            <scope>runtime</scope>
-        </dependency> -->
-        <!-- <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>javax.mail</groupId>
-                    <artifactId>mail</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>javax.jms</groupId>
-                    <artifactId>jms</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.sun.jdmk</groupId>
-                    <artifactId>jmxtools</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.sun.jmx</groupId>
-                    <artifactId>jmxri</artifactId>
-                </exclusion>
-            </exclusions>
-            <scope>runtime</scope>
-        </dependency> -->
 
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>${logback.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
-            <version>${logback.version}</version>
         </dependency>
 
 
@@ -444,112 +676,81 @@
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
-            <version>1</version>
         </dependency>
 
 
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-all</artifactId>
-            <version>${groovy.version}</version>
         </dependency>
 
         <!-- Test -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-all</artifactId>
-            <version>${hamcrest.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>${springframework.version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
-            <version>${mockito.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-module-junit4</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.powermock</groupId>
             <artifactId>powermock-api-mockito</artifactId>
-            <version>${powermock.version}</version>
-            <scope>test</scope>
         </dependency>
 
+        <!-- EasyB -->
 		<dependency>
 			<groupId>org.easyb</groupId>
 			<artifactId>easyb-core</artifactId>
-			<version>${easyb.version}</version>
-            <scope>test</scope>
-            <exclusions>
-                <!-- Exclude Commons Logging in favor of SLF4j -->
-                <exclusion>
-                    <groupId>commons-lang</groupId>
-                    <artifactId>commons-lang</artifactId>
-                </exclusion>
-            </exclusions>
 		</dependency>
 
+        <!-- thucydides -->
 		<dependency>
 			<groupId>net.thucydides</groupId>
 			<artifactId>thucydides-core</artifactId>
-			<version>${thucydides.version}</version>
-            <scope>test</scope>
-            <exclusions>
-                <!-- Exclude Commons Logging in favor of SLF4j -->
-                <exclusion>
-                    <groupId>commons-lang</groupId>
-                    <artifactId>commons-lang</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>log4j</groupId>
-                    <artifactId>log4j</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
-                </exclusion>
-            </exclusions>
 		</dependency>
 
 		<dependency>
 			<groupId>net.thucydides</groupId>
 			<artifactId>thucydides-junit</artifactId>
-			<version>${thucydides.version}</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.thucydides.easyb</groupId>
 			<artifactId>thucydides-easyb-plugin</artifactId>
-			<version>${thucydides.version}</version>
-			<scope>test</scope>
-		</dependency>            
-            
+		</dependency>
+
+        <!-- JBehave -->
+        <dependency>
+            <groupId>org.jbehave</groupId>
+            <artifactId>jbehave-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jbehave</groupId>
+            <artifactId>jbehave-spring</artifactId>
+        </dependency>
+
     </dependencies>
 
     <!-- =================================================================== -->
     <build>
 	    <!-- =============================================================== -->
 
-		<pluginManagement>		
+		<pluginManagement>
 			<plugins>
 
 				<plugin>
@@ -597,7 +798,7 @@
 						</execution>
 					</executions>
 				</plugin>
-		
+
 				<plugin>
 					<groupId>org.easyb</groupId>
 					<artifactId>maven-easyb-plugin</artifactId>
@@ -613,26 +814,56 @@
 						<easybTestDirectory>${basedir}/src/test/stories</easybTestDirectory>
 						<storyReport>${project.build.directory}/easyb-stories.txt</storyReport>
 						<xmlReport>${project.build.directory}/easyb-report.xml</xmlReport>
-						
+
 						<storyType>html</storyType>
           				<storyReport>${project.build.directory}/easyb/stories.html</storyReport>
           				<jvmArguments>-Dwebdriver.driver=${webdriver.driver}</jvmArguments>
 					</configuration>
 				</plugin>
 
-				<plugin>
+
+                <!--
+                http://tomcat.apache.org/maven-plugin-2.0-SNAPSHOT/tomcat7-maven-plugin/plugin-info.html
+
+                This gives OO Memory errors:
+                mvn tomcat7:run -e
+
+                mvn tomcat7:run-war -e
+
+                To package to be deployed with Tomcat:
+                ======================================
+                mvn clean tomcat7:deploy -e
+
+                -->
+                <plugin>
+                    <groupId>org.apache.tomcat.maven</groupId>
+                    <artifactId>tomcat7-maven-plugin</artifactId>
+                    <version>${maven.tomcat.plugin}</version>
+                    <configuration>
+                        <url>http://localhost:8080/manager/html</url>
+                        <server>tomcat7Server</server>
+                        <update>true</update>
+                        <path>/${project.build.finalName}</path>
+                        <warFile>${project.build.directory}/${project.build.finalName}.war</warFile>
+                        <username>admin</username>
+                        <password>admin</password>
+                    </configuration>
+                </plugin>
+
+
+                <plugin>
 				    <groupId>net.thucydides.maven.plugins</groupId>
 				    <artifactId>maven-thucydides-plugin</artifactId>
 				    <version>${thucydides.plugin.version}</version>
-				</plugin>				
-				
+				</plugin>
+
 			</plugins>
 		</pluginManagement>
-	    
+
 	    <!-- =================================================================================== -->
         <plugins>
 
-			<!-- 
+			<!--
 			mvn clean versions:use-latest-versions scm:checkin deploy -Dmessage="update versions" -DperformRelease=true
 			 -->
 			<plugin>
@@ -692,9 +923,46 @@
                             <goal>sources</goal>
                         </goals>
                     </execution>
-                </executions>
+
+					<!-- <execution>
+						<id>unpack-resources-core</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>unpack</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${user.home}/jbehave/view</outputDirectory>
+							<overWriteReleases>true</overWriteReleases>
+							<overWriteSnapshots>true</overWriteSnapshots>
+							<excludes>**/*.class</excludes>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.jbehave</groupId>
+									<artifactId>jbehave-core</artifactId>
+									<version>${jbehave.core.version}</version>
+									<classifier>resources</classifier>
+									<type>zip</type>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.jbehave.site</groupId>
+									<artifactId>jbehave-site-resources</artifactId>
+									<version>${jbehave.site.version}</version>
+									<type>zip</type>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.jbehave</groupId>
+									<artifactId>jbehave-navigator</artifactId>
+									<version>${jbehave.core.version}</version>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution> -->
+
+				</executions>
+
+
             </plugin>
-            
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -756,7 +1024,7 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
-            
+
             <!-- To locate dependencies: mvn dependency:tree -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -803,28 +1071,24 @@
                     <!--forkMode>pertest</forkMode -->
                     <includes>
                         <include>**/*Tests.java</include>
+                        <!-- <include>**/*Stories.java</include> -->
                     </includes>
                     <excludes>
                         <exclude>**/Abstract*.java</exclude>
                     </excludes>
-                    
+
                     <systemPropertyVariables>
              			<webdriver.driver>${webdriver.driver}</webdriver.driver>
          			</systemPropertyVariables>
-         
+
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>tomcat-maven-plugin</artifactId>
-                <version>${maven.tomcat.plugin}</version>
-            </plugin>
 
-			<plugin>
+            <plugin>
 				<groupId>net.thucydides.maven.plugins</groupId>
 				<artifactId>maven-thucydides-plugin</artifactId>
 			</plugin>
-		
+
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -860,11 +1124,11 @@
 					</execution>
 				</executions>
 			</plugin>
-    
+
      	</plugins>
     </build>
 
-    <!-- 
+    <!--
        A quick run with reports:
        mvn clean cobertura:cobertura javadoc:javadoc
      -->
@@ -885,7 +1149,7 @@
 					</reportSet>
 				</reportSets>
 			</plugin>
-    
+
             <!-- <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
@@ -910,16 +1174,14 @@
                     <version>true</version>
                     <windowtitle>${project.name} ${project.version} API</windowtitle>
                     <doclet>ydoc.doclets.YStandard</doclet>
-					<docletPath>${site.basedir}/src/yworks/ydoc.jar;${site.basedir}/src/yworks/styleed.jar;${site.basedir}/src/yworks/resources;${build.classes.dir};</docletPath>
+					<docletPath>${site.basedir}/src/yworks/ydoc.jar;${site.basedir}/src/yworks/styleed.jar;${site.basedir}/src/yworks/resources;${project.build.outputDirectory};</docletPath>
                     <additionalparam>-umlautogen -link http://docs.oracle.com/javase/6/docs/api/</additionalparam>
-                    <tag name="noinspection" description="IntelliJ Inspection Ignore tag"
-                        enabled="false" />
-                        
+
                     <doctitle>API for ${project.name} ${project.version}</doctitle> <!-- Used by javadoc:javadoc goal -->
                     <windowtitle>API for ${project.name} ${project.version}</windowtitle> <!-- Used by javadoc:javadoc goal -->
 
                     <testDoctitle>Test API for ${project.name} ${project.version}</testDoctitle> <!-- Used by javadoc:test-javadoc goal -->
-                    <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle> <!-- Used by javadoc:test-javadoc goal -->                
+                    <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle> <!-- Used by javadoc:test-javadoc goal -->
 
                 </configuration>
 
@@ -947,7 +1209,7 @@
                             <!-- <report>test-javadoc</report> -->
                         </reports>
                     </reportSet>
-                </reportSets>                  
+                </reportSets>
 
             </plugin>
 
@@ -955,7 +1217,7 @@
 				<groupId>net.thucydides.maven.plugins</groupId>
 				<artifactId>maven-thucydides-plugin</artifactId>
 				<version>${thucydides.plugin.version}</version>
-			</plugin> 
+			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -1038,7 +1300,7 @@
     </reporting>
 
     <repositories>
-    
+
         <repository>
             <id>org.jboss.repository.releases</id>
             <name>JBoss Maven Release Repository</name>
@@ -1047,7 +1309,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        
+
         <repository>
             <id>repo.maven.apache.org.maven2</id>
             <name>Maven Repository</name>
@@ -1070,22 +1332,22 @@
     </repositories>
 
 	<pluginRepositories>
-	
+
 		<pluginRepository>
 			<id>sonatype-plugin-snapshots</id>
 			<url>http://oss.sonatype.org/content/repositories/snapshots</url>
 		</pluginRepository>
-		
+
 		<pluginRepository>
 			<id>oss-sonatype-snapshots</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</pluginRepository>
-  		
+
   		<pluginRepository>
       		<id>eviwarePluginRepository</id>
       		<url>http://www.eviware.com/repository/maven2/</url>
    		</pluginRepository>
-   
+
 	</pluginRepositories>
 
 </project>

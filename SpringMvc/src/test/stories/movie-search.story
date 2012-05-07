@@ -1,8 +1,8 @@
 using "thucydides"
 
-import com.baselogic.demos.requirements.Application.MovieSearch.SearchForTitles
-import com.baselogic.demos.steps.UserSteps
-import com.baselogic.demos.steps.SystemSteps
+import com.baselogic.demos.thucydides.requirements.Application.MovieSearch.SearchForTitles
+import com.baselogic.demos.thucydides.steps.UserSteps
+import com.baselogic.demos.thucydides.steps.SystemSteps
 
 thucydides.uses_default_base_url "http://www.imdb.com/"
 thucydides.uses_steps_from UserSteps

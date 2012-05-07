@@ -16,7 +16,9 @@
     </parent>
     
     <description>
-        <![CDATA[Spring Core Certification Hibernate Utility Demos]]>
+        <![CDATA[
+        Spring Core Certification Hibernate Utility Demos
+        ]]>
     </description>
 	
 	<properties>

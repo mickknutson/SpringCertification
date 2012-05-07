@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>
-	Hello SpringMVCForm!  
+	Hello to the SpringMVC Demos!  
 </h1>
 
 <P>Customer Form: <a href="customer.html">customer.html</a></P>

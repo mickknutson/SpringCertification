@@ -16,6 +16,7 @@ import org.springframework.validation.BindException;
 import org.springframework.web.servlet.ModelAndView;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Validator;
@@ -54,27 +55,30 @@ public class CustomerController {
         this.validator = validator;
     }
 
-    @RequestMapping(value = "/customer.html", method = RequestMethod.GET)
-    public ModelMap get() {
+	@SuppressWarnings("unchecked")
+	@RequestMapping(value = "/customer.html", method = RequestMethod.GET)
+	public void get(Model model) {
 
 		Customer customer = new Customer();
 		logger.info(customer.toString());
         // Because we're not specifying a logical view name, the
         // DispatcherServlet's DefaultRequestToViewNameTranslator kicks in.
-        return new ModelMap("CustomerForm", customer);
+		model.addAttribute("customerForm", customer);
+
+		model.addAllAttributes(referenceData());
     }
 
-    @RequestMapping(value = "/customerForm", method = RequestMethod.POST)
+	@RequestMapping(value = "/customerForm", method = RequestMethod.POST)
     public String onSubmit(@ModelAttribute("customerForm") Customer customerForm,
             			   BindingResult result) {
 
         validator.validate(customerForm, result);
         if (result.hasErrors()) {
-        	return "CustomerForm";
+			return "customerForm";
         }
 
         // Use the redirect-after-post pattern to reduce double-submits.
-        return "CustomerSuccess";
+		return "customerSuccess";
 	}
 
 
@@ -97,8 +101,8 @@ public class CustomerController {
 		return cust;
 	}
 
-	//@Override
-	protected Map referenceData(HttpServletRequest request) throws Exception {
+	@SuppressWarnings({ "rawtypes", "unchecked" })
+	protected Map referenceData() {
 
 		Map referenceData = new HashMap();
 
@@ -121,7 +125,7 @@ public class CustomerController {
 		referenceData.put("numberList", numberList);
 
 		//Data referencing for country dropdown box
-		Map<String,String> country = new LinkedHashMap<String,String>();
+		Map<String, String> country = new LinkedHashMap<String, String>();
 		country.put("US", "United Stated");
 		country.put("CHINA", "China");
 		country.put("SG", "Singapore");

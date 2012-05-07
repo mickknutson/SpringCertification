@@ -124,6 +124,7 @@ public class Customer { // JavaBean (Java) or POJO (Java) or Bean (Spring)
 		public void setJavaSkills(String javaSkills) {
 			this.javaSkills = javaSkills;
 		}
+
 		@Override
 		public String toString() {
 		return ToStringBuilder.reflectionToString(this);

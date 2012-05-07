@@ -51,7 +51,7 @@
 <td><form:errors path="receiveNewsletter" cssClass="error" /></td>
 </tr>
 <tr>
-<td>Favourite Web Frameworks : </td>
+<td>Favorite Web Frameworks : </td>
 <td>
 	<form:checkboxes items="${webFrameworkList}" path="favFramework" /> 
 </td>
