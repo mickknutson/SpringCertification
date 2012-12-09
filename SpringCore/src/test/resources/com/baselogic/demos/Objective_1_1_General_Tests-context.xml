@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:context="http://www.springframework.org/schema/context"
-    xmlns:p="http://www.springframework.org/schema/p"
-    xmlns:aop="http://www.springframework.org/schema/aop"
-    xmlns:util="http://www.springframework.org/schema/util"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
-        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
-        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
-    ">
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd"
+       default-autowire="byName"
+>
 
-    <context:component-scan base-package="com.baselogic.components" />
-    
-    <!-- 
-        <p>Spring Certification objective: 1.1 General</p>
-        http://springcert.sourceforge.net/core-3/index.html#beans 
-    -->
-    
+    <!--<context:component-scan base-package="com.baselogic.components" />-->
+
     <!-- Setting message bean via direct property: -->
     <bean   id="simpleComponent"
             name="simpleComponentAlias"
@@ -27,36 +19,36 @@
     <!-- Setting message bean via property reference: -->
     <bean   name="simpleComponentTwo"
             class="com.baselogic.components.SimpleComponent"
-            p:message-ref="message" />
+            p:message-ref="messageName" />
 
     <!--
     // Singleton Pattern
     ExampleService service = new ExampleServiceImpl();
-    
-    
+
+
     // What this would look like in Java:
     HashMap<String, Object> springApplicationContext = new HashMap<String, Object>();
-    
+
     // Add entry by ID:
     springApplicationContext.put( "exampleService", service );
-    
+
     // Add entry by Name
     springApplicationContext.put( "altExampleService", service );
     springApplicationContext.put( "exampleServiceTwo", service );
-    
-    
-    
+
+
+
     // Get Entry:
     (ExampleService) springApplicationContext.get( "exampleService" );
-    
+
     // Create a Proxy (Proxy Pattern)
     ExampleService exampleService = springApplicationContext.getBean("exampleService", ExampleService.class);
-    
+
      -->
 
-    <bean id="message" class="java.lang.String">
+    <!--<bean id="message" class="java.lang.String">
         <constructor-arg type="java.lang.String" value="String Bean Message Reference" />
-    </bean>
+    </bean>-->
 
     <bean name="messageName" class="java.lang.String">
         <constructor-arg type="java.lang.String"
@@ -67,14 +59,23 @@
         <constructor-arg ref="messageName" />
     </bean>
 
-    <bean id="multipleConstructorInjectionComponent" class="com.baselogic.components.MultipleConstructorInjectionComponent">
-        <constructor-arg index="0" type="java.lang.String"
+    <bean id="multipleConstructorInjectionComponent"
+          class="com.baselogic.components.MultipleConstructorInjectionComponent">
+        <constructor-arg type="java.lang.String"
             value="Constructor Arg 1"  />
-        <constructor-arg index="1" type="java.lang.String"
+        <constructor-arg type="java.lang.String"
             value="Constructor Arg 2" />
     </bean>
 
-    <!-- 
+    <bean id="multipleConstructorInjectionComponentByIndex"
+          class="com.baselogic.components.MultipleConstructorInjectionComponent">
+        <constructor-arg index="1" type="java.lang.String"
+            value="Constructor Arg 2" />
+        <constructor-arg index="0" type="java.lang.String"
+                         value="Constructor Arg 1"  />
+    </bean>
+
+    <!--
         Singleton by default (property scope="singleton" is assumed)
     -->
     <bean  id="propertyInjectionComponent"

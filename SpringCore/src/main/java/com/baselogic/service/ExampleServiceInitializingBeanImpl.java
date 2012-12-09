@@ -25,12 +25,12 @@ import com.baselogic.common.SimpleBean;
 
 /**
  * ExampleServiceInitializingBeanImpl InitializingBean and DisposableBean
- * 
- * NOTE: A BeanFactoryPostProcessor modifies bean definitions, 
+ *
+ * NOTE: A BeanFactoryPostProcessor modifies bean definitions,
  * while a BeanPostProcessor replaces bean instances (such as when creating a proxy).
  *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -38,28 +38,28 @@ import com.baselogic.common.SimpleBean;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
+ *
  * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 6 Cookbook Packt</a>
  * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 6 Cookbook Amazon</a>
- * 
+ *
  * @since 2012
- * 
+ *
  */
 @Component
-public class ExampleServiceInitializingBeanImpl 
+public class ExampleServiceInitializingBeanImpl
 implements ExampleService, InitializingBean, DisposableBean {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(ExampleServiceInitializingBeanImpl.class);
-	
+
 	@Autowired
 	String message;
-	
+
 	SimpleBean simpleBean;
 
 	Date creationDate;
 
 	List<String> initializationOrder = new ArrayList<String>();
-		
+
 	@Timestamp
 	public Date getCreationDate() {
 		return creationDate;
@@ -70,13 +70,13 @@ implements ExampleService, InitializingBean, DisposableBean {
 	}
 
 	public String getMessage() {
-		return message;	
+		return message;
 	}
-	
+
 	public void setMessage(String msg){
 		this.message = msg;
 	}
-		
+
 	public SimpleBean getSimpleBean() {
 		return simpleBean;
 	}
@@ -85,12 +85,20 @@ implements ExampleService, InitializingBean, DisposableBean {
 		this.simpleBean = simpleBean;
 	}
 
-	@PostConstruct
+    public List<String> getInitializationOrder() {
+        return initializationOrder;
+    }
+
+    public void setInitializationOrder(List<String> initializationOrder) {
+        this.initializationOrder = initializationOrder;
+    }
+
+    @PostConstruct
 	public void postConstruct(){
         logger.debug("> pc > {}: @PostConstruct <<<<<", this.getClass());
         initializationOrder.add("postConstruct");
 	}
-	
+
 	@PreDestroy
 	public void preDestroy(){
 		logger.debug("> pd > {}: @PreDestroy <<<<<", this.getClass());
@@ -99,16 +107,16 @@ implements ExampleService, InitializingBean, DisposableBean {
 
 	/**
 	 * PostConstruct and init-method are BeanPostProcessors
-	 * 
-	 * @PostConstruct is a JSR-250 annotaion while init-method is Spring's way of having an initializing method
-	 * 
+	 *
+	 * @PostConstruct is a JSR-250 annotation while init-method is Spring's way of having an initializing method
+	 *
 	 * If you have @PostConstruct, this will be called first before the init methods are called
-	 * 
+	 *
 	 * If your bean implements initializing bean and overrides afterPropertiesSet:
 	 * 		1. first postProcessAfterInitialization() is called
 	 * 		2. then the afterPropertiesSet()
 	 * 		3. and then init-method init() called.
-	 * 
+	 *
 	 * @deprecated if using JSR-250 annotations, use @PostConstruct instead of init.
 	 */
     public void init() {

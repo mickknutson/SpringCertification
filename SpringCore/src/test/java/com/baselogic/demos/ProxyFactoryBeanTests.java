@@ -10,6 +10,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 //import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -52,7 +53,7 @@ import com.baselogic.service.UnImplementedService;
  * ProxyFactoryBeanTests
  *
  * <p>Spring Certification objective: 2.1</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -60,28 +61,33 @@ import com.baselogic.service.UnImplementedService;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
+ *
  * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
  * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
  * @since 2012
- * 
+ *
  */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ProxyFactoryBeanTests {
 
-	private final Logger logger = LoggerFactory.getLogger(ProxyFactoryBeanTests.class);
+	private static final Logger logger = LoggerFactory.getLogger(ProxyFactoryBeanTests.class);
 
 	@Autowired
 	ApplicationContext applicationContext;
 
-	@Test
+    @BeforeClass
+    public static void beforeClass(){
+        logger.info("");
+    }
+
+    @Test
 	public void testCustomerWithProxyFactoryService(){
 		logger.info(">>>------------------------------------------------->>>");
-		
+
 		ExampleService service = applicationContext.getBean("exampleServiceInitializingBeanImplProxy", ExampleService.class);
-		
+
 		logger.info("service: {}", service.toString());
 
 		//SimpleBean simpleBean = ((ExampleServiceInitializingBeanImpl)service).getSimpleBean();
@@ -92,7 +98,7 @@ public class ProxyFactoryBeanTests {
 		//assertThat(service instanceof InitializingBean, is(true));
 		//assertThat(service instanceof ExampleService, is(true));
 		//assertThat(service instanceof DisposableBean, is(true));
-		
+
 	}
 
 }

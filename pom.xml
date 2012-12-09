@@ -16,6 +16,13 @@
     ]]>
     </description>
 
+
+    <!--<parent>
+        <groupId>com.baselogic</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0.0</version>
+    </parent>-->
+
     <issueManagement>
 		<url>https://github.com/mickknutson/SpringCertification/issues</url>
 		<system>GitHub Issues</system>
@@ -118,18 +125,20 @@
         <!-- Dependencies ================================================== -->
 
         <log4j.version>1.2.15</log4j.version>
-        <slf4j.version>1.6.4</slf4j.version>
-        <logback.version>1.0.1</logback.version>
+        <slf4j.version>1.6.6</slf4j.version>
+        <logback.version>1.0.7</logback.version>
 
-        <springframework.version>3.1.0.RELEASE</springframework.version>
-        <aspectj.version>1.6.12</aspectj.version>
+        <!--<spring.version>3.1.2.RELEASE</spring.version>-->
+        <spring.version>3.0.7.RELEASE</spring.version>
+
+        <aspectj.version>1.7.0</aspectj.version>
         <cglib.version>2.2.2</cglib.version>
 
         <!-- Hibernate / JPA -->
         <hibernate.version>3.6.0.Final</hibernate.version>
         <hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
         <hibernate.jmx.version>3.5.6-Final</hibernate.jmx.version>
-        <h2.version>1.3.165</h2.version>
+        <h2.version>1.3.168</h2.version>
         <javax.validation.version>1.0.0.GA</javax.validation.version>
 
         <groovy.version>1.9.0-beta-4</groovy.version>
@@ -194,75 +203,107 @@
     <dependencyManagement>
         <dependencies>
 
-	        <!-- Spring -->
-	        <dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-context</artifactId>
-	            <version>${springframework.version}</version>
-	            <exclusions>
-	                <!-- Exclude Commons Logging in favor of SLF4j -->
-	                <exclusion>
-	                    <groupId>commons-logging</groupId>
-	                    <artifactId>commons-logging</artifactId>
-	                </exclusion>
-	            </exclusions>
-	        </dependency>
 
-	        <dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-core</artifactId>
-	            <version>${springframework.version}</version>
-	            <exclusions>
-	                <exclusion>
-	                    <groupId>commons-logging</groupId>
-	                    <artifactId>commons-logging</artifactId>
-	                </exclusion>
-	            </exclusions>
-	        </dependency>
-	        <dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-asm</artifactId>
-	            <version>${springframework.version}</version>
-	            <exclusions>
-	                <exclusion>
-	                    <groupId>commons-logging</groupId>
-	                    <artifactId>commons-logging</artifactId>
-	                </exclusion>
-	            </exclusions>
-	        </dependency>
-	        <dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-aspects</artifactId>
-	            <version>${springframework.version}</version>
-	        </dependency>
-	        <dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-context-support</artifactId>
-	            <version>${springframework.version}</version>
-	            <exclusions>
-	                <exclusion>
-	                    <groupId>quartz</groupId>
-	                    <artifactId>quartz</artifactId>
-	                </exclusion>
-	            </exclusions>
-	        </dependency>
-	        <dependency>
-	            <groupId>org.springframework</groupId>
-	            <artifactId>spring-aop</artifactId>
-	            <version>${springframework.version}</version>
-	        </dependency>
-
-
+            <!--================================================================-->
+            <!-- Spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-asm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-expression</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-web</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-core</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-config</artifactId>
+                <version>${spring.version}</version>
             </dependency>
 
             <dependency>
                 <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
                 <artifactId>spring-webmvc</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
 
 
@@ -270,22 +311,23 @@
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-core</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-config</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-web</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-taglibs</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
 
 	        <!-- AspectJ -->
@@ -420,6 +462,8 @@
                 <version>1.1.2</version>
             </dependency>
 
+
+
             <!-- Hibernate / JPA -->
             <dependency>
                 <groupId>org.hibernate</groupId>
@@ -445,7 +489,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-orm</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-dbcp</groupId>
@@ -462,7 +506,7 @@
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-jms</artifactId>
-                <version>${springframework.version}</version>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.activemq</groupId>
@@ -487,7 +531,7 @@
 	        <dependency>
 	            <groupId>org.springframework</groupId>
 	            <artifactId>spring-test</artifactId>
-	            <version>${springframework.version}</version>
+	            <version>${spring.version}</version>
 	            <scope>test</scope>
 	        </dependency>
 
@@ -598,32 +642,99 @@
     <!-- =================================================================== -->
     <dependencies>
 
-        <!-- Spring -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-asm</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aspects</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-expression</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+            </dependency>
 
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-asm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aspects</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context-support</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-aop</artifactId>
-        </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-core</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-config</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+            </dependency>
+
+
+            <!-- Spring Security -->
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-core</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-config</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-web</artifactId>
+            </dependency>
+
+
+
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-taglibs</artifactId>
+            </dependency>
+
 
 
         <!-- AspectJ -->
@@ -678,6 +789,36 @@
             <artifactId>javax.inject</artifactId>
         </dependency>
 
+
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-validator</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-jmx</artifactId>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>commons-dbcp</groupId>
+                <artifactId>commons-dbcp</artifactId>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+            </dependency>
 
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
@@ -752,6 +893,98 @@
 
 		<pluginManagement>
 			<plugins>
+
+	            <plugin>
+	                <groupId>org.apache.maven.plugins</groupId>
+	                <artifactId>maven-antrun-plugin</artifactId>
+	                <version>1.3</version>
+	                <executions>
+	                    <execution>
+	                        <id>generateVersionFile</id>
+	                        <phase>compile</phase>
+	                        <configuration>
+	                            <tasks>
+	                                <propertyfile file="${project.build.outputDirectory}/version.properties">
+	                                    <entry key="app.version" value="${project.version}"/>
+	                                    <entry key="app.build" type="date" value="now"/>
+	                                </propertyfile>
+	                            </tasks>
+	                        </configuration>
+	                        <goals>
+	                            <goal>run</goal>
+	                        </goals>
+	                    </execution>
+	                </executions>
+	                <dependencies>
+	                    <dependency>
+	                        <groupId>ant</groupId>
+	                        <artifactId>ant-nodeps</artifactId>
+	                        <version>1.6.5</version>
+	                    </dependency>
+	                </dependencies>
+	            </plugin>
+
+
+	            <!--
+	            http://mojo.codehaus.org/aspectj-maven-plugin/
+	            -->
+	            <plugin>
+	                <groupId>org.codehaus.mojo</groupId>
+	                <artifactId>aspectj-maven-plugin</artifactId>
+	                <version>${aspectj-maven-plugin.version}</version>
+	                <configuration>
+	                    <!-- Required as the plugin does not resolve this by default -->
+	                    <source>${maven.compiler.source}</source>
+	                    <target>${maven.compiler.target}</target>
+	                    <complianceLevel>${maven.compiler.target}</complianceLevel>
+	                    <encoding>${project.build.sourceEncoding}</encoding>
+	                    <outxml>true</outxml>
+	                    <aspectLibraries>
+	                        <aspectLibrary>
+	                            <groupId>org.springframework</groupId>
+	                            <artifactId>spring-aspects</artifactId>
+	                        </aspectLibrary>
+	                    </aspectLibraries>
+	                    <sources>
+	                        <source>
+	                            <basedir>src/main/java</basedir>
+	                            <includes>
+	                                <include>**/*.java</include>
+	                                <include>**/*.aj</include>
+	                            </includes>
+	                            <!--<excludes>
+	                                <exclude>**/logging/*.aj</exclude>
+	                            </excludes>-->
+	                            <!--<excludes>
+	                                <exclude>**/data/*.java</exclude>
+	                                <exclude>**/dao/*.java</exclude>
+	                                <exclude>**/domain/*.java</exclude>
+	                            </excludes>-->
+	                        </source>
+	                    </sources>
+	                </configuration>
+	                <executions>
+	                    <execution>
+	                        <goals>
+	                            <goal>compile</goal>
+	                            <goal>test-compile</goal>
+	                        </goals>
+	                    </execution>
+	                </executions>
+	                <dependencies>
+	                    <dependency>
+	                        <groupId>org.aspectj</groupId>
+	                        <artifactId>aspectjrt</artifactId>
+	                        <version>${aspectj.version}</version>
+	                    </dependency>
+	                    <dependency>
+	                        <groupId>org.aspectj</groupId>
+	                        <artifactId>aspectjtools</artifactId>
+	                        <version>${aspectj.version}</version>
+	                    </dependency>
+	                </dependencies>
+	            </plugin>
+
 
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -860,7 +1093,9 @@
 			</plugins>
 		</pluginManagement>
 
-	    <!-- =================================================================================== -->
+        <!--================================================================-->
+        <!-- PLUGINS -->
+        <!--================================================================-->
         <plugins>
 
 			<!--
@@ -1068,7 +1303,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven.surefire.plugin}</version>
                 <configuration>
-                    <!--forkMode>pertest</forkMode -->
+                    <forkMode>pertest</forkMode>
                     <includes>
                         <include>**/*Tests.java</include>
                         <!-- <include>**/*Stories.java</include> -->
@@ -1159,6 +1394,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>${maven.javadoc.plugin}</version>
                 <configuration>
                 	<aggregate>true</aggregate>
                     <author>true</author>

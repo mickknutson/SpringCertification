@@ -1,8 +1,12 @@
 .gitconfig
 .clover/
 .rvmrc
+.gradle/
+.idea/
 .DS_Store
 target/
+bin/
+build/
 src/logs/
 reports/
 src/main/webapp/index.html

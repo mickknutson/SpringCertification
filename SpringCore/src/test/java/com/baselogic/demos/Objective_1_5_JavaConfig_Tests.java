@@ -1,23 +1,13 @@
 package com.baselogic.demos;
 
 //Static imports
-import static org.hamcrest.CoreMatchers.is;
-import static org.junit.Assert.*;
-import static org.mockito.BDDMockito.given;
-import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.*;
 
+import com.baselogic.components.PropertyInjectionComponent;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,18 +15,12 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.baselogic.domain.Activity;
-import com.baselogic.domain.Customer;
-import com.baselogic.util.ExampleUtils;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.is;
 
-
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
 
 /**
- * PropertyEditorTests
+ * Simple JUNit Test
  *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
  *
@@ -56,30 +40,42 @@ import java.lang.annotation.Target;
  */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
-public class PropertyEditorTests {
+public class Objective_1_5_JavaConfig_Tests {
 
-	private static final Logger logger = LoggerFactory.getLogger(PropertyEditorTests.class);
+	private static final Logger logger = LoggerFactory.getLogger(Objective_1_5_JavaConfig_Tests.class);
 
-	@Autowired
-	ApplicationContext applicationContext;
+    @Autowired
+    ApplicationContext applicationContext;
 
+    PropertyInjectionComponent propertyInjectionComponent;
+
+    //-----------------------------------------------------------------------//
+    //-----------------------------------------------------------------------//
+    //-----------------------------------------------------------------------//
     @BeforeClass
     public static void beforeClass(){
         logger.info("");
     }
 
-    @Test
-	public void testCustomerPhoneNumberEditor() {
-		Customer customer = applicationContext.getBean(Customer.class);
-		assertNotNull(customer);
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info("customer: {}", customer.toString());
+    @Before
+	public void beforeEachUnitTest(){
+		logger.debug("beforeEachUnitTest");
+		propertyInjectionComponent = new PropertyInjectionComponent();
 	}
 
-	@Test
-	public void testNeedMoreExamples() {
-		logger.info(">>>------------------------------------------------->>>");
-		logger.info("NEED MORE EXAMPLES FOR EDITORS");
+	@After
+	public void afterEachUnitTest(){
+		logger.debug("afterEachUnitTest");
+		propertyInjectionComponent = null;
+	}
+
+    //-----------------------------------------------------------------------//
+    //-----------------------------------------------------------------------//
+    //-----------------------------------------------------------------------//
+    @Test
+	public void testHolder() {
+		assertThat(propertyInjectionComponent instanceof PropertyInjectionComponent,
+				is(true));
 	}
 
 }

@@ -9,6 +9,7 @@ import static org.mockito.Mockito.*;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -37,9 +38,9 @@ import java.lang.annotation.Target;
 
 /**
  * SpelTests
- * 
+ *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -47,23 +48,28 @@ import java.lang.annotation.Target;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
+ *
  * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
  * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
  * @since 2012
- * 
+ *
  */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 public class SpelTests {
-	
-	private final Logger logger = LoggerFactory.getLogger(SpelTests.class);
+
+	private static final Logger logger = LoggerFactory.getLogger(SpelTests.class);
 
 	@Autowired
 	ApplicationContext applicationContext;
 
-	@Test
+    @BeforeClass
+    public static void beforeClass(){
+        logger.info("");
+    }
+
+    @Test
 	public void testOrderNumberGenerator() {
 		Customer customer = applicationContext.getBean(Customer.class);
 		assertNotNull(customer);
@@ -74,9 +80,9 @@ public class SpelTests {
 
 	@Test
 	public void testOrderNoteFormatter() {
-		
+
 		Order order = applicationContext.getBean(Order.class);
-		
+
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info("SpEL Order: {}", order.toString());
