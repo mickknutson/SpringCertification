@@ -13,9 +13,9 @@ import java.lang.annotation.Annotation;
 
 /**
  * ContextUtils
- * 
+ *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -23,19 +23,19 @@ import java.lang.annotation.Annotation;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
- * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
- * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
+ * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 6 Cookbook Packt</a>
+ * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 6 Cookbook Amazon</a>
+ *
  * @since 2012
- * 
+ *
  */
 @Component
 public class ContextUtils {
 
 	private static final Logger logger = LoggerFactory
             .getLogger(ContextUtils.class);
-	
+
     @Autowired
     ApplicationContext applicationContext;
 
@@ -47,9 +47,9 @@ public class ContextUtils {
      * @return
      */
     public String showBeansInContext() {
-    	
+
     	StringBuilder sb = new StringBuilder();
-    	
+
         sb.append("\n\n******************************************************************************").append("\n\n");
 
         DefaultListableBeanFactory factory = (DefaultListableBeanFactory) beanFactory;
@@ -100,7 +100,7 @@ public class ContextUtils {
         sb.append("*** Number of Beans = ").append(applicationContext.getBeanDefinitionCount()).append(" ***").append("\n");
         sb.append("*** Number of Bean Post Processors = ").append(factory.getBeanPostProcessorCount()).append(" ***").append("\n");
         sb.append("******************************************************************************").append("\n\n");
-        
+
         return sb.toString();
     }
 

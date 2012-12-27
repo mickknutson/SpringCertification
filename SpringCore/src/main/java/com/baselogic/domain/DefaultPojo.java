@@ -1,11 +1,12 @@
-package com.baselogic.common;
+package com.baselogic.domain;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.springframework.context.annotation.Scope;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
+import org.springframework.beans.factory.annotation.Required;
 
 /**
- * SimpleBean
+ * <p>Spring Certification objective: 1.2 Lifecycle</p>
+ *
+ * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * @see <a href="http://www.baselogic.com">Blog: http://baselogic.com</a>
@@ -19,20 +20,37 @@ import org.springframework.beans.factory.config.ConfigurableBeanFactory;
  * @since 2012
  *
  */
-@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public class SimpleBean {
+public class DefaultPojo {
 
-	private String message;
+	private Long id;
 
-	public String getMessage() {
-		return message;
-	}
+	private String description;
 
-	public void setMessage(String message) {
-		this.message = message;
-	}
+	public DefaultPojo() {}
 
-	@Override
+    public DefaultPojo(Long id, String description) {
+        this.id = id;
+        this.description = description;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    @Required
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    @Override
 	public String toString() {
 		return ToStringBuilder.reflectionToString(this);
 	}

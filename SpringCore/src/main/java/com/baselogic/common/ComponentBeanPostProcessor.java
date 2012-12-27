@@ -23,9 +23,9 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
  *
  * NOTE: A BeanFactoryPostProcessor modifies bean definitions,
  * while a BeanPostProcessor replaces/modifies bean instances (such as when creating a proxy).
- * 
+ *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -33,12 +33,12 @@ import com.baselogic.service.ExampleServiceInitializingBeanImpl;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
- * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
- * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
+ * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 6 Cookbook Packt</a>
+ * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 6 Cookbook Amazon</a>
+ *
  * @since 2012
- * 
+ *
  */
 @Component
 public class ComponentBeanPostProcessor implements BeanPostProcessor {
@@ -48,33 +48,33 @@ public class ComponentBeanPostProcessor implements BeanPostProcessor {
 	/**
 	 * for every bean that has @Timestamp, inject a new Date().
 	 */
-	@Override	
+	@Override
 	public Object postProcessBeforeInitialization(final Object bean, String beanName) throws BeansException {
 		logger.debug(">>> bpp.ppBi >> Bean : {} can be postProcessedAfterInitialization: {}", beanName, bean);
 
         Class<? extends Object> clazz = bean.getClass();
-        
+
         ReflectionUtils.doWithMethods(clazz, new ReflectionUtils.MethodCallback() {
             public void doWith(Method method) {
-            	
+
                 if (method.isAnnotationPresent(Timestamp.class)) {
                 	logger.info(">>>--- post process Annotated method >");
                     try {
                         PropertyDescriptor pd = BeanUtils.findPropertyForMethod(method);
 
                         Date originalValue = (Date) pd.getReadMethod().invoke(bean, null);
-                        
+
                         if(originalValue == null){ originalValue = new Date(0); }
-                        
+
                         Date doubledValue = new Date(originalValue.getTime() * 2 );
 
                         // set doubled value
                         pd.getWriteMethod().invoke(bean, new Object[] { doubledValue });
 
 						logger.info(">>> Bean : {} original date value: {}", bean, originalValue);
-						
+
 						logger.debug("new date value: {}", bean, doubledValue);
-						
+
                     } catch (Throwable e) {
                         logger.error(e.getMessage(), e);
                     }
@@ -84,7 +84,7 @@ public class ComponentBeanPostProcessor implements BeanPostProcessor {
 
         return bean;
     }
-	
+
 	public Object postProcessBeforeInitialization2(final Object bean, final String beanName)
 			throws BeansException {
 		logger.info(">>> bpp.ppBi >> Bean : {} can be postProcessedAfterInitialization here..", bean);
@@ -107,7 +107,7 @@ public class ComponentBeanPostProcessor implements BeanPostProcessor {
 		return bean;
 	}
 
-	
+
 	@Override
 	public Object postProcessAfterInitialization(final Object bean,
 			final String beanName) throws BeansException {

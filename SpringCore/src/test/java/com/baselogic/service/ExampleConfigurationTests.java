@@ -31,9 +31,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
  * ExampleConfigurationTests
- * 
+ *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
@@ -41,29 +41,29 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
- * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
- * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
+ * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 6 Cookbook Packt</a>
+ * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 6 Cookbook Amazon</a>
+ *
  * @since 2012
- * 
+ *
  */
 @ContextConfiguration
 @RunWith(SpringJUnit4ClassRunner.class)
 public class ExampleConfigurationTests {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(ExampleConfigurationTests.class);
-	
+
 	@Autowired
 	private ContextUtils contextUtils;
-	
+
 	@Autowired
 	@Qualifier("exampleService")
 	private ExampleService service;
-	
+
 	@Autowired
 	private ExampleServiceInitializingBeanImpl exampleServiceInitializingBeanImpl;
-	
+
 	@Before
 	public void beforeEachUnitTest(){}
 
@@ -77,9 +77,9 @@ public class ExampleConfigurationTests {
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info(">>>------------------------------------------------->>>");
 		logger.info("--> testProxyExampleService: {}", service.getMessage());
-		
+
 		assertThat(service instanceof ExampleService, is(true));
-		
+
 		/*assertThat(initializationOrder.size(), is(2));
 		assertThat(initializationOrder.get(0), is("postConstruct"));
 		assertThat(initializationOrder.get(1), is("afterPropertiesSet"));*/

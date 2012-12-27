@@ -9,17 +9,17 @@ import org.slf4j.LoggerFactory;
 
 /**
  * AroundAdvice
- * 
+ *
  * @Around
  * Surrounds
  * Takes ProceedingJoinPoint, can intercept call or ignore exception
  * First parameter of the advice method must be of type ProceedingJoinPoint
  * Call proceed() on the ProceedingJoinPoint to execute the method
- * 
+ *
  * <p>Spring Certification objective: 2.1 AOP Recommendations</p>
  * <p>Spring Certification objective: 2.2 AOP Pointcuts</p>
  * <p>Spring Certification objective: 2.3 AOP Advice</p>
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.1 AOP Recommendations</a>
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.2 AOP Pointcuts</a>
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html#aop">Objective 2.3 AOP Advice</a>
@@ -29,51 +29,51 @@ import org.slf4j.LoggerFactory;
  * @see <a href="http://linkedin.com/in/mickknutson">LinkedIN: http://linkedin.com/in/mickknutson</a>
  * @see <a href="http://twitter.com/mickknutson">Twitter: http://twitter.com/mickknutson</a>
  * @see <a href="http://github.com/mickknutson">Git hub: http://github.com/mickknutson</a>
- * 
- * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 7 Cookbook Packt</a>
- * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 7 Cookbook Amazon</a>
- * 
+ *
+ * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 6 Cookbook Packt</a>
+ * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 6 Cookbook Amazon</a>
+ *
  * @since 2012
- * 
+ *
  */
 @Aspect
 public class AroundAdvice {
-	
+
 	private final Logger logger = LoggerFactory.getLogger(AroundAdvice.class);
 
 	@Pointcut("execution(* com.baselogic.service.*.placeDelayedOrder(..))")
-    public void placeDelayedOrderService() {}	
+    public void placeDelayedOrderService() {}
 
 
 	/**
 	 * Runs @Before, (jp) then allow code to execute, (jp) then @AfterReturning
-	 * 
+	 *
 	 * Potential issue:
 	 * Multiple markers at this line
 	 * - advice defined in com.baselogic.aspects.AroundAdvice has not been applied [Xlint:adviceDidNotMatch]
 	 * - applying to join point that doesn't return void: method-execution(com.baselogic.domain.Order
 	 * com.baselogic.service.OrderServiceImpl.placeDelayedOrder(com.baselogic.domain.Order, long))
-	 * 
+	 *
 	 * @param joinpoint
 	 */
     @Around("placeDelayedOrderService()")
-    public Object aroundPlaceDelayedOrderService(ProceedingJoinPoint joinpoint) 
+    public Object aroundPlaceDelayedOrderService(ProceedingJoinPoint joinpoint)
     		throws Throwable {
-    	
+
     	Object returnVal = null;
-    	
+
     	// get execution control here.
-    	
+
 	    try {
 		    logger.info(">>> ----- aroundPlaceDelayedOrderService...>>>");
 		    long start = System.currentTimeMillis();
-		    
+
 		    // Return control back to the executing code's at the join-point
 		    // give control back to code execution.
 		    returnVal = joinpoint.proceed();
-		    
+
 		    // get execution control again.
-		    
+
 		    long end = System.currentTimeMillis();
 
 		    logger.info(">>> ----- The order took {} milliseconds to complete...>>>", (end-start));
@@ -81,7 +81,7 @@ public class AroundAdvice {
 	    } catch(Throwable t){
 	    	logger.error(t.getMessage());
 	    	// if error is thrown, will NOT stop code execution.
-	    	
+
 	    	// Can propagate Throwable.
 	    	throw t;
 	    }
@@ -97,19 +97,19 @@ public class AroundAdvice {
      */
     public Object aroundXmlPlaceDelayedOrderService(ProceedingJoinPoint joinpoint){
     	Object returnVal = null;
-    	
+
     	// get execution control here.
-    	
+
 	    try {
 		    logger.info(">>> ----- aroundXmlPlaceDelayedOrderService...>>>");
 		    long start = System.currentTimeMillis();
-		    
+
 		    // Return control back to the executing code's at the join-point
 		    // give control back to code execution.
 		    returnVal = joinpoint.proceed();
-		    
+
 		    // get execution control again.
-		    
+
 		    long end = System.currentTimeMillis();
 
 		    logger.info(">>> ----- The xml order took {} milliseconds to complete...>>>", (end-start));
@@ -122,7 +122,7 @@ public class AroundAdvice {
 	    // return control again to execution code.
 	    return returnVal;
     }
-    
+
     /**
      * @deprecated For testing ONLY!
      * @param joinpoint
