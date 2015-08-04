@@ -8,29 +8,8 @@
     <bannerLeft>
         <name>BASE Logic: ${project.name}</name>
         <href>index.html</href>
+        <src>http://baselogic.com/blog/wp-content/uploads/2011/12/BLiNC_logo.png</src>
     </bannerLeft>
-
-    <!--
-    <bannerLeft>
-        <name/>
-        <src/>
-        <alt/>
-        <href/>
-        <border/>
-        <width/>
-        <height/>
-    </bannerLeft>
-    <bannerRight>
-        <name/>
-        <src/>
-        <alt/>
-        <href/>
-        <border/>
-        <width/>
-        <height/>
-    </bannerRight>
-      <googleAnalyticsAccountId/>
-      -->
 
     <poweredBy>
         <logo img="http://baselogic.com/images/pb-blinc-maven.png"
@@ -108,7 +87,7 @@
         </breadcrumbs>
         -->
 
-        <menu name="Development Inherited Menu" inherit="top">
+        <menu name="Development" inherit="top">
             <item name="Home" href="/" />
             <!-- <item name="Modules" href="/modules.html" /> -->
             <item name="Javadoc" href="/javadoc/index.html" />

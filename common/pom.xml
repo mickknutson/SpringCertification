@@ -9,19 +9,20 @@
     <groupId>com.baselogic.spring.tutorials</groupId>
     <artifactId>common</artifactId>
     <name>Common Objects for Demos</name>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-RELEASE</version>
 
     <parent>
         <groupId>com.baselogic</groupId>
-        <artifactId>SpringTutorials</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <artifactId>SpringCertification</artifactId>
+        <version>1.0.0-RELEASE</version>
+        <relativePath>../</relativePath>
     </parent>
 
 
     <description>Spring Common Objects</description>
 
     <properties>
-        <site.basedir>${project.parent.basedir}</site.basedir>
+        <!--<site.basedir>../</site.basedir>-->
     </properties>
 
     <dependencies>

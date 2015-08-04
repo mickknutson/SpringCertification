@@ -18,7 +18,7 @@ import org.slf4j.LoggerFactory;
  *
  * <p>Spring Certification objective: 1.2 Lifecycle</p>
  *
- * @see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
+ * at_see <a href="http://springcert.sourceforge.net/core-3/index.html#beans">Objective 1.2 Lifecycle</a>
  *
  * @author Mick Knutson
  * <p><a href="http://www.baselogic.com">Blog: http://baselogic.com</a></p>

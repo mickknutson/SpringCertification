@@ -2,15 +2,16 @@
 <project name="BASE Logic: ${project.name}">
 
 	<!-- http://maven.apache.org/skins/maven-fluido-skin/
-	http://maven.apache.org/doxia/doxia-sitetools/doxia-decoration-model/decoration.html 
+	http://maven.apache.org/doxia/doxia-sitetools/doxia-decoration-model/decoration.html
 	-->
 
 	<bannerLeft>
 		<name>BASE Logic: ${project.name}</name>
 		<href>index.html</href>
+		<src>http://baselogic.com/blog/wp-content/uploads/2011/12/BLiNC_logo.png</src>
 	</bannerLeft>
-	
-	<!-- 
+
+	<!--
 	<bannerLeft>
 	    <name/>
 	    <src/>
@@ -29,7 +30,7 @@
 	    <width/>
 	    <height/>
 	</bannerRight>
-  	<googleAnalyticsAccountId/> 
+  	<googleAnalyticsAccountId/>
   	-->
 
 	<poweredBy>
@@ -40,8 +41,8 @@
 
 	<skin>
 		<groupId>org.apache.maven.skins</groupId>
-		<artifactId>maven-fluido-skin</artifactId>
-		<version>1.2.1</version>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.4</version>
 	</skin>
 
 	<custom>
@@ -92,7 +93,7 @@
 
 		<links>
 			<item name="${project.name}" href="index.html" />
-			
+
 			<item name="BASE Logic, Inc" href="http://baselogic.com" />
 			<item name="LinkdIN" href="http://linkedin.com/in/mickknutson" />
 			<item name="Twitter" href="http://twitter.com/mickknutson" />
@@ -102,7 +103,7 @@
 			<item name="Amazon Book" href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166" />
 		</links>
 
-		<!-- 
+		<!--
 		<breadcrumbs>
       		<item name="" />
     	</breadcrumbs>

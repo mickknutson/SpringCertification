@@ -1413,8 +1413,9 @@
                     <use>true</use>
                     <version>true</version>
                     <windowtitle>${project.name} ${project.version} API</windowtitle>
-                    <doclet>ydoc.doclets.YStandard</doclet>
-					<docletPath>${site.basedir}/src/yworks/ydoc.jar;${site.basedir}/src/yworks/styleed.jar;${site.basedir}/src/yworks/resources;${project.build.outputDirectory};</docletPath>
+
+                    <!--<doclet>ydoc.doclets.YStandard</doclet>-->
+					<!--<docletPath>${site.basedir}/src/yworks/ydoc.jar;${site.basedir}/src/yworks/styleed.jar;${site.basedir}/src/yworks/resources;${project.build.outputDirectory};</docletPath>-->
                     <additionalparam>-umlautogen -link http://docs.oracle.com/javase/6/docs/api/</additionalparam>
 
                     <doctitle>API for ${project.name} ${project.version}</doctitle> <!-- Used by javadoc:javadoc goal -->
