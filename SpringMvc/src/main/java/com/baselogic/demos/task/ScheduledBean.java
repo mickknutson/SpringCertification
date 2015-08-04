@@ -1,7 +1,6 @@
 package com.baselogic.demos.task;
 
 import java.util.Date;
-import java.util.concurrent.Future;
 
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.AsyncResult;
@@ -10,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * HibernateConfiguration
- * 
+ *
  * @see <a href="http://springcert.sourceforge.net/core-3/index.html">Objectives</a><br />
  *
  * @author Mick Knutson
@@ -18,12 +17,12 @@ import org.springframework.stereotype.Component;
  * @see LinkedIN: <a href="http://linkedin.com/in/mickknutson">http://linkedin.com/in/mickknutson</a><br />
  * @see Twitter: <a href="http://twitter.com/mickknutson">http://twitter.com/mickknutson</a><br />
  * @see Github: <a href="http://github.com/mickknutson">http://github.com/mickknutson</a><br />
- * 
+ *
  * @see <a href="http://www.packtpub.com/java-ee6-securing-tuning-extending-enterprise-applications-cookbook/book">JavaEE 6 Cookbook Packt</a><br />
  * @see <a href="http://www.amazon.com/Cookbook-securing-extending-enterprise-applications/dp/1849683166">JavaEE 6 Cookbook Amazon</a><br />
- * 
+ *
  * @since 2012
- * 
+ *
  */
 @Component
 public class ScheduledBean {
@@ -33,9 +32,9 @@ public class ScheduledBean {
 		sendAsync("runFixedTask");
 		System.out.println("ranFixedTask... at " + new Date().toString());
 	}
-	
 
-	//@Scheduled(cron = "10,40,50 * * * * *") 
+
+	//@Scheduled(cron = "10,40,50 * * * * *")
 	public void runScheduledTask() {
 		System.out.println("runScheduledTask... at " + new Date().toString());
 	}

@@ -1,7 +1,7 @@
 
-import com.baselogic.domain.Customer
-import com.baselogic.domain.Item
-import com.baselogic.domain.Order
+import com.baselogic.tutorials.domain.Customer
+import com.baselogic.tutorials.domain.Item
+import com.baselogic.tutorials.domain.Order
 import com.baselogic.domain.ShoppingCart
 
 import com.baselogic.domain.Activity
@@ -18,7 +18,7 @@ before_each "Init 1", {
 scenario "Customer Item Ordering" , {
 
 	when "they have one order in their shopping cart", {
-	
+
 		shoppingCart = new ShoppingCart()
 		shoppingCart.addItem(new Item("Foo", 91.00, 2))
 
@@ -27,7 +27,7 @@ scenario "Customer Item Ordering" , {
    		shoppingCart.getTotalPrice().shouldBe 91.00
 
  	}
- 
+
  	and "there should be one item ordered by Mick", {
    		customer.firstName.shouldBe "Mick Knutson"
    		shoppingCart.getItemCount().shouldBe 1

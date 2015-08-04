@@ -1,7 +1,6 @@
 package com.baselogic.demos.domain;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import java.util.Arrays;
 
 import javax.validation.Valid;
 import javax.validation.constraints.Max;

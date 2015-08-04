@@ -11,10 +11,11 @@
 
     <parent>
         <groupId>com.baselogic</groupId>
-        <artifactId>demos</artifactId>
+        <artifactId>SpringTutorials</artifactId>
         <version>1.0.0-RELEASE</version>
     </parent>
-    
+
+
     <description>
         <![CDATA[
         Spring Core Certification Supporting Utility Demos

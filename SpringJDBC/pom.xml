@@ -11,19 +11,20 @@
 
     <parent>
         <groupId>com.baselogic</groupId>
-        <artifactId>demos</artifactId>
+        <artifactId>SpringTutorials</artifactId>
         <version>1.0.0-RELEASE</version>
     </parent>
-    
+
     <description>
         <![CDATA[Spring JDBC Project.]]>
     </description>
-	
+
 	<properties>
     	<site.basedir>${project.parent.basedir}</site.basedir>
 	</properties>
-	 
+
     <dependencies>
+
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
@@ -36,7 +37,7 @@
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
-        </dependency>       
+        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>

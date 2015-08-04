@@ -3,13 +3,8 @@ package com.baselogic.demos;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
-import java.util.zip.DataFormatException;
-
-import javax.naming.InsufficientResourcesException;
-
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,9 +12,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.baselogic.domain.Order;
-import com.baselogic.service.OrderService;
-import com.baselogic.service.OrderServiceImpl;
+import com.baselogic.tutorials.domain.Order;
+import com.baselogic.tutorials.service.OrderService;
+import com.baselogic.tutorials.service.OrderServiceImpl;
 
 /**
  * AroundAdviceTests

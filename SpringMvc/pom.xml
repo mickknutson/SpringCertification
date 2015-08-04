@@ -1,29 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-    <groupId>com.baselogic.demos</groupId>
-    <artifactId>SpringMVC</artifactId>
-    <name>MVC Demos</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+
     <packaging>war</packaging>
+
+    <groupId>com.baselogic.spring.tutorials</groupId>
+    <artifactId>SpringMvc</artifactId>
+    <name>MVC Demos</name>
     <version>1.0.0-SNAPSHOT</version>
 
     <parent>
         <groupId>com.baselogic</groupId>
-        <artifactId>demos</artifactId>
-        <version>1.0.0-RELEASE</version>
+        <artifactId>SpringTutorials</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
-    
+
+
     <description>
         <![CDATA[Spring Core Certification MVC Demos]]>
     </description>
-	
+
 	<properties>
-    	<site.basedir>${project.parent.basedir}</site.basedir>    	    	
+    	<site.basedir>${project.parent.basedir}</site.basedir>
 	</properties>
-    
+
     <dependencies>
-        <!-- Spring -->     
+
+        <dependency>
+            <groupId>com.baselogic.spring.tutorials</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.baselogic.spring.tutorials</groupId>
+            <artifactId>core</artifactId>
+        </dependency>
+
+        <!-- Spring -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -46,32 +61,36 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-web</artifactId>
-        </dependency>       
+        </dependency>
 
         <!-- Servlet -->
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
+
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
             <artifactId>jsp-api</artifactId>
+            <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
-    
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+        </dependency>
+
+
         <!-- ORM -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <!-- <version>3.5.6-Final</version> -->
         </dependency>
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -81,18 +100,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-        </dependency>
-        
+        </dependency>-->
+
         <!-- JBehave -->
 
-		<dependency>
+		<!--<dependency>
 			<groupId>org.jbehave</groupId>
 			<artifactId>jbehave-core</artifactId>
 			<version>${jbehave.core.version}</version>
@@ -104,9 +123,9 @@
 			<artifactId>jbehave-site-resources</artifactId>
 			<version>${jbehave.site.version}</version>
 			<type>zip</type>
-		</dependency>
-    
-		<dependency>
+		</dependency>-->
+
+		<!--<dependency>
 			<groupId>org.jbehave.web</groupId>
 			<artifactId>jbehave-web-selenium</artifactId>
 			<version>${jbehave.web.version}</version>
@@ -129,7 +148,7 @@
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
+		</dependency>-->
 
 		<!--
 		<dependency>
@@ -169,14 +188,42 @@
 			</exclusions>
 		</dependency> -->
 
-        
+
     </dependencies>
 
     <build>
         <plugins>
 
-			<!-- mvn clean test easyb:test thucydides:aggregate -e -->
-			<plugin>
+
+            <!--
+            https://tomcat.apache.org/maven-plugin-trunk/index.html
+
+            To remote debug, execute this command first:
+            ============================================
+            mvnDebug clean tomcat7:run-war -P debug -e
+            (this opens port 8080 as the debug port)
+
+
+            To add more memory to run Tomcat:
+            =================================
+            (Linux) export JAVA_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+            (Windows) set JAVA_OPTS="-Xmx512m -XX:MaxPermSize=512m"
+
+            mvn tomcat7:run -e -P embedded
+            mvn tomcat7:run-war -e -P embedded
+
+            To start:
+            http://localhost:8080/spring-mvc/index.html
+
+
+            To package to be deployed with Tomcat:
+            ======================================
+            mvn clean tomcat7:deploy -e
+
+            -->
+
+            <!-- mvn clean test easyb:test thucydides:aggregate -e -->
+			<!--<plugin>
 				<groupId>org.easyb</groupId>
 				<artifactId>maven-easyb-plugin</artifactId>
 				<configuration>
@@ -192,15 +239,15 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin>-->
 
-			<plugin>
+			<!--<plugin>
 				<groupId>net.thucydides.maven.plugins</groupId>
 				<artifactId>maven-thucydides-plugin</artifactId>
-			</plugin>
+			</plugin>-->
 
 
-			<plugin>
+			<!--<plugin>
 				<groupId>org.jbehave</groupId>
 				<artifactId>jbehave-maven-plugin</artifactId>
 				<executions>
@@ -225,8 +272,8 @@
 						<version>${guava.version}</version>
 					</dependency>
 				</dependencies>
-			</plugin>
-      			
+			</plugin>-->
+
         </plugins>
     </build>
 </project>

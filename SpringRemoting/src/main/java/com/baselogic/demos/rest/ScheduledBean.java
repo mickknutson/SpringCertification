@@ -1,11 +1,8 @@
 package com.baselogic.demos.rest;
 
 import java.util.Date;
-import java.util.concurrent.Future;
 
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.AsyncResult;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component

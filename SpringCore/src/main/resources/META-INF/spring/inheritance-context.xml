@@ -7,12 +7,12 @@
 	">
 
 	<!-- <bean id="simpleOrderBase"
-      class="com.baselogic.domain.Order"
+      class="com.baselogic.tutorials.domain.Order"
       abstract="true">
 	    <property name="firstName" value="Joe" />
 	    <property name="lastName" value="Smith" />
 	</bean>
-	
+
 	<bean id="simpleOrder1"
 	      parent="simplePersonBase">
 	    <property name="address" value="1060 W. Addison St" />
@@ -20,7 +20,7 @@
 	    <property name="state" value="IL" />
 	    <property name="zipPostalCode" value="60613" />
 	</bean>
-	
+
 	<bean id="simpleOrder2"
 	      parent="simplePersonBase">
 	    <property name="address" value="2 Penn Plaza #15" />
