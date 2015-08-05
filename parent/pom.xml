@@ -130,6 +130,7 @@
         <maven.sonar.plugin>2.12</maven.sonar.plugin>
         <maven.source.plugin>2.4</maven.source.plugin>
         <maven.surefire.plugin>2.18.1</maven.surefire.plugin>
+        <maven.taglist.plugin>2.4</maven.taglist.plugin>
         <maven.tomcat.plugin>2.2</maven.tomcat.plugin>
         <maven.version.range>[2.2.1,3.3.3)</maven.version.range>
         <maven.versions.plugin>2.2</maven.versions.plugin>
@@ -161,7 +162,8 @@
         <commons_lang.version>2.6</commons_lang.version>
         <commons_lang3.version>3.4</commons_lang3.version>
         <commons_dbcp.version>1.4</commons_dbcp.version>
-        <commons_io.version>2.3</commons_io.version>
+        <commons.dbcp2.version>2.1</commons.dbcp2.version>
+        <commons_io.version>2.4</commons_io.version>
 
         <easyb.version>1.6</easyb.version>
         <easyb.plugin.version>1.4</easyb.plugin.version>
@@ -584,11 +586,23 @@
                 <version>${spring.version}</version>
             </dependency>
 
-            <!--<dependency>
+            <dependency>
                 <groupId>commons-dbcp</groupId>
                 <artifactId>commons-dbcp</artifactId>
                 <version>${commons_dbcp.version}</version>
-            </dependency>-->
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-dbcp2</artifactId>
+                <version>${commons.dbcp2.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
 
             <!-- TODO: What is this for -->
             <dependency>
@@ -1097,13 +1111,13 @@
                         <!--<threshold>Low</threshold>-->
                         <xmlOutput>true</xmlOutput>
                     </configuration>
-                    <executions>
+                    <!--<executions>
                         <execution>
                             <goals>
                                 <goal>check</goal>
                             </goals>
                         </execution>
-                    </executions>
+                    </executions>-->
                 </plugin>
 
                 <!--
@@ -1398,6 +1412,15 @@
                     </configuration>
                 </plugin>
 
+                <!--
+                http://www.mojohaus.org/taglist-maven-plugin/index.html
+                -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>taglist-maven-plugin</artifactId>
+                    <version>${maven.taglist.plugin}</version>
+                </plugin>
+
                 <!--<plugin>
                     <groupId>net.thucydides.maven.plugins</groupId>
                     <artifactId>maven-thucydides-plugin</artifactId>
@@ -1535,6 +1558,10 @@
                 <artifactId>maven-thucydides-plugin</artifactId>
             </plugin>-->
 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>taglist-maven-plugin</artifactId>
+            </plugin>
 
         </plugins>
     </build>
@@ -1714,6 +1741,7 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>${maven.site.plugin}</version>
                 <configuration>
+                    <!--<stagingDirectory>${project.build.directory}/staging</stagingDirectory>-->
                     <reportPlugins>
                         <plugin>
                             <groupId>org.apache.maven.plugins</groupId>
@@ -1793,7 +1821,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>taglist-maven-plugin</artifactId>
-                <version>2.4</version>
+                <version>${maven.taglist.plugin}</version>
             </plugin>
 
             <plugin>
