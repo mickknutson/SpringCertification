@@ -1,8 +1,7 @@
-package com.baselogic.demos;
+package tutorials.common;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
+import com.baselogic.tutorials.domain.Order;
+import com.baselogic.tutorials.service.OrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
@@ -11,10 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-import com.baselogic.tutorials.domain.Order;
-import com.baselogic.tutorials.service.OrderService;
-import com.baselogic.tutorials.service.OrderServiceImpl;
 
 /**
  * BeforeAdviceTests
@@ -39,46 +34,29 @@ import com.baselogic.tutorials.service.OrderServiceImpl;
  * @since 2012
  *
  */
-//@ContextConfiguration
+//@ContextConfiguration(classes = AfterAdviceTestsContext.class)
 //@RunWith(SpringJUnit4ClassRunner.class)
-public class AfterReturningAdviceTests {
+public class NoopTests {
 
     private final Logger logger = LoggerFactory
-            .getLogger(AfterAdviceTests.class);
+            .getLogger(NoopTests.class);
 
-    @Autowired
-    ApplicationContext applicationContext;
-
-    @Autowired
-    OrderService orderService;
+//    @Autowired
+//    ApplicationContext applicationContext;
+//
+//    @Autowired
+//    OrderService orderService;
 
     @Test
-    public void noop(){
-        logger.info("noop");
-    }
-
-//    @Test
     public void testAfterAdvice(){
         logger.info("testAfterAdvice");
 
-        Order original = new Order();
-        original.adviceGiven.add("created in BeforeAdviceTests");
-
-        Order returned = orderService.placeOrder(original);
-
-        logger.debug(">>> beforeAdvice returned: {}", returned);
+//        Order original = new Order();
+//        original.adviceGiven.add("created in BeforeAdviceTests");
+//
+//        Order returned = orderService.placeOrder(original);
+//
+//        logger.debug(">>> beforeAdvice returned: {}", returned);
     }
 
-    //@Test
-    public void testBeforeAdviceThrowingException(){
-        logger.info("testBeforeAdviceThrowingException");
-        Order original = new Order();
-        original.adviceGiven.add("created in testBeforeAdviceThrowingException");
-
-        Order returned = orderService.placeDelayedOrder(original, 123L);
-
-        logger.debug(">>> testBeforeAdviceThrowingException returned: {}", returned);
-    }
-
-
-}
+} // The End...

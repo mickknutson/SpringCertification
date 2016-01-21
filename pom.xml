@@ -74,6 +74,8 @@
 
     <properties>
         <!--<site.basedir>${basedir}</site.basedir>-->
+        <!--<maven.test.failure.ignore>true</maven.test.failure.ignore>-->
+        <!--<maven.test.skip>true</maven.test.skip>-->
 
     </properties>
 

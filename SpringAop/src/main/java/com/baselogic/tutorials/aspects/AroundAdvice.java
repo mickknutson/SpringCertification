@@ -57,9 +57,11 @@ public class AroundAdvice {
 	 * @param joinpoint
 	 */
     @Around("placeDelayedOrderService()")
-    public Object aroundPlaceDelayedOrderService(ProceedingJoinPoint joinpoint)
+    public Object aroundPlaceDelayedOrderService(
+            ProceedingJoinPoint joinpoint)
     		throws Throwable {
 
+        //Before section
     	Object returnVal = null;
 
     	// get execution control here.
@@ -70,12 +72,15 @@ public class AroundAdvice {
 		    long start = System.currentTimeMillis();
 
 
+//for loop
+            // never call proceed ever!!!!
 
 		    // Return control back to the executing code's at the join-point
 		    // give control back to code execution.
 		    returnVal = joinpoint.proceed();
 
 		    // get execution control again.
+// loop again
 
 		    long end = System.currentTimeMillis();
 

@@ -11,6 +11,10 @@
 
     <name>BASE Logic Parent POM</name>
     <description>Parent / Master POM</description>
+    <organization>
+        <name>BASE Logic, Inc.</name>
+        <url>http://www.baselogic.com</url>
+    </organization>
     <inceptionYear>2013</inceptionYear>
 
     <url>https://github.com/mickknutson/parent</url>
@@ -78,7 +82,8 @@
     -->
     <properties>
         <!--<site.basedir>../</site.basedir>-->
-        <site.basedir>${maven.site.path}</site.basedir>
+        <!--<site.basedir>${maven.site.path}</site.basedir>-->
+        <development.mode>development</development.mode>
 
         <!-- Break the fingers of anyone that changes these values -->
         <maven.test.failure.ignore>false</maven.test.failure.ignore>
@@ -87,8 +92,11 @@
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.compiler.arguments></java.compiler.arguments>
         <java.test.compiler.arguments>-Xlint:all</java.test.compiler.arguments>
+        <jar.addClasspath>false</jar.addClasspath>
+        <server.port>8080</server.port>
 
 
         <!-- Maven plugins ================================================ -->
@@ -106,25 +114,28 @@
         <maven.cloudfoundry.plugin>1.0.0.M1</maven.cloudfoundry.plugin>
         <maven.cobertura.plugin>2.7</maven.cobertura.plugin>
         <maven.compiler.plugin>3.3</maven.compiler.plugin>
-        <maven.dependency.plugin>2.9</maven.dependency.plugin>
+        <maven.checkstyle.plugin>2.16</maven.checkstyle.plugin>
+        <maven.dependency.plugin>2.10</maven.dependency.plugin>
         <maven.deploy.plugin>2.8</maven.deploy.plugin>
         <maven.eclipse.plugin>2.10</maven.eclipse.plugin>
         <maven.enforcer.plugin>1.4</maven.enforcer.plugin>
         <maven.exec.plugin>1.2.1</maven.exec.plugin>
-        <maven.failsafe.plugin>2.12</maven.failsafe.plugin>
-        <maven.findbugs.plugin>3.0.2-SNAPSHOT</maven.findbugs.plugin>
+        <maven.failsafe.plugin>2.18.1</maven.failsafe.plugin>
+        <maven.findbugs.plugin>3.0.3</maven.findbugs.plugin>
         <maven.fluido.skin.plugin>1.4</maven.fluido.skin.plugin>
         <maven.groovy.plugin>1.4</maven.groovy.plugin>
         <maven.help.plugin>2.1.1</maven.help.plugin>
         <maven.install.plugin>2.5</maven.install.plugin>
         <maven.jar.plugin>2.6</maven.jar.plugin>
         <maven.javadoc.plugin>2.10.2</maven.javadoc.plugin>
-        <maven.jetty.plugin>9.3.0.v20150612</maven.jetty.plugin>
+        <maven.jetty.plugin>9.3.5.v20151012</maven.jetty.plugin>
+        <!--<maven.jetty.plugin>9.3.1-SNAPSHOT</maven.jetty.plugin>-->
+        <!--<maven.jetty.plugin>9.3.1.v20150714</maven.jetty.plugin>-->
         <maven.jxr.plugin>2.5</maven.jxr.plugin>
         <maven.project.info.reports.plugin>2.4</maven.project.info.reports.plugin>
         <maven.pmd.plugin>3.5</maven.pmd.plugin>
         <maven.release.plugin>2.4</maven.release.plugin>
-        <maven.resources.plugin>2.5</maven.resources.plugin>
+        <maven.resources.plugin>2.6</maven.resources.plugin>
         <maven.site.plugin>3.4</maven.site.plugin>
         <maven.soapui.plugin>4.0.1</maven.soapui.plugin>
         <maven.sonar.plugin>2.12</maven.sonar.plugin>
@@ -134,20 +145,22 @@
         <maven.tomcat.plugin>2.2</maven.tomcat.plugin>
         <maven.version.range>[2.2.1,3.3.3)</maven.version.range>
         <maven.versions.plugin>2.2</maven.versions.plugin>
-        <maven.war.plugin>2.3</maven.war.plugin>
+        <maven.war.plugin>2.4</maven.war.plugin>
 
         <wagon_ssh.version>2.2</wagon_ssh.version>
-        <github.version>0.6</github.version>
+        <github.version>0.7</github.version>
 
 
         <!-- NEED TO ALPHABETIZE -->
 
         <slf4j.version>1.7.12</slf4j.version>
 
-        <spring.version>4.2.0.RELEASE</spring.version>
-        <spring.data-jpa.version>1.8.2.RELEASE</spring.data-jpa.version>
-        <spring.security.version>4.0.1.RELEASE</spring.security.version>
+        <spring.version>4.2.2.RELEASE</spring.version>
+        <spring.boot.version>1.2.7.RELEASE</spring.boot.version>
+        <spring.data-jpa.version>1.9.0.RELEASE</spring.data-jpa.version>
+        <spring.security.version>4.0.3.RELEASE</spring.security.version>
         <spring.integration.version>4.1.2.RELEASE</spring.integration.version>
+        <spring.batch.version>3.0.5.RELEASE</spring.batch.version>
 
 
 
@@ -155,6 +168,15 @@
         <aspectj.version>1.8.6</aspectj.version>
 
         <cglib.version>3.1</cglib.version>
+
+        <cobertura.branchRate>85</cobertura.branchRate>
+        <cobertura.lineRate>95</cobertura.lineRate>
+        <cobertura.haltOnFailure>true</cobertura.haltOnFailure>
+        <cobertura.totalBranchRate>85</cobertura.totalBranchRate>
+        <cobertura.totalLineRate>95</cobertura.totalLineRate>
+        <cobertura.packageLineRate>100</cobertura.packageLineRate>
+        <cobertura.packageBranchRate>100</cobertura.packageBranchRate>
+
 
         <!-- Commons -->
         <commons_codec.version>1.10</commons_codec.version>
@@ -164,11 +186,15 @@
         <commons_dbcp.version>1.4</commons_dbcp.version>
         <commons.dbcp2.version>2.1</commons.dbcp2.version>
         <commons_io.version>2.4</commons_io.version>
+        <commons_httpclient.version>4.4.1</commons_httpclient.version>
+
+        <cucumber.version>1.2.4</cucumber.version>
 
         <derby.version>10.11.1.1</derby.version>
 
-        <easyb.version>1.6</easyb.version>
-        <easyb.plugin.version>1.4</easyb.plugin.version>
+        <ehcache.version>2.10.0</ehcache.version>
+        <org.ehcache.version>3.0.0.m3</org.ehcache.version>
+        <org.ehcache.jcache.version>1.0.1</org.ehcache.jcache.version>
 
         <groovy.version>2.4.3</groovy.version>
         <guava.version>18.0</guava.version>
@@ -178,22 +204,29 @@
         <hikaricp-java6.version>2.3.8</hikaricp-java6.version>
 
         <!-- Hibernate / JPA -->
-        <hibernate.version>4.3.9.Final</hibernate.version>
-        <!--<hibernate.version>3.6.0.Final</hibernate.version>-->
-        <!--<hibernate.validator.version>4.2.0.Final</hibernate.validator.version>-->
-        <hibernate.validator.version>5.2.1.Final</hibernate.validator.version>
-        <hibernate.jmx.version>3.5.6-Final</hibernate.jmx.version>
+        <hibernate.version>5.0.3.Final</hibernate.version>
+        <hibernate.validator.version>5.2.2.Final</hibernate.validator.version>
 
         <h2.version>1.4.177</h2.version>
 
         <javax.validation.version>1.1.0.Final</javax.validation.version>
+        <javax.cache.version>1.0.0</javax.cache.version>
+        <javax.cdi.version>1.1-PRD</javax.cdi.version>
         <javax.inject.version>1</javax.inject.version>
+
+        <!-- use 3.0.1 for Tomcat 7 or Java EE 6 (i.e. Glassfish 3.x) -->
         <javax.servlet.version>3.1.0</javax.servlet.version>
         <javax.servlet.jsp.version>2.2</javax.servlet.jsp.version>
         <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
 
+        <jaxb.version>2.2.12</jaxb.version>
+        <jaxrs.version>2.0.1</jaxrs.version>
+        <jersey.version>2.2.12</jersey.version>
+
+        <joda.version>2.8.2</joda.version>
+
         <junit.version>4.12</junit.version>
-        <junit.argLine>-Xmx1024m -XX:MaxPermSize=256m</junit.argLine>
+        <junit.argLine>-Xmx1024m</junit.argLine>
         <junit.enableAssertions>true</junit.enableAssertions>
         <junit.failIfNoTests>true</junit.failIfNoTests>
         <!-- [WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.-->
@@ -224,11 +257,18 @@
 
         <taglibs.standard.version>1.1.2</taglibs.standard.version>
 
-        <!--<serenity.version>0.9.275</serenity.version>-->
-        <thucydides.version>0.9.275</thucydides.version>
-        <thucydides.plugin.version>0.8.0</thucydides.plugin.version>
+        <serenity.version>1.1.3</serenity.version>
+        <serenity.jbehave.version>1.1.0</serenity.jbehave.version>
+
+        <!--<serenity.plugin.version>1.0.47</serenity.plugin.version>-->
+        <serenity.plugin.version>1.1.3</serenity.plugin.version>
+
 
         <tomcat.servlet.version>7.0.57</tomcat.servlet.version>
+
+        <wink.version>1.4</wink.version>
+
+        <yaml.version>1.16</yaml.version>
 
 
         <!-- Webdriver ===================================================== -->
@@ -261,6 +301,7 @@
             <properties>
                 <maven.test.failure.ignore>false</maven.test.failure.ignore>
                 <junit.failIfNoTests>true</junit.failIfNoTests>
+                <maven.test.skip>false</maven.test.skip>
             </properties>
         </profile>
     </profiles>
@@ -371,6 +412,12 @@
                 <version>${spring.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
 
             <!-- Spring Security -->
             <dependency>
@@ -442,9 +489,47 @@
             </dependency>
 
             <dependency>
+                <groupId>org.apache.httpcomponents</groupId>
+                <artifactId>httpclient</artifactId>
+                <version>${commons_httpclient.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+
+            <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons_io.version}</version>
+            </dependency>
+
+            <!-- Cache providers -->
+            <!-- Legacy EHcache -->
+            <dependency>
+                <groupId>net.sf.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${ehcache.version}</version>
+            </dependency>
+
+            <!-- new org.EHCache -->
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>ehcache</artifactId>
+                <version>${org.ehcache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ehcache</groupId>
+                <artifactId>jcache</artifactId>
+                <version>${org.ehcache.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.cache</groupId>
+                <artifactId>cache-api</artifactId>
+                <version>${javax.cache.version}</version>
             </dependency>
 
             <dependency>
@@ -452,6 +537,19 @@
                 <artifactId>guava</artifactId>
                 <version>${guava.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.yaml</groupId>
+                <artifactId>snakeyaml</artifactId>
+                <version>${yaml.version}</version>
+            </dependency>
+
 
             <!-- Logging -->
             <dependency>
@@ -610,11 +708,6 @@
                 <artifactId>validation-api</artifactId>
                 <version>${javax.validation.version}</version>
             </dependency>
-            <dependency>
-                <groupId>org.hibernate</groupId>
-                <artifactId>hibernate-jmx</artifactId>
-                <version>${hibernate.jmx.version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>org.springframework.data</groupId>
@@ -626,6 +719,12 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-orm</artifactId>
                 <version>${spring.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.hibernate</groupId>
+                        <artifactId>hibernate-core</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
@@ -658,14 +757,6 @@
                 </exclusions>
             </dependency>
 
-
-            <!-- TODO: What is this for -->
-            <!--<dependency>
-                <groupId>com.zaxxer</groupId>
-                <artifactId>HikariCP-java6</artifactId>
-                <version>${hikaricp-java6.version}</version>
-                <scope>compile</scope>
-            </dependency>-->
 
             <dependency>
                 <groupId>com.h2database</groupId>
@@ -733,13 +824,45 @@
                 <scope>test</scope>
             </dependency>
 
-            <!--=== dependencyManagement =======================================-->
+            <!-- Cucumber-jvm -->
+            <!--
+            https://cucumber.io/docs/reference/jvm
+
+            For further installation:
+            https://github.com/cucumber/cucumber-jvm/tree/master/examples
+            -->
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-junit</artifactId>
+                <version>${cucumber.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-java8</artifactId>
+                <version>${cucumber.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--
+            ./src/test/groovy
+            -->
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-groovy</artifactId>
+                <version>${cucumber.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+
+            <!--=== dependencyManagement =======================================-->
+
+            <!--<dependency>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven.javadoc.plugin}</version>
-            </dependency>
+            </dependency>-->
 
 
             <dependency>
@@ -748,7 +871,6 @@
                 <version>${selenium.version}</version>
                 <scope>test</scope>
                 <exclusions>
-                    <!-- Exclude Commons Logging in favor of SLF4j -->
                     <exclusion>
                         <groupId>commons-lang</groupId>
                         <artifactId>commons-lang</artifactId>
@@ -769,7 +891,6 @@
                 <version>${selenium.version}</version>
                 <scope>test</scope>
                 <exclusions>
-                    <!-- Exclude Commons Logging in favor of SLF4j -->
                     <exclusion>
                         <groupId>commons-lang</groupId>
                         <artifactId>commons-lang</artifactId>
@@ -785,70 +906,59 @@
                 </exclusions>
             </dependency>
 
-            <!-- EasyB -->
-            <!--<dependency>
-                <groupId>org.easyb</groupId>
-                <artifactId>easyb-core</artifactId>
-                <version>${easyb.version}</version>
-                <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-lang</groupId>
-                        <artifactId>commons-lang</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>-->
 
-            <!-- thucydides
-            Renamed to serenity? -->
-            <!--<dependency>
-                <groupId>net.thucydides</groupId>
-                <artifactId>thucydides-core</artifactId>
-                <version>${thucydides.version}</version>
-                <scope>test</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-lang</groupId>
-                        <artifactId>commons-lang</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>log4j</groupId>
-                        <artifactId>log4j</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>-->
-
-            <!--<dependency>
-                <groupId>net.thucydides</groupId>
-                <artifactId>thucydides-junit</artifactId>
-                <version>${thucydides.version}</version>
-                <scope>test</scope>
-            </dependency>-->
-            <!--<dependency>
-                <groupId>net.thucydides.easyb</groupId>
-                <artifactId>thucydides-easyb-plugin</artifactId>
-                <version>${thucydides.version}</version>
-                <scope>test</scope>
-            </dependency>
-
-
-
-
+            <!-- thucydides was renamed to serenity... -->
             <dependency>
                 <groupId>net.serenity-bdd</groupId>
-                <artifactId>core</artifactId>
+                <artifactId>serenity-core</artifactId>
                 <version>${serenity.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>net.serenity-bdd</groupId>
                 <artifactId>serenity-junit</artifactId>
                 <version>${serenity.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
             </dependency>
-            -->
+
+            <dependency>
+                <groupId>net.serenity-bdd</groupId>
+                <artifactId>serenity-spring</artifactId>
+                <version>${serenity.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
+            <dependency>
+                <groupId>net.serenity-bdd</groupId>
+                <artifactId>serenity-jbehave</artifactId>
+                <version>${serenity.jbehave.version}</version>
+                <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <groupId>commons-logging</groupId>
+                        <artifactId>commons-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
 
             <!-- JBehave -->
             <!--<dependency>
@@ -916,9 +1026,15 @@
             <artifactId>commons-lang3</artifactId>
         </dependency>
 
+
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
         </dependency>
 
 
@@ -947,6 +1063,10 @@
             <artifactId>groovy-all</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+        </dependency>
 
         <!--===================================================================
         == TESTING
@@ -964,19 +1084,19 @@
             <artifactId>hamcrest-all</artifactId>
         </dependency>
 
-        <dependency>
+        <!--<dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
-        </dependency>
+        </dependency>-->
 
 
         <!-- Only used for Spring projects -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-        </dependency>
+        </dependency>-->
 
-        <!-- MOCK evertything !!!!-->
+        <!-- MOCK evereything !!!!-->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-all</artifactId>
@@ -989,6 +1109,29 @@
             <groupId>org.powermock</groupId>
             <artifactId>powermock-api-mockito</artifactId>
         </dependency>
+
+
+        <!--<dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>core</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-spring</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.serenity-bdd</groupId>
+            <artifactId>serenity-jbehave</artifactId>
+        </dependency>
+
 
     </dependencies>
 
@@ -1009,8 +1152,8 @@
             <plugins>
 
                 <!--
-                == ActiveMQ
-                == url: XXX
+                ActiveMQ
+                url: XXX
                 -->
                 <plugin>
                     <groupId>org.apache.activemq.tooling</groupId>
@@ -1030,6 +1173,11 @@
                 </plugin>
 
 
+                <!--
+                https://maven.apache.org/plugins/maven-antrun-plugin/
+                Run specific Ant Tasks.
+                This config only creates a version.properties file.
+                -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-antrun-plugin</artifactId>
@@ -1062,31 +1210,37 @@
 
                 <!--
                 http://maven.apache.org/components/plugins/maven-checkstyle-plugin/usage.html
+                Run: mvn clean checkstyle:checkstyle
+                Report: ${build.outputDirectory}/site/checkstyle.html
                 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>2.16</version>
-                    <!--<executions>
+                    <version>${maven.checkstyle.plugin}</version>
+                    <executions>
                         <execution>
                             <id>validate</id>
                             <phase>package</phase>
                             <configuration>
-                                <configLocation>checkstyle.xml</configLocation>
+                                <configLocation>https://raw.githubusercontent.com/checkstyle/checkstyle/18f6ebbcad23e88e3ae30fc79be464b8b7772a0d/google_checks.xml</configLocation>
+                                <!--<configLocation>./google_checks.xml</configLocation>-->
                                 <encoding>UTF-8</encoding>
                                 <consoleOutput>false</consoleOutput>
                                 <failsOnError>false</failsOnError>
-                                <linkXRef>false</linkXRef>
+                                <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                                <linkXRef>true</linkXRef>
                             </configuration>
                             <goals>
-                                <goal>check</goal>
+                                <!--<goal>checkstyle</goal>-->
                             </goals>
                         </execution>
-                    </executions>-->
+                    </executions>
                 </plugin>
 
                 <!--
                 http://www.mojohaus.org/cobertura-maven-plugin/
+                Run: mvn clean cobertura:cobertura
+                Report: ${build.outputDirectory}/site/cobertura/index.html
                 -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -1098,13 +1252,14 @@
                             <format>xml</format>
                         </formats>
                         <check>
-                            <branchRate>85</branchRate>
-                            <lineRate>85</lineRate>
-                            <haltOnFailure>true</haltOnFailure>
-                            <totalBranchRate>85</totalBranchRate>
-                            <totalLineRate>85</totalLineRate>
-                            <packageLineRate>85</packageLineRate>
-                            <packageBranchRate>85</packageBranchRate>
+                            <branchRate>${cobertura.branchRate}</branchRate>
+                            <lineRate>${cobertura.lineRate}</lineRate>
+                            <haltOnFailure>${cobertura.haltOnFailure}</haltOnFailure>
+                            <totalBranchRate>${cobertura.totalBranchRate}</totalBranchRate>
+                            <totalLineRate>${cobertura.totalLineRate}</totalLineRate>
+                            <packageLineRate>${cobertura.packageLineRate}</packageLineRate>
+                            <packageBranchRate>${cobertura.packageBranchRate}</packageBranchRate>
+
                             <regexes>
                                 <regex>
                                     <pattern>com.example.reallyimportant.*</pattern>
@@ -1139,7 +1294,7 @@
                 </plugin>
 
                 <!--
-                == http://maven.apache.org/plugins/maven-compiler-plugin/
+                http://maven.apache.org/plugins/maven-compiler-plugin/
                 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1176,6 +1331,7 @@
 
 
                 <!--
+                TODO: What does this plugin do?
                 https://maven.apache.org/plugins/maven-dependency-plugin/
                 -->
                 <plugin>
@@ -1193,6 +1349,14 @@
                     </executions>
                 </plugin>
 
+                <!--
+                https://maven.apache.org/plugins/maven-eclipse-plugin/
+                Helps create eclipse project details from an existing pom.xml
+
+                Force maven to download source and javaDocs:
+                mvn dependency:sources
+                mvn dependency:resolve -Dclassifier=javadoc
+                -->
                 <plugin>
                     <artifactId>maven-eclipse-plugin</artifactId>
                     <version>${maven.eclipse.plugin}</version>
@@ -1208,7 +1372,11 @@
                     </configuration>
                 </plugin>
 
-                <!-- To locate dependencies: mvn dependency:tree -->
+                <!--
+                Enforce certain rules on the included dependencies in any project.
+                https://maven.apache.org/plugins/maven-dependency-plugin/
+                To locate dependencies: mvn dependency:tree
+                -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-enforcer-plugin</artifactId>
@@ -1246,6 +1414,40 @@
                     </executions>
                 </plugin>
 
+                <!--
+                Running integration and functional tests
+                https://maven.apache.org/surefire/maven-failsafe-plugin/
+                -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-failsafe-plugin</artifactId>
+                    <version>${maven.failsafe.plugin}</version>
+                    <configuration>
+                        <includes>
+                            <include>**/When*.java</include>
+                            <include>**/features/**/*.java</include>
+                        </includes>
+                        <systemProperties>
+                            <webdriver.driver>${webdriver.driver}</webdriver.driver>
+                            <surefire.rerunFailingTestsCount>${surefire.rerunFailingTestsCount}</surefire.rerunFailingTestsCount>
+                        </systemProperties>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>integration-test</goal>
+                                <goal>verify</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+
+                <!--
+                Findbugs static analysis
+                http://gleclaire.github.io/findbugs-maven-plugin/usage.html
+                Run: mvn site
+                Report: ${build.outputDirectory}/site/findbugs/index.html
+                -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>findbugs-maven-plugin</artifactId>
@@ -1275,19 +1477,26 @@
                         <archive>
                             <index>true</index>
                             <manifest>
-                                <addClasspath>true</addClasspath>
+                                <addClasspath>${jar.addClasspath}</addClasspath>
                             </manifest>
                             <manifestEntries>
-                                <mode>development</mode>
-                                <url>${project.url}</url>
-                                <key>value</key>
+                                <Mode>${development.mode}</Mode>
+                                <OrganizationUrl>${project.url}</OrganizationUrl>
+                                <OrganizationName>${project.organization.name}</OrganizationName>
+                                <Description>${project.description}</Description>
+                                <InceptionYear>${project.inceptionYear}</InceptionYear>
+
+                                <foo>bar</foo>
                             </manifestEntries>
                         </archive>
                     </configuration>
                 </plugin>
 
+
                 <!--
                 https://maven.apache.org/plugins/maven-pmd-plugin/
+                Run: mvn pmd:pmd
+                Report: ${build.outputDirectory}/site/pmd/index.html
                 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1307,13 +1516,18 @@
                             <phase>package</phase>
                             <goals>
                                 <goal>pmd</goal>
+                                <!--<goal>cpd</goal>-->
+                                <!--<goal>check</goal>-->
+                                <!--<goal>cpd-check</goal>-->
                             </goals>
                         </execution>
                     </executions>
                 </plugin>
 
                 <!--
+                The Resources Plugin handles the copying of project resources to the output directory.
                 http://maven.apache.org/plugins/maven-resources-plugin/
+
                 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1334,7 +1548,8 @@
                                 <outputDirectory>${basedir}/src/site/</outputDirectory>
                                 <resources>
                                     <resource>
-                                        <directory>${site.basedir}/src/site/</directory>
+                                        <!--<directory>${site.basedir}/src/site/</directory>-->
+                                        <directory>${basedir}/src/site/</directory>
                                         <includes>
                                             <include>**/site.xml</include>
                                         </includes>
@@ -1345,27 +1560,33 @@
                     </executions>
                 </plugin>
 
-                <!--<plugin>
-                    <groupId>org.easyb</groupId>
-                    <artifactId>maven-easyb-plugin</artifactId>
-                    <version>${easyb.plugin.version}</version>
+                <!--
+                Execute Serenity BDD test cases
+                https://github.com/serenity-bdd/serenity-maven-plugin
+                http://mvnrepository.com/artifact/net.serenity-bdd.maven.plugins/serenity-maven-plugin
+                -->
+                <plugin>
+                    <groupId>net.serenity-bdd.maven.plugins</groupId>
+                    <artifactId>serenity-maven-plugin</artifactId>
+                    <version>${serenity.plugin.version}</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>net.serenity-bdd</groupId>
+                            <artifactId>serenity-core</artifactId>
+                            <version>${serenity.version}</version>
+                        </dependency>
+                    </dependencies>
                     <executions>
                         <execution>
+                            <id>serenity-reports</id>
+                            <phase>post-integration-test</phase>
                             <goals>
-                                <goal>test</goal>
+                                <goal>aggregate</goal>
                             </goals>
                         </execution>
                     </executions>
-                    <configuration>
-                        <easybTestDirectory>${basedir}/src/test/stories</easybTestDirectory>
-                        <storyReport>${project.build.directory}/easyb-stories.txt</storyReport>
-                        <xmlReport>${project.build.directory}/easyb-report.xml</xmlReport>
+                </plugin>
 
-                        <storyType>html</storyType>
-                          <storyReport>${project.build.directory}/easyb/stories.html</storyReport>
-                          <jvmArguments>-Dwebdriver.driver=${webdriver.driver}</jvmArguments>
-                    </configuration>
-                </plugin>-->
 
 
                 <!--
@@ -1407,6 +1628,27 @@
                         <username>admin</username>
                         <password>admin</password>
                     </configuration>-->
+                    <configuration>
+                        <!-- http port -->
+                        <port>${server.port}</port>
+                        <!-- application path always starts with /-->
+                        <path>/${project.build.finalName}</path>
+                        <!-- optional path to a context file -->
+                        <contextFile>${basedir}/src/main/webapp/META-INF/context.xml</contextFile>
+                        <!-- optional system properties you want to add -->
+                        <systemProperties>
+                            <appserver.base>${project.build.directory}/appserver-base</appserver.base>
+                            <appserver.home>${project.build.directory}/appserver-home</appserver.home>
+                            <derby.system.home>${project.build.directory}/appserver-base/logs</derby.system.home>
+                            <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+                        </systemProperties>
+                        <!-- if you want to use test dependencies rather than only runtime -->
+                        <useTestClasspath>false</useTestClasspath>
+                        <!-- optional if you want to add some extra directories into the classloader -->
+                        <additionalClasspathDirs>
+                            <additionalClasspathDir>${basedir}/src/main/resources</additionalClasspathDir>
+                        </additionalClasspathDirs>
+                    </configuration>
 
                     <executions>
                         <execution>
@@ -1416,12 +1658,28 @@
                             </goals>
                             <phase>package</phase>
                             <configuration>
+                                <!-- http port -->
+                                <port>${server.port}</port>
                                 <path>/${project.build.finalName}</path>
                                 <!-- optional, needed only if you want to use a preconfigured server.xml file -->
                                 <!--<serverXml>src/main/tomcatconf/server.xml</serverXml>-->
                                 <!-- optional values which can be configurable -->
                                 <!--<attachArtifactClassifier>default value is exec-war but you can customize</attachArtifactClassifier>-->
                                 <!--<attachArtifactClassifierType>default value is jar</attachArtifactClassifierType>-->
+                                <contextFile>${basedir}/src/main/webapp/META-INF/context.xml</contextFile>
+                                <!-- optional system properties you want to add -->
+                                <systemProperties>
+                                    <appserver.base>${project.build.directory}/appserver-base</appserver.base>
+                                    <appserver.home>${project.build.directory}/appserver-home</appserver.home>
+                                    <derby.system.home>${project.build.directory}/appserver-base/logs</derby.system.home>
+                                    <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+                                </systemProperties>
+                                <!-- if you want to use test dependencies rather than only runtime -->
+                                <useTestClasspath>false</useTestClasspath>
+                                <!-- optional if you want to add some extra directories into the classloader -->
+                                <additionalClasspathDirs>
+                                    <additionalClasspathDir>${basedir}/src/main/resources</additionalClasspathDir>
+                                </additionalClasspathDirs>
                             </configuration>
                         </execution>
                     </executions>
@@ -1441,6 +1699,8 @@
                             </goals>
                             <phase>package</phase>
                             <configuration>
+                                <!-- http port -->
+                                <port>${server.port}</port>
                                 <path>/${project.build.finalName}</path>
                             </configuration>
                         </execution>
@@ -1448,7 +1708,7 @@
                 </plugin>
 
                 <!--
-                    http://www.eclipse.org/jetty/documentation/9.2.2.v20140723/jetty-maven-plugin.html
+                    http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html
 
                     mvn jetty:run -e -P embedded
                     mvn jetty:run-war -e -P embedded
@@ -1472,7 +1732,34 @@
                 </plugin>
 
                 <!--
+                    http://www.eclipse.org/jetty/documentation/9.2.2.v20140723/jetty-maven-plugin.html
+
+                    mvn jetty:run -e -P embedded
+                    mvn jetty:run-war -e -P embedded
+
+                    To change the port the server is running on:
+                    ============================================
+                    -Dserver.port=8888
+
+                -->
+                <!--<plugin>
+                    <groupId>org.eclipse.jetty</groupId>
+                    <artifactId>jetty-maven-plugin</artifactId>
+                    <version>${maven.jetty.plugin}</version>
+                    <configuration>
+                        <webApp>
+                            <contextPath>/${project.build.finalName}</contextPath>
+                        </webApp>
+                        <war>${project.build.directory}/${project.build.finalName}.war</war>
+
+                    </configuration>
+                </plugin>-->
+
+                <!--
+                Create Site project documentation
                 http://maven.apache.org/plugins/maven-site-plugin/index.html
+                Run: mvn site:site
+                Report: ${build.outputDirectory}/site/index.html
                 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -1487,7 +1774,10 @@
                     </dependencies>
                 </plugin>
 
-                <!-- https://github.com/github/maven-plugins -->
+                <!--
+                Upload project artifacts and documentation to GitHub
+                https://github.com/github/maven-plugins
+                -->
                 <plugin>
                     <groupId>com.github.github</groupId>
                     <artifactId>site-maven-plugin</artifactId>
@@ -1502,16 +1792,27 @@
                     </configuration>
                     <executions>
                         <execution>
+                            <phase>site-stage</phase>
                             <goals>
                                 <goal>site</goal>
                             </goals>
-                            <phase>site-stage</phase>
                         </execution>
                     </executions>
                 </plugin>
 
+                <!--
+                Sonor plugin for Maven build statistics
+                http://docs.sonarqube.org/display/SONAR/Documentation
+                -->
+                <!--<plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>sonar-maven-plugin</artifactId>
+                    <version>2.3</version>
+                </plugin>-->
+
 
                 <!--
+                The Source Plugin creates a jar archive of the source files of the current project.
                 https://maven.apache.org/plugins/maven-source-plugin/index.html
                 -->
                 <plugin>
@@ -1531,13 +1832,18 @@
 
 
                 <!--
+                Running unit tests, not integration or functional tests.
                 https://maven.apache.org/surefire/maven-surefire-plugin/
+                Run: mvn clean test
+                Report: ${build.outputDirectory}/surefire-reports/
                 -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${maven.surefire.plugin}</version>
                     <configuration>
+                        <argLine>${junit.argLine}</argLine>
+
                         <!-- [WARNING] The parameter forkMode is deprecated since version 2.14. Use forkCount and reuseForks instead.
                         -->
                         <!--<forkMode>pertest</forkMode>-->
@@ -1555,9 +1861,8 @@
 
                         <skipTests>${skipTests}</skipTests>
 
-                        <argLine>${junit.argLine}</argLine>
-
                         <includes>
+                            <include>**/*Test.java</include>
                             <include>**/*Tests.java</include>
                             <!-- <include>**/*Stories.java</include> -->
                         </includes>
@@ -1567,13 +1872,15 @@
 
                         <systemPropertyVariables>
                             <webdriver.driver>${webdriver.driver}</webdriver.driver>
+                            <serenity.browser.width>1200</serenity.browser.width>
                         </systemPropertyVariables>
-
                     </configuration>
                 </plugin>
 
                 <!--
                 http://www.mojohaus.org/taglist-maven-plugin/index.html
+                Run: mvn taglist:taglist
+                Report: ${build.outputDirectory}/taglist/
                 -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
@@ -1581,18 +1888,12 @@
                     <version>${maven.taglist.plugin}</version>
                 </plugin>
 
-                <!--<plugin>
-                    <groupId>net.thucydides.maven.plugins</groupId>
-                    <artifactId>maven-thucydides-plugin</artifactId>
-                    <version>${thucydides.plugin.version}</version>
-                </plugin>-->
-
                 <!--
-                == versions-maven-plugin
-                == http://www.mojohaus.org/versions-maven-plugin/
-                ==
-                == mvn clean versions:use-latest-versions scm:checkin deploy -Dmessage="update versions" -DperformRelease=true
-                 -->
+                The Versions Plugin is used when you want to manage the versions of artifacts in a project's POM.
+                http://www.mojohaus.org/versions-maven-plugin/
+
+                mvn clean versions:use-latest-versions scm:checkin deploy -Dmessage="update versions" -DperformRelease=true
+                -->
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>versions-maven-plugin</artifactId>
@@ -1604,12 +1905,25 @@
                     </configuration>
                 </plugin>
 
+                <!--
+                The WAR Plugin is responsible for collecting all artifact dependencies,
+                classes and resources of the web application and packaging them into a web application archive.
+
+                https://maven.apache.org/plugins/maven-war-plugin/
+                -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
                     <version>${maven.war.plugin}</version>
                     <configuration>
-                        <warName>${project.artifactId}</warName>
+                        <warName>${project.build.finalName}</warName>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                        <webResources>
+                            <resource>
+                                <!-- this is relative to the pom.xml directory -->
+                                <directory>${basedir}/src/main/resources</directory>
+                            </resource>
+                        </webResources>
                     </configuration>
                 </plugin>
 
@@ -1645,6 +1959,11 @@
             </plugin>
 
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
             </plugin>
@@ -1664,6 +1983,11 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+            </plugin>
+
+            <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
             </plugin>
@@ -1680,17 +2004,12 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-            </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
             </plugin>
 
             <plugin>
@@ -1709,18 +2028,23 @@
             </plugin>
 
             <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
+                <groupId>net.serenity-bdd.maven.plugins</groupId>
+                <artifactId>serenity-maven-plugin</artifactId>
             </plugin>
-
-            <!--<plugin>
-                <groupId>net.thucydides.maven.plugins</groupId>
-                <artifactId>maven-thucydides-plugin</artifactId>
-            </plugin>-->
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>taglist-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
             </plugin>
 
         </plugins>
@@ -1741,7 +2065,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>2.16</version>
+                <version>${maven.checkstyle.plugin}</version>
+                <configuration>
+                    <!--<configLocation>https://raw.githubusercontent.com/checkstyle/checkstyle/master/google_checks.xml</configLocation>-->
+                </configuration>
                 <reportSets>
                     <reportSet>
                         <reports>
@@ -1765,6 +2092,12 @@
                         </reports>
                     </reportSet>
                 </reportSets>
+            </plugin>
+
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
             </plugin>
 
             <!--
@@ -1804,10 +2137,31 @@
                     <excludeRoots>
                         <excludeRoot>target/generated-sources/stubs</excludeRoot>
                     </excludeRoots>
+                    <rulesets>
+                        <!-- Two rule sets that come bundled with PMD -->
+                        <ruleset>/rulesets/java/braces.xml</ruleset>
+                        <ruleset>/rulesets/java/basic.xml</ruleset>
+                        <ruleset>/rulesets/java/coupling.xml</ruleset>
+                        <ruleset>/rulesets/java/design.xml</ruleset>
+                        <ruleset>/rulesets/java/javabeans.xml</ruleset>
+                        <ruleset>/rulesets/java/junit.xml</ruleset>
+                        <ruleset>/rulesets/java/naming.xml</ruleset>
+                        <ruleset>/rulesets/java/unnecessary.xml</ruleset>
+                        <ruleset>/rulesets/java/unusedcode.xml</ruleset>
+                    </rulesets>
                 </configuration>
+                <reportSets>
+                    <reportSet>
+                        <reports>
+                            <report>pmd</report>
+                            <report>cpd</report>
+                        </reports>
+                    </reportSet>
+                </reportSets>
             </plugin>
 
-            <!-- at_see yworks
+            <!--
+            at_see yworks
             -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -1822,8 +2176,9 @@
                     <header><![CDATA[<a href="/" target="_top">${project.description}</a>]]></header>
                     <minmemory>128m</minmemory>
                     <maxmemory>1024m</maxmemory>
-                    <overview>${site.basedir}/src/main/javadoc/overview.html</overview>
-                    <packagenames>com.baselogic.*</packagenames>
+                    <!--<overview>${site.basedir}/src/main/javadoc/overview.html</overview>-->
+                    <overview>${basedir}/src/main/javadoc/overview.html</overview>
+                    <packagenames>com.baselogic.*, com.springclass, com.trivera</packagenames>
                     <use>true</use>
                     <version>true</version>
                     <failOnError>false</failOnError>
@@ -1840,7 +2195,6 @@
                     <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle> <!-- Used by javadoc:test-javadoc goal -->
 
                 </configuration>
-
                 <reportSets>
                     <reportSet>
                         <id>html</id>
@@ -1887,12 +2241,6 @@
                 </reportSets>
             </plugin>
 
-            <!--<plugin>
-                <groupId>net.thucydides.maven.plugins</groupId>
-                <artifactId>maven-thucydides-plugin</artifactId>
-                <version>${thucydides.plugin.version}</version>
-            </plugin>-->
-
             <!--
             http://maven.apache.org/plugins/maven-site-plugin/index.html
             -->
@@ -1935,9 +2283,14 @@
                             <groupId>org.apache.maven.plugins</groupId>
                             <artifactId>maven-checkstyle-plugin</artifactId>
                             <version>[2.6,)</version>
-                            <configuration>
-                            </configuration>
                         </plugin>
+
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-failsafe-plugin</artifactId>
+                            <version>[1.18,)</version>
+                        </plugin>
+
                         <plugin>
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>findbugs-maven-plugin</artifactId>
@@ -1952,6 +2305,11 @@
                             <groupId>org.codehaus.mojo</groupId>
                             <artifactId>cobertura-maven-plugin</artifactId>
                             <version>[2.4,)</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>net.serenity-bdd.maven.plugins</groupId>
+                            <artifactId>serenity-maven-plugin</artifactId>
+                            <version>[1.0,)</version>
                         </plugin>
                         <plugin>
                             <groupId>org.codehaus.mojo</groupId>
@@ -1971,6 +2329,20 @@
                     </reportPlugins>
                 </configuration>
             </plugin>
+
+            <!--
+            -->
+            <!--<plugin>
+                <groupId>org.codehaus.sonar-plugins</groupId>
+                <artifactId>maven-report</artifactId>
+            </plugin>-->
+
+            <plugin>
+                <groupId>net.serenity-bdd.maven.plugins</groupId>
+                <artifactId>serenity-maven-plugin</artifactId>
+                <version>${serenity.plugin.version}</version>
+            </plugin>
+
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -2018,13 +2390,28 @@
     <repositories>
 
         <repository>
+            <id>repo.central.maven.org</id>
+            <name>Maven Repository</name>
+            <url>http://central.maven.org/maven2/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+
+        <!--<repository>
             <id>repo.maven.apache.org.maven2</id>
             <name>Maven Repository</name>
             <url>http://repo.maven.apache.org/maven2/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
+        </repository>-->
+
+        <repository>
+            <id>sonatype-snapshots</id>
+            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
+
 
         <repository>
             <id>spring.maven.release</id>
@@ -2036,11 +2423,11 @@
             <name>Spring Milestone Repository</name>
             <url>http://repo.springframework.org/milestone</url>
         </repository>
-        <repository>
+        <!--<repository>
             <id>spring.maven.snapshot</id>
             <name>Spring Snapshot Repository</name>
             <url>http://repo.springframework.org/snapshot</url>
-        </repository>
+        </repository>-->
 
         <repository>
             <id>org.jboss.repository.releases</id>
@@ -2051,12 +2438,12 @@
             </snapshots>
         </repository>
 
-        <repository>
+        <!--<repository>
             <id>eclipselink</id>
             <url>http://download.eclipse.org/rt/eclipselink/maven.repo</url>
-        </repository>
+        </repository>-->
 
-        <repository>
+        <!--<repository>
             <id>apache.public</id>
             <name>Apache public</name>
             <url>https://repository.apache.org/content/groups/public</url>
@@ -2066,9 +2453,9 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </repository>
+        </repository>-->
 
-        <repository>
+        <!--<repository>
             <id>apache.snapshots</id>
             <name>Apache Snapshots</name>
             <url>http://repository.apache.org/content/groups/snapshots-group/</url>
@@ -2078,12 +2465,8 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </repository>
+        </repository>-->
 
-        <!--<repository>-->
-        <!--<id>sonatype-snapshots</id>-->
-        <!--<url>http://oss.sonatype.org/content/repositories/snapshots</url>-->
-        <!--</repository>-->
 
         <!-- <repository>
             <id>mickknutson-snapshots</id>
@@ -2098,13 +2481,22 @@
     <pluginRepositories>
 
         <pluginRepository>
+            <id>repo.central.maven.org</id>
+            <name>Maven Repository</name>
+            <url>http://central.maven.org/maven2/</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+
+        <!--<pluginRepository>
             <id>repo.maven.apache.org.maven2</id>
             <name>Maven Repository</name>
             <url>http://repo.maven.apache.org/maven2/</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </pluginRepository>
+        </pluginRepository>-->
 
         <pluginRepository>
             <id>oss-sonatype-snapshots</id>
@@ -2112,14 +2504,14 @@
         </pluginRepository>
 
         <!-- For SoapUi -->
-        <pluginRepository>
+        <!--<pluginRepository>
             <id>eviwarePluginRepository</id>
             <url>http://www.eviware.com/repository/maven2/</url>
-        </pluginRepository>
+        </pluginRepository>-->
 
 
         <!-- FIXME: Do I need these??? -->
-        <pluginRepository>
+        <!--<pluginRepository>
             <id>apache.public</id>
             <name>Apache public</name>
             <url>https://repository.apache.org/content/groups/public</url>
@@ -2129,9 +2521,9 @@
             <snapshots>
                 <enabled>false</enabled>
             </snapshots>
-        </pluginRepository>
+        </pluginRepository>-->
 
-        <pluginRepository>
+        <!--<pluginRepository>
             <id>apache.snapshots</id>
             <name>Apache Snapshots</name>
             <url>http://repository.apache.org/content/groups/snapshots-group/</url>
@@ -2141,7 +2533,7 @@
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-        </pluginRepository>
+        </pluginRepository>-->
 
 
     </pluginRepositories>

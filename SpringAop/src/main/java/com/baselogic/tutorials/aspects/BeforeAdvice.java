@@ -1,5 +1,6 @@
 package com.baselogic.tutorials.aspects;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -77,7 +78,8 @@ public class BeforeAdvice {
 	/**
 	 * Specific method execution
 	 */
-	@Pointcut("execution(* com.baselogic.*.placeOrder(..))")
+    //       "execution(anyScope AnyPackage.AnyClass.anyMethod(..))"
+	@Pointcut("execution(* *.AnyClass.update(..))")
 	public void placeOrderService() {}
 
 	/**
@@ -127,7 +129,8 @@ public class BeforeAdvice {
 	 * @throws Throwable
 	 */
 	@Before("dataAccessOperation() && args(order,..)")
-	public void beforeOrderDao(Order order) throws Throwable {
+
+	public void beforeOrderDao(Order order, JoinPoint jp) throws Throwable {
 		logger.info(">>> ------------------------------------");
 		logger.info(">>> ------------------------------------");
 		logger.info(">>> ------------------------------------");

@@ -6,7 +6,7 @@
     </contextListener>
 
     <!-- To enable JMX Management -->
-    <jmxConfigurator/>
+    <!--<jmxConfigurator/>-->
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -17,7 +17,7 @@
 	<logger name="rewards" level="debug" />
 	<logger name="common" level="debug" />
 	<logger name="org.apache.activemq" level="debug"/>
-	
+
 	<logger name="org.springframework.beans" level="warn" />
 	<logger name="org.springframework.transaction" level="warn" />
 	<logger name="org.springframework.oxm" level="warn" />

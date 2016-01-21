@@ -11,7 +11,7 @@
     ">
 
     <context:component-scan base-package="com.baselogic.tutorials.dao" />
-    <context:component-scan base-package="com.baselogic.domain" />
+    <context:component-scan base-package="com.baselogic.tutorials.domain" />
     <context:component-scan base-package="com.baselogic.tutorials.service" />
 
     <bean id="beforeAdvice" class="com.baselogic.tutorials.aspects.BeforeAdvice" />
